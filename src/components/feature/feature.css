@@ -1,0 +1,67 @@
+.feature {
+    /* border: 1px solid red; */
+    background-color: #FFFAF0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 64px 80px 64px;
+    gap: 80px;
+}
+
+.feature-text {
+    /* border: 1px solid green; */
+    width: 616px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+}
+
+.bold-text {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.feature-img {
+    /* border: 1px solid yellow; */
+    width: 616px;
+}
+
+.feature-inner-div {
+    /* border: 1px solid pink; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.feature-inner-div div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.feature-img {
+    background: url("../../assets/react.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    /* border: 1px solid red; */
+}
+
+@media screen and (max-width:808px) {
+    .feature {
+        flex-direction: column;
+        padding: 20px;
+        gap: 1rem;
+    }
+
+    .feature-text {
+        width: 100%;
+    }
+
+    .feature-img {
+        width: 100%;
+    }
+}

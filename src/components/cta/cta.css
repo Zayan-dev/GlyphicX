@@ -1,0 +1,74 @@
+.cta {
+    /* border: 1px solid red; */
+    position: relative;
+    height: 421px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../../pics/ss.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+}
+
+.cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.cta-outer {
+    /* border: 1px solid green; */
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    z-index: 2;
+}
+
+.cta-text {
+    font-weight: 700;
+    font-size: 48px;
+    z-index: 2;
+}
+
+.cta-btn-div {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.contact {
+    width: 104px;
+    height: 48px;
+    padding: 12px 24px 12px 24px;
+    background-color: #1214EB;
+    color: white;
+    z-index: 2;
+}
+
+.learn {
+    width: 149px;
+    height: 48px;
+    padding: 12px 24px 12px 24px;
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    z-index: 2;
+}
+
+@media screen and (max-width:808px) {
+    .cta {
+        padding: 20px;
+        gap: 1rem;
+    }
+}

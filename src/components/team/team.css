@@ -1,0 +1,99 @@
+.team {
+    /* border: 1px solid red; */
+    background-image: url("../../assets/bg.png");
+    padding: 112px 64px 112px 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+    color: white;
+}
+
+.team-head {
+    /* border: 1px solid green; */
+    width: 768px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+.team-head-text {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.team-content-div {
+    /* border: 1px solid orange; */
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+}
+
+.team-avatar-div {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-start;
+    gap: 64px;
+}
+
+.team-avatar {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 304px;
+    gap: 24px;
+}
+
+.team-avatar img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.social-media {
+    /* border: 1px solid greenyellow; */
+    height: 34px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hiring-div {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.hiring-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hire {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.hiring-div button {
+    width: 155px;
+    height: 48px;
+    padding: 12px 24px 12px 24px;
+    border: 1px solid white;
+}
+ 
+@media screen and (max-width:836px){
+    .team {
+        padding: 20px;
+        gap: 1rem;
+    }
+    .team-head{
+        width: 100%;
+    }
+    .team-avatar-div {
+        flex-wrap: wrap;
+    }
+}

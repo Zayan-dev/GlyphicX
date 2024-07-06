@@ -1,0 +1,45 @@
+import React from 'react';
+import '../working/working.css';
+import Img from '../../pics/hello.png';
+import communication from "../../assets/images/working1.png"
+import storytelling from "../../assets/images/working2.png"
+import impact from "../../assets/images/working3.png"
+
+// Todos
+// Learn more button in mobile mode
+const Working = () => {
+  return (
+    <div className='working'>
+      <p className='font-bold working-heading'>Stand Out with Our Strategic and Creative Approach</p>
+      <div className='working-outer-div'>
+
+        <div className='working-inner-div'>
+          <img src={communication} alt="Description of image" />
+          <div className=' flex flex-col gap-4'>
+            <p className='inner-div-heading'>Transparent Communication for Effective Collaboration</p>
+            <p>At GlyphicX, we prioritize honesty and open communication to build strong partnerships with our clients.</p>
+          </div>
+        </div>
+
+        <div className='working-inner-div'>
+          <img src={storytelling} alt="Description of image" />
+          <div className=' flex flex-col gap-4'>
+            <p className='inner-div-heading'>Compelling Storytelling to Engage Your Audience</p>
+            <p>Captivating narratives that resonate with your target market.</p>
+          </div>
+        </div>
+
+        <div className='working-inner-div'>
+          <img src={impact} alt="Description of image" />
+          <div className=' flex flex-col gap-4'>
+            <p className='inner-div-heading'>Visually Stunning Designs that Make an Impact</p>
+            <p>Designs that leave a lasting impression on your audience.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  );
+}
+
+export default Working;

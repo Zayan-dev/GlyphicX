@@ -1,0 +1,117 @@
+.collaboration {
+    /* border: 1px solid red; */
+    background-image: url("../../assets/bg.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 64px 80px 64px;
+    gap: 80px;
+    color: white;
+}
+
+.coll-heading {
+    /* border: 1px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 768px;
+    height: 234px;
+    gap: 16px;
+}
+
+.coll-head-text {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57px;
+}
+
+.coll-head-subtext {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.coll-outer-div {
+    /* border: 1px solid green; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+}
+
+.coll-inner-div {
+    /* border: 1px solid blue; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 48px;
+}
+
+.inner-1,
+.inner-2 {
+    /* border: 1px solid red; */
+    width: 303px;
+    height: 404px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 64px;
+}
+
+.inner-3 {
+    /* border: 1px solid orange; */
+    width: 610px;
+    height: 540px;
+    background: url("../../pics/ss.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.discover {
+    /* border: 1px solid red; */
+    width: 240px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.discover-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.coll-btn {
+    padding: 12px 24px 12px 24px;
+    border: 1px solid white;
+}
+
+@media screen and (max-width:808px) {
+    .coll-inner-div {
+        flex-direction: column;
+    }
+    .coll-heading {
+        width: 100%;
+    }
+    .inner-3{
+        width: 100%;
+    }
+    .coll-inner-div {
+        margin-top: 50px;
+    }
+}

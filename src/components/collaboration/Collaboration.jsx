@@ -1,5 +1,6 @@
 import React from 'react'
 import '../collaboration/collaboration.css'
+import video1 from "../../assets/videos/animation_1.mkv"
 // Todos
 // Signup button in mob mode
 // Pic and boxes arrangement 
@@ -17,7 +18,7 @@ const Collaboration = () => {
                     <div className='inner-1'>
                         <div className='discover'>
                             {/* Icon */}
-                            <i class="fa-brands fa-discourse fa-2xl"></i>
+                            <i class="fa-solid fa-diamond fa-2xl"></i>
                             <div className='discover-text'>
                                 <p className='font-bold text-2xl'>Discover</p>
                                 <p className='text-base'>Understand Your Goals and Objectives</p>
@@ -25,7 +26,7 @@ const Collaboration = () => {
                         </div>
                         <div className='discover'>
                             {/* Icon */}
-                            <i class="fa-solid fa-plus fa-2xl"></i>
+                            <i class="fa-solid fa-diamond fa-2xl"></i>
                             <div className='discover-text'>
                                 <p className='font-bold text-2xl'>Create</p>
                                 <p className='text-base'>Develop a Tailored Strategy for Success</p>
@@ -33,13 +34,22 @@ const Collaboration = () => {
                         </div>
 
                     </div>
+                    {/* Video will come here */}
                     <div className='inner-3'>
-
+                        <video
+                            src={video1}
+                            alt="video"
+                            autoPlay
+                            loop
+                            muted
+                        >
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
                     <div className='inner-2'>
                         <div className='discover'>
                             {/* Icon */}
-                            <i class="fa-solid fa-cubes fa-2xl"></i>
+                            <i class="fa-solid fa-diamond fa-2xl"></i>
                             <div className='discover-text'>
                                 <p className='font-bold text-2xl'>Design</p>
                                 <p className='text-base'>Craft Engaging and Impactful Visuals</p>
@@ -47,7 +57,7 @@ const Collaboration = () => {
                         </div>
                         <div className='discover'>
                             {/* Icon */}
-                            <i class="fa-solid fa-cloud fa-2xl"></i>
+                            <i class="fa-solid fa-diamond fa-2xl"></i>
                             <div className='discover-text'>
                                 <p className='font-bold text-2xl'>Deliver</p>
                                 <p className='text-base'>Bring Your Vision to Life with Precision and Care</p>

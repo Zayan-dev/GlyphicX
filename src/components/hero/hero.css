@@ -3,3 +3,14 @@
     background-color: black;
     height: 90vh;
 }
+#slide1, #slide2, #slide3, #slide4{
+    /* max-height: 30rem; */
+    height: max-content;
+    overflow: hidden;
+}
+.carousel-item {
+    display: none;
+}
+.carousel-item.active {
+    display: block;
+}

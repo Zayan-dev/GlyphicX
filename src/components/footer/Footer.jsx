@@ -1,5 +1,6 @@
 import React from 'react';
 import '../footer/footer.css';
+import logo from "../../assets/logo.png"
 
 // todos
 // Company name in copyright (ask from obaid bhai)
@@ -8,7 +9,7 @@ const Footer = () => {
         <div className="flex footer">
             <div className="flex flex-container">
                 <div className="footer-section ">
-                    <h2 className='logo-text'>Logo</h2>
+                    <h2 className='logo-text'><img src={logo} alt="logo" /></h2>
                     <p>Stay up to date on the latest features and releases by joining our newsletter.</p>
                     <div className="newsletter">
                         <input type="email" placeholder="Your email" />

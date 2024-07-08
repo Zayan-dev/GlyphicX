@@ -64,6 +64,9 @@ li {
         width: 100%;
     }
 
+    .text h1{
+        font-size: 26px;
+    }
     .brand-pic {
         width: 100%;
     }

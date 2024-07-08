@@ -77,4 +77,7 @@
     .content, .image{
         width: 100%;
     }
+    .content h1{
+        font-size: 36px;
+    }
 }

@@ -11,7 +11,6 @@ import image1 from "../../assets/images/working1.png"
 import image2 from "../../assets/images/working2.png"
 
 // Todos
-// Adding video in Collaboration as till now video is not provided 
 // add scroll animation in Feature
 
 const Hero = () => {

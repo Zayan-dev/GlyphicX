@@ -63,7 +63,9 @@ li {
     .sketch-text {
         width: 100%;
     }
-
+    .sketch-text h1{
+        font-size: 26px;
+    }
     .sketch-pic {
         width: 100%;
     }

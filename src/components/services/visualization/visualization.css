@@ -63,6 +63,9 @@ li {
     .vis-text {
         width: 100%;
     }
+    .vis-text h1{
+        font-size: 26px;
+    }
 
     .vis-pic {
         width: 100%;

@@ -1,0 +1,78 @@
+.resourcesPage {
+    min-height: 100%;
+    width: 100%;
+    padding: var(--uniform-screen-padding) 0;
+}
+
+.resourceshero {
+    padding: 4% 6%;
+}
+
+.resourceshero p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+
+.resourceshero h1 {
+    font-weight: 800;
+    margin-bottom: 32px;
+}
+ 
+.insightsSection {
+    min-height: 700px;
+    padding: var(--uniform-screen-padding);
+    width: 100%;
+    background: url('./../../assets/theblueBg.svg') no-repeat center;
+    background-size: cover;
+    color: var(--background-color);
+}
+
+
+.insightsSection-p {
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.insightsSection-h2 {
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.viewAllButton {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    margin-top: 1rem;
+}
+
+.articlessSection {
+    min-height: 650px;
+    padding: 4% var(--uniform-screen-padding);
+    width: 100%;
+    color: var(--foreground-color);
+}
+
+.newsletterSection {
+    min-height: 500px;
+    padding: 4% var(--uniform-screen-padding);
+    width: 100%;
+    background: url('./../../assets/theblueBg.svg') no-repeat center;
+    background-size: cover;
+    color: var(--background-color);
+}
+
+.newsletterDiv {
+    border: 1px solid var(--background-color);
+    display: flex;
+}
+
+.newsletterDivDetails {
+    width: 50%;
+    padding: 2rem,
+}
+
+.newsletterImage {
+    width: 50%;
+    height: 100%;
+}

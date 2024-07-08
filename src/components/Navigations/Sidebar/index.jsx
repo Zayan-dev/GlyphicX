@@ -39,31 +39,31 @@ const Sidebar = ({ isOpen, toggle }) => {
 
         <ul className="w-full px-[8%] text-left text-offWhite text-xl">
           <li className={listItemStyles}>
-            <Link to="/" className={linkStyles}>
+            <Link to="/" className={linkStyles} onClick={toggle}>
               <IoHome />
               <p>Home</p>
             </Link>
           </li>
           <li className={listItemStyles}>
-            <Link to="/portfolio" className={linkStyles}>
+            <Link to="/portfolio" className={linkStyles} onClick={toggle}>
               <GrProjects />
               <p>Our Work</p>
             </Link>
           </li>
           <li className={listItemStyles}>
-            <Link to="/services" className={linkStyles}>
+            <Link to="/services" className={linkStyles} onClick={toggle}>
               <MdDesignServices />
               <p>Services</p>
             </Link>
           </li>
           <li className={listItemStyles}>
-            <Link to="/resources" className={linkStyles}>
+            <Link to="/resources" className={linkStyles} onClick={toggle}>
               <GrResources />
               <p>Resources</p>
             </Link>
           </li>
         </ul>
-        <Link to="/contact" className="px-[12%] block mt-12">
+        <Link to="/contact" className="px-[12%] block mt-12" onClick={toggle}>
           <CustomButton text="Contact" />
         </Link>
       </div>

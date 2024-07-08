@@ -3,7 +3,6 @@ import '../collaboration/collaboration.css'
 import video1 from "../../assets/videos/animation_1.mkv"
 // Todos
 // Signup button in mob mode
-// Pic and boxes arrangement 
 const Collaboration = () => {
     return (
         <div className='collaboration'>

@@ -1,6 +1,5 @@
 import React from 'react';
 import '../working/working.css';
-import Img from '../../pics/hello.png';
 import communication from "../../assets/images/working1.png"
 import storytelling from "../../assets/images/working2.png"
 import impact from "../../assets/images/working3.png"

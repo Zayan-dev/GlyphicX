@@ -1,6 +1,8 @@
 import React from 'react'
 import '../feature/feature.css'
 
+// TODOS
+// adding a scroll Animation
 const Feature = () => {
   return (
     <div className='feature'>

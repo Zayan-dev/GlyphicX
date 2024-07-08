@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../assets/logo.png"
 const Navbar = () => {
     return (
-        <div className="navbar bg-base-100 items-start lg:px-6">
+        <div className="navbar bg-base-100 items-start lg:px-6" style={{borderBottom:"1px solid black"}}>
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -26,7 +26,7 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="navbar-center hidden lg:flex">
+                <div className="navbar-center hidden lg:flex px-5">
                     <ul className="menu menu-horizontal px-1">
                         <li><Link to="/">About Us</Link></li>
                         <li><Link to="/services">Services</Link></li>
@@ -49,7 +49,7 @@ const Navbar = () => {
                 </div>
             </div>
 
-            <div className="navbar-end">
+            <div className="px-5 navbar-end">
                 <button className="lg:btn-wide btn btn-neutral" style={{ backgroundColor: "#1214EB", border: "none", color: "white", borderRadius: "0" }}>CALL TO ACTION?</button>
             </div>
         </div>

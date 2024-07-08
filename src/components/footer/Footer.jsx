@@ -60,7 +60,7 @@ const Footer = () => {
             </div>
             <div className="flex footer-bottom">
                 <div className="copyright">
-                    <p>&copy; 2024 All rights reserved.</p>
+                    <p>&copy; 2024 Relume. All rights reserved.</p>
                 </div>
                 <ul className="footer-links">
                     <li><a href="#">Privacy Policy</a></li>

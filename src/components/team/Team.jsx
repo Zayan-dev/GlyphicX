@@ -2,6 +2,14 @@ import React from 'react'
 import "../team/team.css"
 import image from "../../pics/ss.jpg"
 const Team = () => {
+    const teamMembers = [{
+        name: "Abrar Ali",
+        designation: "Lead Designer"
+    }, {
+        name: "Syed Obaid ur Rahman",
+        designation: "Managing Director"
+    }]
+
     return (
         <div className='team'>
             <div className="team-head">
@@ -11,29 +19,19 @@ const Team = () => {
             </div>
             <div className="team-content-div">
                 <div className="team-avatar-div">
-                    <div className="team-avatar">
-                        <img src={image} />
-                        <div className="team-avatar-content">
-                            <p className='font-bold'>Abrar Ali</p>
-                            <p>Lead Designer</p>
+                    {teamMembers.map((member, index) => (
+                        <div key={index} className="team-avatar">
+                            <img src={image} />
+                            <div className="team-avatar-content">
+                                <p className='font-bold'>{member.name}</p>
+                                <p>{member.designation}</p>
+                            </div>
+                            <div className="social-media">
+                                <i class="fa-brands fa-linkedin fa-xl"></i>
+                                <i class="fa-brands fa-dribbble fa-xl"></i>
+                            </div>
                         </div>
-                        <div className="social-media">
-                            <i class="fa-brands fa-linkedin fa-xl"></i>
-                            <i class="fa-brands fa-dribbble fa-xl"></i>
-                        </div>
-                    </div>
-                    <div className="team-avatar">
-                        <img src={image} />
-                        <div className="team-avatar-content">
-                            <p className='font-bold'>Syed Obaid ur Rahman</p>
-                            <p>Managing Director</p>
-                        </div>
-                        <div className="social-media">
-                            <i class="fa-brands fa-linkedin fa-xl"></i>
-                            <i class="fa-brands fa-dribbble fa-xl"></i>
-                        </div>
-                    </div>
-                  
+                    ))}
                 </div>
             </div>
             <div className="hiring-div">

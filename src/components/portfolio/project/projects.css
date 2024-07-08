@@ -1,0 +1,80 @@
+.projects{
+    /* border: 1px solid red; */
+    height: 100%;
+}
+
+.project1{
+    /* border: 1px solid white; */
+    padding:112px 64px 112px 64px;
+    display: flex;
+    justify-content: space-between;
+    background-image: url("../../../assets/bg.png");
+    color: white;
+}
+.project2{
+    /* border: 1px solid white; */
+    padding:112px 64px 112px 64px;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+.project3{
+    /* border: 1px solid white; */
+    padding:112px 64px 112px 64px;
+    display: flex;
+    justify-content: space-between;
+    background-image: url("../../../assets/bg.png");
+    color: white;
+}
+.content{
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+.content h1{
+    font-weight: 700;
+    font-size: 48px;
+}
+.image{
+    /* border: 1px solid red; */
+    width: 50%;
+}
+@media screen and (max-width:969px) {
+    .project1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:34px;
+    }
+    .project2{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:34px;
+    }
+    .project3{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:34px;
+    }
+}
+@media screen and (max-width:808px) {
+    .project1 {
+        padding: 20px;
+        gap: 1rem;
+    }
+    .project2 {
+        padding: 20px;
+        gap: 1rem;
+    }
+    .project3 {
+        padding: 20px;
+        gap: 1rem;
+    }
+    .content, .image{
+        width: 100%;
+    }
+}

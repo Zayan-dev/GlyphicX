@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../assets/logo.png"
 const Navbar = () => {
     return (
-        <div className="navbar bg-base-100 items-start lg:px-6" style={{borderBottom:"1px solid black"}}>
+        <div className="navbar bg-base-100 items-start lg:px-6" style={{ borderBottom: "1px solid black" }}>
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -18,11 +18,7 @@ const Navbar = () => {
                         <li><Link to="/">About Us</Link></li>
                         <li><Link to="/services">Services</Link></li>
                         <li>
-                            <a>Portfolio</a>
-                            <ul className="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
+                            <Link to="portfolio">Portfolio</Link>
                         </li>
                     </ul>
                 </div>
@@ -31,13 +27,7 @@ const Navbar = () => {
                         <li><Link to="/">About Us</Link></li>
                         <li><Link to="/services">Services</Link></li>
                         <li>
-                            <details>
-                                <summary>Portfolio</summary>
-                                <ul className="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
-                            </details>
+                            <Link to="portfolio">Portfolio</Link>
                         </li>
                     </ul>
                 </div>

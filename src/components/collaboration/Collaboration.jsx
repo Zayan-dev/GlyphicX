@@ -1,6 +1,6 @@
 import React from 'react'
 import '../collaboration/collaboration.css'
-import video1 from "../../assets/videos/animation_1.mkv"
+import video1 from "../../assets/videos/Logo_reveal.mp4"
 // Todos
 // Signup button in mob mode
 const Collaboration = () => {

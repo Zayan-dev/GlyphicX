@@ -54,6 +54,7 @@
 
     .working-heading {
         width: auto;
+        font-size: 36px;
     }
 
     .working-outer-div {
@@ -62,6 +63,10 @@
 
     .working-inner-div {
         width: 100%;
+        height: 100%;
+    }
+    .working-inner-div img{
+        height: 100%;
     }
 }
 

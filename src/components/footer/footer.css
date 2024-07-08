@@ -1,6 +1,5 @@
 .footer {
     /* border: 1px solid red; */
-    /* padding: 80px 64px 80px 64px; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -63,7 +62,7 @@
     /* border: 1px solid red; */
     width: 684px;
     height: 100%;
-    margin-left:1rem ;
+    margin-left: 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

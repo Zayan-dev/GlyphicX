@@ -2,8 +2,6 @@ import React from 'react';
 import '../footer/footer.css';
 import logo from "../../assets/logo.png"
 
-// todos
-// Company name in copyright (ask from obaid bhai)
 const Footer = () => {
     return (
         <div className="flex footer">

@@ -42,12 +42,12 @@
 }
 
 .feature-img {
+    /* border: 1px solid red; */
     background: url("../../assets/react.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100vh;
-    /* border: 1px solid red; */
 }
 
 @media screen and (max-width:808px) {

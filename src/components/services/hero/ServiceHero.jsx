@@ -1,11 +1,12 @@
 import React from 'react'
 import "../../services/hero/service-hero.css"
-const ServiceHero = () => {
+const ServiceHero = (props) => {
   return (
     <>
     <div className='service-hero'>
-      <div className='heading'>Translate ideas into impactful content</div>
-      <p>Discover our comprehensive range of services that combine design and business expertise.</p>
+      <h1>{props.subheading}</h1>
+      <div className='heading'>{props.heading}</div>
+      <p>{props.para}</p>
     </div>
     </>
   )

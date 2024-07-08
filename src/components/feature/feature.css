@@ -64,4 +64,8 @@
     .feature-img {
         width: 100%;
     }
+    .bold-text{
+        font-size: 36px;
+        line-height: 50px;
+    }
 }

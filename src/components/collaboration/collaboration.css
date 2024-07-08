@@ -105,13 +105,18 @@
     .coll-inner-div {
         flex-direction: column;
     }
+
     .coll-heading {
         width: 100%;
+        height: 100%;
     }
-    .inner-3{
+
+    .inner-3 {
         width: 100%;
     }
-    .coll-inner-div {
-        margin-top: 50px;
+
+    .coll-head-text {
+        font-size: 36px;
+        line-height: 50px;
     }
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png"
+
 const Navbar = () => {
     return (
         <div className="navbar bg-base-100 items-start lg:px-6" style={{ borderBottom: "1px solid black" }}>

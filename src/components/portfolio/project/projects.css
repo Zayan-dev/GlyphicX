@@ -42,6 +42,9 @@
     width: 50%;
 }
 @media screen and (max-width:969px) {
+    .projects{
+        margin-top: 4rem;
+    }
     .project1{
         flex-direction: column;
         justify-content: center;

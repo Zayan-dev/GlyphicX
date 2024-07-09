@@ -35,23 +35,23 @@ const Footer = () => {
                     <div className="column-3">
                         <p className='column-div-heading'>Follow us</p>
                         <div className="social">
-                            <a href="http://"><i class="fa-brands fa-facebook fa-xl"></i></a>
+                            <a href="http://"> <i className="fa-brands fa-facebook fa-xl"></i></a>
                             <a href="http://">Facebook</a>
                         </div>
                         <div className="social">
-                            <a href="http://"><i class="fa-brands fa-square-instagram fa-xl"></i></a>
+                            <a href="http://"> <i className="fa-brands fa-square-instagram fa-xl"></i></a>
                             <a href="http://">Instagram</a>
                         </div>
                         <div className="social">
-                            <a href="http://"><i class="fa-brands fa-x-twitter fa-xl"></i></a>
+                            <a href="http://"> <i className="fa-brands fa-x-twitter fa-xl"></i></a>
                             <a href="http://">X</a>
                         </div>
                         <div className="social">
-                            <a href="http://"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                            <a href="http://"> <i className="fa-brands fa-linkedin fa-xl"></i></a>
                             <a href="http://">Linkein</a>
                         </div>
                         <div className="social">
-                            <a href="http://"><i class="fa-brands fa-youtube fa-xl"></i></a>
+                            <a href="http://"> <i className="fa-brands fa-youtube fa-xl"></i></a>
                             <a href="http://">Youtube</a>
                         </div>
                     </div>

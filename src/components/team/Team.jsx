@@ -27,8 +27,8 @@ const Team = () => {
                                 <p>{member.designation}</p>
                             </div>
                             <div className="social-media">
-                                <i class="fa-brands fa-linkedin fa-xl"></i>
-                                <i class="fa-brands fa-dribbble fa-xl"></i>
+                                 <i className="fa-brands fa-linkedin fa-xl"></i>
+                                 <i className="fa-brands fa-dribbble fa-xl"></i>
                             </div>
                         </div>
                     ))}

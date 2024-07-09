@@ -15,7 +15,7 @@ const Testimonial = () => {
                 </div>
                 <div className="ruler"></div>
                 <div className="logo">
-                    <i class="fa-brands fa-webflow fa-2xl"></i>
+                    <i className="fa-brands fa-webflow fa-2xl"></i>
                     <p className='font-bold'>Webflow</p>
                 </div>
             </div>

@@ -7,8 +7,9 @@ import Collaboration from '../collaboration/Collaboration'
 import Testimonial from '../testimonial/Testimonial'
 import Team from '../team/Team'
 import Cta from '../cta/Cta'
-import image1 from "../../assets/images/working1.png"
-import image2 from "../../assets/images/working2.png"
+import image1 from "../../assets/images/slider/GlyphicX.png"
+import image2 from "../../assets/images/slider/EAXEE.png"
+// import Slider from '../slider/Slider'
 
 // Todos
 // add scroll animation in Feature
@@ -17,7 +18,7 @@ const Hero = () => {
 
     return (
         <>
-            <div className="carousel w-full">
+            <div className="mt-5 carousel w-full">
                 <div id="slide1" className="carousel-item relative w-full">
                     <img
                         src={image1}
@@ -55,6 +56,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
+            {/* <Slider></Slider> */}
             <Benefit></Benefit>
             <Feature></Feature>
             <Collaboration></Collaboration>

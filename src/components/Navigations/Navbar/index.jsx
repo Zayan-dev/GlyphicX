@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Logo from "../../Logo";
 import CustomButton from "../../CustomButton";
 
-const Navbar = ({toggle}) => {
+const Navbar = ({ toggle }) => {
   const listItemStyles =
     "relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-navyBlue after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center";
   return (
@@ -12,6 +12,11 @@ const Navbar = ({toggle}) => {
         <div className="w-full px-[6%] md:px-10 lg:px-12 xl:px-16 2xl:px-20 h-full">
           <div className="h-full relative flex justify-between items-center ">
             <ul className="hidden md:flex justify-between gap-4 lg:gap-12 text-navyBlue">
+              <li>
+                <Link to="/" className={listItemStyles}>
+                  <p>Home</p>
+                </Link>
+              </li>
               <li>
                 <Link to="/portfolio" className={listItemStyles}>
                   <p>Our Work</p>

@@ -15,7 +15,8 @@
 }
 
 .resourceshero h1 {
-    font-weight: 800;
+    font-weight: 700;
+    font-size: 56px;
     margin-bottom: 32px;
 }
  
@@ -36,6 +37,7 @@
 
 .insightsSection-h2 {
     font-weight: 700;
+    font-size: 48px;
     margin-bottom: 24px;
 }
 
@@ -65,14 +67,43 @@
 .newsletterDiv {
     border: 1px solid var(--background-color);
     display: flex;
+    height: 467px;
+    justify-content: center;
+    align-items: center;
 }
 
 .newsletterDivDetails {
+    /* border: 1px solid red; */
     width: 50%;
-    padding: 2rem,
+    padding: 2rem;
 }
-
+.newsletterButtons{
+    display: flex;
+    gap: 16px;
+}
 .newsletterImage {
     width: 50%;
     height: 100%;
+}
+
+@media screen and (max-width:808px) {
+    .resourceshero{
+        margin-top: 2rem;
+        border: 1px solid red;
+    }
+    .resourceshero h1{
+        font-size: 36px;
+    }
+    .newsletterDiv{
+        flex-direction: column;
+        height: 100vh;
+    }
+    .newsletterDivDetails{
+        width: 100%;
+    }
+    .newsletterImage{
+        width: 100%;
+    }.insightsSection-h2 {
+        font-size: 36px;
+    }
 }

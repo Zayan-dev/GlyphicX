@@ -2,6 +2,7 @@ import React from 'react'
 import './resourcesStyles.css';
 import BlogDisplay from './BlogsDisplay/blogdisplay';
 import CustomButton, { CustomButton2 } from './../CustomButton';
+import ServiceHero from '../services/hero/ServiceHero';
 
 const Resources = () => {
   return (

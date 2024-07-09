@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('../../pics/ss.jpg') no-repeat center center;
+    background: url('../../assets/images/slider/EAXEE.png') no-repeat center center;
     background-size: cover;
     color: white;
 }

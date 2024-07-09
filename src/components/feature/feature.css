@@ -25,6 +25,7 @@
 .feature-img {
     /* border: 1px solid yellow; */
     width: 616px;
+    overflow: hidden;
 }
 
 .feature-inner-div {
@@ -43,10 +44,6 @@
 
 .feature-img {
     /* border: 1px solid red; */
-    background: url("../../assets/react.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     height: 100vh;
 }
 
@@ -63,6 +60,7 @@
 
     .feature-img {
         width: 100%;
+        height: 50vh;
     }
     .bold-text{
         font-size: 36px;

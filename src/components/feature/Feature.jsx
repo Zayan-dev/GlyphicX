@@ -1,5 +1,6 @@
 import React from 'react'
 import '../feature/feature.css'
+import ImageSequenceScroll from '../imagesequence/ImageSequenceScroll'
 
 // TODOS
 // adding a scroll Animation
@@ -7,6 +8,7 @@ const Feature = () => {
   return (
     <div className='feature'>
       <div className='feature-img'>
+      <ImageSequenceScroll></ImageSequenceScroll>
 
       </div>
       <div className='feature-text'>

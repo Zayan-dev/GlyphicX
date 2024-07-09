@@ -7,11 +7,13 @@ import Service from "./components/services/Service";
 import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/contact";
 import Resources from "./components/resources/resources";
+import ScrollToTop from "./components/scrolltotop/ScrollToTop";
 
 function App() {
   return (
     <BrowserRouter>
       <Navigation />
+      <ScrollToTop />
       <Routes>
         <Route exact path="/" element={<Hero></Hero>}></Route>
         <Route exact path="/services" element={<Service></Service>}></Route>

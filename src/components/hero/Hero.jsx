@@ -7,56 +7,13 @@ import Collaboration from '../collaboration/Collaboration'
 import Testimonial from '../testimonial/Testimonial'
 import Team from '../team/Team'
 import Cta from '../cta/Cta'
-import image1 from "../../assets/images/slider/GlyphicX.png"
-import image2 from "../../assets/images/slider/EAXEE.png"
-// import Slider from '../slider/Slider'
-
-// Todos
-// add scroll animation in Feature
+import ImageSlider from '../ImageSlider/ImageSlider'
 
 const Hero = () => {
 
     return (
         <>
-            <div className="mt-5 carousel w-full">
-                <div id="slide1" className="carousel-item relative w-full">
-                    <img
-                        src={image1}
-                        className="w-full" />
-                    <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                        <a href="#slide4" className="btn btn-circle">❮</a>
-                        <a href="#slide2" className="btn btn-circle">❯</a>
-                    </div>
-                </div>
-                <div id="slide2" className="carousel-item relative w-full">
-                    <img
-                        src={image2}
-                        className="w-full" />
-                    <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                        <a href="#slide1" className="btn btn-circle">❮</a>
-                        <a href="#slide3" className="btn btn-circle">❯</a>
-                    </div>
-                </div>
-                <div id="slide3" className="carousel-item relative w-full">
-                    <img
-                        src={image1}
-                        className="w-full" />
-                    <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                        <a href="#slide2" className="btn btn-circle">❮</a>
-                        <a href="#slide4" className="btn btn-circle">❯</a>
-                    </div>
-                </div>
-                <div id="slide4" className="carousel-item relative w-full">
-                    <img
-                        src={image2}
-                        className="w-full" />
-                    <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                        <a href="#slide3" className="btn btn-circle">❮</a>
-                        <a href="#slide1" className="btn btn-circle">❯</a>
-                    </div>
-                </div>
-            </div>
-            {/* <Slider></Slider> */}
+            <ImageSlider></ImageSlider>
             <Benefit></Benefit>
             <Feature></Feature>
             <Collaboration></Collaboration>

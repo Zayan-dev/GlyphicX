@@ -8,16 +8,16 @@ const Footer = () => {
             <div className="flex flex-container">
                 <div className="footer-section ">
                     <h2 className='logo-text'><img src={logo} alt="logo" /></h2>
-                    <p>Stay up to date on the latest features and releases by joining our newsletter.</p>
+                    <p className='para'>Stay up to date on the latest features and releases by joining our newsletter.</p>
                     <div className="newsletter">
                         <input type="email" placeholder="Your email" />
-                        <button>Subscribe</button>
+                        <button className='subHeading'>Subscribe</button>
                     </div>
-                    <p>By subscribing, you agree to our Privacy Policy and consent to receive updates from our company.</p>
+                    <p className='para'>By subscribing, you agree to our Privacy Policy and consent to receive updates from our company.</p>
                 </div>
                 <div className="column-div">
                     <div className="column-1">
-                        <p className='column-div-heading'>Column One</p>
+                        <p className='subHeading column-div-heading'>Column One</p>
                         <a href="http://">link one</a>
                         <a href="http://">link two</a>
                         <a href="http://">link three</a>
@@ -25,7 +25,7 @@ const Footer = () => {
                         <a href="http://">link five</a>
                     </div>
                     <div className="column-2">
-                        <p className='column-div-heading'>Column Two</p>
+                        <p className='subHeading column-div-heading'>Column Two</p>
                         <a href="http://">link one</a>
                         <a href="http://">link two</a>
                         <a href="http://">link three</a>
@@ -33,7 +33,7 @@ const Footer = () => {
                         <a href="http://">link five</a>
                     </div>
                     <div className="column-3">
-                        <p className='column-div-heading'>Follow us</p>
+                        <p className='subHeading column-div-heading'>Follow us</p>
                         <div className="social">
                             <a href="http://"> <i className="fa-brands fa-facebook fa-xl"></i></a>
                             <a href="http://">Facebook</a>
@@ -59,9 +59,9 @@ const Footer = () => {
             </div>
             <div className="flex footer-bottom">
                 <div className="copyright">
-                    <p>&copy; 2024 Relume. All rights reserved.</p>
+                    <p className='para'>&copy; 2024 All rights reserved.</p>
                 </div>
-                <ul className="footer-links">
+                <ul className="para footer-links">
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">Terms of Service</a></li>
                     <li><a href="#">Cookie Settings</a></li>

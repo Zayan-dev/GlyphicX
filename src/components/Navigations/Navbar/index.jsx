@@ -11,7 +11,7 @@ const Navbar = ({ toggle }) => {
       <div className="w-full h-16 min-h-[68px] bg-offWhite fixed top-0 z-10 border-navyBlue border-b-2">
         <div className="w-full px-[6%] md:px-10 lg:px-12 xl:px-16 2xl:px-20 h-full">
           <div className="h-full relative flex justify-between items-center ">
-            <ul className="hidden md:flex justify-between gap-4 lg:gap-12 text-navyBlue">
+            <ul className="subHeading hidden md:flex justify-between gap-4 lg:gap-12 text-navyBlue">
               <li>
                 <Link to="/" className={listItemStyles}>
                   <p>Home</p>
@@ -36,7 +36,7 @@ const Navbar = ({ toggle }) => {
             <div className="static md:absolute md:left-1/2 md:transform md:-translate-x-1/2">
               <Logo />
             </div>
-            <Link to="/contact" className="hidden md:flex">
+            <Link to="/contact" className="subHeading hidden md:flex">
               <CustomButton text="Contact" />
             </Link>
 

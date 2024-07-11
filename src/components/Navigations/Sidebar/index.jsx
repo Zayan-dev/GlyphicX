@@ -37,7 +37,7 @@ const Sidebar = ({ isOpen, toggle }) => {
           </svg>
         </button>
 
-        <ul className="w-full px-[8%] text-left text-offWhite text-xl">
+        <ul className="subHeading w-full px-[8%] text-left text-offWhite text-xl">
           <li className={listItemStyles}>
             <Link to="/" className={linkStyles} onClick={toggle}>
               <IoHome />
@@ -63,7 +63,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             </Link>
           </li>
         </ul>
-        <Link to="/contact" className="px-[12%] block mt-12" onClick={toggle}>
+        <Link to="/contact" className="subHeading px-[12%] block mt-12" onClick={toggle}>
           <CustomButton text="Contact" />
         </Link>
       </div>

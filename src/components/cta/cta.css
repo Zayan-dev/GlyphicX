@@ -5,9 +5,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('../../assets/images/slider/EAXEE.png') no-repeat center center;
+    /* background: url('../../assets/images/slider/EAXEE.png') no-repeat center center; */
     background-size: cover;
     color: white;
+    background-color: #1214eb;
 }
 
 .cta::before {

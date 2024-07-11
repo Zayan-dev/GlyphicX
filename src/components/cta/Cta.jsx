@@ -6,12 +6,12 @@ const Cta = () => {
     <div className='cta'>
         <div className="cta-outer">
       <div className="cta-inner">
-        <p className='cta-text'>Transforming Ideas into Reality</p>
-        <p>Contact GlyphicX today for innovative solutions and exceptional design services.</p>
+        <p className='subHeading cta-text'>Transforming Ideas into Reality</p>
+        <p className='para'>Contact GlyphicX today for innovative solutions and exceptional design services.</p>
       </div>
       <div className="cta-btn-div">
-        <button className='contact'>Contact</button>
-        <button className='learn'>Learn More</button>
+        <button className='subHeading contact'>Contact</button>
+        <button className='subHeading learn'>Learn More</button>
       </div>
       </div>
     </div>

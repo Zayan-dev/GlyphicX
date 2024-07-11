@@ -13,9 +13,9 @@ const Team = () => {
     return (
         <div className='team'>
             <div className="team-head">
-                <p className='font-bold'>Creative</p>
-                <p className='team-head-text'>Meet Our Team</p>
-                <p>Get to know the talented individuals behind GlyphicX.</p>
+                <p className='subHeading font-bold'>Creative</p>
+                <p className='mainHeading team-head-text'>Meet Our Team</p>
+                <p className='para'>Get to know the talented individuals behind GlyphicX.</p>
             </div>
             <div className="team-content-div">
                 <div className="team-avatar-div">
@@ -23,8 +23,8 @@ const Team = () => {
                         <div key={index} className="team-avatar">
                             <img src={image} />
                             <div className="team-avatar-content">
-                                <p className='font-bold'>{member.name}</p>
-                                <p>{member.designation}</p>
+                                <p className='subHeading font-bold'>{member.name}</p>
+                                <p className='para'>{member.designation}</p>
                             </div>
                             <div className="social-media">
                                  <i className="fa-brands fa-linkedin fa-xl"></i>
@@ -39,7 +39,7 @@ const Team = () => {
                     <p className='hire'>We’re hiring!</p>
                     <p>Discover exciting career and freelance opportunities</p>
                 </div>
-                <button>Apply</button>
+                <button className='subHeading'>Apply</button>
             </div>
         </div>
     )

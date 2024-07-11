@@ -8,6 +8,7 @@
     --royalBlue-color: #1214EB;
     --uniform-screen-padding: 6%;
 }
+
 /* 
 html {
     font-size: min(max(1rem, 4vw), 1.375rem);
@@ -29,3 +30,28 @@ h2 {
 p {
     font-size: 1rem;
 } */
+@font-face {
+    font-family: 'mainHeading';
+    src: url('../src/fonts/Baron\ Neue.otf')
+}
+
+@font-face {
+    font-family: 'subHeading';
+    src: url('../src/fonts/OpenSans-Regular.ttf')
+}
+
+@font-face {
+    font-family: 'para';
+    src: url('../src/fonts/OpenSans-Light.ttf')
+}
+
+.mainHeading {
+    font-family: mainHeading;
+}
+
+.subHeading {
+    font-family: subHeading;
+}
+.para{
+    font-family: para;
+}

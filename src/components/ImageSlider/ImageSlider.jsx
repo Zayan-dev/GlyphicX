@@ -37,6 +37,7 @@ const variants = {
 };
 
 const ImageSlider = () => {
+    
     const [[page, direction], setPage] = useState([0, 0]);
 
     const paginate = (newDirection) => {

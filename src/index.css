@@ -32,7 +32,7 @@ p {
 } */
 @font-face {
     font-family: 'mainHeading';
-    src: url('../src/fonts/Baron\ Neue.otf')
+    src: url('../src/fonts/Baron-Neue.otf') 
 }
 
 @font-face {

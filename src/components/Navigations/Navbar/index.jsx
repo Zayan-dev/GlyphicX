@@ -9,9 +9,9 @@ const Navbar = ({ toggle }) => {
   return (
     <>
       <div className="w-full h-16 lg:h-[74px] min-h-[68px] bg-offWhite fixed top-0 z-10 border-navyBlue border-b-2">
-        <div className="w-full px-[6%] md:px-10 lg:px-12 xl:px-16 2xl:px-20 h-full">
+        <div className="w-full px-[6%] md:px-10 lg:px-12 xl:px-16 xl3:px-20 h-full">
           <div className="h-full relative flex justify-between items-center ">
-            <ul className="hidden md2:flex justify-between gap-6 lg1:gap-12 2xl:gap-20 text-navyBlue">
+            <ul className="hidden md2:flex justify-between gap-6 lg1:gap-12 xl3:gap-20 text-navyBlue">
               <li>
                 <Link to="/" className={listItemStyles}>
                   <p>Home</p>

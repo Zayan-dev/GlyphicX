@@ -1,45 +1,29 @@
-/* html {
-    font-size: min(max(1rem, 4vw), 1.375rem);
-}
-
-h1 {
-    font-size: 3rem;
-}
-
-h2 {
-    font-size: 2rem;
-}
-
-p {
-    font-size: 1rem;
-} */
-
 .resourcesPage {
     min-height: 100%;
     width: 100%;
-    padding: var(--uniform-screen-padding) 0;
+    padding-top: var(--uniform-screen-padding);
 }
 
 .resourceshero {
-    padding: 4% 6%;
+    padding: 3% 4rem;
 }
 
 .resourceshero p {
-    font-size: 1.3rem;
+    font-size: 1.35rem;
     font-weight: 600;
-    margin-bottom: 32px;
+    margin-bottom: 28px;
 }
 
 .resourceshero h1 {
     font-weight: 700;
-    font-size: 56px;
-    margin-bottom: 32px;
+    font-size: 3.5rem;
+    margin-bottom: 28px;
 }
  
 .insightsSection {
     min-height: 700px;
-    padding: var(--uniform-screen-padding);
-    padding-bottom: 10%;
+    padding: 4rem;
+    padding-bottom: 8rem;
     width: 100%;
     background: url('./../../assets/theblueBg.svg') no-repeat center;
     background-size: cover;
@@ -49,31 +33,33 @@ p {
 
 .insightsSection-p {
     font-weight: 600;
+    font-size: 1.35rem;
     margin-bottom: 24px;
 }
 
 .insightsSection-h2 {
     font-weight: 700;
-    font-size: 48px;
+    font-size: 3rem;
     margin-bottom: 24px;
 }
 
 .viewAllButton {
     float: right;
+    overflow: hidden;
     width: 12%;
     margin-top: 1rem;
 }
 
 .articlessSection {
     min-height: 650px;
-    padding: 4% var(--uniform-screen-padding);
+    padding: 4% 4rem;
     width: 100%;
     color: var(--foreground-color);
 }
 
 .newsletterSection {
     min-height: 500px;
-    padding: 4% var(--uniform-screen-padding);
+    padding: 4% 4rem;
     width: 100%;
     background: url('./../../assets/theblueBg.svg') no-repeat center;
     background-size: cover;
@@ -89,10 +75,10 @@ p {
 }
 
 .newsletterDivDetails {
-    /* border: 1px solid red; */
     width: 50%;
-    padding: 2rem;
+    padding: 3rem;
 }
+
 .newsletterButtons{
     margin-top: 2.75rem;
     display: flex;
@@ -104,23 +90,89 @@ p {
     height: 100%;
 }
 
-@media screen and (max-width:808px) {
-    .resourceshero{
-        margin-top: 2rem;
+@media screen and (max-width: 912px) {
+    .resourcesPage {
+        padding-top: 10%;
     }
-    .resourceshero h1{
-        font-size: 36px;
+
+    .resourceshero {
+        padding: 3% var(--uniform-screen-padding);
     }
+
+    .insightsSection, .articlessSection, .newsletterSection {
+        padding: var(--uniform-screen-padding);
+    }
+
+    .insightsSection {
+        padding-bottom: 8rem;
+    }
+    
     .newsletterDiv{
         flex-direction: column;
-        height: 100vh;
+        height: 720px;
     }
     .newsletterDivDetails{
         width: 100%;
+        height: 50%;
+        padding: 1.5rem;
+    }
+    .newsletterButtons {
+        width: 50%;
     }
     .newsletterImage{
         width: 100%;
-    }.insightsSection-h2 {
-        font-size: 36px;
+    }
+    
+    .viewAllButton {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .resourceshero h1, .insightsSection-h2{
+        font-size: 2.25rem;
+        margin-bottom: 18px
+    }
+
+    .insightsSection-h2 {
+        font-size: 1.75rem;
+    }
+    .resourceshero p, .insightsSection-p{
+        font-size: 1.125rem;
+        margin-bottom: 18px
+    }
+
+    .insightsSection, .articlessSection {
+        padding: 3rem var(--uniform-screen-padding);
+    }
+
+    .insightsSection {
+        padding-bottom: 6rem;
+    }
+    
+    .newsletterDiv {
+        height: 480px;
+    }
+}
+
+
+@media screen and (max-width: 460px) {
+    .resourcesPage {
+        padding-top: 5.75rem;
+    }
+
+    .viewAllButton {
+        width: 50%;
+        margin-top: 0;
+    }
+
+    .newsletterDiv {
+        height: 730px;
+    }
+
+    .newsletterButtons {
+        width: 100%;
+        gap: 1rem;
+        
     }
 }

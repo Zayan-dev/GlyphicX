@@ -5,7 +5,8 @@ export default {
     extend: {
       screens: {
         md2: "913px",
-        lg1: "1100px"
+        lg1: "1100px",
+        xl3: "1600px",
       },
       fontFamily: {
         lato: ['"Lato"', "sans-serif"],

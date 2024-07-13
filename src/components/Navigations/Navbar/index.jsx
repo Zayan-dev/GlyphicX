@@ -5,13 +5,13 @@ import CustomButton from "../../CustomButton";
 
 const Navbar = ({ toggle }) => {
   const listItemStyles =
-    "relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-navyBlue after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center";
+    "subHeading relative text-lg lg:text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-navyBlue after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center";
   return (
     <>
-      <div className="w-full h-16 min-h-[68px] bg-offWhite fixed top-0 z-10 border-navyBlue border-b-2">
+      <div className="w-full h-16 lg:h-[74px] min-h-[68px] bg-offWhite fixed top-0 z-10 border-navyBlue border-b-2">
         <div className="w-full px-[6%] md:px-10 lg:px-12 xl:px-16 2xl:px-20 h-full">
           <div className="h-full relative flex justify-between items-center ">
-            <ul className="subHeading hidden md:flex justify-between gap-4 lg:gap-12 text-navyBlue">
+            <ul className="hidden md2:flex justify-between gap-6 lg1:gap-12 2xl:gap-20 text-navyBlue">
               <li>
                 <Link to="/" className={listItemStyles}>
                   <p>Home</p>
@@ -33,16 +33,16 @@ const Navbar = ({ toggle }) => {
                 </Link>
               </li>
             </ul>
-            <div className="static md:absolute md:left-1/2 md:transform md:-translate-x-1/2">
+            <div className="static md2:absolute md2:left-1/2 md2:transform md2:-translate-x-1/2">
               <Logo />
             </div>
-            <Link to="/contact" className="subHeading hidden md:flex">
+            <Link to="/contact" className="hidden md2:flex xl:w-[14%]">
               <CustomButton text="Contact" />
             </Link>
 
             <button
               type="button"
-              className="inline-flex items-center md:hidden"
+              className="inline-flex items-center md2:hidden"
               onClick={toggle}
             >
               {/* Menu icon */}

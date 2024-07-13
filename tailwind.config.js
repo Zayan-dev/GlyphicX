@@ -3,6 +3,10 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        md2: "913px",
+        lg1: "1100px"
+      },
       fontFamily: {
         lato: ['"Lato"', "sans-serif"],
       },

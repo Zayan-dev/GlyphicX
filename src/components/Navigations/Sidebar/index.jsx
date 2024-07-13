@@ -63,7 +63,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             </Link>
           </li>
         </ul>
-        <Link to="/contact" className="subHeading px-[12%] block mt-12" onClick={toggle}>
+        <Link to="/contact" className="subHeading px-[12%] block mt-12 w-full" onClick={toggle}>
           <CustomButton text="Contact" />
         </Link>
       </div>

@@ -47,7 +47,7 @@ const ImageSlider = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             paginate(1);
-        }, 3000); // Change image every 3 seconds
+        }, 5000); // Change image every 3 seconds
 
         return () => clearInterval(interval);
     }, [page]);

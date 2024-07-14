@@ -6,7 +6,7 @@
     align-items: center;
     padding: 80px 64px 80px 64px;
     gap: 80px;
-    color: white;
+    color: var(--background-color);
 }
 
 .coll-heading {

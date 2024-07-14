@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 80px;
-    color: white;
+    color: var(--background-color);
 }
 
 .team-head {

@@ -1,6 +1,6 @@
 .hero{
     /* border: 1px solid red; */
-    background-color: black;
+    background-color: var(--foreground-color);
     height: 90vh;
 }
 #slide1, #slide2, #slide3, #slide4{

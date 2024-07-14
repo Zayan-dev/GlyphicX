@@ -2,7 +2,7 @@
     /* border: 1px solid red; */
     padding: 112px 64px 112px 64px;
     background-image: url("../../../assets/bg.png");
-    color: white;
+    color: var(--background-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,7 +49,7 @@ li {
 }
 
 .learn-more-btn {
-    border: 1px solid black;
+    border: 1px solid var(--foreground-color);
     padding: 12px 24px 12px 24px;
 }
 

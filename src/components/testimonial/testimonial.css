@@ -40,7 +40,7 @@
 }
 
 .ruler {
-    border: 1px solid black;
+    border: 1px solid var(--foreground-color);
     width: 0px;
     height: 60px;
 }

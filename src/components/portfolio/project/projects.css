@@ -9,14 +9,14 @@
     display: flex;
     justify-content: space-between;
     background-image: url("../../../assets/bg.png");
-    color: white;
+    color: var(--background-color);
 }
 .project2{
     /* border: 1px solid white; */
     padding:112px 64px 112px 64px;
     display: flex;
     justify-content: space-between;
-    color: black;
+    color: var(--foreground-color);
 }
 .project3{
     /* border: 1px solid white; */
@@ -24,7 +24,7 @@
     display: flex;
     justify-content: space-between;
     background-image: url("../../../assets/bg.png");
-    color: white;
+    color: var(--background-color);
 }
 .content{
     /* border: 1px solid white; */

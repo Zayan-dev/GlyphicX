@@ -19,7 +19,7 @@ const Resources = () => {
         <p className="insightsSection-p">
           Stay informed with our latest blog posts.
         </p>
-        <BlogDisplay bgColor="#fffff8" />
+        <BlogDisplay bgType="dark" />
         <div className="viewAllButton">
           <CustomButton text="View All" />
         </div>
@@ -31,10 +31,10 @@ const Resources = () => {
         <p className="insightsSection-p">
           Get the latest news and updates from GlyphicX.
         </p>
-        <div className="viewAllButton">
+        <div className="viewAllButton" style={{marginTop: "0px"}}>
           <CustomButton text="Read More" />
         </div>
-        <BlogDisplay bgColor="#071C40" />
+        <BlogDisplay bgType="light" />
       </div>
 
       <div className="newsletterSection">

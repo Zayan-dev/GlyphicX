@@ -2,9 +2,25 @@ import React from 'react'
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import "./blogcard.css";
+
 const BlogCard = ({id, image, category, name, description, authorName, authorImage, date, readTime, bgColor}) => {
+
+  console.log(bgColor);
   return (
-    <Link to="/" className="blogCard" style={{border: `1px solid ${bgColor}`}}>
+    <Link
+      to="/"
+      className="blogCard"
+      style={{
+        "--bg-color":
+          bgColor === "dark"
+            ? "var(--background-color)"
+            : "var(--foreground-color)",
+        "--fg-color":
+          bgColor === "dark"
+            ? "var(--foreground-color)"
+            : "var(--background-color)",
+      }}
+    >
       <div
         className="blogImage"
         style={{

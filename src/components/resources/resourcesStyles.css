@@ -9,14 +9,14 @@
 }
 
 .resourceshero p {
-    font-size: 1.35rem;
+    font-size: min(max(1.12rem, 4vw), 1.35rem);
     font-weight: 600;
     margin-bottom: 28px;
 }
 
 .resourceshero h1 {
     font-weight: 700;
-    font-size: 3.5rem;
+    font-size: min(max(2.25rem, 4vw), 3.5rem);
     margin-bottom: 28px;
 }
  
@@ -33,20 +33,21 @@
 
 .insightsSection-p {
     font-weight: 600;
-    font-size: 1.35rem;
+    font-size: min(max(1.12rem, 4vw), 1.35rem);
     margin-bottom: 24px;
 }
 
 .insightsSection-h2 {
     font-weight: 700;
-    font-size: 3rem;
+    font-size: min(max(1.75rem, 4vw), 3rem);
     margin-bottom: 24px;
+    line-height: 62px;
 }
 
 .viewAllButton {
     float: right;
     overflow: hidden;
-    width: 12%;
+    width: 180px;
     margin-top: 1rem;
 }
 
@@ -69,7 +70,7 @@
 .newsletterDiv {
     border: 1px solid var(--background-color);
     display: flex;
-    height: 467px;
+    height: 420px;
     justify-content: center;
     align-items: center;
 }
@@ -88,6 +89,18 @@
 .newsletterImage {
     width: 50%;
     height: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .insightsSection-h2 {
+        line-height: 54px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .viewAllButton {
+        width: 128px;
+    }
 }
 
 @media screen and (max-width: 912px) {
@@ -109,8 +122,9 @@
     
     .newsletterDiv{
         flex-direction: column;
-        height: 720px;
+        height: 500px;
     }
+
     .newsletterDivDetails{
         width: 100%;
         height: 50%;
@@ -118,28 +132,27 @@
     }
     .newsletterButtons {
         width: 50%;
+        margin-top: 2rem;
     }
     .newsletterImage{
         width: 100%;
-    }
-    
-    .viewAllButton {
-        width: 20%;
+        height: 50%;
     }
 }
 
 @media screen and (max-width: 768px) {
     .resourceshero h1, .insightsSection-h2{
-        font-size: 2.25rem;
-        margin-bottom: 18px
+        margin-bottom: 18px;
+        line-height: 38px;
+    }
+    
+    .resourceshero h1 {
+        line-height: 42px;
     }
 
-    .insightsSection-h2 {
-        font-size: 1.75rem;
-    }
     .resourceshero p, .insightsSection-p{
-        font-size: 1.125rem;
-        margin-bottom: 18px
+        margin-bottom: 18px;
+        line-height: 22px;
     }
 
     .insightsSection, .articlessSection {
@@ -156,23 +169,27 @@
 }
 
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 640px) {
     .resourcesPage {
         padding-top: 5.75rem;
     }
 
     .viewAllButton {
-        width: 50%;
+        width: 120px;
         margin-top: 0;
     }
 
     .newsletterDiv {
-        height: 730px;
+        height: calc(440px + ((640px - 100vw) / 1.7));
+    }
+
+    .newsletterDivDetails{
+        padding: 1rem;
     }
 
     .newsletterButtons {
+        margin-top: 1.45rem;
         width: 100%;
         gap: 1rem;
-        
     }
 }

@@ -3,7 +3,7 @@ import React from "react";
 import BlogCard from "./../BlogCard/blogCard";
 import "./blogdisplay.css";
 
-const BlogDisplay = (bgColor) => {
+const BlogDisplay = ({bgType}) => {
   const blogs = [
     {
       id: 1,
@@ -38,9 +38,9 @@ const BlogDisplay = (bgColor) => {
       image:
         "https://www.simplilearn.com/ice9/free_resources_article_thumb/Is_Graphic_Design_A_Good_Career.jpg",
       category: "Technology",
-      name: "The Future of AI in Business",
+      name: "Embracing the Revolution: AI's Impact on Businesses",
       description:
-        "Explore the potential of artificial intelligence in driving business growth.",
+        "Unlock new opportunities with AI technology, transforming industries and driving innovative business solutions.",
       authorName: "James Brown",
       authorImage:
         "https://img.freepik.com/free-photo/portrait-man-laughing_23-2148859448.jpg?size=338&ext=jpg&ga=GA1.1.2113030492.1720224000&semt=ais_user",
@@ -72,13 +72,13 @@ const BlogDisplay = (bgColor) => {
   ];
 
   return (
-    <div>
+    <>
       <div className="blogsContainer">
         {blogs.map((blog) => (
-          <BlogCard key={blog.id} {...blog} bgColor={bgColor} />
+          <BlogCard key={blog.id} {...blog} bgColor={bgType} />
         ))}
       </div>
-    </div>
+    </>
   );
 };
 

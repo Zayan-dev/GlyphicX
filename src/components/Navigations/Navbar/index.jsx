@@ -36,7 +36,7 @@ const Navbar = ({ toggle }) => {
             <div className="static md2:absolute md2:left-1/2 md2:transform md2:-translate-x-1/2">
               <Logo />
             </div>
-            <Link to="/contact" className="hidden md2:flex xl:w-[14%]">
+            <Link to="/contact" className="hidden md2:flex xl:w-[180px]">
               <CustomButton text="Contact" />
             </Link>
 

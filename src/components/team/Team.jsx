@@ -15,7 +15,7 @@ const Team = () => {
       <div className="team">
         <div className="team-head">
           <p className="subHeading font-bold">Creative</p>
-          <p className="mainHeading team-head-text">Meet Our Team</p>
+          <p className="mainHeading team-head-text">Meet our Team</p>
           <p className="para">
             Get to know the talented individuals behind GlyphicX.
           </p>

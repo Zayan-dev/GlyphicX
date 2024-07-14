@@ -37,7 +37,7 @@ const Feature = () => {
       </div>
       <div className="feature-text">
         <p className="mainHeading bold-text">
-          Unlock the Power of Storytelling
+          unlock the Power of Storytelling
         </p>
         <p className="para">
           At GlyphicX, we believe in the transformative power of storytelling.

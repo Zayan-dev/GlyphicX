@@ -7,7 +7,7 @@ const Cta = () => {
     <div className="cta">
       <div className="cta-outer">
         <div className="cta-inner">
-          <p className="subHeading cta-text">Transforming Ideas into Reality</p>
+          <p className="mainHeading cta-text">Transforming Ideas into Reality</p>
           <p className="para">
             Contact GlyphicX today for innovative solutions and exceptional
             design services.

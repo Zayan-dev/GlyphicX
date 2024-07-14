@@ -9,13 +9,13 @@ const Resources = () => {
     <div className="resourcesPage">
       <div className="resourceshero">
         <p>Discover</p>
-        <h1>Unlock Your Potential</h1>
+        <h1 className='mainHeading'>unlock Your Potential</h1>
         <p>Explore our resources</p>
       </div>
 
       <div className="insightsSection">
         <p className="insightsSection-p">Insights</p>
-        <h2 className="insightsSection-h2">Unlocking Digital Success</h2>
+        <h2 className="mainHeading insightsSection-h2">unlocking Digital Success</h2>
         <p className="insightsSection-p">
           Stay informed with our latest blog posts.
         </p>
@@ -27,7 +27,7 @@ const Resources = () => {
 
       <div className="articlessSection">
         <p className="insightsSection-p">Articles</p>
-        <h2 className="insightsSection-h2">Stay Updated with GlyphicX</h2>
+        <h2 className="mainHeading insightsSection-h2">Stay updated with GlyPhicX</h2>
         <p className="insightsSection-p">
           Get the latest news and updates from GlyphicX.
         </p>
@@ -40,8 +40,8 @@ const Resources = () => {
       <div className="newsletterSection">
         <div className="newsletterDiv">
           <div className="newsletterDivDetails">
-            <h2 className="insightsSection-h2">
-              Unlock Your Marketing Potential Today
+            <h2 className="mainHeading insightsSection-h2">
+              unlock Your Marketing Potential Today
             </h2>
             <p className="insightsSection-p">
               Stay up to date with the latest industry trends and insights.

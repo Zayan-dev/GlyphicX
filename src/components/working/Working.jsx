@@ -9,7 +9,7 @@ import impact from "../../assets/images/working3.png"
 const Working = () => {
   return (
     <div className='working'>
-      <p className='mainHeading font-bold working-heading'>Stand Out with Our Strategic and Creative Approach</p>
+      <p className='mainHeading font-bold working-heading'>Stand out with our Strategic and Creative Approach</p>
       <div className='working-outer-div'>
 
         <div className='working-inner-div'>

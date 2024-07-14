@@ -7,7 +7,7 @@ const Benefit = () => {
       <div className="benefit">
         <div className="benefit-heading">
           <p className="mainHeading">
-            Transforming brands through captivating storytelling.
+            Transforming Brands Through Captivating Storytelling.
           </p>
         </div>
         <div className="benefit-intro">

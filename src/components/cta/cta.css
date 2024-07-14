@@ -41,8 +41,10 @@
 }
 
 .cta-btn-div {
+    margin-top: 1rem;
     display: flex;
-    gap: 16px;
+    width: 392px;
+    gap: 2rem;
     justify-content: center;
     align-items: center;
     z-index: 2;

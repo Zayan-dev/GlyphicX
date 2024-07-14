@@ -23,15 +23,12 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: space-between;
     gap: 24px;
 }
 
-.benefit-intro button {
-    /* border: 1px solid blue; */
-    background: blue;
-    color: white;
-    padding: 10px;
-    width: 129px;
+.benefit-intro-button {
+    width: 180px;
 }
 
 @media screen and (max-width:808px) {

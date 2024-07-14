@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 import "./blogcard.css";
 
 const BlogCard = ({id, image, category, name, description, authorName, authorImage, date, readTime, bgColor}) => {
-
-  console.log(bgColor);
   return (
     <Link
       to="/"

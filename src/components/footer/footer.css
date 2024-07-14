@@ -39,7 +39,7 @@
 
 .newsletter {
     display: flex;
-    gap: 16px;
+    gap: 2rem;
     margin-top: 10px;
 }
 
@@ -51,11 +51,8 @@
     border: 1px solid black;
 }
 
-.newsletter button {
-    width: 119px;
-    height: 48px;
-    padding: 12px 24px 12px 24px;
-    border: 1px solid black;
+.subscribe-btn {
+    width: 140px;
 }
 
 .column-div {

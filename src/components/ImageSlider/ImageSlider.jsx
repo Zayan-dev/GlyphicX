@@ -7,34 +7,33 @@ import image2 from '../../assets/images/slider/EAXEE.png';
 const images = [image1, image2];
 
 const variants = {
-    enter: (direction) => {
-        return {
-            x: direction > 0 ? 1000 : -1000,
-            opacity: 0,
-            scale: 0.8,
-            rotate: 45,
-            skew: 20
-        };
+    enter: {
+        opacity: 0,
+        scale: 10,
+        transition: {
+            opacity: { duration: 0.8 },
+            scale: { type: 'spring', stiffness: 300, damping: 30 }
+        }
     },
     center: {
         zIndex: 1,
-        x: 0,
         opacity: 1,
         scale: 1,
-        rotate: 0,
-        skew: 0
+        transition: {
+            opacity: { duration: 0.8 }
+        }
     },
-    exit: (direction) => {
-        return {
-            zIndex: 0,
-            x: direction < 0 ? 1000 : -1000,
-            opacity: 0,
-            scale: 0.8,
-            rotate: -45,
-            skew: -20
-        };
+    exit: {
+        zIndex: 0,
+        opacity: 0,
+        scale: 0.8,
+        transition: {
+            opacity: { duration: 0.8 },
+            scale: { type: 'spring', stiffness: 300, damping: 30 }
+        }
     },
 };
+
 
 const ImageSlider = () => {
     
@@ -47,7 +46,7 @@ const ImageSlider = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             paginate(1);
-        }, 5000); // Change image every 3 seconds
+        }, 3000); // Change image every 3 seconds
 
         return () => clearInterval(interval);
     }, [page]);

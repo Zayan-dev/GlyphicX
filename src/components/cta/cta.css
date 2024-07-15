@@ -77,4 +77,7 @@
     .cta-text{
         font-size: 36px;
     }
+    .cta-btn-div{
+        width: 100%;
+    }
 }

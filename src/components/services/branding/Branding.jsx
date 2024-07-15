@@ -5,21 +5,6 @@ import img2 from "../../../../src/assets/images/slider/2.png"
 import urge from "../../../../src/assets/videos/Urge_Fragrances.mp4"
 
 const Branding = () => {
-    // const [currentIndex, setCurrentIndex] = useState(0);
-    // const slides = [
-    //     { type: 'image', src: img1 },
-    //     { type: 'image', src: img2 },
-    //     { type: 'video', src: urge }
-    // ];
-
-    // useEffect(() => {
-    //     const interval = setInterval(() => {
-    //         setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    //     }, 3000);
-
-    //     return () => clearInterval(interval);
-    // }, [slides.length]);
-
     const [currentIndex, setCurrentIndex] = useState(0);
     const videoRef = useRef(null);
     const slides = [
@@ -37,7 +22,7 @@ const Branding = () => {
             } else {
                 setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
             }
-        }, 3000);
+        }, 5000);
 
         return () => clearInterval(interval);
     }, [currentIndex, slides.length]);
@@ -60,21 +45,6 @@ const Branding = () => {
                     <li><i class="fa-solid fa-cube"></i> Establish a strong brand presence that sets you apart from competitors</li>
                 </div>
             </div>
-            {/* <div className="branding-slider">
-                {slides.map((slide, index) => (
-                    <div
-                        key={index}
-                        className={`branding-slide ${index === currentIndex ? 'active' : ''}`}
-                    >
-                        {slide.type === 'image' ? (
-                            <img src={slide.src} alt={`slide-${index}`} />
-                        ) : (
-                            <video src={slide.src} autoPlay muted loop />
-                        )}
-                    </div>
-                ))}
-            </div> */}
-
             <div className="branding-slider">
                 {slides.map((slide, index) => (
                     <div

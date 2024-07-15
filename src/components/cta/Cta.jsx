@@ -1,6 +1,6 @@
 import React from 'react'
 import "../cta/cta.css"
-import { CustomButton2 } from '../CustomButton'
+import { CustomButton3 } from '../CustomButton'
 
 const Cta = () => {
   return (
@@ -14,8 +14,8 @@ const Cta = () => {
           </p>
         </div>
         <div className="cta-btn-div">
-          <CustomButton2 text="Contact" />
-          <CustomButton2 text="Learn More" />
+          <CustomButton3 text="Contact" />
+          <CustomButton3 text="Learn More" />
         </div>
       </div>
     </div>

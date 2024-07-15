@@ -1,7 +1,7 @@
 import React from 'react';
 import '../footer/footer.css';
 import logo from "../../assets/logo.png"
-import CustomButton from '../CustomButton';
+import CustomButton, { CustomButton2 } from '../CustomButton';
 
 const Footer = () => {
   return (
@@ -18,7 +18,7 @@ const Footer = () => {
           <div className="newsletter">
             <input type="email" placeholder="Your email" className='para'/>
             <div className="subscribe-btn">
-              <CustomButton text="Subscribe" />
+              <CustomButton2 text="Subscribe" />
             </div>
           </div>
           <p className="para">

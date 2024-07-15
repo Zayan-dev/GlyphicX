@@ -3,7 +3,7 @@ import "../branding/branding.css"
 import img1 from "../../../../src/assets/images/slider/1.png"
 import img2 from "../../../../src/assets/images/slider/2.png"
 import urge from "../../../../src/assets/videos/Urge_Fragrances.mp4"
-
+import star from "../../../assets/images/Star.png"
 const Branding = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const videoRef = useRef(null);
@@ -40,9 +40,9 @@ const Branding = () => {
                 <p className='para'>Compelling brand identities that resonate with your target audience, from logo design to brand guidelines, we help you establish a strong and memorable brand presence.</p>
 
                 <div className='para list'>
-                    <li><i class="fa-solid fa-cube"></i> Cohesive understanding of the brand's visual identity and direction</li>
-                    <li><i class="fa-solid fa-cube"></i> Create compelling content that communicate your brand values</li>
-                    <li><i class="fa-solid fa-cube"></i> Establish a strong brand presence that sets you apart from competitors</li>
+                    <li><img src={star} alt="star" style={{ height: "25px" }} />Cohesive understanding of the brand's visual identity and direction</li>
+                    <li><img src={star} alt="star" style={{ height: "25px" }} /> Create compelling content that communicate your brand values</li>
+                    <li><img src={star} alt="star" style={{ height: "25px" }} /> Establish a strong brand presence that sets you apart from competitors</li>
                 </div>
             </div>
             <div className="branding-slider">

@@ -33,16 +33,10 @@ li {
 }
 
 .buttons {
-    /* width: 264px; */
-    /* height: 64px; */
-    /* padding: 16px 0px 0px 0px;
-    display: flex;
-    align-items: center;
-    gap: 24px; */
-
+    /* border: 1px solid red; */
+    width: 100%;
     margin-top: 1rem;
     display: flex;
-    width: 392px;
     gap: 2rem;
     justify-content: center;
     align-items: center;

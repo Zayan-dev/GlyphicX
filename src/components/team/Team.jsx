@@ -37,7 +37,7 @@ const Team = () => {
             ))}
           </div>
         </div>
-        <div className="hiring-div">
+        {/* <div className="hiring-div">
           <div className="hiring-text">
             <p className="hire">We’re hiring!</p>
             <p>Discover exciting career and freelance opportunities</p>
@@ -45,7 +45,7 @@ const Team = () => {
           <div className='apply-btn'>
             <CustomButton3 text="Apply" />
           </div>
-        </div>
+        </div> */}
       </div>
     );
 }

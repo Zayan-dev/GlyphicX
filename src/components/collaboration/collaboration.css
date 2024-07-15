@@ -95,11 +95,13 @@
     width: 180px;
 }
 
-@media screen and (max-width:808px) {
+@media screen and (max-width:908px) {
     .coll-inner-div {
         flex-direction: column;
     }
+}
 
+@media screen and (max-width:808px) {
     .coll-heading {
         width: 100%;
         height: 100%;

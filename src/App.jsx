@@ -1,16 +1,45 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./components/footer/Footer"
 import Hero from "./components/hero/Hero"
 import Navigation from "./components/Navigations";
-
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Service from "./components/services/Service";
 import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/contact";
 import Resources from "./components/resources/resources";
 import ScrollToTop from "./components/scrolltotop/ScrollToTop";
+// import { useRef } from "react";
+// import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 
 function App() {
+  // const ref = useRef(null)
   return (
+
+    // <BrowserRouter>
+    //   <LocomotiveScrollProvider
+    //     style={{ margin: "0px" }}
+    //     options={
+    //       {
+    //         smooth: true,
+    //         lerp: 0.05
+    //       }
+    //     }
+    //     ref={ref}
+    //   >
+    //     <main data-scroll-container ref={ref} style={{ overflow: "hidden", margin: "0px" }}>
+    //       <Navigation />
+    //       <ScrollToTop />
+    //       <Routes>
+    //         <Route exact path="/" element={<Hero></Hero>}></Route>
+    //         <Route exact path="/services" element={<Service></Service>}></Route>
+    //         <Route exact path="/portfolio" element={<Portfolio></Portfolio>}></Route>
+    //         <Route exact path="/resources" element={<Resources></Resources>}></Route>
+    //         <Route exact path="/contact" element={<Contact></Contact>}></Route>
+    //       </Routes>
+    //       <Footer></Footer>
+    //     </main>
+    //   </LocomotiveScrollProvider>
+    // </BrowserRouter >
+
     <BrowserRouter>
       <Navigation />
       <ScrollToTop />

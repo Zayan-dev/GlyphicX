@@ -1,7 +1,7 @@
 import React from 'react'
 import './resourcesStyles.css';
 import BlogDisplay from './BlogsDisplay/blogdisplay';
-import CustomButton, { CustomButton2 } from './../CustomButton';
+import CustomButton, { CustomButton2, CustomButton3 } from './../CustomButton';
 import ServiceHero from '../services/hero/ServiceHero';
 
 const Resources = () => {
@@ -21,7 +21,7 @@ const Resources = () => {
         </p>
         <BlogDisplay bgType="dark" />
         <div className="viewAllButton">
-          <CustomButton text="View All" />
+          <CustomButton3 text="View All" />
         </div>
       </div>
 
@@ -32,7 +32,7 @@ const Resources = () => {
           Get the latest news and updates from GlyphicX.
         </p>
         <div className="viewAllButton" style={{ marginTop: "0px" }}>
-          <CustomButton text="Read More" />
+          <CustomButton2 text="Read More" />
         </div>
         <BlogDisplay bgType="light" />
       </div>
@@ -47,8 +47,8 @@ const Resources = () => {
               Stay up to date with the latest industry trends and insights.
             </p>
             <div className="newsletterButtons">
-              <CustomButton2 text="Subscribe" />
-              <CustomButton2 text="Learn More" />
+              <CustomButton3 text="Subscribe" />
+              <CustomButton3 text="Learn More" />
             </div>
           </div>
           <div

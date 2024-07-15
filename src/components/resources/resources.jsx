@@ -27,7 +27,7 @@ const Resources = () => {
 
       <div className="articlessSection">
         <p className="subHeading insightsSection-p">Articles</p>
-        <h2 className="mainHeading insightsSection-h2">Stay updated with GlyPhicX</h2>
+        <h2 className="mainHeading insightsSection-h2">Stay uPdated with GlyPhicX</h2>
         <p className="para insightsSection-p">
           Get the latest news and updates from GlyphicX.
         </p>
@@ -48,7 +48,7 @@ const Resources = () => {
             </p>
             <div className="newsletterButtons">
               <CustomButton2 text="Subscribe" />
-              <CustomButton text="Learn More" />
+              <CustomButton2 text="Learn More" />
             </div>
           </div>
           <div

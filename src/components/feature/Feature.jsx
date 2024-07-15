@@ -30,7 +30,7 @@ const Feature = () => {
       <div className="feature-img">
         {/* <ImageSequenceScroll></ImageSequenceScroll> */}
         <div ref={ref}>
-          <video ref={videoRef} src={animatedvideo} alt="video" muted playsInline>
+          <video ref={videoRef} src={animatedvideo} alt="video" muted playsInline loop>
             Your browser does not support the video tag.
           </video>
         </div>

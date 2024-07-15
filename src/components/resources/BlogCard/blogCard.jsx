@@ -28,16 +28,16 @@ const BlogCard = ({id, image, category, name, description, authorName, authorIma
         }}
       ></div>
       {/* <Image src={image} alt={name} width="64" height="64" /> */}
-      <div className="blogInformation">
-        <div className="go-corner" href="#">
+      <div className="blogInformation"  >
+        <div className="go-corner" href="#" >
           <div className="go-arrow">
             <FaArrowRightLong />
           </div>
         </div>
-        <div className="blogDetails">
-          <p>{category}</p>
-          <h3>{name}</h3>
-          <p>{description}</p>
+        <div className="blogDetails" >
+          <p className='para'>{category}</p>
+          <h3 className='mainHeading'>{name}</h3>
+          <p className='para'>{description}</p>
         </div>
         <div className="authorDetailsDiv">
           <div
@@ -51,9 +51,9 @@ const BlogCard = ({id, image, category, name, description, authorName, authorIma
           <div>
             <p className="authorName">{authorName}</p>
             <div className="timeAndDate">
-              <p>{date}</p>
-              <p>&#8226;</p>
-              <p>{readTime} min read</p>
+              <p className='para'>{date}</p>
+              <p className='para'>&#8226;</p>
+              <p className='para'>{readTime} min read</p>
             </div>
           </div>
         </div>

@@ -8,8 +8,8 @@ const Projects = () => {
 
             <div className="project1">
                 <div className="content">
-                    <h1>Project 1</h1>
-                    <p>description</p>
+                    <h1 className='mainHeading'>Project 1</h1>
+                    <p className='para'>description</p>
                 </div>
                 <div className="image">
                     <img src={image} alt="" />
@@ -18,8 +18,8 @@ const Projects = () => {
 
             <div className="project2">
                 <div className="content">
-                    <h1>Project 2</h1>
-                    <p>description</p>
+                    <h1 className='mainHeading'>Project 2</h1>
+                    <p className='para'>description</p>
                 </div>
                 <div className="image">
                     <img src={image} alt="" />
@@ -28,8 +28,8 @@ const Projects = () => {
 
             <div className="project3">
                 <div className="content">
-                    <h1>Project 3</h1>
-                    <p>description</p>
+                    <h1 className='mainHeading'>Project 3</h1>
+                    <p className='para'>description</p>
                 </div>
                 <div className="image">
                     <img src={image} alt="" />

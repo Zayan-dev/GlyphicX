@@ -6,7 +6,7 @@ const ServiceHero = (props) => {
       <div className="service-hero">
         <h1>{props.subheading}</h1>
         <div className="mainHeading heading">{props.heading}</div>
-        <p>{props.para}</p>
+        <p className='para'>{props.para}</p>
       </div>
     </>
   );

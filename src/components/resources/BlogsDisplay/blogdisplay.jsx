@@ -1,9 +1,8 @@
-// components/BlogDisplay.js
 import React from "react";
 import BlogCard from "./../BlogCard/blogCard";
 import "./blogdisplay.css";
 
-const BlogDisplay = ({bgType}) => {
+const BlogDisplay = ({ bgType }) => {
   const blogs = [
     {
       id: 1,
@@ -47,34 +46,30 @@ const BlogDisplay = ({bgType}) => {
       date: "June 25, 2024",
       readTime: "6",
     },
-    // {
-    //   id: 4,
-    //   image: "/images/blog4.jpg",
-    //   category: "Travel",
-    //   name: "Top 10 Destinations",
-    //   description: "The best places to visit this summer.",
-    //   authorName: "Emily White",
-    //   authorImage: "/assets/images/glyphicX.png",
-    //   date: "June 20, 2024",
-    //   readTime: "7 min",
-    // },
-    // {
-    //   id: 5,
-    //   image: "/images/blog5.jpg",
-    //   category: "Education",
-    //   name: "Online Learning Platforms",
-    //   description: "The best platforms for online education.",
-    //   authorName: "Michael Green",
-    //   authorImage: "/assets/images/glyphicX.png",
-    //   date: "June 15, 2024",
-    //   readTime: "5 min",
-    // },
   ];
+
+  const transformName = (name) => {
+    const charArray = name.split('');
+    let newName = "";
+    for (let i = 0; i < charArray.length; i++) {
+      if (charArray[i] == "P" || charArray[i] == "p") {
+        newName += charArray[i].toUpperCase();
+      } else {
+        newName += charArray[i].toLowerCase();
+      }
+    }
+    return newName;
+  };
+
+  const transformedBlogs = blogs.map((blog) => ({
+    ...blog,
+    name: transformName(blog.name),
+  }));
 
   return (
     <>
       <div className="blogsContainer">
-        {blogs.map((blog) => (
+        {transformedBlogs.map((blog) => (
           <BlogCard key={blog.id} {...blog} bgColor={bgType} />
         ))}
       </div>
@@ -83,7 +78,3 @@ const BlogDisplay = ({bgType}) => {
 };
 
 export default BlogDisplay;
-
-
-
-

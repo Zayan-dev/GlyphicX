@@ -8,15 +8,15 @@ const Resources = () => {
   return (
     <div className="resourcesPage">
       <div className="resourceshero">
-        <p>Discover</p>
+        <p className='subHeading'>Discover</p>
         <h1 className='mainHeading'>unlock Your Potential</h1>
-        <p>Explore our resources</p>
+        <p className='para'>Explore our resources</p>
       </div>
 
       <div className="insightsSection">
-        <p className="insightsSection-p">Insights</p>
+        <p className="subHeading insightsSection-p">Insights</p>
         <h2 className="mainHeading insightsSection-h2">unlocking Digital Success</h2>
-        <p className="insightsSection-p">
+        <p className="para insightsSection-p">
           Stay informed with our latest blog posts.
         </p>
         <BlogDisplay bgType="dark" />
@@ -26,12 +26,12 @@ const Resources = () => {
       </div>
 
       <div className="articlessSection">
-        <p className="insightsSection-p">Articles</p>
+        <p className="subHeading insightsSection-p">Articles</p>
         <h2 className="mainHeading insightsSection-h2">Stay updated with GlyPhicX</h2>
-        <p className="insightsSection-p">
+        <p className="para insightsSection-p">
           Get the latest news and updates from GlyphicX.
         </p>
-        <div className="viewAllButton" style={{marginTop: "0px"}}>
+        <div className="viewAllButton" style={{ marginTop: "0px" }}>
           <CustomButton text="Read More" />
         </div>
         <BlogDisplay bgType="light" />
@@ -43,7 +43,7 @@ const Resources = () => {
             <h2 className="mainHeading insightsSection-h2">
               unlock Your Marketing Potential Today
             </h2>
-            <p className="insightsSection-p">
+            <p className="para insightsSection-p">
               Stay up to date with the latest industry trends and insights.
             </p>
             <div className="newsletterButtons">

@@ -8,10 +8,10 @@
     /* background: url('../../assets/images/slider/EAXEE.png') no-repeat center center; */
     background-size: cover;
     color: var(--background-color);
-    background-color: #1214eb;
+    background-color: var(--royalBlue-color);
 }
 
-.cta::before {
+/* .cta::before {
     content: '';
     position: absolute;
     top: 0;
@@ -20,7 +20,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
-}
+} */
 
 .cta-outer {
     /* border: 1px solid green; */

@@ -6,7 +6,7 @@ import "./blogcard.css";
 const BlogCard = ({id, image, category, name, description, authorName, authorImage, date, readTime, bgColor}) => {
   return (
     <Link
-      to="/"
+      to="/resources"
       className="blogCard"
       style={{
         "--bg-color":

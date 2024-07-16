@@ -12,7 +12,7 @@ export default {
         lato: ['"Lato"', "sans-serif"],
       },
       colors: {
-        offWhite: "#fffff8",
+        offWhite: "#fffaf0",
         navyBlue: "#071C40",
         royalBlue: "#1214EB",
       },

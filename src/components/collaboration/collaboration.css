@@ -66,15 +66,9 @@
     gap: 64px;
 }
 
-/* .inner-3 {
-    border: 1px solid orange;
-    width: 610px;
-    height: 540px;
-    background: url("../../pics/ss.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-} */
+.inner-3 {
+    border: 2px solid var(--background-color);
+}
 
 .discover {
     /* border: 1px solid red; */
@@ -101,11 +95,13 @@
     width: 180px;
 }
 
-@media screen and (max-width:808px) {
+@media screen and (max-width:908px) {
     .coll-inner-div {
         flex-direction: column;
     }
+}
 
+@media screen and (max-width:808px) {
     .coll-heading {
         width: 100%;
         height: 100%;

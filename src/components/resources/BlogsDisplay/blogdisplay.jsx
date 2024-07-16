@@ -3,7 +3,7 @@ import React, {useState, useEffect} from "react";
 import BlogCard from "./../BlogCard/blogCard";
 import "./blogdisplay.css";
 
-const BlogDisplay = ({bgType}) => {
+const BlogDisplay = ({ bgType }) => {
   // const [currentIndex, setCurrentIndex] = useState(0);
 
   // const handleSlideTransition = () => {
@@ -89,10 +89,29 @@ const BlogDisplay = ({bgType}) => {
     // },
   ];
 
+
+  const transformName = (name) => {
+    const charArray = name.split('');
+    let newName = "";
+    for (let i = 0; i < charArray.length; i++) {
+      if (charArray[i] == "P" || charArray[i] == "p") {
+        newName += charArray[i].toUpperCase();
+      } else {
+        newName += charArray[i].toLowerCase();
+      }
+    }
+    return newName;
+  };
+
+  const transformedBlogs = blogs.map((blog) => ({
+    ...blog,
+    name: transformName(blog.name),
+  }));
+
   return (
     <>
       <div className="blogsContainer">
-        {blogs.map((blog) => (
+        {transformedBlogs.map((blog) => (
           <BlogCard key={blog.id} {...blog} bgColor={bgType} />
         ))}
       </div>
@@ -109,7 +128,3 @@ const BlogDisplay = ({bgType}) => {
 };
 
 export default BlogDisplay;
-
-
-
-

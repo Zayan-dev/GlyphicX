@@ -1,5 +1,7 @@
 import React from 'react'
 import "../visualization/visualization.css"
+import star from "../../../assets/images/Star.png"
+
 const Visualization = () => {
     return (
         <div className='visualization'>
@@ -7,14 +9,14 @@ const Visualization = () => {
             </div>
 
             <div className='vis-text'>
-                <h1>3D Visualization</h1>
-                <p>Confidently make informed decisions and bring your creative vision to life with our 3D visualization services. </p>
-                <p>Get a clear, immersive representation of your final product, space, or design, enabling better understanding of scale, proportions, and design options</p>
+                <h1 className='mainHeading'>3D visualization</h1>
+                <p className='para'>Confidently make informed decisions and bring your creative vision to life with our 3D visualization services. </p>
+                <p className='para'>Get a clear, immersive representation of your final product, space, or design, enabling better understanding of scale, proportions, and design options</p>
 
-                <div className='vis-list'>
-                    <li><i class="fa-solid fa-cube"></i> Clear Representation</li>
-                    <li><i class="fa-solid fa-cube"></i> Collaborative Design</li>
-                    <li><i class="fa-solid fa-cube"></i> Competitive Advantage</li>
+                <div className='para vis-list'>
+                    <li><img src={star} alt="star" style={{ height: "25px", mixBlendMode: "difference" }} /> Clear Representation</li>
+                    <li><img src={star} alt="star" style={{ height: "25px", mixBlendMode: "difference" }} /> Collaborative Design</li>
+                    <li><img src={star} alt="star" style={{ height: "25px", mixBlendMode: "difference" }} /> Competitive Advantage</li>
                 </div>
             </div>
 

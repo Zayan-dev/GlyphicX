@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../Logo";
-import CustomButton from "../../CustomButton";
+import { CustomButton2 } from "../../CustomButton";
 
 const Navbar = ({ toggle }) => {
   const listItemStyles =
@@ -37,7 +37,7 @@ const Navbar = ({ toggle }) => {
               <Logo />
             </div>
             <Link to="/contact" className="hidden md2:flex xl:w-[180px]">
-              <CustomButton text="Contact" />
+              <CustomButton2 text="Contact" />
             </Link>
 
             <button

@@ -1,13 +1,13 @@
 import React from 'react'
 import '../benefit/benefit.css'
-import CustomButton from '../CustomButton'
+import  { CustomButton2 } from '../CustomButton'
 
 const Benefit = () => {
     return (
       <div className="benefit">
         <div className="benefit-heading">
           <p className="mainHeading">
-            Transforming Brands Through Captivating Storytelling.
+            Transforming Brands Through CaPtivating Storytelling.
           </p>
         </div>
         <div className="benefit-intro">
@@ -18,7 +18,7 @@ const Benefit = () => {
             audience and drive results.
           </p>
           <div className="benefit-intro-button">
-            <CustomButton text="Learn More" />
+            <CustomButton2 text="Learn More" />
           </div>
         </div>
       </div>

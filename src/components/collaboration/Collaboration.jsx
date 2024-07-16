@@ -1,10 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import { useInView } from 'react-intersection-observer';
-import { PiStarFourFill } from "react-icons/pi";
-import { BsStars } from "react-icons/bs";
 import '../collaboration/collaboration.css';
 import video1 from "../../assets/videos/Logo_reveal.mp4";
 import {CustomButton3} from '../CustomButton';
+import star from "../../../src/assets/images/Star.png"
 
 const Collaboration = () => {
     const { ref, inView } = useInView({
@@ -29,7 +28,7 @@ const Collaboration = () => {
         <div className="coll-heading">
           <p className="subHeading font-bold">Innovative</p>
           <p className="mainHeading coll-head-text">
-            our unique Approach to Client Collaboration
+            our unique APProach to Client Collaboration
           </p>
           <p className="para coll-head-subtext">
             At GlyphicX, we believe in building strong relationships with our
@@ -41,8 +40,7 @@ const Collaboration = () => {
           <div className="coll-inner-div">
             <div className="inner-1">
               <div className="discover">
-                {/* <i className="fa-solid fa-diamond fa-2xl"></i> */}
-                <PiStarFourFill style={{ fontSize: "2.85rem" }} />
+                <img src={star} alt="star" style={{ height: "50px" }}/>
                 <div className="discover-text">
                   <p className="subHeading font-bold text-2xl">Discover</p>
                   <p className="para text-base">
@@ -51,8 +49,7 @@ const Collaboration = () => {
                 </div>
               </div>
               <div className="discover">
-                {/* <i className="fa-solid fa-diamond fa-2xl"></i> */}
-                <BsStars style={{ fontSize: "3rem" }} />
+                <img src={star} alt="star" style={{ height: "50px" }}/>
                 <div className="discover-text">
                   <p className="subHeading font-bold text-2xl">Create</p>
                   <p className="para text-base">
@@ -75,7 +72,7 @@ const Collaboration = () => {
             </div>
             <div className="inner-2">
               <div className="discover">
-                <i className="fa-solid fa-diamond fa-2xl"></i>
+                <img src={star} alt="star" style={{ height: "50px" }}/>
                 <div className="discover-text">
                   <p className="subHeading font-bold text-2xl">Design</p>
                   <p className="para text-base">
@@ -84,7 +81,7 @@ const Collaboration = () => {
                 </div>
               </div>
               <div className="discover">
-                <i className="fa-solid fa-diamond fa-2xl"></i>
+                <img src={star} alt="star" style={{ height: "50px" }}/>
                 <div className="discover-text">
                   <p className="subHeading font-bold text-2xl">Deliver</p>
                   <p className="para text-base">

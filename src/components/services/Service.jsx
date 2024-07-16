@@ -9,7 +9,7 @@ import Cta from '../cta/Cta'
 const Service = () => {
   return (
     <div>
-      <ServiceHero heading="Translate ideas into impactful content" para="Discover our comprehensive range of services that combine design and business expertise." ></ServiceHero>
+      <ServiceHero heading="Translate ideas into imPactful content" para="Discover our comprehensive range of services that combine design and business expertise." ></ServiceHero>
       <Branding></Branding>
       <br />
       <Visualization></Visualization>

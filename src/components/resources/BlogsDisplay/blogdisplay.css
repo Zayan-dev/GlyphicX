@@ -8,6 +8,19 @@
 }
 
 
+/* .blogsContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    column-gap: 3.5%;
+}
+
+.blogCard {
+    flex: 0 0 31%;
+    transition: transform 0.5s ease-in-out;
+} */
+
 
 @media screen and (max-width: 1024px) {
     .blogsContainer {

@@ -38,14 +38,33 @@ li {
     gap: 15px;
 }
 
+
+/* Css for slider */
 .vis-pic {
-    /* border: 1px solid red; */
-    width: 616px;
-    height: 640px;
-    background-image: url("../../../pics/ss.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.vis-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.vis-slide.active {
+    opacity: 1;
+}
+
+.vis-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 @media screen and (max-width:969px) {
@@ -63,7 +82,8 @@ li {
     .vis-text {
         width: 100%;
     }
-    .vis-text h1{
+
+    .vis-text h1 {
         font-size: 26px;
     }
 

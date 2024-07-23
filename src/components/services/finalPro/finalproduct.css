@@ -51,10 +51,35 @@ li {
     /* border: 1px solid red; */
     width: 616px;
     height: 640px;
-    background-image: url("../../../pics/ss.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  
+}
+
+/* Css for slider */
+.finalpro-pic {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 616px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.finalpro-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.finalpro-slide.active {
+    opacity: 1;
+}
+
+.finalpro-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 @media screen and (max-width:969px) {

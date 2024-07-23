@@ -1,7 +1,29 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "../finalPro/finalproduct.css"
 import { CustomButton3 } from '../../CustomButton'
+import image1 from "../../../assets/images/slider/final_1.jpg";
+import image2 from "../../../assets/images/slider/final_2.jpg";
+import image3 from "../../../assets/images/slider/final_3.jpg";
+import image4 from "../../../assets/images/slider/final_4.jpg";
+import image5 from "../../../assets/images/slider/final_5.jpg";
 const FinalProduct = () => {
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const slides = [
+        { type: 'image', src: image1 },
+        { type: 'image', src: image2 },
+        { type: 'image', src: image3 },
+        { type: 'image', src: image4 },
+        { type: 'image', src: image5 },
+    ];
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+        }, 5000);
+
+        return () => clearInterval(interval);
+    }, [slides.length]);
+
     return (
         <div className='finalpro'>
             <div className='finalpro-text'>
@@ -16,7 +38,14 @@ const FinalProduct = () => {
                 </div>
             </div>
             <div className="finalpro-pic">
-
+                {slides.map((slide, index) => (
+                    <div
+                        key={index}
+                        className={`finalpro-slide ${index === currentIndex ? 'active' : ''}`}
+                    >
+                        <img src={slide.src} alt={`slide-${index}`} />
+                    </div>
+                ))}
             </div>
         </div>
     )

@@ -2,41 +2,76 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../Logo";
 import { CustomButton2 } from "../../CustomButton";
+// import gsap from 'gsap';
+// import { useGSAP } from '@gsap/react';
 
 const Navbar = ({ toggle }) => {
+
+  // useGSAP(
+  //   () => {
+  //     let tl = gsap.timeline();
+  //     tl.from('#gsapNavDiv', {
+  //       y: 60,
+  //       scale:0,
+  //       opacity: 0,
+  //       duration: 1.5,
+  //     })
+  //     tl.from('#gsapNavItem', {
+  //       y: -50,
+  //       opacity: 0,
+  //       duration: 1.5,
+  //       stagger: 0.2
+  //     });
+  //     tl.from('#gsapLogo', {
+  //       y: -50,
+  //       opacity: 0,
+  //       duration: 1,
+  //     });
+  //     tl.from('#gsapContactBtn', {
+  //       y: -50,
+  //       opacity: 0,
+  //       duration: 1,
+  //     });
+
+  //   },
+
+  // );
+
+
+
   const listItemStyles =
     "subHeading relative text-lg lg:text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-navyBlue after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center";
   return (
     <>
-      <div className="w-full h-16 lg:h-[74px] min-h-[68px] bg-offWhite fixed top-0 z-10 border-navyBlue border-b-2">
+      <div id="gsapNavDiv" className="w-full h-16 lg:h-[74px] min-h-[68px] bg-offWhite fixed top-0 z-10 border-navyBlue border-b-2">
         <div className="w-full px-[6%] md:px-10 lg:px-12 xl:px-16 xl3:px-20 h-full">
           <div className="h-full relative flex justify-between items-center ">
             <ul className="hidden md2:flex justify-between gap-6 lg1:gap-12 xl3:gap-20 text-navyBlue">
               <li>
-                <Link to="/" className={listItemStyles}>
+                <Link to="/" className={listItemStyles} id="gsapNavItem">
                   <p>Home</p>
                 </Link>
               </li>
               <li>
-                <Link to="/portfolio" className={listItemStyles}>
+                <Link to="/portfolio" className={listItemStyles} id="gsapNavItem">
                   <p>Our Work</p>
                 </Link>
               </li>
               <li>
-                <Link to="/services" className={listItemStyles}>
+                <Link to="/services" className={listItemStyles} id="gsapNavItem">
                   <p>Services</p>
                 </Link>
               </li>
               <li>
-                <Link to="/resources" className={listItemStyles}>
+                <Link to="/resources" className={listItemStyles} id="gsapNavItem">
                   <p>Resources</p>
                 </Link>
               </li>
             </ul>
-            <div className="static md2:absolute md2:left-1/2 md2:transform md2:-translate-x-1/2">
+            <div id="gsapLogo" className="static md2:absolute md2:left-1/2 md2:transform md2:-translate-x-1/2">
               <Logo />
             </div>
-            <Link to="/contact" className="hidden md2:flex xl:w-[180px]">
+            <Link id="gsapContactBtn" to="/contact" className="hidden md2:flex xl:w-[180px]">
               <CustomButton2 text="Contact" />
             </Link>
 

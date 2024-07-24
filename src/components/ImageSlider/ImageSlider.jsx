@@ -46,7 +46,7 @@ const ImageSlider = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             paginate(1);
-        }, 3000); // Change image every 3 seconds
+        }, 3000); 
 
         return () => clearInterval(interval);
     }, [page]);
@@ -54,7 +54,7 @@ const ImageSlider = () => {
     const imageIndex = page % images.length;
 
     return (
-        <div className="slider">
+        <div id='gsapSlider' className="slider">
             <AnimatePresence initial={false} custom={direction}>
                 <motion.img
                     key={page}

@@ -12,6 +12,7 @@
 body {
     color: var(--foreground-color);
     background-color: var(--background-color);
+    overflow-x: hidden;
 }
 
 @font-face {

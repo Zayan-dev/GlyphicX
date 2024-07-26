@@ -9,7 +9,9 @@
 
 .benefit-heading {
     /* border: 1px solid green; */
+    overflow: hidden;
     width: 616px;
+    height: 100%;
     font-size: 56px;
     font-weight: 700;
     line-height: 67.2px;
@@ -61,6 +63,24 @@
 
 .underline-btn:hover::after {
     width: 100%;
+}
+
+
+
+
+/* Gsap css */
+.benefit-text {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows text to wrap if needed */
+}
+
+.benefit-text .word {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    /* Ensures proper alignment without gaps */
 }
 
 

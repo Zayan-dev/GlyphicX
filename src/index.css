@@ -8,11 +8,13 @@
     --royalBlue-color: #1214EB;
     --uniform-screen-padding: 6%;
 }
+*{
 
-body {
+}
+html,body {
+    overflow-x: hidden;
     color: var(--foreground-color);
     background-color: var(--background-color);
-    overflow-x: hidden;
 }
 
 @font-face {

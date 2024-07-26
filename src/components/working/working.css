@@ -48,6 +48,16 @@
     line-height: 33.6px;
 }
 
+
+/* gsap css */
+#gsapHeadingContainer{
+    /* border: 1px solid black; */
+}
+#gsapHeadingContainer div{
+    /* border: 1px solid red; */
+    display:inline;
+}
+
 @media screen and (max-width:808px) {
     .working {
         padding: 20px;

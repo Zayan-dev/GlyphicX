@@ -25,7 +25,7 @@ const Collaboration = () => {
 
     return (
       <div className="collaboration">
-        <div className="coll-heading">
+        <div id='gsapCollaborationHeading' className="coll-heading">
           <p className="subHeading font-bold">Innovative</p>
           <p className="mainHeading coll-head-text">
             our unique APProach to Client Collaboration
@@ -38,7 +38,7 @@ const Collaboration = () => {
         </div>
         <div className="coll-outer-div">
           <div className="coll-inner-div">
-            <div className="inner-1">
+            <div id='gsapInner1' className="inner-1">
               <div className="discover">
                 <img src={star} alt="star" style={{ height: "50px" }}/>
                 <div className="discover-text">
@@ -58,7 +58,7 @@ const Collaboration = () => {
                 </div>
               </div>
             </div>
-            <div ref={ref} className="inner-3">
+            <div id='gsapInner3' ref={ref} className="inner-3">
               <video
                 ref={videoRef}
                 src={video1}
@@ -70,7 +70,7 @@ const Collaboration = () => {
                 Your browser does not support the video tag.
               </video>
             </div>
-            <div className="inner-2">
+            <div id='gsapInner2' className="inner-2">
               <div className="discover">
                 <img src={star} alt="star" style={{ height: "50px" }}/>
                 <div className="discover-text">

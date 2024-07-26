@@ -10,10 +10,11 @@ import Cta from '../cta/Cta'
 import ImageSlider from '../ImageSlider/ImageSlider'
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const Hero = () => {
 
-
+    gsap.registerPlugin(ScrollTrigger);
     useGSAP(
         () => {
             let tl = gsap.timeline();
@@ -29,14 +30,204 @@ const Hero = () => {
                 x: 500,
                 duration: 1,
             });
-
-
             gsap.from('#gsapSlider', {
                 y: 100,
                 opacity: 0,
                 scale: 3,
                 duration: 1
             });
+            gsap.from("#gsapBenefitContainer", {
+                x: -800,
+                opacity: 0,
+                scrollTrigger: {
+                    trigger: "#gsapBenefitContainer",
+                    scroller: "body",
+                    markers: false,
+                    start: "top 90%",
+                    end: "top 40%",
+                    scrub: 2,
+                }
+            });
+            gsap.from("#gsapBenefitIntro", {
+                x: 800,
+                opacity: 0,
+                scrollTrigger: {
+                    trigger: "#gsapBenefitIntro",
+                    scroller: "body",
+                    markers: false,
+                    start: "top 90%",
+                    end: "top 40%",
+                    scrub: 2,
+                }
+            });
+            gsap.from("#gsapFeatureVideo", {
+                transformOrigin: 'left',
+                transform: "scaleX(0)",
+                duration: 1,
+                scrollTrigger: {
+                    trigger: "#gsapFeatureVideo",
+                    scroller: "body",
+                    markers: false,
+                    start: "top 90%",
+                    end: "top 30%",
+                    scrub: 1,
+                }
+            })
+            gsap.from("#gsapFeatureText", {
+                x: 400,
+                opacity: 0,
+                scrollTrigger: {
+                    trigger: "#gsapFeatureText",
+                    scroller: "body",
+                    markers: false,
+                    start: "top 100%",
+                    end: "top 30%",
+                    scrub: 2,
+                }
+            })
+            gsap.from("#gsapCollaborationHeading p", {
+                // y: 400,
+                rotateX: "90deg",
+                opacity: 0,
+                stagger: 0.3,
+                scrollTrigger: {
+                    trigger: "#gsapCollaborationHeading",
+                    scroller: "body",
+                    markers: false,
+                    start: "top 100%",
+                    end: "top 30%",
+                    scrub: 5,
+                }
+            });
+            gsap.from("#gsapInner1 p", {
+                y: 400,
+                opacity: 0,
+                stagger: 0.3,
+                opacity: 0,
+                scrollTrigger: {
+                    trigger: "#gsapInner1",
+                    scroller: "body",
+                    markers: false,
+                    start: "top 100%",
+                    end: "top 30%",
+                    scrub: 2,
+                }
+            });
+            gsap.from("#gsapInner1 img", {
+                scale: 5,
+                rotateZ: "360deg",
+                // x:-100,
+                // y:-230,
+                scrollTrigger: {
+                    trigger: "#gsapInner1",
+                    scroller: "body",
+                    markers: false,
+                    start: "top 100%",
+                    end: "top 30%",
+                    scrub: 2,
+                }
+            });
+            gsap.from("#gsapInner2 p", {
+                y: 400,
+                opacity: 0,
+                stagger: 0.3,
+                opacity: 0,
+                scrollTrigger: {
+                    trigger: "#gsapInner1",
+                    scroller: "body",
+                    markers: false,
+                    start: "top 100%",
+                    end: "top 30%",
+                    scrub: 2,
+                }
+            });
+            gsap.from("#gsapInner2 img", {
+                scale: 5,
+                rotateZ: "360deg",
+                // x:100,
+                // y:230,
+                scrollTrigger: {
+                    trigger: "#gsapInner1",
+                    scroller: "body",
+                    markers: false,
+                    start: "top 100%",
+                    end: "top 30%",
+                    scrub: 2,
+                }
+            });
+            gsap.from("#gsapInner3", {
+                scale: 0,
+                scrollTrigger: {
+                    trigger: "#gsapInner1",
+                    scroller: "body",
+                    markers: false,
+                    start: "top 100%",
+                    end: "top 30%",
+                    scrub: 2,
+                }
+            });
+            gsap.from("#gsapHeadingContainer", {
+                x: -800,
+                opacity: 0,
+                scrollTrigger: {
+                    trigger: "#gsapHeadingContainer",
+                    scroller: "body",
+                    markers: false,
+                    start: "top 90%",
+                    end: "top 40%",
+                    scrub: 2,
+                }
+            });
+
+            gsap.from("#gsapWorkingImg ", {
+                transformOrigin: 'left',
+                transform: "scaleX(0)",
+                scrollTrigger: {
+                    trigger: "#gsapWorkingImg",
+                    scroller: "body",
+                    markers: false,
+                    start: "top 80%",
+                    end: "top 30%",
+                    scrub: 2,
+                }
+            });
+            gsap.from("#gsapWorking p", {
+                y: 700,
+                scrollTrigger: {
+                    trigger: "#gsapWorking",
+                    scroller: "body",
+                    markers: false,
+                    start: "top 80%",
+                    end: "top 30%",
+                    scrub: 2,
+                }
+            });
+            gsap.from("#gsapCta p", {
+                opacity: 0,
+                y: -200,
+                scrollTrigger: {
+                    trigger: "#gsapCta",
+                    scroller: "body",
+                    markers: false,
+                    start: "top 70%",
+                    end: "top 30%",
+                    scrub: 2,
+                }
+            });
+            gsap.from("#gsapCtaBtn ", {
+                opacity: 0,
+                y: 100,
+                scrollTrigger: {
+                    trigger: "#gsapCtaBtn",
+                    scroller: "body",
+                    markers: false,
+                    start: "top 140%",
+                    end: "top 40%",
+                    scrub: 2,
+                }
+            });
+
+
         },
 
     );

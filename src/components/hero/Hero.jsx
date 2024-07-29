@@ -11,7 +11,8 @@ import ImageSlider from '../ImageSlider/ImageSlider'
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
+import LogoBanner from '../logobanner/LogoBanner'
+import logo from "../../assets/images/glyphicX.png"
 const Hero = () => {
 
     gsap.registerPlugin(ScrollTrigger);
@@ -229,9 +230,9 @@ const Hero = () => {
 
 
         },
-
     );
 
+   
     return (
         <>
             <ImageSlider></ImageSlider>
@@ -239,6 +240,7 @@ const Hero = () => {
             <Feature></Feature>
             <Collaboration></Collaboration>
             <Working></Working>
+            <LogoBanner></LogoBanner>
             <Testimonial></Testimonial>
             <Team></Team>
             <Cta></Cta>

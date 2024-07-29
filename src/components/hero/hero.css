@@ -14,3 +14,10 @@
 .carousel-item.active {
     display: block;
 }
+#cursor{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 100;
+}

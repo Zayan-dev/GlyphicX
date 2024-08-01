@@ -12,13 +12,13 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import LogoBanner from '../logobanner/LogoBanner'
-import logo from "../../assets/images/glyphicX.png"
+// import logo from "../../assets/images/glyphicX.png"
 const Hero = () => {
 
     gsap.registerPlugin(ScrollTrigger);
     useGSAP(
         () => {
-            let tl = gsap.timeline();
+            // let tl = gsap.timeline();
             gsap.from('#gsapNavItem', {
                 x: -500,
                 duration: 1,
@@ -87,7 +87,6 @@ const Hero = () => {
                 }
             })
             gsap.from("#gsapCollaborationHeading p", {
-                // y: 400,
                 rotateX: "90deg",
                 opacity: 0,
                 stagger: 0.3,
@@ -104,7 +103,6 @@ const Hero = () => {
                 y: 400,
                 opacity: 0,
                 stagger: 0.3,
-                opacity: 0,
                 scrollTrigger: {
                     trigger: "#gsapInner1",
                     scroller: "body",
@@ -117,8 +115,6 @@ const Hero = () => {
             gsap.from("#gsapInner1 img", {
                 scale: 5,
                 rotateZ: "360deg",
-                // x:-100,
-                // y:-230,
                 scrollTrigger: {
                     trigger: "#gsapInner1",
                     scroller: "body",
@@ -132,7 +128,6 @@ const Hero = () => {
                 y: 400,
                 opacity: 0,
                 stagger: 0.3,
-                opacity: 0,
                 scrollTrigger: {
                     trigger: "#gsapInner1",
                     scroller: "body",
@@ -145,8 +140,6 @@ const Hero = () => {
             gsap.from("#gsapInner2 img", {
                 scale: 5,
                 rotateZ: "360deg",
-                // x:100,
-                // y:230,
                 scrollTrigger: {
                     trigger: "#gsapInner1",
                     scroller: "body",
@@ -156,29 +149,18 @@ const Hero = () => {
                     scrub: 2,
                 }
             });
-            gsap.from("#gsapInner3", {
-                scale: 0,
-                scrollTrigger: {
-                    trigger: "#gsapInner1",
-                    scroller: "body",
-                    markers: false,
-                    start: "top 100%",
-                    end: "top 30%",
-                    scrub: 2,
-                }
-            });
-            gsap.from("#gsapHeadingContainer", {
-                x: -800,
-                opacity: 0,
-                scrollTrigger: {
-                    trigger: "#gsapHeadingContainer",
-                    scroller: "body",
-                    markers: false,
-                    start: "top 90%",
-                    end: "top 40%",
-                    scrub: 2,
-                }
-            });
+            // gsap.from("#gsapHeadingContainer", {
+            //     x: -800,
+            //     opacity: 0,
+            //     scrollTrigger: {
+            //         trigger: "#gsapHeadingContainer",
+            //         scroller: "body",
+            //         markers: false,
+            //         start: "top 90%",
+            //         end: "top 40%",
+            //         scrub: 2,
+            //     }
+            // });
 
             gsap.from("#gsapWorkingImg ", {
                 transformOrigin: 'left',
@@ -192,8 +174,11 @@ const Hero = () => {
                     scrub: 2,
                 }
             });
-            gsap.from("#gsapWorking p", {
-                y: 700,
+            gsap.from("#gsapWorkingHeading", {
+                rotateX: "90deg",
+                opacity: 0,
+                stagger: 0.3,
+                duration: 10,
                 scrollTrigger: {
                     trigger: "#gsapWorking",
                     scroller: "body",
@@ -203,36 +188,10 @@ const Hero = () => {
                     scrub: 2,
                 }
             });
-            gsap.from("#gsapCta p", {
-                opacity: 0,
-                y: -200,
-                scrollTrigger: {
-                    trigger: "#gsapCta",
-                    scroller: "body",
-                    markers: false,
-                    start: "top 70%",
-                    end: "top 30%",
-                    scrub: 2,
-                }
-            });
-            gsap.from("#gsapCtaBtn ", {
-                opacity: 0,
-                y: 100,
-                scrollTrigger: {
-                    trigger: "#gsapCtaBtn",
-                    scroller: "body",
-                    markers: false,
-                    start: "top 140%",
-                    end: "top 40%",
-                    scrub: 2,
-                }
-            });
-
-
         },
     );
 
-   
+
     return (
         <>
             <ImageSlider></ImageSlider>

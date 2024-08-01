@@ -9,6 +9,7 @@
     background-size: cover;
     color: var(--background-color);
     background-color: var(--royalBlue-color);
+    overflow: hidden;
 }
 
 /* .cta::before {

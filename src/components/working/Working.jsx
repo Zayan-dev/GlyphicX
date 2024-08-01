@@ -18,23 +18,23 @@ const splitTextIntoDivs = (selector) => {
 };
 const Working = () => {
 
-  useEffect(() => {
-    splitTextIntoDivs("#gsapWorkingHeading");
-    gsap.from("#gsapWorkingHeading .word", {
-      opacity: 0,
-      x: 800, 
-      stagger: 0.1,
-      duration:2,
-      scrollTrigger: {
-        trigger: "#gsapWorkingHeading",
-        scroller: "body",
-        markers: false,
-        start: "top 90%",
-        end: "top 50%",
-        scrub: 2,
-      }
-    });
-  }, []);
+  // useEffect(() => {
+  //   splitTextIntoDivs("#gsapWorkingHeading");
+  //   gsap.from("#gsapWorkingHeading .word", {
+  //     opacity: 0,
+  //     x: 800, 
+  //     stagger: 0.1,
+  //     duration:2,
+  //     scrollTrigger: {
+  //       trigger: "#gsapWorkingHeading",
+  //       scroller: "body",
+  //       markers: false,
+  //       start: "top 90%",
+  //       end: "top 50%",
+  //       scrub: 2,
+  //     }
+  //   });
+  // }, []);
   
   return (
     <div className='working'>

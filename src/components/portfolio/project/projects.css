@@ -1,7 +1,7 @@
 .projects {
     /* border: 1px solid red; */
     height: 100%;
-    position: relative;
+    /* position: relative; */
     overflow: hidden;
 }
 
@@ -16,8 +16,8 @@
     width: 100%;
     top: 0;
     left: 0;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.678);
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.76);
     z-index: 10;
     pointer-events: none;
 }
@@ -53,7 +53,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
+    width: 45%;
 }
 
 .content h1 {
@@ -73,11 +73,14 @@
     z-index: 11;
     top: 0;
     left: 0;
+    right: 0;
     height: 100%;
-    width: 100%;
-    padding: 3rem;
-    /* border: none; */
-    overflow: hidden;
+    margin: 3rem;
+    background-color: white;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .iframe-container {
@@ -95,6 +98,30 @@
 
 .close-btn i {
     color: var(--background-color);
+}
+
+.mainHeading {
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.mainHeading::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: currentColor;
+    bottom: -5px;
+    left: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.mainHeading:hover::after {
+    opacity: 1;
+    width: 100%;
 }
 
 @media screen and (max-width:969px) {

@@ -19,6 +19,8 @@ import urgevid3 from "../../../assets/images/Urge Fragrances/5.mp4"
 import urgevid4 from "../../../assets/images/Urge Fragrances/6.mp4"
 import urgevid5 from "../../../assets/images/Urge Fragrances/7.mp4"
 import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/all';
+import { useGSAP } from '@gsap/react';
 
 const Projects = () => {
     const [modalContent, setModalContent] = useState(null);
@@ -85,24 +87,61 @@ const Projects = () => {
         // Add project3 or any other project content if needed
     };
 
+    gsap.registerPlugin(ScrollTrigger);
+
+    useGSAP(() => {
+            let tl=gsap.timeline({
+                scrollTrigger:{
+                    trigger:".simple",
+                    scroller:"body",
+                    start:"top 50%",
+                    end:"top 10%",
+                    scrub:2,
+                    markers:false,
+                }
+            });
+            tl.from(".project1 .left",{
+                x:-300,
+                opacity:0,
+                duration:10,
+
+            },"anim1")
+            tl.from(".project1 .right",{
+                x:300,
+                opacity:0,
+                duration:1,
+            },"anim1")
+            tl.from(".project2 .left",{
+                x:-300,
+                opacity:0,
+                duration:1,
+            },"anim2")
+            tl.from(".project2 .right",{
+                x:300,
+                opacity:0,
+                duration:1,
+            },"anim2")
+    })
+
+
     return (
         <div className={modalContent ? 'projects' : 'simple'}>
             <div className="project1">
-                <div className="content">
+                <div className="content left">
                     <h1 className='mainHeading' onClick={() => handleDisplay('project1')}>Lambda Theta</h1>
                     <p className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit harum eveniet fugit, cumque dignissimos illum quis vitae saepe excepturi at? Atque, impedit molestiae.</p>
                 </div>
-                <div className="image">
+                <div className="image right">
                     <img onClick={() => handleDisplay('project1')} src={image3} alt="" />
                 </div>
             </div>
 
             <div className="project2">
-                <div className="content">
+                <div className="content left">
                     <h1 className='mainHeading' onClick={() => handleDisplay('project2')}>urge Fragnances</h1>
                     <p className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit harum eveniet fugit, cumque dignissimos illum quis vitae saepe excepturi at? Atque, impedit molestiae.</p>
                 </div>
-                <div className="image">
+                <div className="image right">
                     <img onClick={() => handleDisplay('project2')} src={image} alt="" />
                 </div>
             </div>

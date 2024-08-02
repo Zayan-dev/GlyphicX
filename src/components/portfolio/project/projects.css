@@ -100,14 +100,14 @@
     color: var(--background-color);
 }
 
-.mainHeading {
+.simple .mainHeading {
     position: relative;
     cursor: pointer;
     text-align: center;
     margin-bottom: 10px;
 }
 
-.mainHeading::after {
+.simple .mainHeading::after {
     content: '';
     position: absolute;
     width: 0%;
@@ -119,7 +119,7 @@
     transition: all 0.5s ease;
 }
 
-.mainHeading:hover::after {
+.simple .mainHeading:hover::after {
     opacity: 1;
     width: 100%;
 }

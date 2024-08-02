@@ -149,19 +149,6 @@ const Hero = () => {
                     scrub: 2,
                 }
             });
-            // gsap.from("#gsapHeadingContainer", {
-            //     x: -800,
-            //     opacity: 0,
-            //     scrollTrigger: {
-            //         trigger: "#gsapHeadingContainer",
-            //         scroller: "body",
-            //         markers: false,
-            //         start: "top 90%",
-            //         end: "top 40%",
-            //         scrub: 2,
-            //     }
-            // });
-
             gsap.from("#gsapWorkingImg ", {
                 transformOrigin: 'left',
                 transform: "scaleX(0)",
@@ -188,8 +175,11 @@ const Hero = () => {
                     scrub: 2,
                 }
             });
+
         },
     );
+
+
 
 
     return (

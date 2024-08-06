@@ -1,5 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import "../project/projects.css";
+import { ScrollTrigger } from 'gsap/all';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
 import image from "../../../assets/images/working1.png";
 import image1 from "../../../assets/images/Lambda Theta/2.jpg"
 import image2 from "../../../assets/images/Lambda Theta/3.jpg"
@@ -18,9 +21,6 @@ import urgevid2 from "../../../assets/images/Urge Fragrances/4.mp4"
 import urgevid3 from "../../../assets/images/Urge Fragrances/5.mp4"
 import urgevid4 from "../../../assets/images/Urge Fragrances/6.mp4"
 import urgevid5 from "../../../assets/images/Urge Fragrances/7.mp4"
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/all';
-import { useGSAP } from '@gsap/react';
 
 const Projects = () => {
     const [modalContent, setModalContent] = useState(null);
@@ -84,43 +84,43 @@ const Projects = () => {
                 </video>
             </>
         ),
-        // Add project3 or any other project content if needed
+        //  project3 or any other project content if needed
     };
 
     gsap.registerPlugin(ScrollTrigger);
 
     useGSAP(() => {
-            let tl=gsap.timeline({
-                scrollTrigger:{
-                    trigger:".simple",
-                    scroller:"body",
-                    start:"top 50%",
-                    end:"top 10%",
-                    scrub:2,
-                    markers:false,
-                }
-            });
-            tl.from(".project1 .left",{
-                x:-300,
-                opacity:0,
-                duration:10,
+        let tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".simple",
+                scroller: "body",
+                start: "top 50%",
+                end: "top 10%",
+                scrub: 2,
+                markers: false,
+            }
+        });
+        tl.from(".project1 .left", {
+            x: -300,
+            opacity: 0,
+            duration: 10,
 
-            },"anim1")
-            tl.from(".project1 .right",{
-                x:300,
-                opacity:0,
-                duration:1,
-            },"anim1")
-            tl.from(".project2 .left",{
-                x:-300,
-                opacity:0,
-                duration:1,
-            },"anim2")
-            tl.from(".project2 .right",{
-                x:300,
-                opacity:0,
-                duration:1,
-            },"anim2")
+        }, "anim1")
+        tl.from(".project1 .right", {
+            x: 300,
+            opacity: 0,
+            duration: 1,
+        }, "anim1")
+        tl.from(".project2 .left", {
+            x: -300,
+            opacity: 0,
+            duration: 1,
+        }, "anim2")
+        tl.from(".project2 .right", {
+            x: 300,
+            opacity: 0,
+            duration: 1,
+        }, "anim2")
     })
 
 
@@ -145,7 +145,7 @@ const Projects = () => {
                     <img onClick={() => handleDisplay('project2')} src={image} alt="" />
                 </div>
             </div>
-            {/* Add project3 or any other project if needed */}
+            {/* project3 or any other project if needed */}
 
             {modalContent && (
                 <div className="iframe-container">

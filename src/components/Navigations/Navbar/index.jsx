@@ -2,42 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../Logo";
 import { CustomButton2 } from "../../CustomButton";
-// import gsap from 'gsap';
-// import { useGSAP } from '@gsap/react';
 
 const Navbar = ({ toggle }) => {
-
-  // useGSAP(
-  //   () => {
-  //     let tl = gsap.timeline();
-  //     tl.from('#gsapNavDiv', {
-  //       y: 60,
-  //       scale:0,
-  //       opacity: 0,
-  //       duration: 1.5,
-  //     })
-  //     tl.from('#gsapNavItem', {
-  //       y: -50,
-  //       opacity: 0,
-  //       duration: 1.5,
-  //       stagger: 0.2
-  //     });
-  //     tl.from('#gsapLogo', {
-  //       y: -50,
-  //       opacity: 0,
-  //       duration: 1,
-  //     });
-  //     tl.from('#gsapContactBtn', {
-  //       y: -50,
-  //       opacity: 0,
-  //       duration: 1,
-  //     });
-
-  //   },
-
-  // );
-
-
 
   const listItemStyles =
     "subHeading relative text-lg lg:text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-navyBlue after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center";
@@ -62,11 +28,11 @@ const Navbar = ({ toggle }) => {
                   <p>Services</p>
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/resources" className={listItemStyles} id="gsapNavItem">
                   <p>Resources</p>
                 </Link>
-              </li>
+              </li> */}
             </ul>
             <div id="gsapLogo" className="static md2:absolute md2:left-1/2 md2:transform md2:-translate-x-1/2">
               <Logo />

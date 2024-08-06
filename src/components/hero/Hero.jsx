@@ -12,13 +12,11 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import LogoBanner from '../logobanner/LogoBanner'
-// import logo from "../../assets/images/glyphicX.png"
 const Hero = () => {
 
     gsap.registerPlugin(ScrollTrigger);
     useGSAP(
         () => {
-            // let tl = gsap.timeline();
             gsap.from('#gsapNavItem', {
                 x: -500,
                 duration: 1,

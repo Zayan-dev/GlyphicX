@@ -56,12 +56,12 @@ const Sidebar = ({ isOpen, toggle }) => {
               <p>Services</p>
             </Link>
           </li>
-          <li className={listItemStyles}>
+          {/* <li className={listItemStyles}>
             <Link to="/resources" className={linkStyles} onClick={toggle}>
               <GrResources />
               <p>Resources</p>
             </Link>
-          </li>
+          </li> */}
         </ul>
         <Link to="/contact" className="subHeading px-[12%] block mt-12 w-full" onClick={toggle}>
           <CustomButton text="Contact" />

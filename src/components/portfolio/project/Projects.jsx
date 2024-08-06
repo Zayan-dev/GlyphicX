@@ -32,9 +32,6 @@ const Projects = () => {
 
     const GlyphicX = {
         image1: "/Portfolio/GlyphicX/Glyphicx Profile 24-06-2024-01.jpg",
-        image2: "/Portfolio/GlyphicX/Glyphicx Profile 24-06-2024-02.jpg",
-        image3: "/Portfolio/GlyphicX/Glyphicx Profile 24-06-2024-03.jpg",
-        image4: "/Portfolio/GlyphicX/Glyphicx Profile 24-06-2024-04.jpg",
         image5: "/Portfolio/GlyphicX/Glyphicx Profile 24-06-2024-05.jpg",
         image6: "/Portfolio/GlyphicX/Glyphicx Profile 24-06-2024-06.jpg",
         image7: "/Portfolio/GlyphicX/Glyphicx Profile 24-06-2024-07.jpg",
@@ -122,9 +119,6 @@ const Projects = () => {
         project2: (
             <>
                 <img src={GlyphicX.image1} alt="project2" />
-                <img src={GlyphicX.image2} alt="project2" />
-                <img src={GlyphicX.image3} alt="project2" />
-                <img src={GlyphicX.image4} alt="project2" />
                 <img src={GlyphicX.image5} alt="project2" />
                 <img src={GlyphicX.image6} alt="project2" />
                 <img src={GlyphicX.image7} alt="project2" />
@@ -182,7 +176,7 @@ const Projects = () => {
                 </video>
             </>
         )
-        //  project3 or any other project content if needed
+        // any other project content if needed
     };
 
     gsap.registerPlugin(ScrollTrigger);
@@ -263,7 +257,7 @@ const Projects = () => {
                     <img onClick={() => handleDisplay('project4')} src={shoesAnimation.image1} alt="" />
                 </div>
             </div>
-            {/* project3 or any other project if needed */}
+            {/* any other project if needed */}
 
             {modalContent && (
                 <div className="iframe-container">

@@ -1,4 +1,18 @@
 .logobanner{
     /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
     margin-top: 1rem;
+}
+
+@media screen and (max-width:808px) {
+    .logobanner {
+        padding: 20px;
+        gap: 1rem;
+        margin-top: 4rem;
+        flex-direction: column;
+    }
+
 }

@@ -8,23 +8,23 @@ import logo3 from "../../assets/images/slider/Logos/Urge-01.png"
 const LogoBanner = () => {
     return (
         <div className='logobanner'>
-            <Slider
+            {/* <Slider
                 width="300px"
                 duration={25}
                 pauseOnHover={true}
                 blurBorders={false}
                 blurBoderColor={`var(--background-color)`}
-            >
-                <Slider.Slide>
+            > */}
+                {/* <Slider.Slide> */}
                     <img src={logo1} alt="any" className='w-36' />
-                </Slider.Slide>
-                <Slider.Slide>
+                {/* </Slider.Slide> */}
+                {/* <Slider.Slide> */}
                     <img src={logo2} alt="any2" className='w-36' />
-                </Slider.Slide>
-                <Slider.Slide>
+                {/* </Slider.Slide> */}
+                {/* <Slider.Slide> */}
                     <img src={logo3} alt="any3" className='w-36' />
-                </Slider.Slide>
-            </Slider>
+                {/* </Slider.Slide> */}
+            {/* </Slider> */}
         </div>
     )
 }

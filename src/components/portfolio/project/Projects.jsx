@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import "../project/projects.css";
 import { ScrollTrigger } from 'gsap/all';
 import gsap from 'gsap';
@@ -78,6 +78,24 @@ const Projects = () => {
         video1: "/Portfolio/Shoe Animation/Animation.mp4",
     }
 
+    const uhu = {
+        image1: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-01.jpg",
+        image2: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-02.jpg",
+        image3: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-03.jpg",
+        image4: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-04.jpg",
+        image5: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-05.jpg",
+        image6: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-06.jpg",
+        image7: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-07.jpg",
+        image8: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-08.jpg",
+        image9: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-09.jpg",
+        image10: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-10.jpg",
+        image11: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-11.jpg",
+        image12: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-12.jpg",
+        image13: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-13.jpg",
+        image14: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-14.jpg",
+        image15: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-15.jpg",
+    }
+
     const [modalContent, setModalContent] = useState(null);
 
     const handleDisplay = (project) => {
@@ -88,6 +106,23 @@ const Projects = () => {
     const handleClose = () => {
         setModalContent(null);
     };
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            const modal = document.querySelector('.iframe-container');
+            if (modal && !modal.contains(event.target) && document.querySelector('.projects')) {
+                handleClose();
+            }
+        };
+
+        if (modalContent && document.querySelector('.projects')) {
+            document.addEventListener('mousedown', handleClickOutside);
+        }
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [modalContent]);
 
     const projectContent = {
         project1: (
@@ -155,11 +190,11 @@ const Projects = () => {
                 <img src={LambdaTheta.image1} alt="project3" />
                 <img src={LambdaTheta.image2} alt="project3" />
                 <img src={LambdaTheta.image3} alt="project3" />
-                <video muted autoPlay playsInline loop>
+                <video controls muted autoPlay playsInline loop>
                     <source src={LambdaTheta.video1} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
-                <video muted autoPlay playsInline loop>
+                <video controls muted autoPlay playsInline loop>
                     <source src={LambdaTheta.video2} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
@@ -170,10 +205,29 @@ const Projects = () => {
                 <img src={shoesAnimation.image1} alt="project4" />
                 <img src={shoesAnimation.image2} alt="project4" />
                 <img src={shoesAnimation.image3} alt="project4" />
-                <video muted autoPlay playsInline loop>
+                <video controls muted autoPlay playsInline loop>
                     <source src={shoesAnimation.video1} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
+            </>
+        ),
+        project5: (
+            <>
+                <img style={{ width: "100%" }} src={uhu.image1} alt="project5" />
+                <img style={{ width: "100%" }} src={uhu.image2} alt="project5" />
+                <img style={{ width: "100%" }} src={uhu.image3} alt="project5" />
+                <img style={{ width: "100%" }} src={uhu.image4} alt="project5" />
+                <img style={{ width: "100%" }} src={uhu.image5} alt="project5" />
+                <img style={{ width: "100%" }} src={uhu.image6} alt="project5" />
+                <img style={{ width: "100%" }} src={uhu.image7} alt="project5" />
+                <img style={{ width: "100%" }} src={uhu.image8} alt="project5" />
+                <img style={{ width: "100%" }} src={uhu.image9} alt="project5" />
+                <img style={{ width: "100%" }} src={uhu.image10} alt="project5" />
+                <img style={{ width: "100%" }} src={uhu.image11} alt="project5" />
+                <img style={{ width: "100%" }} src={uhu.image12} alt="project5" />
+                <img style={{ width: "100%" }} src={uhu.image13} alt="project5" />
+                <img style={{ width: "100%" }} src={uhu.image14} alt="project5" />
+                <img style={{ width: "100%" }} src={uhu.image15} alt="project5" />
             </>
         )
         // any other project content if needed
@@ -218,17 +272,8 @@ const Projects = () => {
 
     return (
         <div className={modalContent ? 'projects' : 'simple'}>
-            <div className="project1">
-                <div className="content left">
-                    <h1 className='mainHeading' onClick={() => handleDisplay('project1')}>Eaxee Enterprise</h1>
-                    <p className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit harum eveniet fugit, cumque dignissimos illum quis vitae saepe excepturi at? Atque, impedit molestiae.</p>
-                </div>
-                <div className="image right">
-                    <img onClick={() => handleDisplay('project1')} src={Eaxee.image1} alt="" />
-                </div>
-            </div>
 
-            <div className="project2">
+            <div className="project1">
                 <div className="content left">
                     <h1 className='mainHeading' onClick={() => handleDisplay('project2')}>GlyphicX</h1>
                     <p className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit harum eveniet fugit, cumque dignissimos illum quis vitae saepe excepturi at? Atque, impedit molestiae.</p>
@@ -238,7 +283,27 @@ const Projects = () => {
                 </div>
             </div>
 
+            <div className="project2">
+                <div className="content left">
+                    <h1 className='mainHeading' onClick={() => handleDisplay('project1')}>Eaxee Enterprise</h1>
+                    <p className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit harum eveniet fugit, cumque dignissimos illum quis vitae saepe excepturi at? Atque, impedit molestiae.</p>
+                </div>
+                <div className="image right">
+                    <img onClick={() => handleDisplay('project1')} src={Eaxee.image1} alt="" />
+                </div>
+            </div>
+
             <div className="project1">
+                <div className="content left">
+                    <h1 className='mainHeading' onClick={() => handleDisplay('project5')}>uHu</h1>
+                    <p className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit harum eveniet fugit, cumque dignissimos illum quis vitae saepe excepturi at? Atque, impedit molestiae.</p>
+                </div>
+                <div className="image right">
+                    <img onClick={() => handleDisplay('project5')} src={uhu.image1} alt="" />
+                </div>
+            </div>
+
+            <div className="project2">
                 <div className="content left">
                     <h1 className='mainHeading' onClick={() => handleDisplay('project3')}>Lambda Theta</h1>
                     <p className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit harum eveniet fugit, cumque dignissimos illum quis vitae saepe excepturi at? Atque, impedit molestiae.</p>
@@ -248,7 +313,7 @@ const Projects = () => {
                 </div>
             </div>
 
-            <div className="project2">
+            <div className="project1">
                 <div className="content left">
                     <h1 className='mainHeading' onClick={() => handleDisplay('project4')}>Shoes Animation</h1>
                     <p className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit harum eveniet fugit, cumque dignissimos illum quis vitae saepe excepturi at? Atque, impedit molestiae.</p>
@@ -260,7 +325,7 @@ const Projects = () => {
             {/* any other project if needed */}
 
             {modalContent && (
-                <div className="iframe-container">
+                <div className="iframe-container" onClick={(e) => e.stopPropagation()}>
                     <div className='project-iframe'>
                         {projectContent[modalContent]}
                     </div>

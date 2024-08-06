@@ -1,6 +1,6 @@
 import React from 'react'
 import "../logobanner/logobanner.css"
-import Slider from 'react-infinite-logo-slider'
+// import Slider from 'react-infinite-logo-slider'
 import logo1 from "../../assets/images/slider/Logos/Eaxee-01.png"
 import logo2 from "../../assets/images/slider/Logos/Lambda-Theta-01.png"
 import logo3 from "../../assets/images/slider/Logos/Urge-01.png"

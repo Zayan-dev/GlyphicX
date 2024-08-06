@@ -42,10 +42,10 @@ li {
     /* border: 1px solid red; */
     width: 616px;
     height: 640px;
-    background-image: url("../../../pics/ss.jpg");
+    background-image: url("/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-07.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
 }
 
 @media screen and (max-width:969px) {

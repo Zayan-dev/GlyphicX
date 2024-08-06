@@ -1,7 +1,6 @@
 .projects {
     /* border: 1px solid red; */
     height: 100%;
-    /* position: relative; */
     overflow: hidden;
 }
 
@@ -81,11 +80,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.iframe-container {
-    /* border: 3px solid green; */
-    /* overflow: scroll; */
 }
 
 .close-btn {

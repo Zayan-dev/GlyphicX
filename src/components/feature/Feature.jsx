@@ -4,7 +4,6 @@ import gsap from 'gsap';
 import { useInView } from "react-intersection-observer";
 import animatedvideo from "../../assets/videos/Unlock the Power of Storytelling.mp4";
 
-// Function to split text into words
 const splitTextIntoWords = (selector) => {
   const element = document.querySelector(selector);
   const text = element.textContent;
@@ -51,7 +50,6 @@ const Feature = () => {
   return (
     <div className="feature">
       <div id='gsapFeatureVideo' className="feature-img">
-        {/* <ImageSequenceScroll></ImageSequenceScroll> */}
         <div ref={ref}>
           <video ref={videoRef} src={animatedvideo} alt="video" muted playsInline loop>
             Your browser does not support the video tag.

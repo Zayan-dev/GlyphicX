@@ -1,45 +1,15 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import '../working/working.css';
 import communication from "../../assets/images/working1.png"
 import storytelling from "../../assets/images/working2.png"
 import impact from "../../assets/images/working3.png"
-import gsap from 'gsap';
 
-// Todos
-// Learn more button in mobile mode
-
-
-const splitTextIntoDivs = (selector) => {
-  const element = document.querySelector(selector);
-  const text = element.textContent;
-  const html = text.split(/\s+/).map(word => `<div class="word">${word}</div>`).join(' ');
-  element.innerHTML = html;
-
-};
 const Working = () => {
 
-  // useEffect(() => {
-  //   splitTextIntoDivs("#gsapWorkingHeading");
-  //   gsap.from("#gsapWorkingHeading .word", {
-  //     opacity: 0,
-  //     x: 800, 
-  //     stagger: 0.1,
-  //     duration:2,
-  //     scrollTrigger: {
-  //       trigger: "#gsapWorkingHeading",
-  //       scroller: "body",
-  //       markers: false,
-  //       start: "top 90%",
-  //       end: "top 50%",
-  //       scrub: 2,
-  //     }
-  //   });
-  // }, []);
-  
   return (
     <div className='working'>
       <div id='gsapHeadingContainer'>
-      <p id='gsapWorkingHeading' className='mainHeading font-bold working-heading'>Stand out with our Strategic and Creative APProach</p>
+        <p id='gsapWorkingHeading' className='mainHeading font-bold working-heading'>Stand out with our Strategic and Creative APProach</p>
       </div>
       <div className='working-outer-div'>
 

@@ -32,21 +32,11 @@
     width: 180px;
 }
 
-
-.container {
-    /* border: 1px solid red; */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* height: 100vh; */
-}
-
 .underline-btn {
     background-color: transparent;
     /* border: 1px solid red; */
     position: relative;
     cursor: pointer;
-    /* padding: 10px 0px; */
     outline: none;
 }
 
@@ -65,14 +55,10 @@
     width: 100%;
 }
 
-
-
-
 /* Gsap css */
 .benefit-text {
     display: flex;
     flex-wrap: wrap;
-    /* Allows text to wrap if needed */
 }
 
 .benefit-text .word {
@@ -80,9 +66,7 @@
     margin: 0;
     padding: 0;
     line-height: 1;
-    /* Ensures proper alignment without gaps */
 }
-
 
 @media screen and (max-width:808px) {
     .benefit {

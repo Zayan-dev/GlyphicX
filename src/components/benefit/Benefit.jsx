@@ -14,27 +14,11 @@ const Benefit = () => {
   useEffect(() => {
     splitTextIntoDivs("#gsapBenefitHeading");
 
-  //   gsap.from("#gsapBenefitHeading .word", {
-  //     opacity: 0,
-  //     x: 400, 
-  //     stagger: 0.1,
-  //     // ease: "bounce.out",
-  //     scrollTrigger: {
-  //       trigger: "#gsapBenefitHeading",
-  //       scroller: "body",
-  //       markers: false,
-  //       start: "top 90%",
-  //       end: "top 50%",
-  //       scrub: 2,
-  //     }
-  //   });
-  // }, []);
-
     gsap.from("#gsapBenefitHeading .word", {
       opacity: 0,
-      x: 800, 
+      x: 800,
       stagger: 0.1,
-      duration:2,
+      duration: 2,
       scrollTrigger: {
         trigger: "#gsapBenefitHeading",
         scroller: "body",
@@ -63,9 +47,6 @@ const Benefit = () => {
             <a href='/' className="underline-btn">Learn More</a>
           </div>
         </p>
-        {/* <div className="benefit-intro-button">
-            <CustomButton2 text="Learn More" />
-          </div> */}
       </div>
     </div>
   );

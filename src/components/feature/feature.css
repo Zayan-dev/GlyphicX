@@ -48,7 +48,6 @@
 .feature-text {
     display: flex;
     flex-wrap: wrap;
-    /* Allows text to wrap if needed */
 }
 
 .feature-text .word {
@@ -56,7 +55,6 @@
     margin: 0;
     padding: 0;
     line-height: 1;
-    /* Ensures proper alignment without gaps */
 }
 
 

@@ -24,9 +24,6 @@ const LogoBanner = () => {
                 <Slider.Slide>
                     <img src={logo3} alt="any3" className='w-36' />
                 </Slider.Slide>
-                {/* <Slider.Slide>
-                    <img src={logo4} alt="any3" className='w-36' />
-                </Slider.Slide> */}
             </Slider>
         </div>
     )

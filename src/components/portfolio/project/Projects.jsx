@@ -97,12 +97,14 @@ const Projects = () => {
     // }
 
     const [modalContent, setModalContent] = useState(null);
+    const [clickedElement, setClickedElement] = useState(null);
 
-    const handleDisplay = (project) => {
-        window.scrollTo(0, 0);
+    const handleDisplay = (project, event) => {
+      setClickedElement(event.currentTarget);
+      window.scrollTo(0, 0);
         document.body.style.overflow = "hidden"; // Add this line
         document.documentElement.style.overflow = "hidden"; // Add this line
-        setModalContent(project);
+      setModalContent(project);
       };
   
 
@@ -111,6 +113,10 @@ const Projects = () => {
       document.documentElement.style.overflowX = "hidden"; // Add this line
     //   document.body.style.overflowY = "scroll"; // Add this line
       document.documentElement.style.overflowY = "scroll"; // Add this line
+
+      if (clickedElement) {
+        clickedElement.scrollIntoView({ block: "center"});
+      }
       setModalContent(null);
     };
 
@@ -282,53 +288,53 @@ const Projects = () => {
 
             <div className="project1">
                 <div className="content left">
-                    <h1 className='mainHeading' onClick={() => handleDisplay('project2')}>GlyphicX</h1>
+                    <h1 className='mainHeading' onClick={(e) => handleDisplay('project2',e)}>GlyphicX</h1>
                     <p className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit harum eveniet fugit, cumque dignissimos illum quis vitae saepe excepturi at? Atque, impedit molestiae.</p>
                 </div>
                 <div className="image right">
-                    <img onClick={() => handleDisplay('project2')} src={GlyphicX.image1} alt="" />
+                    <img onClick={(e) => handleDisplay('project2',e)} src={GlyphicX.image1} alt="" />
                 </div>
             </div>
 
             <div className="project2">
                 <div className="content left">
-                    <h1 className='mainHeading' onClick={() => handleDisplay('project1')}>Eaxee Enterprise</h1>
+                    <h1 className='mainHeading' onClick={(e) => handleDisplay('project1',e)}>Eaxee Enterprise</h1>
                     <p className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit harum eveniet fugit, cumque dignissimos illum quis vitae saepe excepturi at? Atque, impedit molestiae.</p>
                 </div>
                 <div className="image right">
-                    <img onClick={() => handleDisplay('project1')} src={Eaxee.image1} alt="" />
+                    <img onClick={(e) => handleDisplay('project1',e)} src={Eaxee.image1} alt="" />
                 </div>
             </div>
 {/* 
             <div className="project1">
                 <div className="content left">
-                    <h1 className='mainHeading' onClick={() => handleDisplay('project5')}>Director’s Treatment</h1>
+                    <h1 className='mainHeading' onClick={(e) => handleDisplay('project5')}>Director’s Treatment</h1>
                     <h2 className='subHeading my-3' style={{ fontSize: "20px" }}>Television Commercial</h2>
                     <p className='para'>The ad highlights the universal application and strength of a UHU adhesive tube and was designed to leverage the hype around the release of House of the Dragon by nostalgia baiting a popular scene from Game of Thrones.</p>
                     <p className='mt-3'> This pitch documents is the first step in the pre-production and essential to outline the perspective, vision, and story ideas for the job and explain how the TV commercial will be brought to life</p>
                 </div>
                 <div className="image right">
-                    <img onClick={() => handleDisplay('project5')} src={uhu.image1} alt="" />
+                    <img onClick={(e) => handleDisplay('project5')} src={uhu.image1} alt="" />
                 </div>
             </div> */}
 
             <div className="project1">
                 <div className="content left">
-                    <h1 className='mainHeading' onClick={() => handleDisplay('project3')}>Lambda Theta</h1>
+                    <h1 className='mainHeading' onClick={(e) => handleDisplay('project3',e)}>Lambda Theta</h1>
                     <p className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit harum eveniet fugit, cumque dignissimos illum quis vitae saepe excepturi at? Atque, impedit molestiae.</p>
                 </div>
                 <div className="image right">
-                    <img onClick={() => handleDisplay('project3')} src={LambdaTheta.image3} alt="" />
+                    <img onClick={(e) => handleDisplay('project3',e)} src={LambdaTheta.image3} alt="" />
                 </div>
             </div>
 
             {/* <div className="project1">
                 <div className="content left">
-                    <h1 className='mainHeading' onClick={() => handleDisplay('project4')}>Product Animation</h1>
+                    <h1 className='mainHeading' onClick={(e) => handleDisplay('project4')}>Product Animation</h1>
                     <p className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit harum eveniet fugit, cumque dignissimos illum quis vitae saepe excepturi at? Atque, impedit molestiae.</p>
                 </div>
                 <div className="image right">
-                    <img onClick={() => handleDisplay('project4')} src={shoesAnimation.image1} alt="" />
+                    <img onClick={(e) => handleDisplay('project4')} src={shoesAnimation.image1} alt="" />
                 </div>
             </div> */}
             {/* any other project if needed */}

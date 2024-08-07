@@ -18,7 +18,7 @@ const Cta = () => {
         markers: false,
         start: "top 70%",
         end: "top 30%",
-        scrub: 2,
+        // scrub: 1,
       }
     });
     gsap.from("#gsapCtaBtn ", {
@@ -28,9 +28,9 @@ const Cta = () => {
         trigger: "#gsapCtaBtn",
         scroller: "body",
         markers: false,
-        start: "top 140%",
+        start: "top 80%",
         end: "top 40%",
-        scrub: 2,
+        // scrub: 1,
       }
     });
   })

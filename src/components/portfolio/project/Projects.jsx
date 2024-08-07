@@ -296,7 +296,7 @@ const Projects = () => {
             <div className="project1">
                 <div className="content left">
                     <h1 className='mainHeading' onClick={() => handleDisplay('project5')}>Director’s Treatment</h1>
-                    <h2 className='subHeading my-3' style={{fontSize:"20px"}}>Television Commercial</h2>
+                    <h2 className='subHeading my-3' style={{ fontSize: "20px" }}>Television Commercial</h2>
                     <p className='para'>The ad highlights the universal application and strength of a UHU adhesive tube and was designed to leverage the hype around the release of House of the Dragon by nostalgia baiting a popular scene from Game of Thrones.</p>
                     <p className='mt-3'> This pitch documents is the first step in the pre-production and essential to outline the perspective, vision, and story ideas for the job and explain how the TV commercial will be brought to life</p>
                 </div>

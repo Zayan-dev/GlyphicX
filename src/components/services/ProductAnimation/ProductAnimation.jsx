@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react'
-import "../graphic design/graphic.css"
-import img1 from "/Portfolio/GlyphicX/Glyphicx Profile 24-06-2024-30.jpg"
-import img2 from "/Portfolio/Lambda Theta/4.jpg"
-import img3 from "/Portfolio/EAXEE/Brand Guideline/EAXEE-29.jpg"
+import "../ProductAnimation/productAnimation.css"
+import img1 from "/Portfolio/Shoe Animation/1.jpg"
+import img2 from "/Portfolio/Shoe Animation/2.jpg"
+import img3 from "/Portfolio/Shoe Animation/3.jpg"
 // import urge from "../../../../src/assets/videos/Urge_Fragrances.mp4"
 import star from "../../../assets/images/Star.png"
-const Graphic = () => {
+const ProductAnimation = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const videoRef = useRef(null);
     const slides = [
@@ -35,27 +35,26 @@ const Graphic = () => {
         }
     }, [currentIndex, slides]);
     return (
-        <div className='graphic'>
+        <div className='proAnimation'>
             <div className='text'>
-                <h1 className='mainHeading'>Graphic Design</h1>
-                <p className='para'>Extraordinary design can transform your business. Whether you need a striking logo, captivating packaging, or an eye-catching illustration, our team of skilled designers is here to bring your vision to life.</p>
-                <p className='para'>Compelling brand identities that resonate with your target audience, from logo design to brand guidelines, we help you establish a strong and memorable brand presence.</p>
+                <h1 className='mainHeading'>Product Animation</h1>
+                <p className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit harum eveniet fugit, cumque dignissimos illum quis vitae saepe excepturi at? Atque, impedit molestiae.</p>
 
-                <div className='para list'>
-                    <li><img src={star} alt="star" style={{ height: "25px" }} />Visual identity graphic design</li>
-                    <li><img src={star} alt="star" style={{ height: "25px" }} /> Marketing & advertising graphic design</li>
-                    <li><img src={star} alt="star" style={{ height: "25px" }} /> Publication graphic design</li>
-                    <li><img src={star} alt="star" style={{ height: "25px" }} /> Packaging graphic design</li>
-                    <li><img src={star} alt="star" style={{ height: "25px" }} /> Motion graphic design</li>
-                    <li><img src={star} alt="star" style={{ height: "25px" }} /> Environmental graphic design</li>
-                    <li><img src={star} alt="star" style={{ height: "25px" }} /> Art and illustration for graphic design</li>
-                </div>
+                {/* <div className='para list'>
+                    <li><img src={star} alt="star" style={{ height: "25px" }} />Visual identity proAnimation design</li>
+                    <li><img src={star} alt="star" style={{ height: "25px" }} /> Marketing & advertising proAnimation design</li>
+                    <li><img src={star} alt="star" style={{ height: "25px" }} /> Publication proAnimation design</li>
+                    <li><img src={star} alt="star" style={{ height: "25px" }} /> Packaging proAnimation design</li>
+                    <li><img src={star} alt="star" style={{ height: "25px" }} /> Motion proAnimation design</li>
+                    <li><img src={star} alt="star" style={{ height: "25px" }} /> Environmental proAnimation design</li>
+                    <li><img src={star} alt="star" style={{ height: "25px" }} /> Art and illustration for proAnimation design</li>
+                </div> */}
             </div>
-            <div className="graphic-slider">
+            <div className="proAnimation-slider">
                 {slides.map((slide, index) => (
                     <div
                         key={index}
-                        className={`graphic-slide ${index === currentIndex ? 'active' : ''}`}
+                        className={`proAnimation-slide ${index === currentIndex ? 'active' : ''}`}
                     >
                         {slide.type === 'image' ? (
                             <img src={slide.src} alt={`slide-${index}`} />
@@ -74,4 +73,4 @@ const Graphic = () => {
     )
 }
 
-export default Graphic
+export default ProductAnimation

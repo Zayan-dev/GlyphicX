@@ -6,10 +6,12 @@ import FinalProduct from './finalPro/FinalProduct'
 import Sketch from './sketch/Sketch'
 import Cta from '../cta/Cta'
 import Graphic from './graphic design/Graphic'
+import Commercial from './commercial/Commercial'
+import ProductAnimation from './ProductAnimation/ProductAnimation'
 
 const Service = () => {
 
-  
+
   return (
     <div>
       <ServiceHero heading="Translate ideas into imPactful content" para="Discover our comprehensive range of services that combine design and business expertise." ></ServiceHero>
@@ -22,6 +24,10 @@ const Service = () => {
       <Sketch></Sketch>
       <br />
       <Graphic></Graphic>
+      <br />
+      <Commercial></Commercial>
+      <br />
+      <ProductAnimation></ProductAnimation>
       <Cta></Cta>
     </div>
   )

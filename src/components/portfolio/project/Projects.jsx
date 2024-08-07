@@ -71,30 +71,30 @@ const Projects = () => {
         video2: "/Portfolio/Lambda Theta/5.m4v",
     }
 
-    const shoesAnimation = {
-        image1: "/Portfolio/Shoe Animation/1.jpg",
-        image2: "/Portfolio/Shoe Animation/2.jpg",
-        image3: "/Portfolio/Shoe Animation/3.jpg",
-        video1: "/Portfolio/Shoe Animation/Animation.mp4",
-    }
+    // const shoesAnimation = {
+    //     image1: "/Portfolio/Shoe Animation/1.jpg",
+    //     image2: "/Portfolio/Shoe Animation/2.jpg",
+    //     image3: "/Portfolio/Shoe Animation/3.jpg",
+    //     video1: "/Portfolio/Shoe Animation/Animation.mp4",
+    // }
 
-    const uhu = {
-        image1: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-01.jpg",
-        image2: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-02.jpg",
-        image3: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-03.jpg",
-        image4: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-04.jpg",
-        image5: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-05.jpg",
-        image6: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-06.jpg",
-        image7: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-07.jpg",
-        image8: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-08.jpg",
-        image9: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-09.jpg",
-        image10: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-10.jpg",
-        image11: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-11.jpg",
-        image12: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-12.jpg",
-        image13: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-13.jpg",
-        image14: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-14.jpg",
-        image15: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-15.jpg",
-    }
+    // const uhu = {
+    //     image1: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-01.jpg",
+    //     image2: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-02.jpg",
+    //     image3: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-03.jpg",
+    //     image4: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-04.jpg",
+    //     image5: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-05.jpg",
+    //     image6: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-06.jpg",
+    //     image7: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-07.jpg",
+    //     image8: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-08.jpg",
+    //     image9: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-09.jpg",
+    //     image10: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-10.jpg",
+    //     image11: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-11.jpg",
+    //     image12: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-12.jpg",
+    //     image13: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-13.jpg",
+    //     image14: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-14.jpg",
+    //     image15: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-15.jpg",
+    // }
 
     const [modalContent, setModalContent] = useState(null);
 
@@ -200,36 +200,36 @@ const Projects = () => {
                 </video>
             </>
         ),
-        project4: (
-            <>
-                <img src={shoesAnimation.image1} alt="project4" />
-                <img src={shoesAnimation.image2} alt="project4" />
-                <img src={shoesAnimation.image3} alt="project4" />
-                <video controls muted autoPlay playsInline loop>
-                    <source src={shoesAnimation.video1} type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
-            </>
-        ),
-        project5: (
-            <>
-                <img style={{ width: "100%" }} src={uhu.image1} alt="project5" />
-                <img style={{ width: "100%" }} src={uhu.image2} alt="project5" />
-                <img style={{ width: "100%" }} src={uhu.image3} alt="project5" />
-                <img style={{ width: "100%" }} src={uhu.image4} alt="project5" />
-                <img style={{ width: "100%" }} src={uhu.image5} alt="project5" />
-                <img style={{ width: "100%" }} src={uhu.image6} alt="project5" />
-                <img style={{ width: "100%" }} src={uhu.image7} alt="project5" />
-                <img style={{ width: "100%" }} src={uhu.image8} alt="project5" />
-                <img style={{ width: "100%" }} src={uhu.image9} alt="project5" />
-                <img style={{ width: "100%" }} src={uhu.image10} alt="project5" />
-                <img style={{ width: "100%" }} src={uhu.image11} alt="project5" />
-                <img style={{ width: "100%" }} src={uhu.image12} alt="project5" />
-                <img style={{ width: "100%" }} src={uhu.image13} alt="project5" />
-                <img style={{ width: "100%" }} src={uhu.image14} alt="project5" />
-                <img style={{ width: "100%" }} src={uhu.image15} alt="project5" />
-            </>
-        )
+        // project4: (
+        //     <>
+        //         <img src={shoesAnimation.image1} alt="project4" />
+        //         <img src={shoesAnimation.image2} alt="project4" />
+        //         <img src={shoesAnimation.image3} alt="project4" />
+        //         <video controls muted autoPlay playsInline loop>
+        //             <source src={shoesAnimation.video1} type="video/mp4" />
+        //             Your browser does not support the video tag.
+        //         </video>
+        //     </>
+        // ),
+        // project5: (
+        //     <>
+        //         <img style={{ width: "100%" }} src={uhu.image1} alt="project5" />
+        //         <img style={{ width: "100%" }} src={uhu.image2} alt="project5" />
+        //         <img style={{ width: "100%" }} src={uhu.image3} alt="project5" />
+        //         <img style={{ width: "100%" }} src={uhu.image4} alt="project5" />
+        //         <img style={{ width: "100%" }} src={uhu.image5} alt="project5" />
+        //         <img style={{ width: "100%" }} src={uhu.image6} alt="project5" />
+        //         <img style={{ width: "100%" }} src={uhu.image7} alt="project5" />
+        //         <img style={{ width: "100%" }} src={uhu.image8} alt="project5" />
+        //         <img style={{ width: "100%" }} src={uhu.image9} alt="project5" />
+        //         <img style={{ width: "100%" }} src={uhu.image10} alt="project5" />
+        //         <img style={{ width: "100%" }} src={uhu.image11} alt="project5" />
+        //         <img style={{ width: "100%" }} src={uhu.image12} alt="project5" />
+        //         <img style={{ width: "100%" }} src={uhu.image13} alt="project5" />
+        //         <img style={{ width: "100%" }} src={uhu.image14} alt="project5" />
+        //         <img style={{ width: "100%" }} src={uhu.image15} alt="project5" />
+        //     </>
+        // )
         // any other project content if needed
     };
 
@@ -292,7 +292,7 @@ const Projects = () => {
                     <img onClick={() => handleDisplay('project1')} src={Eaxee.image1} alt="" />
                 </div>
             </div>
-
+{/* 
             <div className="project1">
                 <div className="content left">
                     <h1 className='mainHeading' onClick={() => handleDisplay('project5')}>Director’s Treatment</h1>
@@ -303,9 +303,9 @@ const Projects = () => {
                 <div className="image right">
                     <img onClick={() => handleDisplay('project5')} src={uhu.image1} alt="" />
                 </div>
-            </div>
+            </div> */}
 
-            <div className="project2">
+            <div className="project1">
                 <div className="content left">
                     <h1 className='mainHeading' onClick={() => handleDisplay('project3')}>Lambda Theta</h1>
                     <p className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit harum eveniet fugit, cumque dignissimos illum quis vitae saepe excepturi at? Atque, impedit molestiae.</p>
@@ -315,7 +315,7 @@ const Projects = () => {
                 </div>
             </div>
 
-            <div className="project1">
+            {/* <div className="project1">
                 <div className="content left">
                     <h1 className='mainHeading' onClick={() => handleDisplay('project4')}>Product Animation</h1>
                     <p className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit harum eveniet fugit, cumque dignissimos illum quis vitae saepe excepturi at? Atque, impedit molestiae.</p>
@@ -323,7 +323,7 @@ const Projects = () => {
                 <div className="image right">
                     <img onClick={() => handleDisplay('project4')} src={shoesAnimation.image1} alt="" />
                 </div>
-            </div>
+            </div> */}
             {/* any other project if needed */}
 
             {modalContent && (

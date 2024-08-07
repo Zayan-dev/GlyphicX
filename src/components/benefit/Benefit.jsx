@@ -18,14 +18,14 @@ const Benefit = () => {
       opacity: 0,
       x: 800,
       stagger: 0.1,
-      duration: 2,
+      // duration: 2,
       scrollTrigger: {
         trigger: "#gsapBenefitHeading",
         scroller: "body",
         markers: false,
         start: "top 90%",
         end: "top 50%",
-        scrub: 2,
+        // scrub: 2,
       }
     });
   }, []);

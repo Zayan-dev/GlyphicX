@@ -42,7 +42,7 @@ const Feature = () => {
         markers: false,
         start: "top 90%",
         end: "top 50%",
-        scrub: 2,
+        // scrub: 2,
       }
     });
   }, []);

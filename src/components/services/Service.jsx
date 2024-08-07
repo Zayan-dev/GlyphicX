@@ -5,6 +5,7 @@ import Visualization from './visualization/Visualization'
 import FinalProduct from './finalPro/FinalProduct'
 import Sketch from './sketch/Sketch'
 import Cta from '../cta/Cta'
+import Graphic from './graphic design/Graphic'
 
 const Service = () => {
 
@@ -20,6 +21,7 @@ const Service = () => {
       <br />
       <Sketch></Sketch>
       <br />
+      <Graphic></Graphic>
       <Cta></Cta>
     </div>
   )

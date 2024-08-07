@@ -44,7 +44,7 @@ const Hero = () => {
                     markers: false,
                     start: "top 90%",
                     end: "top 40%",
-                    scrub: 2,
+                    // // scrub: 2,
                 }
             });
             gsap.from("#gsapBenefitIntro", {
@@ -56,7 +56,7 @@ const Hero = () => {
                     markers: false,
                     start: "top 90%",
                     end: "top 40%",
-                    scrub: 2,
+                    // // scrub: 2,
                 }
             });
             gsap.from("#gsapFeatureVideo", {
@@ -69,7 +69,7 @@ const Hero = () => {
                     markers: false,
                     start: "top 90%",
                     end: "top 30%",
-                    scrub: 1,
+                    // scrub: 1,
                 }
             })
             gsap.from("#gsapFeatureText", {
@@ -81,7 +81,7 @@ const Hero = () => {
                     markers: false,
                     start: "top 100%",
                     end: "top 30%",
-                    scrub: 2,
+                    // scrub: 2,
                 }
             })
             gsap.from("#gsapCollaborationHeading p", {
@@ -92,9 +92,9 @@ const Hero = () => {
                     trigger: "#gsapCollaborationHeading",
                     scroller: "body",
                     markers: false,
-                    start: "top 100%",
-                    end: "top 30%",
-                    scrub: 5,
+                    start: "top 60%",
+                    end: "top 10%",
+                    // scrub: 5,
                 }
             });
             gsap.from("#gsapInner1 p", {
@@ -107,7 +107,7 @@ const Hero = () => {
                     markers: false,
                     start: "top 100%",
                     end: "top 30%",
-                    scrub: 2,
+                    // scrub: 2,
                 }
             });
             gsap.from("#gsapInner1 img", {
@@ -119,7 +119,7 @@ const Hero = () => {
                     markers: false,
                     start: "top 100%",
                     end: "top 30%",
-                    scrub: 2,
+                    // scrub: 2,
                 }
             });
             gsap.from("#gsapInner2 p", {
@@ -132,7 +132,7 @@ const Hero = () => {
                     markers: false,
                     start: "top 100%",
                     end: "top 30%",
-                    scrub: 2,
+                    // scrub: 2,
                 }
             });
             gsap.from("#gsapInner2 img", {
@@ -144,7 +144,7 @@ const Hero = () => {
                     markers: false,
                     start: "top 100%",
                     end: "top 30%",
-                    scrub: 2,
+                    // scrub: 2,
                 }
             });
             gsap.from("#gsapWorkingImg ", {
@@ -156,29 +156,26 @@ const Hero = () => {
                     markers: false,
                     start: "top 80%",
                     end: "top 30%",
-                    scrub: 2,
+                    // scrub: 2,
                 }
             });
             gsap.from("#gsapWorkingHeading", {
                 rotateX: "90deg",
                 opacity: 0,
                 stagger: 0.3,
-                duration: 10,
+                // duration: 10,
                 scrollTrigger: {
                     trigger: "#gsapWorking",
                     scroller: "body",
                     markers: false,
                     start: "top 80%",
                     end: "top 30%",
-                    scrub: 2,
+                    // scrub: 2,
                 }
             });
 
         },
     );
-
-
-
 
     return (
         <>

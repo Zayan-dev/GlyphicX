@@ -70,7 +70,7 @@
 .project-iframe {
     /* border: 1px solid red; */
     /* background-color: white; */
-    position: absolute;
+    position: fixed;
     z-index: 11;
     top: 0;
     left: 0;
@@ -125,6 +125,17 @@
     width: 100%;
 }
 
+.overlay{
+    /* border: 10px solid red; */
+    /* background-color: aqua; */
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    overflow-y: scroll; */
+}
 @media screen and (max-width:969px) {
     .projects {
         margin-top: 4rem;

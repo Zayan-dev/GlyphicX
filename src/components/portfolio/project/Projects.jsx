@@ -106,13 +106,13 @@ const Projects = () => {
       };
   
 
-      const handleClose = () => {
-        //   document.body.style.overflowX = "hidden"; // Add this line
-          document.documentElement.style.overflowX = "hidden"; // Add this line
-        //   document.body.style.overflowY = "scroll"; // Add this line
-          document.documentElement.style.overflowY = "scroll"; // Add this line
-          setModalContent(null);
-        };
+    const handleClose = () => {
+    //   document.body.style.overflowX = "hidden"; // Add this line
+      document.documentElement.style.overflowX = "hidden"; // Add this line
+    //   document.body.style.overflowY = "scroll"; // Add this line
+      document.documentElement.style.overflowY = "scroll"; // Add this line
+      setModalContent(null);
+    };
 
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -334,6 +334,8 @@ const Projects = () => {
             {/* any other project if needed */}
 
             {modalContent && (
+                <div className="overlay">
+
                 <div className="iframe-container" onClick={(e) => e.stopPropagation()}>
                     <div className='project-iframe'>
                         {projectContent[modalContent]}
@@ -341,6 +343,7 @@ const Projects = () => {
                     <button className="close-btn" onClick={handleClose}>
                         <i className="fa-solid fa-xmark fa-2xl"></i>
                     </button>
+                </div>
                 </div>
             )}
         </div>

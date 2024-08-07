@@ -8,6 +8,8 @@ import Cta from '../cta/Cta'
 import Graphic from './graphic design/Graphic'
 import Commercial from './commercial/Commercial'
 import ProductAnimation from './ProductAnimation/ProductAnimation'
+import UserInterface from './user interface/UserInterface'
+import WebDev from './web dev/WebDev'
 
 const Service = () => {
 
@@ -28,6 +30,10 @@ const Service = () => {
       <Commercial></Commercial>
       <br />
       <ProductAnimation></ProductAnimation>
+      <br />
+      <UserInterface></UserInterface>
+      <br />
+      <WebDev></WebDev>
       <Cta></Cta>
     </div>
   )

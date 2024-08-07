@@ -1,26 +1,66 @@
-import React from 'react'
-import "../sketch/sketch.css"
-import star from "../../../assets/images/Star.png"
+import React, { useEffect, useRef, useState } from 'react'
+import "../user interface/userInterface.css"
+import img1 from "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-01.jpg"
+import img2 from "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-02.jpg"
+// import urge from "../../../../src/assets/videos/Urge_Fragrances.mp4"
+// import star from "../../../assets/images/Star.png"
+const UserInterface = () => {
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const videoRef = useRef(null);
+    const slides = [
+        { type: 'image', src: img1 },
+        { type: 'image', src: img2 },
+        // { type: 'video', src: urge }
+    ];
 
-const Sketch = () => {
+    useEffect(() => {
+        const interval = setInterval(() => {
+            if (slides[currentIndex].type === 'video' && videoRef.current) {
+                if (videoRef.current.ended) {
+                    setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+                }
+            } else {
+                setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+            }
+        }, 5000);
+
+        return () => clearInterval(interval);
+    }, [currentIndex, slides.length]);
+
+    useEffect(() => {
+        if (slides[currentIndex].type === 'video' && videoRef.current) {
+            videoRef.current.play();
+        }
+    }, [currentIndex, slides]);
     return (
-        <div className='sketch'>
-            <div className="sketch-pic">
+        <div className='userinterface'>
+            <div className='text'>
+                <h1 className='mainHeading'>uI Design</h1>
+                <p className='para'>Elevate your product above expectations through our expertise in modern design and our commitment to the art of UI/UX
+                </p>
+                <p className='para'>Let us help you launch or overhaul your product with the right design strategy & user requirements, allowing for a better user experience!</p>
             </div>
-
-            <div className='sketch-text'>
-                <h1 className='mainHeading'>Sketch Your vision Before Production Begins</h1>
-                <p className='para'>At GlyphicX, we help our clients bring their ideas to life by providing professional storyboarding services. Working closely with you, we sketch out your vision before production begins, ensuring that every detail is captured and your project is set up for success. </p>
-
-                <div className='para sketch-list'>
-                    <li><img src={star} alt="star" style={{ height: "25px", mixBlendMode: "difference" }} /> Clarity of Vision</li>
-                    <li><img src={star} alt="star" style={{ height: "25px", mixBlendMode: "difference" }} /> Collaborative Feedback </li>
-                    <li><img src={star} alt="star" style={{ height: "25px", mixBlendMode: "difference" }} /> Reduced Risks</li>
-                </div>
+            <div className="userinterface-slider">
+                {slides.map((slide, index) => (
+                    <div
+                        key={index}
+                        className={`userinterface-slide ${index === currentIndex ? 'active' : ''}`}
+                    >
+                        {slide.type === 'image' ? (
+                            <img src={slide.src} alt={`slide-${index}`} />
+                        ) : (
+                            <video
+                                ref={videoRef}
+                                src={slide.src}
+                                onEnded={() => setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length)}
+                                muted
+                            />
+                        )}
+                    </div>
+                ))}
             </div>
-
         </div>
     )
 }
 
-export default Sketch
+export default UserInterface

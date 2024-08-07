@@ -1,8 +1,8 @@
-.userinterface {
+.webdev {
     /* border: 1px solid red; */
     padding: 112px 64px 112px 64px;
-    /* background-image: url("../../../assets/bg.png"); */
-    color: var(--foreground-color);
+    background-image: url("../../../assets/bg.png");
+    color: var(--background-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,7 +39,7 @@ li {
 }
 
 
-.userinterface-slider {
+.webdev-slider {
     /* border: 1px solid red; */
     position: relative;
     width: 100%;
@@ -48,7 +48,7 @@ li {
     overflow: hidden;
 }
 
-.userinterface-slide {
+.webdev-slide {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -56,32 +56,32 @@ li {
     transition: opacity 0.5s ease-in-out;
 }
 
-.userinterface-slide.active {
+.webdev-slide.active {
     opacity: 1;
 }
 
-.userinterface-slider img,
-.userinterface-slider video {
+.webdev-slider img,
+.webdev-slider video {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
 @media screen and (min-width:1100px) {
-    .userinterface-slider {
+    .webdev-slider {
         /* border: 1px solid red; */
         width: 1500px;
     }   
 }
 
 @media screen and (max-width:969px) {
-    .userinterface {
+    .webdev {
         flex-direction: column;
     }
 }
 
 @media screen and (max-width:808px) {
-    .userinterface {
+    .webdev {
         padding: 20px;
         gap: 1rem;
     }

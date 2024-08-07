@@ -1,8 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import "../user interface/userInterface.css"
-import img1 from "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-01.jpg"
-import img2 from "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-02.jpg"
-// import urge from "../../../../src/assets/videos/Urge_Fragrances.mp4"
+import img1 from "../../../assets/images/figmass.png"
+import img2 from "../../../assets/images/figma_2_ss.png"
 // import star from "../../../assets/images/Star.png"
 const UserInterface = () => {
     const [currentIndex, setCurrentIndex] = useState(0);

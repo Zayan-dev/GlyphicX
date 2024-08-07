@@ -100,12 +100,19 @@ const Projects = () => {
 
     const handleDisplay = (project) => {
         window.scrollTo(0, 0);
+        document.body.style.overflow = "hidden"; // Add this line
+        document.documentElement.style.overflow = "hidden"; // Add this line
         setModalContent(project);
-    };
+      };
+  
 
-    const handleClose = () => {
-        setModalContent(null);
-    };
+      const handleClose = () => {
+        //   document.body.style.overflowX = "hidden"; // Add this line
+          document.documentElement.style.overflowX = "hidden"; // Add this line
+        //   document.body.style.overflowY = "scroll"; // Add this line
+          document.documentElement.style.overflowY = "scroll"; // Add this line
+          setModalContent(null);
+        };
 
     useEffect(() => {
         const handleClickOutside = (event) => {

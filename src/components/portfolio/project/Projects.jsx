@@ -123,12 +123,12 @@ const Projects = () => {
     useEffect(() => {
         const handleClickOutside = (event) => {
             const modal = document.querySelector('.iframe-container');
-            if (modal && !modal.contains(event.target) && document.querySelector('.projects')) {
+            if (modal && !modal.contains(event.target) && document.querySelector('.overlay')) {
                 handleClose();
             }
         };
 
-        if (modalContent && document.querySelector('.projects')) {
+        if (modalContent && document.querySelector('.overlay')) {
             document.addEventListener('mousedown', handleClickOutside);
         }
 
@@ -340,10 +340,10 @@ const Projects = () => {
             {/* any other project if needed */}
 
             {modalContent && (
-                <div className="overlay">
+                <div className="overlay" >
 
-                <div className="iframe-container" onClick={(e) => e.stopPropagation()}>
-                    <div className='project-iframe'>
+                <div className="iframe-container" onClick={(e) => e.stopPropagation()} >
+                    <div className='project-iframe' >
                         {projectContent[modalContent]}
                     </div>
                     <button className="close-btn" onClick={handleClose}>

@@ -71,12 +71,12 @@
     /* border: 1px solid red; */
     /* background-color: white; */
     /* position: fixed; */
-    z-index: 11;
+    z-index: 20;
     top: 0;
     left: 0;
     right: 0;
     height: 100%;
-    margin: 3rem;
+    /* margin: 3rem; */
     border: none;
     display: flex;
     flex-direction: column;
@@ -127,14 +127,18 @@
 
 .overlay{
     /* border: 10px solid red; */
-    /* background-color: transparent; */
+    /* background-color: red; */
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     z-index: 11;
+    padding: 3rem;
     overflow-y: scroll;
+}
+.btn{
+    font-size: smaller;
 }
 @media screen and (max-width:969px) {
     .projects {

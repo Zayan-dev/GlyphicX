@@ -75,25 +75,25 @@ const Projects = () => {
     const [clickedElement, setClickedElement] = useState(null);
 
     const handleDisplay = (project, event) => {
-      setClickedElement(event.currentTarget);
-      window.scrollTo(0, 0);
+        setClickedElement(event.currentTarget);
+        window.scrollTo(0, 0);
         document.body.style.overflow = "hidden"; // Add this line
         document.documentElement.style.overflow = "hidden"; // Add this line
-      setModalContent(project);
-      };
-  
+        setModalContent(project);
+    };
+
 
     const handleClose = () => {
-    //   document.body.style.overflowX = "hidden"; // Add this line
-      document.documentElement.style.overflowX = "hidden"; // Add this line
-    //   document.body.style.overflowY = "scroll"; // Add this line
-      document.documentElement.style.overflowY = "scroll"; // Add this line
+        //   document.body.style.overflowX = "hidden"; // Add this line
+        document.documentElement.style.overflowX = "hidden"; // Add this line
+        //   document.body.style.overflowY = "scroll"; // Add this line
+        document.documentElement.style.overflowY = "scroll"; // Add this line
 
-      if (clickedElement) {
-        clickedElement.scrollIntoView({ block: "center"});
-      }
-      setModalContent(null);
-    };
+        if (clickedElement) {
+            clickedElement.scrollIntoView({ block: "center" });
+        }
+        setModalContent(null);
+    };
 
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -257,11 +257,12 @@ const Projects = () => {
         }, "anim2")
     })
 
-    useGSAP(()=>{
+    useGSAP(() => {
+
         gsap.from("#pro1", {
-            y:-400,
-            opacity:0,
-            duration:1,
+            y: -400,
+            opacity: 0,
+            duration: 1,
 
             scrollTrigger: {
                 trigger: "#pro1",
@@ -274,9 +275,9 @@ const Projects = () => {
         });
 
         gsap.from("#gsapleft", {
-            x:-400,
-            opacity:0,
-            duration:1,
+            x: -400,
+            opacity: 0,
+            duration: 1,
 
             scrollTrigger: {
                 trigger: "#gsapleft",
@@ -289,9 +290,9 @@ const Projects = () => {
         });
 
         gsap.from("#gsapright", {
-            x:400,
-            opacity:0,
-            duration:1,
+            x: 400,
+            opacity: 0,
+            duration: 1,
             scrollTrigger: {
                 trigger: "#gsapright",
                 scroller: "body",
@@ -302,9 +303,9 @@ const Projects = () => {
             }
         });
         gsap.from("#pro2gsapleft", {
-            x:-400,
-            opacity:0,
-            duration:1,
+            x: -400,
+            opacity: 0,
+            duration: 1,
             scrollTrigger: {
                 trigger: "#pro2gsapleft",
                 scroller: "body",
@@ -315,9 +316,9 @@ const Projects = () => {
             }
         });
         gsap.from("#pro2gsapright", {
-            x:800,
-            opacity:0,
-            duration:1,
+            x: 800,
+            opacity: 0,
+            duration: 1,
             scrollTrigger: {
                 trigger: "#pro2gsapright",
                 scroller: "body",
@@ -328,9 +329,9 @@ const Projects = () => {
             }
         });
         gsap.from("#pro3gsapleft", {
-            x:-400,
-            opacity:0,
-            duration:1,
+            x: -400,
+            opacity: 0,
+            duration: 1,
             scrollTrigger: {
                 trigger: "#pro3gsapleft",
                 scroller: "body",
@@ -341,9 +342,9 @@ const Projects = () => {
             }
         });
         gsap.from("#pro3gsapright", {
-            x:800,
-            opacity:0,
-            duration:1,
+            x: 800,
+            opacity: 0,
+            duration: 1,
             scrollTrigger: {
                 trigger: "#pro3gsapright",
                 scroller: "body",
@@ -361,31 +362,33 @@ const Projects = () => {
 
             <div className="project1" id='pro1'>
                 <div className="content left"  >
-                    <h1 id='gsapleft' className='mainHeading' onClick={(e) => handleDisplay('project2',e)}>GlyphicX</h1>
-                    <p id='gsapleft' className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit harum eveniet fugit, cumque dignissimos illum quis vitae saepe excepturi at? Atque, impedit molestiae.</p>
+                    <h1 id='gsapleft' className='mainHeading' onClick={(e) => handleDisplay('project2', e)}>GlyphicX</h1>
+                    <p id='gsapleft' className='para'>When it came to crafting our own identity, we approached the task with the same passion and creativity that we bring to every client project</p>
+                    <p id='gsapleft' className='para mt-3'>The result? A cohesive, powerful brand identity that not only represents who we are today but also inspires us as we continue to grow and evolve</p>
                 </div>
                 <div id='gsapright' className="image right">
-                    <img onClick={(e) => handleDisplay('project2',e)} src={GlyphicX.image1} alt="" />
+                    <img onClick={(e) => handleDisplay('project2', e)} src={GlyphicX.image1} alt="" />
                 </div>
             </div>
 
             <div className="project2">
                 <div className="content left">
-                    <h1 id='pro2gsapleft'  className='mainHeading' onClick={(e) => handleDisplay('project1',e)}>Eaxee Enterprise</h1>
-                    <p id='pro2gsapleft' className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit harum eveniet fugit, cumque dignissimos illum quis vitae saepe excepturi at? Atque, impedit molestiae.</p>
+                    <h1 id='pro2gsapleft' className='mainHeading' onClick={(e) => handleDisplay('project1', e)}>Eaxee Enterprise</h1>
+                    <p id='pro2gsapleft' className='para'>Eaxee, a leader in enterprise architecture management, sought a brand identity that would mirror its commitment to empowering organizations with intuitive, flexible solutions.</p>
+                    <p id='pro2gsapleft' className='mt-3 para'>Our task was to craft a brand that embodies Eaxee’s mission of delivering a user-friendly platform while aligning with its vision of making enterprise architecture accessible to all.</p>
                 </div>
                 <div id='pro2gsapright' className="image right">
-                    <img onClick={(e) => handleDisplay('project1',e)} src={Eaxee.image1} alt="" />
+                    <img onClick={(e) => handleDisplay('project1', e)} src={Eaxee.image1} alt="" />
                 </div>
             </div>
 
             <div className="project1">
                 <div className="content left">
-                    <h1 id='pro3gsapleft' className='mainHeading' onClick={(e) => handleDisplay('project3',e)}>Lambda Theta</h1>
+                    <h1 id='pro3gsapleft' className='mainHeading' onClick={(e) => handleDisplay('project3', e)}>Lambda Theta</h1>
                     <p id='pro3gsapleft' className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit harum eveniet fugit, cumque dignissimos illum quis vitae saepe excepturi at? Atque, impedit molestiae.</p>
                 </div>
                 <div id='pro3gsapright' className="image right">
-                    <img onClick={(e) => handleDisplay('project3',e)} src={LambdaTheta.image3} alt="" />
+                    <img onClick={(e) => handleDisplay('project3', e)} src={LambdaTheta.image3} alt="" />
                 </div>
             </div>
             {/* any other project if needed */}
@@ -393,14 +396,14 @@ const Projects = () => {
             {modalContent && (
                 <div className="overlay" >
 
-                <div className="iframe-container" onClick={(e) => e.stopPropagation()} >
-                    <div className='project-iframe' >
-                        {projectContent[modalContent]}
+                    <div className="iframe-container" onClick={(e) => e.stopPropagation()} >
+                        <div className='project-iframe' >
+                            {projectContent[modalContent]}
+                        </div>
+                        <button className="close-btn" onClick={handleClose}>
+                            <i className="fa-solid fa-xmark fa-2xl"></i>
+                        </button>
                     </div>
-                    <button className="close-btn" onClick={handleClose}>
-                        <i className="fa-solid fa-xmark fa-2xl"></i>
-                    </button>
-                </div>
                 </div>
             )}
         </div>

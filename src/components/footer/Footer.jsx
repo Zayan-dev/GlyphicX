@@ -28,15 +28,15 @@ const Footer = () => {
         </div>
         <div className="column-div">
           <div className="column-1">
-            <p className="subHeading column-div-heading">Column One</p>
-            <a href="http://" className='para'>link one</a>
-            <a href="http://" className='para'>link two</a>
-            <a href="http://" className='para'>link three</a>
-            <a href="http://" className='para'>link four</a>
-            <a href="http://" className='para'>link five</a>
+            <p className="subHeading column-div-heading">Services</p>
+            <a href="http://" className='para'>Graphic Design</a>
+            <a href="http://" className='para'>UI Design</a>
+            <a href="http://" className='para'>Website Development</a>
+            <a href="http://" className='para'>Television Commercial</a>
+            <a href="http://" className='para'>Product Animation</a>
           </div>
           <div className="column-2">
-            <p className="subHeading column-div-heading">Column Two</p>
+            <p className="subHeading column-div-heading">Contact</p>
             <a href="http://" className='para'>link one</a>
             <a href="http://" className='para'>link two</a>
             <a href="http://" className='para'>link three</a>

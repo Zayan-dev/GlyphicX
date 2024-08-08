@@ -25,10 +25,12 @@
 .project1 {
     /* border: 1px solid white; */
     padding: 112px 64px 112px 64px;
+    height:100%;
     display: flex;
     justify-content: space-between;
     background-image: url("../../../assets/bg.png");
     color: var(--background-color);
+    overflow: hidden;
 }
 
 .project2 {
@@ -137,9 +139,7 @@
     padding: 3rem;
     overflow-y: scroll;
 }
-.btn{
-    font-size: smaller;
-}
+
 @media screen and (max-width:969px) {
     .projects {
         margin-top: 4rem;

@@ -1,15 +1,15 @@
 import React, { useEffect, useRef } from 'react';
 import '../feature/feature.css';
-import gsap from 'gsap';
 import { useInView } from "react-intersection-observer";
 import animatedvideo from "../../assets/videos/Unlock the Power of Storytelling.mp4";
+// import gsap from 'gsap';
 
-const splitTextIntoWords = (selector) => {
-  const element = document.querySelector(selector);
-  const text = element.textContent;
-  const html = text.split(/\s+/).map(word => `<div class="word">${word}</div>`).join(' ');
-  element.innerHTML = html;
-};
+// const splitTextIntoWords = (selector) => {
+//   const element = document.querySelector(selector);
+//   const text = element.textContent;
+//   const html = text.split(/\s+/).map(word => `<div class="word">${word}</div>`).join(' ');
+//   element.innerHTML = html;
+// };
 
 const Feature = () => {
   const { ref, inView } = useInView({
@@ -29,23 +29,23 @@ const Feature = () => {
     }
   }, [inView]);
 
-  useEffect(() => {
-    splitTextIntoWords("#gsapFeatureText .mainHeading");
+  // useEffect(() => {
+    // splitTextIntoWords("#gsapFeatureText .mainHeading");
 
-    gsap.from("#gsapFeatureText .word", {
-      opacity: 0,
-      x: -400,
-      stagger: 0.2, 
-      scrollTrigger: {
-        trigger: "#gsapFeatureText",
-        scroller: "body",
-        markers: false,
-        start: "top 90%",
-        end: "top 50%",
-        // scrub: 2,
-      }
-    });
-  }, []);
+    // gsap.from("#gsapFeatureText", {
+    //   opacity: 0,
+    //   x: -400,
+    //   stagger: 0.2, 
+    //   scrollTrigger: {
+    //     trigger: "#gsapFeatureText",
+    //     scroller: "body",
+    //     markers: true ,
+    //     start: "top 50%",
+    //     end: "top 10%",
+    //     // scrub: 2,
+    //   }
+    // });
+  // }, []);
 
   return (
     <div className="feature">

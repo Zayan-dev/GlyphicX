@@ -36,7 +36,7 @@ const ProductAnimation = () => {
     }, [currentIndex, slides]);
     return (
         <div className='proAnimation'>
-            <div className='text'>
+            <div className='gsapProAnimText text'>
                 <h1 className='mainHeading'>Product Animation</h1>
                 <p className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit harum eveniet fugit, cumque dignissimos illum quis vitae saepe excepturi at? Atque, impedit molestiae.</p>
 
@@ -50,7 +50,7 @@ const ProductAnimation = () => {
                     <li><img src={star} alt="star" style={{ height: "25px" }} /> Art and illustration for proAnimation design</li>
                 </div> */}
             </div>
-            <div className="proAnimation-slider">
+            <div className="gsapProAnimSlider proAnimation-slider">
                 {slides.map((slide, index) => (
                     <div
                         key={index}

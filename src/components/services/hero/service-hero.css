@@ -5,17 +5,23 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 24px;
+    overflow: hidden;
 }
 
 .heading {
+    /* border: 1px solid red; */
     width: 868px;
     height: 145px;
+    display: flex;
+    align-items:end;
     font-weight: 700;
     font-size: 56px;
-    line-height: 67px;
+    overflow: hidden;
 }
-
+.service-hero-para{
+    font-size: 25px;
+    overflow: hidden;
+}
 @media screen and (max-width:969px) {
     .service-hero {
         padding: 80px 20px;

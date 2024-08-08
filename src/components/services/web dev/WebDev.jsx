@@ -36,7 +36,7 @@ const WebDev = () => {
     }, [currentIndex, slides]);
     return (
         <div className='webdev'>
-            <div className='text'>
+            <div className='gsapWebDevText text'>
                 <h1 className='mainHeading'>Website Development</h1>
                 <p className='para'>The landscape of web development has been rapidly changing, and developing custom-built websites that take full advantage of bleeding edge technology is one in which we continue to specialize.</p>
                 <p className='para'>Your website is the modern storefront. We do not just build a beautiful website, but one which your consumers would engage in before making their purchasing decisions. Intuitive, easy to use and designed to be a lead capturing website are our top priorities.</p>
@@ -51,7 +51,7 @@ const WebDev = () => {
                     <li><img src={star} alt="star" style={{ height: "25px" }} /> Art and illustration for webdev design</li>
                 </div> */}
             </div>
-            <div className="webdev-slider">
+            <div className="gsapWebDevSlider webdev-slider">
                 {slides.map((slide, index) => (
                     <div
                         key={index}

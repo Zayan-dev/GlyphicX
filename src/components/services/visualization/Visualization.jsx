@@ -27,7 +27,7 @@ const Visualization = () => {
 
     return (
       <div className="visualization">
-        <div className="vis-pic">
+        <div className="gsapVisSlider vis-pic">
           {slides.map((slide, index) => (
             <div
               key={index}
@@ -42,7 +42,7 @@ const Visualization = () => {
             </div>
           ))}
         </div>
-        <div className="vis-text">
+        <div className="gsapVisText vis-text">
           <h1 className="mainHeading">3D visualization</h1>
           <p className="para">
             Confidently make informed decisions and bring your creative vision

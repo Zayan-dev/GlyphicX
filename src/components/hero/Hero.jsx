@@ -173,7 +173,7 @@ const Hero = () => {
                     // scrub: 2,
                 }
             });
-
+            
         },
     );
 
@@ -186,7 +186,7 @@ const Hero = () => {
             <Working></Working>
             <LogoBanner></LogoBanner>
             <Testimonial></Testimonial>
-            <Team></Team>
+            {/* <Team></Team> */}
             <Cta></Cta>
         </>
     )

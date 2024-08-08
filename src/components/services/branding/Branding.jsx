@@ -34,7 +34,7 @@ const Branding = () => {
     }, [currentIndex, slides]);
     return (
         <div className='branding'>
-            <div className='text'>
+            <div className='gsapBrandingText text'>
                 <h1 className='mainHeading'>Branding: unlocking the Power of Design for Your Business</h1>
                 <p className='para'>At GlyphicX, we understand the vital role that branding plays in the success of a business. </p>
                 <p className='para'>Compelling brand identities that resonate with your target audience, from logo design to brand guidelines, we help you establish a strong and memorable brand presence.</p>
@@ -45,7 +45,7 @@ const Branding = () => {
                     <li><img src={star} alt="star" style={{ height: "25px" }} /> Establish a strong brand presence that sets you apart from competitors</li>
                 </div>
             </div>
-            <div className="branding-slider">
+            <div className="gsapBrandingSlider branding-slider">
                 {slides.map((slide, index) => (
                     <div
                         key={index}

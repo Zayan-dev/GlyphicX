@@ -12,6 +12,7 @@
 
 .sketch-text {
     /* border: 1px solid green; */
+    background-color:var(--background-color);
     width: 616px;
     padding: 10px;
     display: flex;

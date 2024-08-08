@@ -71,31 +71,6 @@ const Projects = () => {
         video2: "/Portfolio/Lambda Theta/5.m4v",
     }
 
-    // const shoesAnimation = {
-    //     image1: "/Portfolio/Shoe Animation/1.jpg",
-    //     image2: "/Portfolio/Shoe Animation/2.jpg",
-    //     image3: "/Portfolio/Shoe Animation/3.jpg",
-    //     video1: "/Portfolio/Shoe Animation/Animation.mp4",
-    // }
-
-    // const uhu = {
-    //     image1: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-01.jpg",
-    //     image2: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-02.jpg",
-    //     image3: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-03.jpg",
-    //     image4: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-04.jpg",
-    //     image5: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-05.jpg",
-    //     image6: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-06.jpg",
-    //     image7: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-07.jpg",
-    //     image8: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-08.jpg",
-    //     image9: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-09.jpg",
-    //     image10: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-10.jpg",
-    //     image11: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-11.jpg",
-    //     image12: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-12.jpg",
-    //     image13: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-13.jpg",
-    //     image14: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-14.jpg",
-    //     image15: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-15.jpg",
-    // }
-
     const [modalContent, setModalContent] = useState(null);
     const [clickedElement, setClickedElement] = useState(null);
 
@@ -282,61 +257,137 @@ const Projects = () => {
         }, "anim2")
     })
 
+    useGSAP(()=>{
+        gsap.from("#pro1", {
+            y:-400,
+            opacity:0,
+            duration:1,
+
+            scrollTrigger: {
+                trigger: "#pro1",
+                scroller: "body",
+                markers: false,
+                start: "top 80%",
+                end: "top 30%",
+                // scrub: 2,
+            }
+        });
+
+        gsap.from("#gsapleft", {
+            x:-400,
+            opacity:0,
+            duration:1,
+
+            scrollTrigger: {
+                trigger: "#gsapleft",
+                scroller: "body",
+                markers: false,
+                start: "top 80%",
+                end: "top 30%",
+                // scrub: 2,
+            }
+        });
+
+        gsap.from("#gsapright", {
+            x:400,
+            opacity:0,
+            duration:1,
+            scrollTrigger: {
+                trigger: "#gsapright",
+                scroller: "body",
+                markers: false,
+                start: "top 80%",
+                end: "top 30%",
+                // scrub: 2,
+            }
+        });
+        gsap.from("#pro2gsapleft", {
+            x:-400,
+            opacity:0,
+            duration:1,
+            scrollTrigger: {
+                trigger: "#pro2gsapleft",
+                scroller: "body",
+                markers: false,
+                start: "top 80%",
+                end: "top 30%",
+                // scrub: 2,
+            }
+        });
+        gsap.from("#pro2gsapright", {
+            x:800,
+            opacity:0,
+            duration:1,
+            scrollTrigger: {
+                trigger: "#pro2gsapright",
+                scroller: "body",
+                markers: false,
+                start: "top 80%",
+                end: "top 30%",
+                // scrub: 1,
+            }
+        });
+        gsap.from("#pro3gsapleft", {
+            x:-400,
+            opacity:0,
+            duration:1,
+            scrollTrigger: {
+                trigger: "#pro3gsapleft",
+                scroller: "body",
+                markers: false,
+                start: "top 80%",
+                end: "top 30%",
+                // scrub: 2,
+            }
+        });
+        gsap.from("#pro3gsapright", {
+            x:800,
+            opacity:0,
+            duration:1,
+            scrollTrigger: {
+                trigger: "#pro3gsapright",
+                scroller: "body",
+                markers: false,
+                start: "top 80%",
+                end: "top 30%",
+                // scrub: 1,
+            }
+        });
+    })
+
 
     return (
         <div className={modalContent ? 'projects' : 'simple'}>
 
-            <div className="project1">
-                <div className="content left">
-                    <h1 className='mainHeading' onClick={(e) => handleDisplay('project2',e)}>GlyphicX</h1>
-                    <p className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit harum eveniet fugit, cumque dignissimos illum quis vitae saepe excepturi at? Atque, impedit molestiae.</p>
+            <div className="project1" id='pro1'>
+                <div className="content left"  >
+                    <h1 id='gsapleft' className='mainHeading' onClick={(e) => handleDisplay('project2',e)}>GlyphicX</h1>
+                    <p id='gsapleft' className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit harum eveniet fugit, cumque dignissimos illum quis vitae saepe excepturi at? Atque, impedit molestiae.</p>
                 </div>
-                <div className="image right">
+                <div id='gsapright' className="image right">
                     <img onClick={(e) => handleDisplay('project2',e)} src={GlyphicX.image1} alt="" />
                 </div>
             </div>
 
             <div className="project2">
                 <div className="content left">
-                    <h1 className='mainHeading' onClick={(e) => handleDisplay('project1',e)}>Eaxee Enterprise</h1>
-                    <p className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit harum eveniet fugit, cumque dignissimos illum quis vitae saepe excepturi at? Atque, impedit molestiae.</p>
+                    <h1 id='pro2gsapleft'  className='mainHeading' onClick={(e) => handleDisplay('project1',e)}>Eaxee Enterprise</h1>
+                    <p id='pro2gsapleft' className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit harum eveniet fugit, cumque dignissimos illum quis vitae saepe excepturi at? Atque, impedit molestiae.</p>
                 </div>
-                <div className="image right">
+                <div id='pro2gsapright' className="image right">
                     <img onClick={(e) => handleDisplay('project1',e)} src={Eaxee.image1} alt="" />
                 </div>
             </div>
-{/* 
-            <div className="project1">
-                <div className="content left">
-                    <h1 className='mainHeading' onClick={(e) => handleDisplay('project5')}>Director’s Treatment</h1>
-                    <h2 className='subHeading my-3' style={{ fontSize: "20px" }}>Television Commercial</h2>
-                    <p className='para'>The ad highlights the universal application and strength of a UHU adhesive tube and was designed to leverage the hype around the release of House of the Dragon by nostalgia baiting a popular scene from Game of Thrones.</p>
-                    <p className='mt-3'> This pitch documents is the first step in the pre-production and essential to outline the perspective, vision, and story ideas for the job and explain how the TV commercial will be brought to life</p>
-                </div>
-                <div className="image right">
-                    <img onClick={(e) => handleDisplay('project5')} src={uhu.image1} alt="" />
-                </div>
-            </div> */}
 
             <div className="project1">
                 <div className="content left">
-                    <h1 className='mainHeading' onClick={(e) => handleDisplay('project3',e)}>Lambda Theta</h1>
-                    <p className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit harum eveniet fugit, cumque dignissimos illum quis vitae saepe excepturi at? Atque, impedit molestiae.</p>
+                    <h1 id='pro3gsapleft' className='mainHeading' onClick={(e) => handleDisplay('project3',e)}>Lambda Theta</h1>
+                    <p id='pro3gsapleft' className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit harum eveniet fugit, cumque dignissimos illum quis vitae saepe excepturi at? Atque, impedit molestiae.</p>
                 </div>
-                <div className="image right">
+                <div id='pro3gsapright' className="image right">
                     <img onClick={(e) => handleDisplay('project3',e)} src={LambdaTheta.image3} alt="" />
                 </div>
             </div>
-
-            {/* <div className="project1">
-                <div className="content left">
-                    <h1 className='mainHeading' onClick={(e) => handleDisplay('project4')}>Product Animation</h1>
-                    <p className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit harum eveniet fugit, cumque dignissimos illum quis vitae saepe excepturi at? Atque, impedit molestiae.</p>
-                </div>
-                <div className="image right">
-                    <img onClick={(e) => handleDisplay('project4')} src={shoesAnimation.image1} alt="" />
-                </div>
-            </div> */}
             {/* any other project if needed */}
 
             {modalContent && (

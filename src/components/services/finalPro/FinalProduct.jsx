@@ -26,7 +26,7 @@ const FinalProduct = () => {
 
     return (
         <div className='finalpro'>
-            <div className='finalpro-text'>
+            <div className='gsapFinalProText finalpro-text'>
                 <p className="subHeading font-semibold">Craft</p>
                 <h1 className='mainHeading'>From Idea to Final Product</h1>
                 <p className='para'>Script development is a meticulous process that involves crafting and refining scripts</p>
@@ -37,7 +37,7 @@ const FinalProduct = () => {
                     <CustomButton3 text="Contact" />
                 </div> */}
             </div>
-            <div className="finalpro-pic">
+            <div className="gsapFinalProSlider finalpro-pic">
                 {slides.map((slide, index) => (
                     <div
                         key={index}

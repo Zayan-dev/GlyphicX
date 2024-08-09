@@ -1,7 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react'
 import "../web dev/webDev.css"
 import img1 from "../../../assets/images/slider/web_1.png"
-import img2 from "../../../assets/images/slider/web_2.png"
+import img2 from "../../../assets/images/slider/web_2.jpg"
+
 // import star from "../../../assets/images/Star.png"
 const WebDev = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -9,6 +10,7 @@ const WebDev = () => {
     const slides = [
         { type: 'image', src: img1 },
         { type: 'image', src: img2 },
+
         // { type: 'video', src: urge }
     ];
 

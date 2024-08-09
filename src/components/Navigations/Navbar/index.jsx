@@ -1,9 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Logo from "../../Logo";
 import { CustomButton2 } from "../../CustomButton";
+import Footer from "../../footer/Footer";
 
 const Navbar = ({ toggle }) => {
+
+  // const footerRef = useRef(null);
+
 
   const listItemStyles =
     "subHeading relative text-lg lg:text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-navyBlue after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center";
@@ -37,7 +41,8 @@ const Navbar = ({ toggle }) => {
             <div id="gsapLogo" className="static md2:absolute md2:left-1/2 md2:transform md2:-translate-x-1/2">
               <Logo />
             </div>
-            <Link id="gsapContactBtn" to="/contact" className="hidden md2:flex xl:w-[180px]">
+
+            <Link to="#footerSection" id="gsapContactBtn" className="hidden md2:flex xl:w-[180px]">
               <CustomButton2 text="Contact" />
             </Link>
 

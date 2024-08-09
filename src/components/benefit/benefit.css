@@ -59,6 +59,12 @@
     width: 100%;
 }
 
+.benefitContactBtn{
+    /* border: 1px solid red; */
+    margin-top: 1rem;
+    overflow: hidden;
+}
+
 /* Gsap css */
 .benefit-text {
     display: flex;

@@ -20,6 +20,7 @@ function App() {
         <Route exact path="/contact" element={<Contact></Contact>}></Route>
         {/* <Route exact path="/resources" element={<Resources></Resources>}></Route> */}
       </Routes>
+ 
       <Footer></Footer>
     </BrowserRouter>
   );

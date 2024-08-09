@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import '../benefit/benefit.css';
 import gsap from 'gsap';
+import { Link } from 'react-router-dom';
+import { CustomButton2 } from '../CustomButton';
 
 // const splitTextIntoDivs = (selector) => {
 //   const element = document.querySelector(selector);
@@ -42,9 +44,12 @@ const Benefit = () => {
           exceptional brand experiences. Our team of experts is passionate
           about crafting compelling narratives that resonate with your
           audience and drive results.
-          <div className="py-4 container">
+          {/* <div className="py-4 container">
             <a href='/' className="underline-btn">Learn More</a>
-          </div>
+          </div> */}  
+          <Link id="gsapContactBtn" to="/contact" className="benefitContactBtn hidden md2:flex xl:w-[180px]">
+              <CustomButton2 text="Learn More" />
+            </Link>
         </p>
       </div>
     </div>

@@ -1,11 +1,23 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import '../footer/footer.css';
 import logo from "../../assets/logo.png"
 import CustomButton, { CustomButton2 } from '../CustomButton';
+import { useLocation } from 'react-router-dom';
 
 const Footer = () => {
+  const footerRef = useRef(null);
+
+  const { hash } = useLocation();
+  useEffect(() => {
+
+    if (hash === "#footerSection" && footerRef.current) {
+      footerRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [hash]);
+
   return (
-    <div className="flex footer">
+
+    <div ref={footerRef} id="footerSection" className="flex footer">
       <div className="flex flex-container">
         <div className="footer-section ">
           <h2 className="logo-text">
@@ -16,7 +28,7 @@ const Footer = () => {
             newsletter.
           </p>
           <div className="newsletter">
-            <input type="email" placeholder="Your email" className='para'/>
+            <input type="email" placeholder="Your email" className='para' />
             <div className="subscribe-btn">
               <CustomButton2 text="Subscribe" />
             </div>
@@ -29,11 +41,11 @@ const Footer = () => {
         <div className="column-div">
           <div className="column-1">
             <p className="subHeading column-div-heading">Services</p>
-            <a href="http://" className='para'>Graphic Design</a>
-            <a href="http://" className='para'>UI Design</a>
-            <a href="http://" className='para'>Website Development</a>
-            <a href="http://" className='para'>Television Commercial</a>
-            <a href="http://" className='para'>Product Animation</a>
+            <a className='para'>Graphic Design</a>
+            <a className='para'>UI Design</a>
+            <a className='para'>Website Development</a>
+            <a className='para'>Television Commercial</a>
+            <a className='para'>Product Animation</a>
           </div>
           <div className="column-2">
             <p className="subHeading column-div-heading">Contact</p>
@@ -100,6 +112,8 @@ const Footer = () => {
         </ul>
       </div>
     </div>
+
+
   );
 };
 

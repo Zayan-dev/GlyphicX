@@ -47,15 +47,15 @@ li {
     padding: 12px 24px 12px 24px;
 }
 
-.finalpro-pic {
-    /* border: 1px solid red; */
+/* .finalpro-pic {
+    border: 1px solid red;
     width: 616px;
     height: 640px;
-  
-}
+} */
 
 /* Css for slider */
 .finalpro-pic {
+    /* border: 1px solid red; */
     position: relative;
     width: 100%;
     max-width: 600px;

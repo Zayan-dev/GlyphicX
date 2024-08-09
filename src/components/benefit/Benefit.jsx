@@ -47,7 +47,7 @@ const Benefit = () => {
           {/* <div className="py-4 container">
             <a href='/' className="underline-btn">Learn More</a>
           </div> */}  
-          <Link id="gsapContactBtn" to="/contact" className="benefitContactBtn hidden md2:flex xl:w-[180px]">
+          <Link id="gsapContactBtn" to="/services" className="benefitContactBtn hidden md2:flex xl:w-[180px]">
               <CustomButton2 text="Learn More" />
             </Link>
         </p>

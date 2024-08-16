@@ -1,8 +1,8 @@
 .userinterface {
     /* border: 1px solid red; */
     padding: 112px 64px 112px 64px;
-    /* background-image: url("../../../assets/bg.png"); */
-    color: var(--foreground-color);
+    background-image: url("../../../assets/bg.png");
+    color: var(--background-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,7 +43,7 @@ li {
     /* border: 1px solid red; */
     position: relative;
     width: 100%;
-    max-width: 600px;
+    /* max-width: 600px; */
     height: 616px;
     overflow: hidden;
 }
@@ -70,13 +70,16 @@ li {
 @media screen and (min-width:1100px) {
     .userinterface-slider {
         /* border: 1px solid red; */
-        width: 1500px;
+        width: 150vw;
     }   
 }
 
 @media screen and (max-width:969px) {
     .userinterface {
         flex-direction: column;
+    }
+    .userinterface-slider{
+        height: 313px;
     }
 }
 

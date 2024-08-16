@@ -36,20 +36,7 @@ const ProductAnimation = () => {
     }, [currentIndex, slides]);
     return (
         <div className='proAnimation'>
-            <div className='gsapProAnimText text'>
-                <h1 className='mainHeading'>Product Animation</h1>
-                <p className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit harum eveniet fugit, cumque dignissimos illum quis vitae saepe excepturi at? Atque, impedit molestiae.</p>
-
-                {/* <div className='para list'>
-                    <li><img src={star} alt="star" style={{ height: "25px" }} />Visual identity proAnimation design</li>
-                    <li><img src={star} alt="star" style={{ height: "25px" }} /> Marketing & advertising proAnimation design</li>
-                    <li><img src={star} alt="star" style={{ height: "25px" }} /> Publication proAnimation design</li>
-                    <li><img src={star} alt="star" style={{ height: "25px" }} /> Packaging proAnimation design</li>
-                    <li><img src={star} alt="star" style={{ height: "25px" }} /> Motion proAnimation design</li>
-                    <li><img src={star} alt="star" style={{ height: "25px" }} /> Environmental proAnimation design</li>
-                    <li><img src={star} alt="star" style={{ height: "25px" }} /> Art and illustration for proAnimation design</li>
-                </div> */}
-            </div>
+     
             <div className="gsapProAnimSlider proAnimation-slider">
                 {slides.map((slide, index) => (
                     <div
@@ -68,6 +55,20 @@ const ProductAnimation = () => {
                         )}
                     </div>
                 ))}
+            </div>
+            <div className='gsapProAnimText text'>
+                <h1 className='mainHeading'>Product Animation</h1>
+                <p className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit harum eveniet fugit, cumque dignissimos illum quis vitae saepe excepturi at? Atque, impedit molestiae.</p>
+
+                {/* <div className='para list'>
+                    <li><img src={star} alt="star" style={{ height: "25px" }} />Visual identity proAnimation design</li>
+                    <li><img src={star} alt="star" style={{ height: "25px" }} /> Marketing & advertising proAnimation design</li>
+                    <li><img src={star} alt="star" style={{ height: "25px" }} /> Publication proAnimation design</li>
+                    <li><img src={star} alt="star" style={{ height: "25px" }} /> Packaging proAnimation design</li>
+                    <li><img src={star} alt="star" style={{ height: "25px" }} /> Motion proAnimation design</li>
+                    <li><img src={star} alt="star" style={{ height: "25px" }} /> Environmental proAnimation design</li>
+                    <li><img src={star} alt="star" style={{ height: "25px" }} /> Art and illustration for proAnimation design</li>
+                </div> */}
             </div>
         </div>
     )

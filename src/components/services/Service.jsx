@@ -177,7 +177,7 @@ const Service = () => {
       }
     });
     gsap.from(".gsapProAnimText", {
-      x: -400,
+      x: 400,
       opacity: 0,
       duration: 1,
       scrollTrigger: {
@@ -189,7 +189,7 @@ const Service = () => {
       }
     });
     gsap.from(".gsapProAnimSlider", {
-      x: 400,
+      x: -400,
       opacity: 0,
       duration: 1,
       scrollTrigger: {
@@ -201,7 +201,7 @@ const Service = () => {
       }
     });
     gsap.from(".gsapUiSlider", {
-      x: -400,
+      x: 400,
       opacity: 0,
       duration: 1,
       scrollTrigger: {
@@ -213,7 +213,7 @@ const Service = () => {
       }
     });
     gsap.from(".gsapUiText", {
-      x: 400,
+      x: -400,
       opacity: 0,
       duration: 1,
       scrollTrigger: {
@@ -225,7 +225,7 @@ const Service = () => {
       }
     });
     gsap.from(".gsapWebDevText", {
-      x: -400,
+      x: 400,
       opacity: 0,
       duration: 1,
       scrollTrigger: {
@@ -237,7 +237,7 @@ const Service = () => {
       }
     });
     gsap.from(".gsapWebDevSlider", {
-      x: 400,
+      x: -400,
       opacity: 0,
       duration: 1,
       scrollTrigger: {
@@ -264,8 +264,8 @@ const Service = () => {
       <br />
       <Graphic></Graphic>
       <br />
-      <Commercial></Commercial>
-      <br />
+      {/* <Commercial></Commercial> */}
+      {/* <br /> */}
       <ProductAnimation></ProductAnimation>
       <br />
       <UserInterface></UserInterface>

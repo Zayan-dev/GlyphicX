@@ -34,6 +34,13 @@ const UserInterface = () => {
     return (
         <div className='userinterface'>
          
+        
+            <div className='gsapUiText text'>
+                <h1 className='mainHeading'>uI Design</h1>
+                <p className='para'>Elevate your product above expectations through our expertise in modern design and our commitment to the art of UI/UX
+                </p>
+                <p className='para'>Let us help you launch or overhaul your product with the right design strategy & user requirements, allowing for a better user experience!</p>
+            </div>
             <div className="gsapUiSlider userinterface-slider">
                 {slides.map((slide, index) => (
                     <div
@@ -52,12 +59,6 @@ const UserInterface = () => {
                         )}
                     </div>
                 ))}
-            </div>
-            <div className='gsapUiText text'>
-                <h1 className='mainHeading'>uI Design</h1>
-                <p className='para'>Elevate your product above expectations through our expertise in modern design and our commitment to the art of UI/UX
-                </p>
-                <p className='para'>Let us help you launch or overhaul your product with the right design strategy & user requirements, allowing for a better user experience!</p>
             </div>
         </div>
     )

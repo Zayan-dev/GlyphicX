@@ -71,6 +71,24 @@ const Projects = () => {
         video2: "/Portfolio/Lambda Theta/5.m4v",
     }
 
+    const VideoProduction={
+        image1:"/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-01.jpg",
+        image2:"/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-02.jpg",
+        image3:"/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-03.jpg",
+        image4:"/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-04.jpg",
+        image5:"/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-05.jpg",
+        image6:"/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-06.jpg",
+        image7:"/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-07.jpg",
+        image8:"/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-08.jpg",
+        image9:"/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-09.jpg",
+        image10:"/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-10.jpg",
+        image11:"/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-11.jpg",
+        image12:"/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-12.jpg",
+        image13:"/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-13.jpg",
+        image14:"/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-14.jpg",
+        image15:"/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-15.jpg",
+    }
+
     const [modalContent, setModalContent] = useState(null);
     const [clickedElement, setClickedElement] = useState(null);
 
@@ -188,36 +206,26 @@ const Projects = () => {
                 </video>
             </>
         ),
-        // project4: (
-        //     <>
-        //         <img src={shoesAnimation.image1} alt="project4" />
-        //         <img src={shoesAnimation.image2} alt="project4" />
-        //         <img src={shoesAnimation.image3} alt="project4" />
-        //         <video controls muted autoPlay playsInline loop>
-        //             <source src={shoesAnimation.video1} type="video/mp4" />
-        //             Your browser does not support the video tag.
-        //         </video>
-        //     </>
-        // ),
-        // project5: (
-        //     <>
-        //         <img style={{ width: "100%" }} src={uhu.image1} alt="project5" />
-        //         <img style={{ width: "100%" }} src={uhu.image2} alt="project5" />
-        //         <img style={{ width: "100%" }} src={uhu.image3} alt="project5" />
-        //         <img style={{ width: "100%" }} src={uhu.image4} alt="project5" />
-        //         <img style={{ width: "100%" }} src={uhu.image5} alt="project5" />
-        //         <img style={{ width: "100%" }} src={uhu.image6} alt="project5" />
-        //         <img style={{ width: "100%" }} src={uhu.image7} alt="project5" />
-        //         <img style={{ width: "100%" }} src={uhu.image8} alt="project5" />
-        //         <img style={{ width: "100%" }} src={uhu.image9} alt="project5" />
-        //         <img style={{ width: "100%" }} src={uhu.image10} alt="project5" />
-        //         <img style={{ width: "100%" }} src={uhu.image11} alt="project5" />
-        //         <img style={{ width: "100%" }} src={uhu.image12} alt="project5" />
-        //         <img style={{ width: "100%" }} src={uhu.image13} alt="project5" />
-        //         <img style={{ width: "100%" }} src={uhu.image14} alt="project5" />
-        //         <img style={{ width: "100%" }} src={uhu.image15} alt="project5" />
-        //     </>
-        // )
+        project4:(
+            <>
+             <img src={VideoProduction.image1} alt="project4" style={{width:"100%"}}/>
+             <img src={VideoProduction.image2} alt="project4" style={{width:"100%"}}/>
+             <img src={VideoProduction.image3} alt="project4" style={{width:"100%"}}/>
+             <img src={VideoProduction.image4} alt="project4" style={{width:"100%"}}/>
+             <img src={VideoProduction.image5} alt="project4" style={{width:"100%"}}/>
+             <img src={VideoProduction.image6} alt="project4" style={{width:"100%"}}/>
+             <img src={VideoProduction.image7} alt="project4" style={{width:"100%"}}/>
+             <img src={VideoProduction.image8} alt="project4" style={{width:"100%"}}/>
+             <img src={VideoProduction.image9} alt="project4" style={{width:"100%"}}/>
+             <img src={VideoProduction.image10} alt="project4" style={{width:"100%"}}/>
+             <img src={VideoProduction.image11} alt="project4" style={{width:"100%"}}/>
+             <img src={VideoProduction.image12} alt="project4" style={{width:"100%"}}/>
+             <img src={VideoProduction.image13} alt="project4" style={{width:"100%"}}/>
+             <img src={VideoProduction.image14} alt="project4" style={{width:"100%"}}/>
+             <img src={VideoProduction.image15} alt="project4" style={{width:"100%"}}/>
+            </>
+        )
+       
         // any other project content if needed
     };
 
@@ -354,6 +362,32 @@ const Projects = () => {
                 // scrub: 1,
             }
         });
+        gsap.from("#pro4gsapleft", {
+            x: -400,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: "#pro4gsapleft",
+                scroller: "body",
+                markers: false,
+                start: "top 80%",
+                end: "top 30%",
+                // scrub: 2,
+            }
+        });
+        gsap.from("#pro4gsapright", {
+            x: 800,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: "#pro4gsapright",
+                scroller: "body",
+                markers: false,
+                start: "top 80%",
+                end: "top 30%",
+                // scrub: 1,
+            }
+        });
     })
 
 
@@ -389,6 +423,17 @@ const Projects = () => {
                 </div>
                 <div id='pro3gsapright' className="image right">
                     <img onClick={(e) => handleDisplay('project3', e)} src={LambdaTheta.image3} alt="" />
+                </div>
+            </div>
+
+            <div className="project2">
+                <div className="content left">
+                    <h1 id='pro4gsapleft' className='mainHeading' onClick={(e) => handleDisplay('project4', e)}>video Production</h1>
+                    <p id='pro4gsapleft' className='para'>The ad highlights the universal application and strength of a UHU adhesive tube and was designed to leverage the hype around the release of House of the Dragon by nostalgia baiting a popular scene from Game of Thrones.</p>
+                    <p id='pro4gsapleft' className='mt-3 para'>This pitch documents is the first step in the pre-production and essential to outline the perspective, vision, and story ideas for the job and explain how the TV commercial will be brought to life</p>
+                </div>
+                <div id='pro4gsapright' className="image right">
+                    <img onClick={(e) => handleDisplay('project4', e)} src={VideoProduction.image1} alt="" />
                 </div>
             </div>
             {/* any other project if needed */}

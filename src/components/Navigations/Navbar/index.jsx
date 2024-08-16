@@ -1,16 +1,16 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Logo from "../../Logo";
 import { CustomButton2 } from "../../CustomButton";
 import Footer from "../../footer/Footer";
 
 const Navbar = ({ toggle }) => {
 
-  // const footerRef = useRef(null);
-
-
   const listItemStyles =
     "subHeading relative text-lg lg:text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-navyBlue after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center";
+    
+  const activeLinkStyles = " after:w-full after:scale-x-0 after:scale-x-100"; 
+
   return (
     <>
       <div id="gsapNavDiv" className="w-full h-16 lg:h-[74px] min-h-[68px] bg-offWhite fixed top-0 z-10 border-navyBlue border-b-2">
@@ -18,33 +18,46 @@ const Navbar = ({ toggle }) => {
           <div className="h-full relative flex justify-between items-center ">
             <ul className="hidden md2:flex justify-between gap-6 lg1:gap-12 xl3:gap-20 text-navyBlue">
               <li>
-                <Link to="/" className={listItemStyles} id="gsapNavItem">
+                <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                    `${listItemStyles} ${isActive ? activeLinkStyles : ""}`
+                  }
+                  id="gsapNavItem"
+                >
                   <p>Home</p>
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/portfolio" className={listItemStyles} id="gsapNavItem">
+                <NavLink
+                  to="/portfolio"
+                  className={({ isActive }) =>
+                    `${listItemStyles} ${isActive ? activeLinkStyles : ""}`
+                  }
+                  id="gsapNavItem"
+                >
                   <p>Our Work</p>
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/services" className={listItemStyles} id="gsapNavItem">
+                <NavLink
+                  to="/services"
+                  className={({ isActive }) =>
+                    `${listItemStyles} ${isActive ? activeLinkStyles : ""}`
+                  }
+                  id="gsapNavItem"
+                >
                   <p>Services</p>
-                </Link>
+                </NavLink>
               </li>
-              {/* <li>
-                <Link to="/resources" className={listItemStyles} id="gsapNavItem">
-                  <p>Resources</p>
-                </Link>
-              </li> */}
             </ul>
             <div id="gsapLogo" className="static md2:absolute md2:left-1/2 md2:transform md2:-translate-x-1/2">
               <Logo />
             </div>
 
-            <Link to="#footerSection" id="gsapContactBtn" className="hidden md2:flex xl:w-[180px]">
+            <NavLink to="#footerSection" id="gsapContactBtn" className="hidden md2:flex xl:w-[180px]">
               <CustomButton2 text="Contact" />
-            </Link>
+            </NavLink>
 
             <button
               type="button"

@@ -58,7 +58,8 @@ const ProductAnimation = () => {
             </div>
             <div className='gsapProAnimText text'>
                 <h1 className='mainHeading'>Product Animation</h1>
-                <p className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit harum eveniet fugit, cumque dignissimos illum quis vitae saepe excepturi at? Atque, impedit molestiae.</p>
+                <p className='para'>In today's fiercely competitive B2C market, standing out is crucial. Experience the power of animation to elevate your brand, increase engagement, and outshine the competition.</p>
+                <p>From initial concept to final frame, we handle every aspect of the animation process, delivering high-impact videos that resonate with your target audience.</p>
 
                 {/* <div className='para list'>
                     <li><img src={star} alt="star" style={{ height: "25px" }} />Visual identity proAnimation design</li>

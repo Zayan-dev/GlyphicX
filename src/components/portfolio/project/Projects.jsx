@@ -419,7 +419,9 @@ const Projects = () => {
             <div className="project1">
                 <div className="content left">
                     <h1 id='pro3gsapleft' className='mainHeading' onClick={(e) => handleDisplay('project3', e)}>Lambda Theta</h1>
-                    <p id='pro3gsapleft' className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit harum eveniet fugit, cumque dignissimos illum quis vitae saepe excepturi at? Atque, impedit molestiae.</p>
+                    <p id='pro3gsapleft' className='para'>Lambda Theta, a cutting-edge technology company, required a brand identity that would capture the essence of their expertise in providing research and development of AI-based and Digital Systems</p>
+                    <p id='pro3gsapleft' className='mt-3 para'>We crafted a voice that resonates with Lambda Theta’s core mission—to solve complex challenges with customized, cutting-edge solutions establishing them as a trusted, innovative partner in the tech industry.</p>
+              
                 </div>
                 <div id='pro3gsapright' className="image right">
                     <img onClick={(e) => handleDisplay('project3', e)} src={LambdaTheta.image3} alt="" />

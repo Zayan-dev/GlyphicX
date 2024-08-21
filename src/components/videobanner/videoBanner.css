@@ -1,0 +1,9 @@
+.video-banner{
+    /* border: 1px solid red; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    overflow:hidden;
+}

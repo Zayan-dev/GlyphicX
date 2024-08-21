@@ -12,6 +12,7 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import LogoBanner from '../logobanner/LogoBanner'
+import VideoBanner from '../videobanner/VideoBanner'
 const Hero = () => {
 
     gsap.registerPlugin(ScrollTrigger);
@@ -29,12 +30,12 @@ const Hero = () => {
                 x: 500,
                 duration: 1,
             });
-            gsap.from('#gsapSlider', {
-                y: 100,
-                opacity: 0,
-                scale: 3,
-                duration: 1
-            });
+            // gsap.from('#gsapSlider', {
+            //     y: 100,
+            //     opacity: 0,
+            //     scale: 3,
+            //     duration: 1
+            // });
             gsap.from("#gsapBenefitContainer", {
                 x: -800,
                 opacity: 0,
@@ -179,7 +180,8 @@ const Hero = () => {
 
     return (
         <>
-            <ImageSlider></ImageSlider>
+            {/* <ImageSlider></ImageSlider> */}
+            <VideoBanner></VideoBanner>
             <Benefit></Benefit>
             <Feature></Feature>
             <Collaboration></Collaboration>

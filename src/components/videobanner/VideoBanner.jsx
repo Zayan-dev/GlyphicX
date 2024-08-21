@@ -9,6 +9,7 @@ const VideoBanner = () => {
                 muted
                 autoPlay
                 playsInline
+                loop
             />
         </div>
     )

@@ -1,18 +1,18 @@
 import React, { useEffect, useRef, useState } from 'react'
 import "../ProductAnimation/productAnimation.css"
-import img1 from "/Portfolio/Shoe Animation/1.jpg"
-import img2 from "/Portfolio/Shoe Animation/2.jpg"
-import img3 from "/Portfolio/Shoe Animation/3.jpg"
-// import urge from "../../../../src/assets/videos/Urge_Fragrances.mp4"
+// import img1 from "/Portfolio/Shoe Animation/1.jpg"
+// import img2 from "/Portfolio/Shoe Animation/2.jpg"
+// import img3 from "/Portfolio/Shoe Animation/3.jpg"
+import shoeAnimation from "../../../../public/Portfolio/Shoe Animation/Animation.mp4"
 import star from "../../../assets/images/Star.png"
 const ProductAnimation = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const videoRef = useRef(null);
     const slides = [
-        { type: 'image', src: img1 },
-        { type: 'image', src: img2 },
-        { type: 'image', src: img3 },
-        // { type: 'video', src: urge }
+        // { type: 'image', src: img1 },
+        // { type: 'image', src: img2 },
+        // { type: 'image', src: img3 },
+        { type: 'video', src: shoeAnimation }
     ];
 
     useEffect(() => {
@@ -51,6 +51,7 @@ const ProductAnimation = () => {
                                 src={slide.src}
                                 onEnded={() => setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length)}
                                 muted
+                                loop
                             />
                         )}
                     </div>

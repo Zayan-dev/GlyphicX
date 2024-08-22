@@ -32,12 +32,14 @@ const Benefit = () => {
   // }, []);
 
   return (
+    <div className="beneath-overlay">
     <div id='gsapBenefitContainer' className="benefit">
       <div className="benefit-heading">
         <p id='gsapBenefitHeading' className="mainHeading">
-          Transforming Brands Through CaPtivating Storytelling.
+          Transforming Brands Through CaPtivating Storytelling
         </p>
       </div>
+      {/* <div className="beneath-overlay"> */}
       <div className="benefit-intro">
         <p id='gsapBenefitIntro' className="para">
           Welcome to GlyphicX, where creativity meets strategy to deliver
@@ -52,6 +54,8 @@ const Benefit = () => {
             </Link>
         </p>
       </div>
+      {/* </div> */}
+    </div>
     </div>
   );
 }

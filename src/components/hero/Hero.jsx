@@ -181,8 +181,8 @@ const Hero = () => {
     return (
         <>
             {/* <ImageSlider></ImageSlider> */}
-            <VideoBanner></VideoBanner>
             <Benefit></Benefit>
+            <VideoBanner></VideoBanner>
             <Feature></Feature>
             <Collaboration></Collaboration>
             <Working></Working>

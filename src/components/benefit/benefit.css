@@ -1,15 +1,26 @@
 .benefit {
-    /* border: 1px solid red; */
+    /* border: 1px solid green; */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 80px 64px 80px 64px;
-    gap: 80px;
+    margin-top: 4rem;
+    gap: 30px;
+    overflow: hidden;
+    background-image: url("../../assets/bg.png");
+    background-position: center;
+    background-repeat: repeat;
+    color: var(--background-color);
 }
+
 
 .benefit-heading {
     /* border: 1px solid green; */
-    width: 616px;
+    text-align: center;
+    width: 816px;
+    /* position: relative;
+    left: 15%; */
     height: 100%;
     font-size: 46px;
     font-weight: 700;
@@ -18,17 +29,17 @@
 
 .benefit-intro {
     /* border: 1px solid yellow; */
-    width: 616px;
+    width: 816px;
+    text-align: center;
     height: 100%;
     /* padding: 20px 0; */
     font-size: 18px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 24px;
-    position: relative;
-    top: 10px;
+    /* margin-top: 1rem; */
 }
 
 .benefit-intro-button {
@@ -58,9 +69,9 @@
     width: 100%;
 }
 
-.benefitContactBtn{
+.benefitContactBtn {
     /* border: 1px solid red; */
-    margin-top: 1rem;
+    margin: 2rem auto;
     overflow: hidden;
 }
 
@@ -89,6 +100,10 @@
         font-size: 36px;
         line-height: 50px;
     }
+
+    /* .beneath-overlay{
+        height: 100vh;
+    } */
 
     .benefit-intro {
         width: 100%;

@@ -6,6 +6,7 @@
     align-items: center;
     padding: 80px 64px 80px 64px;
     /* margin-top: 4rem; */
+    padding-top: 10rem;
     gap: 30px;
     overflow: hidden;
     background-image: url("../../assets/bg.png");

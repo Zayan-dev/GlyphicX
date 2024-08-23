@@ -35,7 +35,7 @@ const Navbar = ({ toggle }) => {
   // Define styles based on location
   const isHomePage = location.pathname === "/";
   const navbarStyles = isHomePage 
-    ? `fixed top-0 z-10 border-b-2 transition-colors duration-300 ${isScrolled ? 'bg-offWhite text-navyBlue opacity-100' : 'bg-transparent text-white opacity-75'}`
+    ? `fixed top-0 z-10 transition-colors duration-300 ${isScrolled ? 'bg-offWhite text-navyBlue opacity-100' : 'bg-transparent text-white opacity-75'}`
     : 'fixed top-0 z-10 bg-white text-navyBlue opacity-100 border-b-2'; // Default styles for other pages
 
   const listItemStyles =
@@ -44,7 +44,7 @@ const Navbar = ({ toggle }) => {
   const activeLinkStyles = "after:w-full after:scale-x-0 after:scale-x-100";
 
   return (
-    <div id="gsapNavDiv" className={`${navbarStyles} w-full h-16 lg:h-[74px] min-h-[68px] transition-all duration-300`}>
+    <div id="gsapNavDiv" className={`${navbarStyles} w-full h-16 lg:h-[74px] min-h-[68px] transition-all duration-700`}>
       <div className="w-full px-[6%] md:px-10 lg:px-12 xl:px-16 xl3:px-20 h-full">
         <div className="h-full relative flex justify-between items-center">
           <ul className="hidden md2:flex justify-between gap-6 lg1:gap-12 xl3:gap-20">

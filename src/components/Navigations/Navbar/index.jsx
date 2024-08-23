@@ -34,14 +34,14 @@ const Navbar = ({ toggle }) => {
 
   // Define styles based on location
   const isHomePage = location.pathname === "/";
-  const navbarStyles = isHomePage 
+  const navbarStyles = isHomePage
     ? `fixed top-0 z-10 transition-colors duration-300 ${isScrolled ? 'bg-offWhite text-navyBlue opacity-100' : 'bg-transparent text-white opacity-75'}`
     : 'fixed top-0 z-10 bg-white text-navyBlue opacity-100 border-b-2'; // Default styles for other pages
 
   const listItemStyles =
-    "subHeading relative text-lg lg:text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300";
-    
-  const activeLinkStyles = "after:w-full after:scale-x-0 after:scale-x-100";
+    "subHeading relative text-lg lg:text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 hover:text-royalBlue";
+
+  const activeLinkStyles = "after:w-full after:scale-x-0 after:scale-x-100 text-royalBlue ";
 
   return (
     <div id="gsapNavDiv" className={`${navbarStyles} w-full h-16 lg:h-[74px] min-h-[68px] transition-all duration-700`}>
@@ -53,19 +53,20 @@ const Navbar = ({ toggle }) => {
                 to="/"
                 onClick={() => handleNavigation("/")}
                 className={({ isActive }) =>
-                  `${listItemStyles} ${isActive ? activeLinkStyles : ""} ${isHomePage ? (isScrolled ? 'after:bg-navyBlue' : 'after:bg-white') : 'after:bg-navyBlue'}`
+                  `${listItemStyles} ${isActive ? activeLinkStyles : ""} ${isHomePage ? (isScrolled ? 'after:bg-royalBlue' : 'after:bg-white') : 'after:bg-royalBlue'}`
                 }
                 id="gsapNavItem"
               >
                 <p>Home</p>
               </NavLink>
+
             </li>
             <li>
               <NavLink
                 to="/portfolio"
                 onClick={() => handleNavigation("/portfolio")}
                 className={({ isActive }) =>
-                  `${listItemStyles} ${isActive ? activeLinkStyles : ""} ${isHomePage ? (isScrolled ? 'after:bg-navyBlue' : 'after:bg-white') : 'after:bg-navyBlue'}`
+                  `${listItemStyles} ${isActive ? activeLinkStyles : ""} ${isHomePage ? (isScrolled ? 'after:bg-royalBlue' : 'after:bg-white') : 'after:bg-royalBlue'}`
                 }
                 id="gsapNavItem"
               >
@@ -77,7 +78,7 @@ const Navbar = ({ toggle }) => {
                 to="/services"
                 onClick={() => handleNavigation("/services")}
                 className={({ isActive }) =>
-                  `${listItemStyles} ${isActive ? activeLinkStyles : ""} ${isHomePage ? (isScrolled ? 'after:bg-navyBlue' : 'after:bg-white') : 'after:bg-navyBlue'}`
+                  `${listItemStyles} ${isActive ? activeLinkStyles : ""} ${isHomePage ? (isScrolled ? 'after:bg-royalBlue' : 'after:bg-white') : 'after:bg-royalBlue'}`
                 }
                 id="gsapNavItem"
               >

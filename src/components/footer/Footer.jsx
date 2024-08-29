@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import '../footer/footer.css';
 import logo from "../../assets/logo.png"
-import CustomButton, { CustomButton2 } from '../CustomButton';
+import CustomButton, { CustomButton2, CustomButton4 } from '../CustomButton';
 import { useLocation } from 'react-router-dom';
 
 const Footer = () => {
@@ -15,6 +15,9 @@ const Footer = () => {
     }
   }, [hash]);
 
+  const openMail = () => {
+    window.location.href = "mailto:zayanirfan8@gmail.com";
+  }
   return (
 
     <div ref={footerRef} id="footerSection" className="flex footer">
@@ -30,7 +33,7 @@ const Footer = () => {
           <div className="newsletter">
             <input type="email" placeholder="Your email" className='para' />
             <div className="subscribe-btn">
-              <CustomButton2 text="Submit" />
+              <CustomButton4 text="Submit" />
             </div>
           </div>
           <p className="para">
@@ -47,43 +50,29 @@ const Footer = () => {
             <a className='para'>Television Commercial</a>
             <a className='para'>Product Animation</a>
           </div>
-          <div className="column-2">
-            <p className="subHeading column-div-heading">Contact</p>
-            <a href="http://" className='para'>link one</a>
-            <a href="http://" className='para'>link two</a>
-            <a href="http://" className='para'>link three</a>
-            <a href="http://" className='para'>link four</a>
-            <a href="http://" className='para'>link five</a>
-          </div>
+
           <div className="column-3">
             <p className="subHeading column-div-heading">Follow us</p>
             <div className="social">
-              <a href="http://" >
+              <a href="https://www.facebook.com/profile.php?id=61555673464641&mibextid=kFxxJD" >
                 {" "}
                 <i className="fa-brands fa-facebook fa-xl"></i>
               </a>
-              <a href="http://" className='para'>Facebook</a>
+              <a href="https://www.facebook.com/profile.php?id=61555673464641&mibextid=kFxxJD" className='para'>Facebook</a>
             </div>
             <div className="social">
-              <a href="http://">
+              <a href="https://www.instagram.com/glyphicx_agency?igsh=MndxZzFqazRhOXpj">
                 {" "}
                 <i className="fa-brands fa-square-instagram fa-xl"></i>
               </a>
-              <a href="http://" className='para'>Instagram</a>
+              <a href="https://www.instagram.com/glyphicx_agency?igsh=MndxZzFqazRhOXpj" className='para'>Instagram</a>
             </div>
             <div className="social">
-              <a href="http://">
-                {" "}
-                <i className="fa-brands fa-x-twitter fa-xl"></i>
-              </a>
-              <a href="http://" className='para'>X</a>
-            </div>
-            <div className="social">
-              <a href="http://">
+              <a href="https://www.linkedin.com/company/glyphicx/">
                 {" "}
                 <i className="fa-brands fa-linkedin fa-xl"></i>
               </a>
-              <a href="http://" className='para'>Linkedin</a>
+              <a href="https://www.linkedin.com/company/glyphicx/" className='para'>Linkedin</a>
             </div>
             <div className="social">
               <a href="http://">
@@ -92,6 +81,21 @@ const Footer = () => {
               </a>
               <a href="http://" className='para'>Youtube</a>
             </div>
+            <div className="social">
+              <a href="http://">
+                {" "}
+                <i className="fa-brands fa-x-twitter fa-xl"></i>
+              </a>
+              <a href="http://" className='para'>X</a>
+            </div>
+          </div>
+          <div className="column-2">
+            <p className="subHeading column-div-heading">Contact Us</p>
+            <a href='mailto:info@GlyphicX.com' className='para'>info@GlyphicX.com</a>
+            {/* <a href="http://" className='para'>link two</a>
+            <a href="http://" className='para'>link three</a>
+            <a href="http://" className='para'>link four</a>
+            <a href="http://" className='para'>link five</a> */}
           </div>
         </div>
       </div>

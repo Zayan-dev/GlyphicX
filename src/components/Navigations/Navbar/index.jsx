@@ -11,7 +11,7 @@ const Navbar = ({ toggle }) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 100) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -35,11 +35,10 @@ const Navbar = ({ toggle }) => {
   // Define styles based on location
   const isHomePage = location.pathname === "/";
   const navbarStyles = isHomePage
-    ? `fixed top-0 z-10 transition-colors duration-300 ${isScrolled ? 'bg-offWhite text-navyBlue opacity-100' : 'bg-transparent text-white opacity-75'}`
-    : 'fixed top-0 z-10 bg-white text-navyBlue opacity-100 border-b-2'; // Default styles for other pages
+    ? `fixed top-0 z-10 transition-colors duration-300 ${isScrolled ? 'bg-offWhite text-navyBlue opacity-100' : 'bg-transparent text-white opacity-100'}`
+    : 'fixed top-0 z-10 text-navyBlue opacity-100 border-b-2 bg-offWhite'; // Default styles for other pages
 
-  const listItemStyles =
-    "subHeading relative text-lg lg:text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 hover:text-royalBlue";
+    const listItemStyles = `${isHomePage && !isScrolled ? 'text-white' : ''} subHeading relative text-lg lg:text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 hover:text-royalBlue`;
 
   const activeLinkStyles = "after:w-full after:scale-x-0 after:scale-x-100 text-royalBlue ";
 

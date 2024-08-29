@@ -36,11 +36,24 @@ const Hero = () => {
             //     scale: 3,
             //     duration: 1
             // });
-            gsap.from("#gsapBenefitContainer", {
+            // gsap.from("#gsapBenefitContainer", {
+            //     x: -800,
+            //     opacity: 0,
+            //     scrollTrigger: {
+            //         trigger: "#gsapBenefitContainer",
+            //         scroller: "body",
+            //         markers: false,
+            //         start: "top 90%",
+            //         end: "top 40%",
+            //         // // scrub: 2,
+            //     }
+            // });
+            
+            gsap.from("#gsapBenefitHeading", {
                 x: -800,
                 opacity: 0,
                 scrollTrigger: {
-                    trigger: "#gsapBenefitContainer",
+                    trigger: "#gsapBenefitHeading",
                     scroller: "body",
                     markers: false,
                     start: "top 90%",

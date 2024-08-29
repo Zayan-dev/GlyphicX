@@ -57,6 +57,7 @@
 .newsletter input:focus {
     border: 2px solid var(--foreground-color);
 }
+
 .subscribe-btn {
     width: 140px;
 }

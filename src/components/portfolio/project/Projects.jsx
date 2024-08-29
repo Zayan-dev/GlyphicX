@@ -71,22 +71,22 @@ const Projects = () => {
         video2: "/Portfolio/Lambda Theta/5.m4v",
     }
 
-    const VideoProduction={
-        image1:"/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-01.jpg",
-        image2:"/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-02.jpg",
-        image3:"/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-03.jpg",
-        image4:"/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-04.jpg",
-        image5:"/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-05.jpg",
-        image6:"/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-06.jpg",
-        image7:"/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-07.jpg",
-        image8:"/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-08.jpg",
-        image9:"/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-09.jpg",
-        image10:"/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-10.jpg",
-        image11:"/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-11.jpg",
-        image12:"/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-12.jpg",
-        image13:"/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-13.jpg",
-        image14:"/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-14.jpg",
-        image15:"/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-15.jpg",
+    const VideoProduction = {
+        image1: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-01.jpg",
+        image2: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-02.jpg",
+        image3: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-03.jpg",
+        image4: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-04.jpg",
+        image5: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-05.jpg",
+        image6: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-06.jpg",
+        image7: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-07.jpg",
+        image8: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-08.jpg",
+        image9: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-09.jpg",
+        image10: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-10.jpg",
+        image11: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-11.jpg",
+        image12: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-12.jpg",
+        image13: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-13.jpg",
+        image14: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-14.jpg",
+        image15: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-15.jpg",
     }
 
     const [modalContent, setModalContent] = useState(null);
@@ -206,72 +206,70 @@ const Projects = () => {
                 </video>
             </>
         ),
-        project4:(
+        project4: (
             <>
-             <img src={VideoProduction.image1} alt="project4" style={{width:"100%"}}/>
-             <img src={VideoProduction.image2} alt="project4" style={{width:"100%"}}/>
-             <img src={VideoProduction.image3} alt="project4" style={{width:"100%"}}/>
-             <img src={VideoProduction.image4} alt="project4" style={{width:"100%"}}/>
-             <img src={VideoProduction.image5} alt="project4" style={{width:"100%"}}/>
-             <img src={VideoProduction.image6} alt="project4" style={{width:"100%"}}/>
-             <img src={VideoProduction.image7} alt="project4" style={{width:"100%"}}/>
-             <img src={VideoProduction.image8} alt="project4" style={{width:"100%"}}/>
-             <img src={VideoProduction.image9} alt="project4" style={{width:"100%"}}/>
-             <img src={VideoProduction.image10} alt="project4" style={{width:"100%"}}/>
-             <img src={VideoProduction.image11} alt="project4" style={{width:"100%"}}/>
-             <img src={VideoProduction.image12} alt="project4" style={{width:"100%"}}/>
-             <img src={VideoProduction.image13} alt="project4" style={{width:"100%"}}/>
-             <img src={VideoProduction.image14} alt="project4" style={{width:"100%"}}/>
-             <img src={VideoProduction.image15} alt="project4" style={{width:"100%"}}/>
+                <img src={VideoProduction.image1} alt="project4" style={{ width: "100%" }} />
+                <img src={VideoProduction.image2} alt="project4" style={{ width: "100%" }} />
+                <img src={VideoProduction.image3} alt="project4" style={{ width: "100%" }} />
+                <img src={VideoProduction.image4} alt="project4" style={{ width: "100%" }} />
+                <img src={VideoProduction.image5} alt="project4" style={{ width: "100%" }} />
+                <img src={VideoProduction.image6} alt="project4" style={{ width: "100%" }} />
+                <img src={VideoProduction.image7} alt="project4" style={{ width: "100%" }} />
+                <img src={VideoProduction.image8} alt="project4" style={{ width: "100%" }} />
+                <img src={VideoProduction.image9} alt="project4" style={{ width: "100%" }} />
+                <img src={VideoProduction.image10} alt="project4" style={{ width: "100%" }} />
+                <img src={VideoProduction.image11} alt="project4" style={{ width: "100%" }} />
+                <img src={VideoProduction.image12} alt="project4" style={{ width: "100%" }} />
+                <img src={VideoProduction.image13} alt="project4" style={{ width: "100%" }} />
+                <img src={VideoProduction.image14} alt="project4" style={{ width: "100%" }} />
+                <img src={VideoProduction.image15} alt="project4" style={{ width: "100%" }} />
             </>
         )
-       
+
         // any other project content if needed
     };
 
     gsap.registerPlugin(ScrollTrigger);
 
-    useGSAP(() => {
-        let tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: ".simple",
-                scroller: "body",
-                start: "top 50%",
-                end: "top 10%",
-                scrub: 2,
-                markers: false,
-            }
-        });
-        tl.from(".project1 .left", {
-            x: -300,
-            opacity: 0,
-            duration: 10,
+    // useGSAP(() => {
+    //     let tl = gsap.timeline({
+    //         scrollTrigger: {
+    //             trigger: ".simple",
+    //             scroller: "body",
+    //             start: "top 50%",
+    //             end: "top 10%",
+    //             scrub: 2,
+    //             markers: false,
+    //         }
+    //     });
+    //     tl.from(".project1 .left", {
+    //         x: -300,
+    //         opacity: 0,
+    //         duration: 10,
 
-        }, "anim1")
-        tl.from(".project1 .right", {
-            x: 300,
-            opacity: 0,
-            duration: 1,
-        }, "anim1")
-        tl.from(".project2 .left", {
-            x: -300,
-            opacity: 0,
-            duration: 1,
-        }, "anim2")
-        tl.from(".project2 .right", {
-            x: 300,
-            opacity: 0,
-            duration: 1,
-        }, "anim2")
-    })
+    //     }, "anim1")
+    //     tl.from(".project1 .right", {
+    //         x: 300,
+    //         opacity: 0,
+    //         duration: 1,
+    //     }, "anim1")
+    //     tl.from(".project2 .left", {
+    //         x: -300,
+    //         opacity: 0,
+    //         duration: 1,
+    //     }, "anim2")
+    //     tl.from(".project2 .right", {
+    //         x: 300,
+    //         opacity: 0,
+    //         duration: 1,
+    //     }, "anim2")
+    // })
 
     useGSAP(() => {
 
         gsap.from("#pro1", {
-            y: -400,
             opacity: 0,
             duration: 1,
-
             scrollTrigger: {
                 trigger: "#pro1",
                 scroller: "body",
@@ -421,7 +419,7 @@ const Projects = () => {
                     <h1 id='pro3gsapleft' className='mainHeading' onClick={(e) => handleDisplay('project3', e)}>Lambda Theta</h1>
                     <p id='pro3gsapleft' className='para'>Lambda Theta, a cutting-edge technology company, required a brand identity that would capture the essence of their expertise in providing research and development of AI-based and Digital Systems</p>
                     <p id='pro3gsapleft' className='mt-3 para'>We crafted a voice that resonates with Lambda Theta’s core mission—to solve complex challenges with customized, cutting-edge solutions establishing them as a trusted, innovative partner in the tech industry.</p>
-              
+
                 </div>
                 <div id='pro3gsapright' className="image right">
                     <img onClick={(e) => handleDisplay('project3', e)} src={LambdaTheta.image3} alt="" />

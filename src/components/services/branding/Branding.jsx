@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react'
 import "../branding/branding.css"
-import img1 from "../../../../src/assets/images/slider/1.png"
-import img2 from "../../../../src/assets/images/slider/2.png"
-import urge from "../../../../src/assets/videos/Urge_Fragrances.mp4"
+import img1 from "../../../../src/assets/images/slider/1.jpg"
+import img2 from "../../../../src/assets/images/slider/2.jpg"
+// import urge from "../../../../src/assets/videos/Urge_Fragrances.mp4"
 import star from "../../../assets/images/Star.png"
 const Branding = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -10,7 +10,7 @@ const Branding = () => {
     const slides = [
         { type: 'image', src: img1 },
         { type: 'image', src: img2 },
-        { type: 'video', src: urge }
+        // { type: 'video', src: urge }
     ];
 
     useEffect(() => {

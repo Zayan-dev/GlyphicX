@@ -2,11 +2,20 @@ import React, { useEffect, useRef, useState } from 'react'
 import "../web dev/webDev.css"
 import img1 from "../../../assets/images/slider/web_1.png"
 import img2 from "../../../assets/images/slider/web_2.jpg"
+import { useLocation } from 'react-router-dom'
 
 // import star from "../../../assets/images/Star.png"
 const WebDev = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const videoRef = useRef(null);
+    const webRef = useRef(null);
+    const { hash } = useLocation();
+    useEffect(() => {
+  
+      if (hash === "#webDevelopment" && webRef.current) {
+        webRef.current.scrollIntoView({ behavior: "smooth" });
+      }
+    }, [hash]);
     const slides = [
         { type: 'image', src: img1 },
         { type: 'image', src: img2 },
@@ -34,7 +43,7 @@ const WebDev = () => {
         }
     }, [currentIndex, slides]);
     return (
-        <div className='webdev'>
+        <div ref={webRef} id='webDevelopment' className='webdev'>
            
             <div className="gsapWebDevSlider webdev-slider">
                 {slides.map((slide, index) => (

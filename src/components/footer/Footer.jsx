@@ -2,14 +2,14 @@ import React, { useEffect, useRef } from 'react';
 import '../footer/footer.css';
 import logo from "../../assets/logo.png"
 import CustomButton, { CustomButton2, CustomButton4 } from '../CustomButton';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const Footer = () => {
   const footerRef = useRef(null);
-
   const { hash } = useLocation();
-  useEffect(() => {
+  const navigate = useNavigate();
 
+  useEffect(() => {
     if (hash === "#footerSection" && footerRef.current) {
       footerRef.current.scrollIntoView({ behavior: "smooth" });
     }
@@ -17,9 +17,23 @@ const Footer = () => {
 
   const openMail = () => {
     window.location.href = "mailto:zayanirfan8@gmail.com";
-  }
-  return (
+  };
 
+  const handleNavigation = () => {
+    navigate("/services#graphicDesign");
+  };
+
+  const handleUi=()=>{
+    navigate("/services#uiDesign");
+  }
+  const handleWeb=()=>{
+    navigate("/services#webDevelopment");
+  }
+  const handleProAnim=()=>{
+    navigate("/services#proAnim")
+  }
+
+  return (
     <div ref={footerRef} id="footerSection" className="flex footer">
       <div className="flex flex-container">
         <div className="footer-section ">
@@ -44,17 +58,19 @@ const Footer = () => {
         <div className="column-div">
           <div className="column-1">
             <p className="subHeading column-div-heading">Services</p>
-            <a className='para'>Graphic Design</a>
-            <a className='para'>UI Design</a>
-            <a className='para'>Website Development</a>
+            <a onClick={handleNavigation} className='para cursor-pointer'>
+              Graphic Design
+            </a>
+            <a onClick={handleUi} className='para cursor-pointer'>UI Design</a>
+            <a onClick={handleWeb} className='para cursor-pointer'>Website Development</a>
             <a className='para'>Television Commercial</a>
-            <a className='para'>Product Animation</a>
+            <a onClick={handleProAnim} className='para cursor-pointer'>Product Animation</a>
           </div>
 
           <div className="column-3">
             <p className="subHeading column-div-heading">Follow us</p>
             <div className="social">
-              <a href="https://www.facebook.com/profile.php?id=61555673464641&mibextid=kFxxJD" >
+              <a href="https://www.facebook.com/profile.php?id=61555673464641&mibextid=kFxxJD">
                 {" "}
                 <i className="fa-brands fa-facebook fa-xl"></i>
               </a>
@@ -92,10 +108,6 @@ const Footer = () => {
           <div className="column-2">
             <p className="subHeading column-div-heading">Contact Us</p>
             <a href='mailto:info@GlyphicX.com' className='para'>info@GlyphicX.com</a>
-            {/* <a href="http://" className='para'>link two</a>
-            <a href="http://" className='para'>link three</a>
-            <a href="http://" className='para'>link four</a>
-            <a href="http://" className='para'>link five</a> */}
           </div>
         </div>
       </div>
@@ -116,8 +128,6 @@ const Footer = () => {
         </ul>
       </div>
     </div>
-
-
   );
 };
 

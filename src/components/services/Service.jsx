@@ -250,7 +250,6 @@ const Service = () => {
     });
 
   })
-
   return (
     <div>
       <ServiceHero heading="Translate ideas into imPactful content" para="Discover our comprehensive range of services that combine design and business expertise." ></ServiceHero>

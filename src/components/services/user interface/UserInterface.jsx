@@ -2,10 +2,20 @@ import React, { useEffect, useRef, useState } from 'react'
 import "../user interface/userInterface.css"
 import img1 from "../../../assets/images/figmass.png"
 import img2 from "../../../assets/images/figma_2_ss.png"
+import { useLocation } from 'react-router-dom'
 // import star from "../../../assets/images/Star.png"
 const UserInterface = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const videoRef = useRef(null);
+    const uiRef = useRef(null);
+    const { hash } = useLocation();
+    useEffect(() => {
+  
+      if (hash === "#uiDesign" && uiRef.current) {
+        uiRef.current.scrollIntoView({ behavior: "smooth" });
+      }
+    }, [hash]);
+
     const slides = [
         { type: 'image', src: img1 },
         { type: 'image', src: img2 },
@@ -32,7 +42,7 @@ const UserInterface = () => {
         }
     }, [currentIndex, slides]);
     return (
-        <div className='userinterface'>
+        <div ref={uiRef} id="uiDesign" className='userinterface'>
          
         
             <div className='gsapUiText text'>

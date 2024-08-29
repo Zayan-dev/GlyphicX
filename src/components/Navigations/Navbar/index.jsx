@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import Logo from "../../Logo"; // Original bluish logo
 import { CustomButton2 } from "../../CustomButton";
 import WhiteLogo from "../../Logo/whiteLogo"; // White logo

@@ -5,9 +5,19 @@ import img2 from "/Portfolio/Lambda Theta/4.jpg"
 import img3 from "/Portfolio/EAXEE/Brand Guideline/EAXEE-29.jpg"
 // import urge from "../../../../src/assets/videos/Urge_Fragrances.mp4"
 import star from "../../../assets/images/Star.png"
+import { useLocation } from 'react-router-dom'
 const Graphic = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const videoRef = useRef(null);
+    const graphicDesign = useRef(null);
+    const { hash } = useLocation();
+    useEffect(() => {
+  
+      if (hash === "#graphicDesign" && graphicDesign.current) {
+        graphicDesign.current.scrollIntoView({ behavior: "smooth" });
+      }
+    }, [hash]);
+
     const slides = [
         { type: 'image', src: img1 },
         { type: 'image', src: img2 },
@@ -35,7 +45,7 @@ const Graphic = () => {
         }
     }, [currentIndex, slides]);
     return (
-        <div className='graphic'>
+        <div ref={graphicDesign} id="graphicDesign" className='graphic'>
             <div className='gsapGraphicText text'>
                 <h1 className='mainHeading'>Graphic Design</h1>
                 <p className='para'>Extraordinary design can transform your business. Whether you need a striking logo, captivating packaging, or an eye-catching illustration, our team of skilled designers is here to bring your vision to life.</p>
@@ -74,4 +84,4 @@ const Graphic = () => {
     )
 }
 
-export default Graphic
+export default Graphic;

@@ -5,9 +5,18 @@ import "../ProductAnimation/productAnimation.css"
 // import img3 from "/Portfolio/Shoe Animation/3.jpg"
 import shoeAnimation from "../../../../public/Portfolio/Shoe Animation/Animation.mp4"
 import star from "../../../assets/images/Star.png"
+import { useLocation } from 'react-router-dom'
 const ProductAnimation = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const proAnimRef = useRef(null);
     const videoRef = useRef(null);
+    const { hash } = useLocation();
+    useEffect(() => {
+  
+      if (hash === "#proAnim" && proAnimRef.current) {
+        proAnimRef.current.scrollIntoView({ behavior: "smooth" });
+      }
+    }, [hash]);
     const slides = [
         // { type: 'image', src: img1 },
         // { type: 'image', src: img2 },
@@ -35,7 +44,7 @@ const ProductAnimation = () => {
         }
     }, [currentIndex, slides]);
     return (
-        <div className='proAnimation'>
+        <div ref={proAnimRef} id='proAnim' className='proAnimation'>
      
             <div className="gsapProAnimSlider proAnimation-slider">
                 {slides.map((slide, index) => (

@@ -428,7 +428,7 @@ const Projects = () => {
 
             <div className="project2">
                 <div className="content left">
-                    <h1 id='pro4gsapleft' className='mainHeading' onClick={(e) => handleDisplay('project4', e)}>video Production</h1>
+                    <h1 id='pro4gsapleft' className='mainHeading' onClick={(e) => handleDisplay('project4', e)}>uHu TvC Production</h1>
                     <p id='pro4gsapleft' className='para'>The ad highlights the universal application and strength of a UHU adhesive tube and was designed to leverage the hype around the release of House of the Dragon by nostalgia baiting a popular scene from Game of Thrones.</p>
                     <p id='pro4gsapleft' className='mt-3 para'>This pitch documents is the first step in the pre-production and essential to outline the perspective, vision, and story ideas for the job and explain how the TV commercial will be brought to life</p>
                 </div>

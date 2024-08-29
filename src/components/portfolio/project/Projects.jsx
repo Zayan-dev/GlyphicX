@@ -3,6 +3,7 @@ import "../project/projects.css";
 import { ScrollTrigger } from 'gsap/all';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
+import { CustomButton2, CustomButton3 } from '../../CustomButton';
 const Projects = () => {
 
     const Eaxee = {
@@ -396,7 +397,10 @@ const Projects = () => {
                 <div className="content left"  >
                     <h1 id='gsapleft' className='mainHeading' onClick={(e) => handleDisplay('project2', e)}>GlyphicX</h1>
                     <p id='gsapleft' className='para'>When it came to crafting our own identity, we approached the task with the same passion and creativity that we bring to every client project</p>
-                    <p id='gsapleft' className='para mt-3'>The result? A cohesive, powerful brand identity that not only represents who we are today but also inspires us as we continue to grow and evolve</p>
+                    <p id='gsapleft' className='para mt-3 pb-3'>The result? A cohesive, powerful brand identity that not only represents who we are today but also inspires us as we continue to grow and evolve</p>
+                    <div className="mt-3">
+                    <CustomButton2 text="Explore" ></CustomButton2>
+                    </div>
                 </div>
                 <div id='gsapright' className="image right">
                     <img onClick={(e) => handleDisplay('project2', e)} src={GlyphicX.image1} alt="" />
@@ -408,6 +412,9 @@ const Projects = () => {
                     <h1 id='pro2gsapleft' className='mainHeading' onClick={(e) => handleDisplay('project1', e)}>Eaxee Enterprise</h1>
                     <p id='pro2gsapleft' className='para'>Eaxee, a leader in enterprise architecture management, sought a brand identity that would mirror its commitment to empowering organizations with intuitive, flexible solutions.</p>
                     <p id='pro2gsapleft' className='mt-3 para'>Our task was to craft a brand that embodies Eaxee’s mission of delivering a user-friendly platform while aligning with its vision of making enterprise architecture accessible to all.</p>
+                    <div className="mt-3">
+                    <CustomButton2 text="Explore" ></CustomButton2>
+                    </div>
                 </div>
                 <div id='pro2gsapright' className="image right">
                     <img onClick={(e) => handleDisplay('project1', e)} src={Eaxee.image1} alt="" />
@@ -420,6 +427,9 @@ const Projects = () => {
                     <p id='pro3gsapleft' className='para'>Lambda Theta, a cutting-edge technology company, required a brand identity that would capture the essence of their expertise in providing research and development of AI-based and Digital Systems</p>
                     <p id='pro3gsapleft' className='mt-3 para'>We crafted a voice that resonates with Lambda Theta’s core mission—to solve complex challenges with customized, cutting-edge solutions establishing them as a trusted, innovative partner in the tech industry.</p>
 
+                    <div className="mt-3">
+                    <CustomButton2 text="Explore" ></CustomButton2>
+                    </div>
                 </div>
                 <div id='pro3gsapright' className="image right">
                     <img onClick={(e) => handleDisplay('project3', e)} src={LambdaTheta.image3} alt="" />
@@ -431,6 +441,9 @@ const Projects = () => {
                     <h1 id='pro4gsapleft' className='mainHeading' onClick={(e) => handleDisplay('project4', e)}>uHu TvC Production</h1>
                     <p id='pro4gsapleft' className='para'>The ad highlights the universal application and strength of a UHU adhesive tube and was designed to leverage the hype around the release of House of the Dragon by nostalgia baiting a popular scene from Game of Thrones.</p>
                     <p id='pro4gsapleft' className='mt-3 para'>This pitch documents is the first step in the pre-production and essential to outline the perspective, vision, and story ideas for the job and explain how the TV commercial will be brought to life</p>
+                    <div className="mt-3">
+                    <CustomButton2 text="Explore" ></CustomButton2>
+                    </div>
                 </div>
                 <div id='pro4gsapright' className="image right">
                     <img onClick={(e) => handleDisplay('project4', e)} src={VideoProduction.image1} alt="" />

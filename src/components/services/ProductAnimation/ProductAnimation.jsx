@@ -3,7 +3,7 @@ import "../ProductAnimation/productAnimation.css"
 // import img1 from "/Portfolio/Shoe Animation/1.jpg"
 // import img2 from "/Portfolio/Shoe Animation/2.jpg"
 // import img3 from "/Portfolio/Shoe Animation/3.jpg"
-import shoeAnimation from "../../../../public/Portfolio/Shoe Animation/Animation.mp4"
+import shoeAnimation from "/Portfolio/Shoe Animation/Animation.mp4"
 import star from "../../../assets/images/Star.png"
 import { useLocation } from 'react-router-dom'
 const ProductAnimation = () => {

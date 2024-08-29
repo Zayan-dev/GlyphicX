@@ -62,12 +62,18 @@
     font-weight: 700;
     font-size: 48px;
 }
-
-.image {
-    /* border: 1px solid red; */
+.image{
     width: 50%;
     cursor: pointer;
 }
+
+.project1 .image, .project3 .image {
+    border: 2px solid var(--background-color);
+}
+.project2 .image, .project4 .image {
+    border: 2px solid var(--foreground-color);
+}
+
 
 .project-iframe {
     /* border: 1px solid red; */

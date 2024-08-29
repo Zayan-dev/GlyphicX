@@ -91,9 +91,9 @@ const Collaboration = () => {
               </div>
             </div>
           </div>
-          <div className="coll-btn">
+          {/* <div className="coll-btn">
             <CustomButton3 text="Learn More"/>
-          </div>
+          </div> */}
         </div>
       </div>
     );

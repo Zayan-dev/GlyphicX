@@ -12,7 +12,7 @@
 
 .finalpro-text {
     /* border: 1px solid green; */
-    width: 616px;
+    max-width: 45%;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -55,16 +55,19 @@ li {
 
 /* Css for slider */
 .finalpro-pic {
-    border: 2px solid var(--background-color);
+    /* border: 2px solid var(--background-color); */
     position: relative;
     width: 100%;
-    max-width: 600px;
-    height: 316px;
+    max-width: 50%;
+    min-height: 83vh;
     overflow: hidden;
 }
 
 .finalpro-slide {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
     opacity: 0;
@@ -76,14 +79,27 @@ li {
 }
 
 .finalpro-pic img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+     /* width: 100%;
+    height: 100%; */
+    border: 2px solid var(--background-color);
+    object-fit: contain;
 }
 
+@media screen and (min-width:1100px) {
+    .finalpro-pic {
+        /* border: 1px solid red; */
+        width: 60%;
+    }
+}
 @media screen and (max-width:969px) {
     .finalpro {
         flex-direction: column;
+    }
+    .finalpro-text{
+        max-width: 100%;
+    }
+    .finalpro-pic{
+        max-width: 100%;
     }
 }
 
@@ -102,6 +118,6 @@ li {
     }
 
     .finalpro-pic {
-        width: 100%;
+        min-height: 53vh;
     }
 }

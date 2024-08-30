@@ -12,8 +12,8 @@
 
 .vis-text {
     /* border: 1px solid green; */
-    background-color:var(--background-color);
-    width: 616px;
+    background-color: var(--background-color);
+    max-width: 45%;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -42,19 +42,24 @@ li {
 
 /* Css for slider */
 .vis-pic {
-    border: 2px solid var(--foreground-color);
+    /* border: 2px solid var(--foreground-color); */
     position: relative;
     width: 100%;
-    max-width: 600px;
-    height: 316px;
+    max-width: 50%;
+    min-height: 83vh;
     overflow: hidden;
 }
 
 .vis-slide {
     position: absolute;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
     opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .vis-slide.active {
@@ -62,14 +67,30 @@ li {
 }
 
 .vis-pic img {
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
+    border: 2px solid var(--foreground-color);
     object-fit: cover;
 }
 
+@media screen and (min-width:1100px) {
+    .vis-pic {
+        /* border: 1px solid red; */
+        width: 60%;
+    }
+}
+
 @media screen and (max-width:969px) {
+    .vis-text {
+        max-width: 100%;
+    }
+
     .visualization {
         flex-direction: column;
+    }
+
+    .vis-pic {
+        max-width: 100%;
     }
 }
 
@@ -88,6 +109,6 @@ li {
     }
 
     .vis-pic {
-        width: 100%;
+        min-height: 53vh;
     }
 }

@@ -42,8 +42,8 @@ li {
 .sketch-pic {
     border: 2px solid var(--foreground-color);
     width: 100%;
-    max-width: 600px;
-    height: 316px;
+    max-width: 50%;
+    height: 616px;
     background-image: url("/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-07.jpg");
     background-repeat: no-repeat;
     background-position: center;

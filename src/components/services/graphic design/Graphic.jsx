@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import "../graphic design/graphic.css"
 import img1 from "/Portfolio/GlyphicX/Glyphicx Profile 24-06-2024-30.jpg"
 import img2 from "/Portfolio/Lambda Theta/4.jpg"
-import img3 from "/Portfolio/EAXEE/Brand Guideline/EAXEE-29.jpg"
+import img3 from "../../../assets/images/slider/Graphic design-01.jpg"
 // import urge from "../../../../src/assets/videos/Urge_Fragrances.mp4"
 import star from "../../../assets/images/Star.png"
 import { useLocation } from 'react-router-dom'

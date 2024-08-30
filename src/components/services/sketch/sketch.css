@@ -40,13 +40,14 @@ li {
 }
 
 .sketch-pic {
-    /* border: 1px solid red; */
-    width: 50%;
-    height: 640px;
+    border: 2px solid var(--foreground-color);
+    width: 100%;
+    max-width: 600px;
+    height: 316px;
     background-image: url("/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-07.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
 }
 
 @media screen and (max-width:969px) {

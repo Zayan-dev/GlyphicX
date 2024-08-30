@@ -274,18 +274,6 @@ const Service = () => {
         end: "top 30%",
       }
     });
-    gsap.from(".gsapTvcText", {
-      x: 400,
-      opacity: 0,
-      duration: 1,
-      scrollTrigger: {
-        trigger: ".gsapTvcText",
-        scroller: "body",
-        markers: false,
-        start: "top 50%",
-        end: "top 30%",
-      }
-    });
     gsap.from(".gsapTvcSlider", {
       x: -400,
       opacity: 0,
@@ -298,6 +286,19 @@ const Service = () => {
         end: "top 30%",
       }
     });
+    gsap.from(".gsapTvcText", {
+      x: 400,
+      opacity: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: ".gsapTvcText",
+        scroller: "body",
+        markers: false,
+        start: "top 50%",
+        end: "top 30%",
+      }
+    });
+
   })
   return (
     <div>

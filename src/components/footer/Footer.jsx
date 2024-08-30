@@ -15,9 +15,6 @@ const Footer = () => {
     }
   }, [hash]);
 
-  const openMail = () => {
-    window.location.href = "mailto:zayanirfan8@gmail.com";
-  };
 
   const handleNavigation = () => {
     navigate("/services#graphicDesign");
@@ -31,6 +28,9 @@ const Footer = () => {
   }
   const handleProAnim=()=>{
     navigate("/services#proAnim")
+  }
+  const handleTvc=()=>{
+    navigate("/services#Tvc")
   }
 
   return (
@@ -63,7 +63,7 @@ const Footer = () => {
             </a>
             <a onClick={handleUi} className='para cursor-pointer'>UI Design</a>
             <a onClick={handleWeb} className='para cursor-pointer'>Website Development</a>
-            <a className='para'>Television Commercial</a>
+            <a onClick={handleTvc} className='para cursor-pointer'>Television Commercial</a>
             <a onClick={handleProAnim} className='para cursor-pointer'>Product Animation</a>
           </div>
 

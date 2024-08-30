@@ -13,6 +13,8 @@ import WebDev from './web dev/WebDev'
 import { ScrollTrigger } from 'gsap/all';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
+import InteriorDesign from './InteriorDesign/InteriorDesign'
+import TVC from './TVC/TVC'
 
 const Service = () => {
 
@@ -248,7 +250,54 @@ const Service = () => {
         end: "top 30%",
       }
     });
-
+    gsap.from(".gsapinteriordesignText", {
+      x: -400,
+      opacity: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: ".gsapinteriordesignText",
+        scroller: "body",
+        markers: false,
+        start: "top 50%",
+        end: "top 30%",
+      }
+    });
+    gsap.from(".gsapinteriordesignSlider", {
+      x: 400,
+      opacity: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: ".gsapinteriordesignSlider",
+        scroller: "body",
+        markers: false,
+        start: "top 50%",
+        end: "top 30%",
+      }
+    });
+    gsap.from(".gsapTvcText", {
+      x: 400,
+      opacity: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: ".gsapTvcText",
+        scroller: "body",
+        markers: false,
+        start: "top 50%",
+        end: "top 30%",
+      }
+    });
+    gsap.from(".gsapTvcSlider", {
+      x: -400,
+      opacity: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: ".gsapTvcSlider",
+        scroller: "body",
+        markers: false,
+        start: "top 50%",
+        end: "top 30%",
+      }
+    });
   })
   return (
     <div>
@@ -270,6 +319,10 @@ const Service = () => {
       <UserInterface></UserInterface>
       <br />
       <WebDev></WebDev>
+      <br />
+      <InteriorDesign></InteriorDesign>
+      <br  />
+      <TVC></TVC>
       <Cta></Cta>
     </div>
   )

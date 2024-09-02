@@ -1,4 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 import "../graphic design/graphic.css"
 import img1 from "/Portfolio/GlyphicX/Glyphicx Profile 24-06-2024-30.jpg"
 import img2 from "/Portfolio/Lambda Theta/4.jpg"
@@ -6,17 +7,29 @@ import img3 from "../../../assets/images/slider/Graphic design-01.jpg"
 // import urge from "../../../../src/assets/videos/Urge_Fragrances.mp4"
 import star from "../../../assets/images/Star.png"
 import { useLocation } from 'react-router-dom'
+
 const Graphic = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const videoRef = useRef(null);
     const graphicDesign = useRef(null);
     const { hash } = useLocation();
+    const [sliderVisible, setSliderVisible] = useState(false);
+
     useEffect(() => {
-  
-      if (hash === "#graphicDesign" && graphicDesign.current) {
-        graphicDesign.current.scrollIntoView({ behavior: "smooth" });
-      }
+        if (hash === "#graphicDesign" && graphicDesign.current) {
+            graphicDesign.current.scrollIntoView({ behavior: "smooth" });
+        }
     }, [hash]);
+
+    const { ref, inView } = useInView({
+        threshold: 1.0, // adjust the threshold to your liking
+    });
+
+    useEffect(() => {
+        if (inView) {
+            setSliderVisible(true);
+        }
+    }, [inView]);
 
     const slides = [
         { type: 'image', src: img1 },
@@ -26,18 +39,20 @@ const Graphic = () => {
     ];
 
     useEffect(() => {
-        const interval = setInterval(() => {
-            if (slides[currentIndex].type === 'video' && videoRef.current) {
-                if (videoRef.current.ended) {
+        if (sliderVisible) {
+            const interval = setInterval(() => {
+                if (slides[currentIndex].type === 'video' && videoRef.current) {
+                    if (videoRef.current.ended) {
+                        setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+                    }
+                } else {
                     setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
                 }
-            } else {
-                setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-            }
-        }, 5000);
+            }, 5000);
 
-        return () => clearInterval(interval);
-    }, [currentIndex, slides.length]);
+            return () => clearInterval(interval);
+        }
+    }, [sliderVisible, currentIndex, slides.length]);
 
     useEffect(() => {
         if (slides[currentIndex].type === 'video' && videoRef.current) {
@@ -61,7 +76,7 @@ const Graphic = () => {
                     <li><img src={star} alt="star" style={{ height: "25px" }} /> Art and illustration for graphic design</li>
                 </div>
             </div>
-            <div className="gsapGraphicSlider graphic-slider">
+            <div ref={ref} className="gsapGraphicSlider graphic-slider">
                 {slides.map((slide, index) => (
                     <div
                         key={index}

@@ -1,16 +1,27 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 import img1 from "../../../assets/images/slider/interior design/1.jpg"
 import img2 from "../../../assets/images/slider/interior design/2.jpg"
 import img3 from "../../../assets/images/slider/interior design/3.jpg"
 import img4 from "../../../assets/images/slider/interior design/4.jpg"
 import img5 from "../../../assets/images/slider/interior design/5.jpg"
 import img6 from "../../../assets/images/slider/interior design/6.jpg"
-// import { useLocation } from 'react-router-dom'
 import "../InteriorDesign/Interiordesign.css"
 
 const InteriorDesign = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const videoRef = useRef(null);
+    const [sliderVisible, setSliderVisible] = useState(false);
+
+    const { ref, inView } = useInView({
+        threshold: 1.0, // adjust the threshold to your liking
+    });
+
+    useEffect(() => {
+        if (inView) {
+            setSliderVisible(true);
+        }
+    }, [inView]);
 
     const slides = [
         { type: 'image', src: img1 },
@@ -19,23 +30,24 @@ const InteriorDesign = () => {
         { type: 'image', src: img4 },
         { type: 'image', src: img5 },
         { type: 'image', src: img6 },
-
         // { type: 'video', src: urge }
     ];
 
     useEffect(() => {
-        const interval = setInterval(() => {
-            if (slides[currentIndex].type === 'video' && videoRef.current) {
-                if (videoRef.current.ended) {
+        if (sliderVisible) {
+            const interval = setInterval(() => {
+                if (slides[currentIndex].type === 'video' && videoRef.current) {
+                    if (videoRef.current.ended) {
+                        setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+                    }
+                } else {
                     setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
                 }
-            } else {
-                setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-            }
-        }, 5000);
+            }, 5000);
 
-        return () => clearInterval(interval);
-    }, [currentIndex, slides.length]);
+            return () => clearInterval(interval);
+        }
+    }, [sliderVisible, currentIndex, slides.length]);
 
     useEffect(() => {
         if (slides[currentIndex].type === 'video' && videoRef.current) {
@@ -60,7 +72,7 @@ const InteriorDesign = () => {
                     <li><img src={star} alt="star" style={{ height: "25px" }} /> Art and illustration for interiordesign design</li>
                 </div> */}
             </div>
-            <div className="gsapinteriordesignSlider interiordesign-slider">
+            <div ref={ref} className="gsapinteriordesignSlider interiordesign-slider">
                 {slides.map((slide, index) => (
                     <div
                         key={index}

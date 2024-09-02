@@ -1,41 +1,54 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 import "../web dev/webDev.css"
 import img1 from "../../../assets/images/slider/web_1.png"
 import img2 from "../../../assets/images/slider/web_2.jpg"
 import { useLocation } from 'react-router-dom'
 
-// import star from "../../../assets/images/Star.png"
 const WebDev = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const videoRef = useRef(null);
     const webRef = useRef(null);
     const { hash } = useLocation();
+    const [sliderVisible, setSliderVisible] = useState(false);
+
     useEffect(() => {
-  
-      if (hash === "#webDevelopment" && webRef.current) {
-        webRef.current.scrollIntoView({ behavior: "smooth" });
-      }
+        if (hash === "#webDevelopment" && webRef.current) {
+            webRef.current.scrollIntoView({ behavior: "smooth" });
+        }
     }, [hash]);
+
+    const { ref, inView } = useInView({
+        threshold: 1.0, // adjust the threshold to your liking
+    });
+
+    useEffect(() => {
+        if (inView) {
+            setSliderVisible(true);
+        }
+    }, [inView]);
+
     const slides = [
         { type: 'image', src: img1 },
         { type: 'image', src: img2 },
-
         // { type: 'video', src: urge }
     ];
 
     useEffect(() => {
-        const interval = setInterval(() => {
-            if (slides[currentIndex].type === 'video' && videoRef.current) {
-                if (videoRef.current.ended) {
+        if (sliderVisible) {
+            const interval = setInterval(() => {
+                if (slides[currentIndex].type === 'video' && videoRef.current) {
+                    if (videoRef.current.ended) {
+                        setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+                    }
+                } else {
                     setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
                 }
-            } else {
-                setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-            }
-        }, 5000);
+            }, 5000);
 
-        return () => clearInterval(interval);
-    }, [currentIndex, slides.length]);
+            return () => clearInterval(interval);
+        }
+    }, [sliderVisible, currentIndex, slides.length]);
 
     useEffect(() => {
         if (slides[currentIndex].type === 'video' && videoRef.current) {
@@ -44,8 +57,8 @@ const WebDev = () => {
     }, [currentIndex, slides]);
     return (
         <div ref={webRef} id='webDevelopment' className='webdev'>
-           
-            <div className="gsapWebDevSlider webdev-slider">
+
+            <div ref={ref} className="gsapWebDevSlider webdev-slider">
                 {slides.map((slide, index) => (
                     <div
                         key={index}

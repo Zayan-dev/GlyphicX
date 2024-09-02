@@ -47,7 +47,7 @@ li {
     width: 100%;
     max-width: 50%;
     min-height: 83vh;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .vis-slide {

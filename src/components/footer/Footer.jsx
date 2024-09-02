@@ -70,39 +70,39 @@ const Footer = () => {
           <div className="column-3">
             <p className="subHeading column-div-heading">Follow us</p>
             <div className="social">
-              <a href="https://www.facebook.com/profile.php?id=61555673464641&mibextid=kFxxJD">
+              <a target='_blank' href="https://www.facebook.com/profile.php?id=61555673464641&mibextid=kFxxJD">
                 {" "}
                 <i className="fa-brands fa-facebook fa-xl"></i>
               </a>
-              <a href="https://www.facebook.com/profile.php?id=61555673464641&mibextid=kFxxJD" className='para'>Facebook</a>
+              <a target='_blank' href="https://www.facebook.com/profile.php?id=61555673464641&mibextid=kFxxJD" className='para'>Facebook</a>
             </div>
             <div className="social">
-              <a href="https://www.instagram.com/glyphicx_agency?igsh=MndxZzFqazRhOXpj">
+              <a target='_blank' href="https://www.instagram.com/glyphicx_agency?igsh=MndxZzFqazRhOXpj">
                 {" "}
                 <i className="fa-brands fa-square-instagram fa-xl"></i>
               </a>
-              <a href="https://www.instagram.com/glyphicx_agency?igsh=MndxZzFqazRhOXpj" className='para'>Instagram</a>
+              <a target='_blank' href="https://www.instagram.com/glyphicx_agency?igsh=MndxZzFqazRhOXpj" className='para'>Instagram</a>
             </div>
             <div className="social">
-              <a href="https://www.linkedin.com/company/glyphicx/">
+              <a target='_blank' href="https://www.linkedin.com/company/glyphicx/">
                 {" "}
                 <i className="fa-brands fa-linkedin fa-xl"></i>
               </a>
-              <a href="https://www.linkedin.com/company/glyphicx/" className='para'>Linkedin</a>
+              <a target='_blank' href="https://www.linkedin.com/company/glyphicx/" className='para'>Linkedin</a>
             </div>
             <div className="social">
-              <a href="http://">
+              <a target='_blank' href="http://">
                 {" "}
                 <i className="fa-brands fa-youtube fa-xl"></i>
               </a>
-              <a href="http://" className='para'>Youtube</a>
+              <a target='_blank' href="http://" className='para'>Youtube</a>
             </div>
             <div className="social">
-              <a href="http://">
+              <a target='_blank' href="http://">
                 {" "}
                 <i className="fa-brands fa-x-twitter fa-xl"></i>
               </a>
-              <a href="http://" className='para'>X</a>
+              <a target='_blank' href="http://" className='para'>X</a>
             </div>
           </div>
           <div className="column-2">

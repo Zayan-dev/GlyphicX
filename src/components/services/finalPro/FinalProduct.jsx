@@ -14,11 +14,11 @@ const FinalProduct = () => {
   const [sliderVisible, setSliderVisible] = useState(false);
   const slides = [
     { type: 'image', src: image1 },
-    { type: 'image', src: image2 },
+    { type: 'image', src: image2, height: "lg:h-3/4" },
     { type: 'image', src: image3 },
     { type: 'image', src: image4 },
     { type: 'image', src: image5 },
-    { type: 'image', src: image6 },
+    { type: 'image', src: image6, height: "lg:h-3/4" },
   ];
 
   const { ref, inView } = useInView({
@@ -42,7 +42,7 @@ const FinalProduct = () => {
   }, [sliderVisible, slides.length]);
 
   return (
-    <div className='finalpro'>
+    <div className=' finalpro'>
       <div className='gsapFinalProText finalpro-text'>
         <p className="subHeading font-semibold">Craft</p>
         <h1 className='mainHeading'>From Idea to Final Product</h1>
@@ -60,7 +60,7 @@ const FinalProduct = () => {
             key={index}
             className={`finalpro-slide ${index === currentIndex ? 'active' : ''}`}
           >
-            <img src={slide.src} alt={`slide-${index}`} />
+            <img className={slide.height || {}} src={slide.src} alt={`slide-${index}`} />
           </div>
         ))}
       </div>

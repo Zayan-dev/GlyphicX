@@ -70,31 +70,37 @@ const TVC = () => {
     }, [currentIndex, slides.length]);
 
     return (
-        <div ref={tvcRef} id='Tvc' className='Tvc'>
-            <div className="gsapTvcSlider Tvc-slider">
-                {slides.map((slide, index) => (
-                    <div
-                        key={index}
-                        className={`Tvc-slide ${index === currentIndex ? 'active' : ''}`}
-                    >
-                        {slide.type === 'image' ? (
-                            <img src={slide.src} alt={`slide-${index}`} />
-                        ) : (
-                            <video
-                                ref={videoRef}
-                                src={slide.src}
-                                muted
-                            />
-                        )}
-                    </div>
-                ))}
+      <div ref={tvcRef} id="Tvc" className="Tvc">
+        <div className="gsapTvcSlider Tvc-slider">
+          {slides.map((slide, index) => (
+            <div
+              key={index}
+              className={`Tvc-slide ${index === currentIndex ? "active" : ""}`}
+            >
+              {slide.type === "image" ? (
+                <img src={slide.src} alt={`slide-${index}`} />
+              ) : (
+                <video ref={videoRef} src={slide.src} muted />
+              )}
             </div>
-            <div className='gsapTvcText text'>
-                <h1 className='mainHeading'>Television Commercial</h1>
-                <p className='para'>In today's fiercely competitive B2C market, standing out is crucial. Experience the power of animation to elevate your brand, increase engagement, and outshine the competition.</p>
-                <p>From initial concept to final frame, we handle every aspect of the animation process, delivering high-impact videos that resonate with your target audience.</p>
-            </div>
+          ))}
         </div>
+        <div className="gsapTvcText text">
+          <h1 className="mainHeading">Digital video Commercial</h1>
+          <p className="para">
+            Your brand has a story to tell, and we’re here to help you tell it.
+            By partnering with you, we listen to your vision, create a strategic
+            plan, and deliver video content that not only meets your goals but
+            exceeds your expectations.
+          </p>
+          <p className="para">
+            We craft videos that stand out in the crowded social media
+            landscape. Our unique approach ensures that your content isn't just
+            seen but remembered—capturing attention, driving engagement, and
+            converting viewers into loyal customers.
+          </p>
+        </div>
+      </div>
     );
 };
 

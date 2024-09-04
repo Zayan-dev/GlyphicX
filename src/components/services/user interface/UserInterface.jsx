@@ -61,7 +61,7 @@ const UserInterface = () => {
     <div ref={uiRef} id="uiDesign" className='userinterface'>
       
       <div className='gsapUiText text'>
-        <h1 className='mainHeading'>UI Design</h1>
+        <h1 className='mainHeading'>uI Design</h1>
         <p className='para'>Elevate your product above expectations through our expertise in modern design and our commitment to the art of UI/UX</p>
         <p className='para'>Let us help you launch or overhaul your product with the right design strategy & user requirements, allowing for a better user experience!</p>
       </div>

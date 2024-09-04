@@ -55,14 +55,23 @@ const InteriorDesign = () => {
         }
     }, [currentIndex, slides]);
     return (
-        <div className='interiordesign'>
+      <div className="interiordesign">
+        <div className="gsapinteriordesignText text">
+          <h1 className="mainHeading">3D Interior Design</h1>
+          <p className="para">
+            At GlyphicX, we empower interior designers, real estate developers,
+            and marketers to showcase their projects with unparalleled clarity
+            and impact. Our advanced 3D rendering services bring your design
+            concepts to life, delivering photorealistic visuals that captivate
+            and persuade.{" "}
+          </p>
+          <p className="para">
+            Whether you're working on a cozy residential space or a sprawling
+            commercial development, our state-of-the-art renderings provide a
+            detailed, lifelike preview that goes far beyond traditional methods.
+          </p>
 
-            <div className='gsapinteriordesignText text'>
-                <h1 className='mainHeading'>3D Interior Design</h1>
-                <p className='para'>The landscape of web development has been rapidly changing, and developing custom-built websites that take full advantage of bleeding edge technology is one in which we continue to specialize.</p>
-                <p className='para'>Your website is the modern storefront. We do not just build a beautiful website, but one which your consumers would engage in before making their purchasing decisions. Intuitive, easy to use and designed to be a lead capturing website are our top priorities.</p>
-
-                {/* <div className='para list'>
+          {/* <div className='para list'>
                     <li><img src={star} alt="star" style={{ height: "25px" }} />Visual identity interiordesign design</li>
                     <li><img src={star} alt="star" style={{ height: "25px" }} /> Marketing & advertising interiordesign design</li>
                     <li><img src={star} alt="star" style={{ height: "25px" }} /> Publication interiordesign design</li>
@@ -71,29 +80,37 @@ const InteriorDesign = () => {
                     <li><img src={star} alt="star" style={{ height: "25px" }} /> Environmental interiordesign design</li>
                     <li><img src={star} alt="star" style={{ height: "25px" }} /> Art and illustration for interiordesign design</li>
                 </div> */}
-            </div>
-            <div ref={ref} className="gsapinteriordesignSlider interiordesign-slider">
-                {slides.map((slide, index) => (
-                    <div
-                        key={index}
-                        className={`interiordesign-slide ${index === currentIndex ? 'active' : ''}`}
-                    >
-                        {slide.type === 'image' ? (
-                            <img src={slide.src} alt={`slide-${index}`} />
-                        ) : (
-                            <video
-                                ref={videoRef}
-                                src={slide.src}
-                                onEnded={() => setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length)}
-                                muted
-                            />
-                        )}
-                    </div>
-                ))}
-            </div>
-
         </div>
-    )
+        <div
+          ref={ref}
+          className="gsapinteriordesignSlider interiordesign-slider"
+        >
+          {slides.map((slide, index) => (
+            <div
+              key={index}
+              className={`interiordesign-slide ${
+                index === currentIndex ? "active" : ""
+              }`}
+            >
+              {slide.type === "image" ? (
+                <img src={slide.src} alt={`slide-${index}`} />
+              ) : (
+                <video
+                  ref={videoRef}
+                  src={slide.src}
+                  onEnded={() =>
+                    setCurrentIndex(
+                      (prevIndex) => (prevIndex + 1) % slides.length
+                    )
+                  }
+                  muted
+                />
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    );
 }
 
 export default InteriorDesign

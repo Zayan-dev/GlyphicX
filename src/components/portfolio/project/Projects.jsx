@@ -361,7 +361,7 @@ const Projects = () => {
 
             <div className="project1" id='pro1'>
                 <div className="content left"  >
-                    <h1 id='gsapleft' className='mainHeading' onClick={(e) => handleDisplay('project2', e)}>GlyphicX</h1>
+                    <h1 id='gsapleft' className='mainHeading' onClick={(e) => handleDisplay('project2', e)}>GlyPhicX</h1>
                     <p id='gsapleft' className='para'>When it came to crafting our own identity, we approached the task with the same passion and creativity that we bring to every client project</p>
                     <p id='gsapleft' className='para mt-3 pb-3'>The result? A cohesive, powerful brand identity that not only represents who we are today but also inspires us as we continue to grow and evolve</p>
                     <div id='gsapleft' className="mt-3">
@@ -377,7 +377,7 @@ const Projects = () => {
 
             <div className="project2">
                 <div className="content left">
-                    <h1 id='pro2gsapleft' className='mainHeading' onClick={(e) => handleDisplay('project1', e)}>Eaxee Enterprise</h1>
+                    <h1 id='pro2gsapleft' className='mainHeading' onClick={(e) => handleDisplay('project1', e)}>Eaxee EnterPrise</h1>
                     <p id='pro2gsapleft' className='para'>Eaxee, a leader in enterprise architecture management, sought a brand identity that would mirror its commitment to empowering organizations with intuitive, flexible solutions.</p>
                     <p id='pro2gsapleft' className='mt-3 para pb-3'>Our task was to craft a brand that embodies Eaxee’s mission of delivering a user-friendly platform while aligning with its vision of making enterprise architecture accessible to all.</p>
                     <div id='pro2gsapleft' className="mt-3">

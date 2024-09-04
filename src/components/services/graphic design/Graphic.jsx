@@ -62,7 +62,7 @@ const Graphic = () => {
     return (
         <div ref={graphicDesign} id="graphicDesign" className='graphic'>
             <div className='gsapGraphicText text'>
-                <h1 className='mainHeading'>Graphic Design</h1>
+                <h1 className='mainHeading'>GraPhic Design</h1>
                 <p className='para'>Extraordinary design can transform your business. Whether you need a striking logo, captivating packaging, or an eye-catching illustration, our team of skilled designers is here to bring your vision to life.</p>
                 <p className='para'>Compelling brand identities that resonate with your target audience, from logo design to brand guidelines, we help you establish a strong and memorable brand presence.</p>
 

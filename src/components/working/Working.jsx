@@ -46,31 +46,31 @@ const Working = () => {
 
       </div> */}
       <div className="outerContainer">
-        <div className="imageDiv">
+        <div id='gsapWorkingStar' className="imageDiv">
           <img id="gsapWorking" src={stars} alt="Why us stars" />
         </div>
         <div id="gsapWorking" className="textDiv">
-          <div className="pointerDiv">
+          <div id='gsapWorkingTextDiv' className="pointerDiv">
             <h3 className="subHeading">Transparent Communication</h3>
             <p className="para">
               At GlyphicX, we prioritize honesty and open communication to build
               strong partnerships with our clients.
             </p>
           </div>
-          <div id="gsapWorking" className="pointerDiv">
+          <div id="gsapWorkingTextDiv" className="pointerDiv">
             <h3 className="subHeading">Competitive Analysis</h3>
             <p className="para">
               We dive deep into your market landscape, empowering you to make
               informed decisions and stay ahead
             </p>
           </div>
-          <div id="gsapWorking" className="pointerDiv">
+          <div id="gsapWorkingTextDiv" className="pointerDiv">
             <h3 className="subHeading">Audience Engagement</h3>
             <p className="para">
               Captivating narratives resonate with your target market
             </p>
           </div>
-          <div id="gsapWorking" className="pointerDiv">
+          <div id="gsapWorkingTextDiv" className="pointerDiv">
             <h3 className="subHeading">Stunning designs</h3>
             <p className="para">
               Visuals that make an impact. Leave a lasting impression on your

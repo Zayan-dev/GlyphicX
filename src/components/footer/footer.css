@@ -33,7 +33,7 @@
 .logo-text {
     font-size: 25px;
     font-weight: 600;
-    height: 150px;
+    height: 60px;
     position: relative;
     left: -15px;
     top: -40px;
@@ -41,7 +41,7 @@
     /* overflow: hidden; */
 }
 .logo-text img{
-    width: 15rem;
+    width: 10rem;
 }
 .newsletter {
     display: flex;

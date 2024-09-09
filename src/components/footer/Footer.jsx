@@ -187,7 +187,7 @@ const Footer = () => {
 
           <h3 className='subHeading'>How We Use Your Information</h3>
           <p className='para mb-3'>We use the information we collect to:</p>
-          <ul>
+          <ul className='para'>
             <li>Send you updates about our services, offers, and news.</li>
             <li>Respond to your inquiries and provide customer support.</li>
             <li>Improve our website and tailor our services to better meet your needs.</li>

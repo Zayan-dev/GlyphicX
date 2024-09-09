@@ -45,7 +45,7 @@ const Footer = () => {
             newsletter.
           </p>
           <div className="newsletter">
-            <input type="email" placeholder="Your email" className='para' />
+            <input type="email" placeholder="Your email" className="para" />
             <div className="subscribe-btn">
               <CustomButton4 text="Submit" />
             </div>
@@ -58,56 +58,103 @@ const Footer = () => {
         <div className="column-div">
           <div className="column-1">
             <p className="subHeading column-div-heading">Services</p>
-            <a onClick={handleNavigation} className='para cursor-pointer'>
+            <a onClick={handleNavigation} className="para cursor-pointer">
               Graphic Design
             </a>
-            <a onClick={handleUi} className='para cursor-pointer'>UI Design</a>
-            <a onClick={handleWeb} className='para cursor-pointer'>Website Development</a>
-            <a onClick={handleTvc} className='para cursor-pointer'>Television Commercial</a>
-            <a onClick={handleProAnim} className='para cursor-pointer'>Product Animation</a>
+            <a onClick={handleUi} className="para cursor-pointer">
+              UI Design
+            </a>
+            <a onClick={handleWeb} className="para cursor-pointer">
+              Website Development
+            </a>
+            <a onClick={handleTvc} className="para cursor-pointer">
+              Digital Video Commercial
+            </a>
+            <a onClick={handleProAnim} className="para cursor-pointer">
+              Product Animation
+            </a>
           </div>
 
           <div className="column-3">
             <p className="subHeading column-div-heading">Follow us</p>
             <div className="social">
-              <a target='_blank' href="https://www.facebook.com/profile.php?id=61555673464641&mibextid=kFxxJD">
+              <a
+                target="_blank"
+                href="https://www.facebook.com/profile.php?id=61555673464641&mibextid=kFxxJD"
+              >
                 {" "}
                 <i className="fa-brands fa-facebook fa-xl"></i>
               </a>
-              <a target='_blank' href="https://www.facebook.com/profile.php?id=61555673464641&mibextid=kFxxJD" className='para'>Facebook</a>
+              <a
+                target="_blank"
+                href="https://www.facebook.com/profile.php?id=61555673464641&mibextid=kFxxJD"
+                className="para"
+              >
+                Facebook
+              </a>
             </div>
             <div className="social">
-              <a target='_blank' href="https://www.instagram.com/glyphicx_agency?igsh=MndxZzFqazRhOXpj">
+              <a
+                target="_blank"
+                href="https://www.instagram.com/glyphicx_agency?igsh=MndxZzFqazRhOXpj"
+              >
                 {" "}
                 <i className="fa-brands fa-square-instagram fa-xl"></i>
               </a>
-              <a target='_blank' href="https://www.instagram.com/glyphicx_agency?igsh=MndxZzFqazRhOXpj" className='para'>Instagram</a>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/glyphicx_agency?igsh=MndxZzFqazRhOXpj"
+                className="para"
+              >
+                Instagram
+              </a>
             </div>
             <div className="social">
-              <a target='_blank' href="https://www.linkedin.com/company/glyphicx/">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/company/glyphicx/"
+              >
                 {" "}
                 <i className="fa-brands fa-linkedin fa-xl"></i>
               </a>
-              <a target='_blank' href="https://www.linkedin.com/company/glyphicx/" className='para'>Linkedin</a>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/company/glyphicx/"
+                className="para"
+              >
+                Linkedin
+              </a>
             </div>
             <div className="social">
-              <a target='_blank' href="http://">
+              <a target="_blank" href="http://">
                 {" "}
                 <i className="fa-brands fa-youtube fa-xl"></i>
               </a>
-              <a target='_blank' href="http://" className='para'>Youtube</a>
+              <a target="_blank" href="http://" className="para">
+                Youtube
+              </a>
             </div>
             <div className="social">
-              <a target='_blank' href="http://">
+              <a target="_blank" href="http://">
                 {" "}
                 <i className="fa-brands fa-x-twitter fa-xl"></i>
               </a>
-              <a target='_blank' href="http://" className='para'>X</a>
+              <a target="_blank" href="http://" className="para">
+                X
+              </a>
             </div>
           </div>
           <div className="column-2">
             <p className="subHeading column-div-heading">Contact Us</p>
-            <a href='mailto:info@GlyphicX.com' className='para'>info@GlyphicX.com</a>
+            <div className="social">
+              <a target="_blank" href="mailto:info@GlyphicX.com">
+                {" "}
+                <i class="fa-solid fa-envelope fa-xl"></i>
+              </a>
+              <a href="mailto:info@GlyphicX.com" className="para">
+                info@GlyphicX.com
+              </a>
+            </div>
           </div>
         </div>
       </div>

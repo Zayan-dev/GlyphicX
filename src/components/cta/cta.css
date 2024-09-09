@@ -2,6 +2,7 @@
     /* border: 1px solid red; */
     position: relative;
     height: 421px;
+    padding: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,6 +40,7 @@
     font-weight: 700;
     font-size: 48px;
     z-index: 2;
+    margin-bottom: 1rem;
 }
 
 .cta-btn-div {
@@ -49,6 +51,11 @@
     justify-content: center;
     align-items: center;
     z-index: 2;
+}
+
+.ctaBtn {
+    overflow: hidden;
+    margin: 0 4rem;
 }
 
 .contact {

@@ -86,7 +86,7 @@ li {
     }
 
     .visualization {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .vis-pic {

@@ -46,7 +46,7 @@ const Cta = () => {
           </p>
         </div>
         <div id='gsapCtaBtn' className="cta-btn-div">
-          <Link to="/services" className="benefitContactBtn hidden md2:flex xl:w-[180px]">
+          <Link to="/services" className="benefitContactBtn md:w-[180px]" style={{margin: "0 2rem"}}>
           <CustomButton3 text="Learn More"></CustomButton3>
           </Link>
 

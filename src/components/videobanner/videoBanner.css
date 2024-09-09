@@ -30,3 +30,15 @@
     background-repeat: repeat;
     z-index: -1;
 }
+
+
+@media screen and (max-width:808px) {
+    .video-banner {
+        padding: 0 20px;
+        margin-bottom: 20px;
+    }
+    .hero-video {
+        width: 100vw;
+
+    }
+}

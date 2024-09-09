@@ -26,7 +26,7 @@ const Collaboration = () => {
     return (
       <div className="collaboration">
         <div id='gsapCollaborationHeading' className="coll-heading">
-          <p className="subHeading font-bold">Innovative</p>
+          <p className="subHeading font-bold" style={{display: "none"}}>Innovative</p>
           <p className="mainHeading coll-head-text">
             our unique APProach to Client Collaboration
           </p>

@@ -60,8 +60,8 @@
 
 @media screen and (max-width:808px) {
     .feature {
-        flex-direction: column;
-        padding: 20px;
+        flex-direction: column-reverse;
+        padding: 20px 20px 40px;
         gap: 1rem;
     }
 

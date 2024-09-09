@@ -28,6 +28,7 @@
     height:100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-image: url("../../../assets/bg.png");
     color: var(--background-color);
     overflow: hidden;
@@ -38,6 +39,7 @@
     padding: 112px 64px 112px 64px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     color: var(--foreground-color);
 }
 
@@ -46,6 +48,7 @@
     padding: 112px 64px 112px 64px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-image: url("../../../assets/bg.png");
     color: var(--background-color);
 }
@@ -66,11 +69,16 @@
     width: 50%;
     cursor: pointer;
 }
+/* .image img:nth-child(odd){ */
+    /* height: 100%; */
+    /* object-fit: cover; */
+    /* border: 2px solid var(--background-color); */
+/* } */
 
-.project1 .image, .project3 .image {
+.project1 .image img, .project3 .image img {
     border: 2px solid var(--background-color);
 }
-.project2 .image, .project4 .image {
+.project2 .image img, .project4 .image img{
     border: 2px solid var(--foreground-color);
 }
 
@@ -173,21 +181,26 @@
     }
 }
 
-@media screen and (max-width:808px) {
+@media screen and (max-width:970px) {
     .project1 {
         padding: 20px;
         gap: 1rem;
         margin-top: 4rem;
-    }
+        margin-bottom: 3rem;
+        }
 
     .project2 {
         padding: 20px;
         gap: 1rem;
+        margin-bottom: 3rem;
+
     }
 
     .project3 {
         padding: 20px;
         gap: 1rem;
+        margin-bottom: 3rem;
+
     }
 
     .content,

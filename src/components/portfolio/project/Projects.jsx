@@ -374,7 +374,7 @@ const Projects = () => {
                     <img onClick={(e) => handleDisplay('project2', e)} src={GlyphicX.image1} alt="" />
                 </div>
             </div>
-
+            
             <div className="project2">
                 <div className="content left">
                     <h1 id='pro2gsapleft' className='mainHeading' onClick={(e) => handleDisplay('project1', e)}>Eaxee EnterPrise</h1>

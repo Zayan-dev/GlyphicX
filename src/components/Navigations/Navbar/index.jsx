@@ -42,11 +42,13 @@ const Navbar = ({ toggle }) => {
 
   const activeLinkStyles = "after:w-full after:scale-x-0 after:scale-x-100 text-royalBlue ";
 
+
+  // When resources navlink had to be added change all md: to md2
   return (
     <div id="gsapNavDiv" className={`${navbarStyles} w-full h-16 lg:h-[74px] min-h-[68px] transition-all duration-700`}>
       <div className="w-full px-[6%] md:px-10 lg:px-12 xl:px-16 xl3:px-20 h-full">
         <div className="h-full relative flex justify-between items-center">
-          <ul className="hidden md2:flex justify-between gap-6 lg1:gap-12 xl3:gap-20">
+          <ul className="hidden md:flex justify-between gap-6 lg1:gap-12 xl3:gap-20">
             <li>
               <NavLink
                 to="/"
@@ -85,17 +87,17 @@ const Navbar = ({ toggle }) => {
               </NavLink>
             </li>
           </ul>
-          <div id="gsapLogo" className="static md2:absolute md2:left-1/2 md2:transform md2:-translate-x-1/2">
+          <div id="gsapLogo" className="static md:absolute md:left-1/2 md:transform md:-translate-x-1/2">
             {isHomePage ? (isScrolled ? <Logo /> : <WhiteLogo />) : <Logo />} {/* Toggle logos based on page */}
           </div>
 
-          <NavLink to="#footerSection" id="gsapContactBtn" className="hidden md2:flex xl:w-[180px]">
+          <NavLink to="/contact" id="gsapContactBtn" className="hidden md:flex xl:w-[180px]">
             <CustomButton2 text="Contact" />
           </NavLink>
 
           <button
             type="button"
-            className="inline-flex items-center md2:hidden"
+            className="inline-flex items-center md:hidden"
             onClick={toggle}
           >
             {/* Menu icon */}

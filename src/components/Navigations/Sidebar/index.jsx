@@ -4,7 +4,7 @@ import { GrResources } from "react-icons/gr";
 import { MdDesignServices } from "react-icons/md";
 import { GrProjects } from "react-icons/gr";
 import { Link } from "react-router-dom";
-import {CustomButton4} from "../../CustomButton";
+import { CustomButton3 } from "../../CustomButton";
 import logo from "../../../assets/images/sidebarLogo2.png"
 
 const Sidebar = ({ isOpen, toggle }) => {
@@ -93,7 +93,7 @@ const Sidebar = ({ isOpen, toggle }) => {
           className="subHeading px-[12%] block mt-8 w-full"
           onClick={toggle}
         >
-          <CustomButton4 text="Contact" />
+          <CustomButton3 text="Contact" />
         </Link>
 
         <div className="w-full px-[8%] text-left text-offWhite">

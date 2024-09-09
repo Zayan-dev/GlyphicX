@@ -138,7 +138,7 @@ const Footer = () => {
                 Linkedin
               </a>
             </div>
-            <div className="social">
+            {/* <div className="social">
               <a target="_blank" href="http://">
                 <i className="fa-brands fa-youtube fa-xl"></i>
               </a>
@@ -153,13 +153,14 @@ const Footer = () => {
               <a target="_blank" href="http://" className="para">
                 X
               </a>
-            </div>
+            </div> */}
           </div>
           <div className="column-2">
             <p className="subHeading column-div-heading">Contact Us</p>
             <div className="social">
               <a target="_blank" href="mailto:info@GlyphicX.com">
-                <i class="fa-solid fa-envelope fa-xl"></i>
+                {" "}
+                <i className="fa-solid fa-envelope fa-xl"></i>
               </a>
               <a href="mailto:info@GlyphicX.com" className="para">
                 info@GlyphicX.com

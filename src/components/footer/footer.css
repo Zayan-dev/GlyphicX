@@ -15,13 +15,13 @@
 
 .footer-section {
     /* border: 1px solid green; */
-    margin-bottom: 30px;
+    margin-bottom: 70px;
     width: 600px;
-    height: 240px;
+    height: 340px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    position: relative;
+    justify-content: center;
+    /* position: relative; */
     top: 0px;
     gap: 24px;
 }
@@ -33,10 +33,16 @@
 .logo-text {
     font-size: 25px;
     font-weight: 600;
+    height: 150px;
     position: relative;
     left: -15px;
+    top: -40px;
+    /* border: 1px solid red; */
+    /* overflow: hidden; */
 }
-
+.logo-text img{
+    width: 15rem;
+}
 .newsletter {
     display: flex;
     gap: 2rem;
@@ -123,6 +129,7 @@
     .footer-section {
         top: 40px;
     }
+
 }
 
 @media screen and (max-width:928px) {
@@ -147,6 +154,7 @@
         width: 100%;
         margin-left: 0;
     }
+ 
 }
 
 @media screen and (max-width:739px) {

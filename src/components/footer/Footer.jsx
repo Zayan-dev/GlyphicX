@@ -37,9 +37,9 @@ const Footer = () => {
     <div ref={footerRef} id="footerSection" className="flex footer">
       <div className="flex flex-container">
         <div className="footer-section ">
-          <h2 className="logo-text">
+          <div className="logo-text">
             <img src={logo} alt="logo" />
-          </h2>
+          </div>
           <p className="para">
             Stay up to date on the latest features and releases by joining our
             newsletter.

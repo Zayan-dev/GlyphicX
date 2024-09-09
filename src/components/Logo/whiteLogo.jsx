@@ -33,7 +33,7 @@ const WhiteLogo = () => {
 
   return (
     <>
-      <Link to="/" style={{ display: "block" }}>
+      <Link to="/" style={{ display: "block", marginLeft: "20px" }}>
         {/* <Image
           src="/assets/images/glyphicX.png"
           alt="Logo"

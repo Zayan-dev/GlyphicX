@@ -42,14 +42,19 @@ const Benefit = () => {
         {/* <div className="beneath-overlay"> */}
         <div className="benefit-intro">
           <p id="gsapBenefitIntro" className="para">
-            Welcome to GlyphicX, where creativity meets strategy to deliver
-            exceptional brand experiences. Our team of experts is passionate
-            about crafting compelling narratives that resonate with your
-            audience and drive results.
+            Welcome to <span style={{fontWeight: "bold", fontSize: "22px"}}>GlyphicX</span>, where creativity meets strategy to
+            deliver exceptional brand experiences. Our team of experts is
+            passionate about crafting compelling narratives that resonate with
+            your audience and drive results.
             {/* <div className="py-4 container">
             <a href='/' className="underline-btn">Learn More</a>
           </div> */}
-          <Link id="gsapContactBtn" to="/services" className="benefitContactBtn hidden md2:flex md:w-[180px]">
+            <Link
+              id="gsapContactBtn"
+              to="/services"
+              className="benefitContactBtn hidden"
+            >
+              {/* wapis button lane k liye for big screens add this md2:flex md:w-[180px] */}
               <CustomButton2 text="Learn More" />
             </Link>
           </p>

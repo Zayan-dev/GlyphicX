@@ -2,21 +2,21 @@ import React, { useEffect, useRef, useState } from 'react';
 import '../footer/footer.css';
 import Modal from '../Modal'; // Import Modal component
 import logo from "../../assets/logo.png"
-import CustomButton, { CustomButton2, CustomButton4 } from '../CustomButton';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { CustomButton4 } from '../CustomButton';
 
 const Footer = () => {
-  const footerRef = useRef(null);
-  const { hash } = useLocation();
-  const navigate = useNavigate();
+  // const footerRef = useRef(null);
+  // const { hash } = useLocation();
+  // const navigate = useNavigate();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isModalTosOpen, setIsModalTosOpen] = useState(false);
+  const [isModalCookieOpen, setIsModalCookieOpen] = useState(false);
 
-  useEffect(() => {
-    if (hash === "#footerSection" && footerRef.current) {
-      footerRef.current.scrollIntoView({ behavior: "smooth" });
-    }
-  }, [hash]);
+  // useEffect(() => {
+  //   if (hash === "#footerSection" && footerRef.current) {
+  //     footerRef.current.scrollIntoView({ behavior: "smooth" });
+  //   }
+  // }, [hash]);
 
   const handleNavigation = () => {
     navigate("/services#graphicDesign");
@@ -44,10 +44,13 @@ const Footer = () => {
   const openTosModal = () => setIsModalTosOpen(true);
   const closeTosModal = () => setIsModalTosOpen(false);
 
+  const openCookieModal = () => setIsModalCookieOpen(true);
+  const closeCookieModal = () => setIsModalCookieOpen(false);
+
 
 
   return (
-    <div ref={footerRef} id="footerSection" className="flex footer">
+    <div id="footerSection" className="flex footer">
       <div className="flex flex-container">
         <div className="footer-section ">
           <div className="logo-text">
@@ -177,7 +180,7 @@ const Footer = () => {
             <a onClick={openTosModal} className="cursor-pointer">Terms of Service</a>
           </li>
           <li>
-            <a href="#">Cookie Settings</a>
+            <a onClick={openCookieModal} className="cursor-pointer">Cookie Settings</a>
           </li>
         </ul>
       </div>
@@ -243,6 +246,31 @@ const Footer = () => {
 
         <h2 className='subHeading'>6. Contact Information</h2>
         <p className='para mb-3'>For any questions regarding these Terms of Service, please contact us at <a href="mailto:info@GlyphicX.com">info@GlyphicX.com</a>.</p>
+      </Modal>
+      <Modal isOpen={isModalCookieOpen} onClose={closeCookieModal}>
+        <h3 className='mainHeading mb-3'>Cookies</h3>
+        <p className='para mb-3'>Our website uses cookies to enhance your browsing experience and improve our services. Cookies are small files that are stored on your device when you visit a website. They help us understand how you use our site and enable us to provide a more personalized experience.</p>
+
+        <h4 className='subHeading'>Types of Cookies We Use:</h4>
+        <ul className='para mb-3'>
+          <li><strong>Session Cookies:</strong> These cookies are temporary and expire once you close your browser. They help us manage your session while you navigate our site.</li>
+          {/* <li><strong>Persistent Cookies:</strong> These cookies remain on your device for a specified period or until you delete them. They help us remember your preferences for future visits.</li>
+          <li><strong>Third-Party Cookies:</strong> We may also use cookies from third-party services for analytics and advertising purposes.</li> */}
+        </ul>
+
+        <h4 className='subHeading'>User Consent:</h4>
+        <p className='para mb-3'>By using our website, you consent to our use of cookies.</p>
+
+        <h4 className='subHeading'>Managing Cookies:</h4>
+        <p className='para mb-3'>You can control how cookies are managed on your device by adjusting your browser settings. Most browsers allow you to refuse cookies or alert you when cookies are being sent. For more information on how to manage cookies, please visit the help section of your browser:</p>
+        <ul className='para mb-3'>
+          <li><a href="https://support.google.com/chrome/answer/95647" target="_blank">Chrome</a></li>
+          <li><a href="https://support.mozilla.org/en-US/kb/delete-cookies-remove-info-websites-stored" target="_blank">Firefox</a></li>
+          <li><a href="https://support.apple.com/en-us/HT201265" target="_blank">Safari</a></li>
+        </ul>
+
+        <p className='para'>If you have any questions or concerns about our use of cookies, please contact us at <a href="mailto:info@GlyphicX.com">info@GlyphicX.com</a>.</p>
+
       </Modal>
     </div>
   );

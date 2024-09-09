@@ -10,6 +10,7 @@ const Footer = () => {
   const { hash } = useLocation();
   const navigate = useNavigate();
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalTosOpen, setIsModalTosOpen] = useState(false);
 
   useEffect(() => {
     if (hash === "#footerSection" && footerRef.current) {
@@ -39,6 +40,11 @@ const Footer = () => {
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
+
+  const openTosModal = () => setIsModalTosOpen(true);
+  const closeTosModal = () => setIsModalTosOpen(false);
+
+
 
   return (
     <div ref={footerRef} id="footerSection" className="flex footer">
@@ -168,7 +174,7 @@ const Footer = () => {
             <a onClick={openModal} className="cursor-pointer">Privacy Policy</a>
           </li>
           <li>
-            <a href="#">Terms of Service</a>
+            <a onClick={openTosModal} className="cursor-pointer">Terms of Service</a>
           </li>
           <li>
             <a href="#">Cookie Settings</a>
@@ -212,6 +218,31 @@ const Footer = () => {
           <p className='para mb-3'>If you have any questions or concerns about our Privacy Policy, please contact us at <a href="mailto:info@GlyphicX.com">info@GlyphicX.com</a>.</p>
         </div>
 
+      </Modal>
+
+      <Modal isOpen={isModalTosOpen} onClose={closeTosModal}>
+        <h1 className='mainHeading mb-3'>Terms of Service</h1>
+        <p><strong>Effective Date: September 9 2024</strong></p>
+
+        <p className='para mb-3'>Welcome to GlyphicX! These Terms of Service govern your use of our website and services. By accessing or using our services, you agree to comply with these terms. If you do not agree, please do not use our services.</p>
+
+        <h2 className='subHeading'>1. Acceptance of Terms</h2>
+        <p className='para mb-3'>By using our website, you acknowledge that you have read and agree to these Terms of Service. We may update these terms from time to time, and your continued use signifies acceptance of those changes.</p>
+
+        <h2 className='subHeading'>2. Services Offered</h2>
+        <p className='para mb-3'>GlyphicX provides graphic design, branding, and related services. Details about our offerings can be found on our website.</p>
+
+        <h2 className='subHeading'>3. Intellectual Property</h2>
+        <p className='para mb-3'>All content on our website, including designs, graphics, and text, is the property of GlyphicX and protected by intellectual property laws. User-generated content may grant us rights to use it as described in our policies.</p>
+
+        <h2 className='subHeading'>4. Payment Terms</h2>
+        <p className='para mb-3'>All payments for services are due as specified at the time of purchase. We reserve the right to change our fees, and users will be notified accordingly.</p>
+
+        <h2 className='subHeading'>5. Changes to the Terms</h2>
+        <p className='para mb-3'>We may update these Terms of Service at any time. Changes will be posted on this page, and the effective date will be updated.</p>
+
+        <h2 className='subHeading'>6. Contact Information</h2>
+        <p className='para mb-3'>For any questions regarding these Terms of Service, please contact us at <a href="mailto:info@GlyphicX.com">info@GlyphicX.com</a>.</p>
       </Modal>
     </div>
   );

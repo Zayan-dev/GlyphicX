@@ -113,23 +113,36 @@ const Projects = () => {
         }
         setModalContent(null);
     };
-
     useEffect(() => {
+        // Function to close modal on click outside
         const handleClickOutside = (event) => {
-            const modal = document.querySelector('.iframe-container');
-            if (modal && !modal.contains(event.target) && document.querySelector('.overlay')) {
-                handleClose();
-            }
+          const modal = document.querySelector('.iframe-container');
+          if (modal && !modal.contains(event.target) && document.querySelector('.overlay')) {
+            handleClose();  // Close the modal if click is outside
+          }
         };
-
+      
+        // Function to close modal on pressing 'Escape' key
+        const handleEscapeKey = (event) => {
+          if (event.key === 'Escape') {
+            handleClose();  // Close the modal if 'Escape' key is pressed
+          }
+        };
+      
+        // Add event listeners when modal is open
         if (modalContent && document.querySelector('.overlay')) {
-            document.addEventListener('mousedown', handleClickOutside);
+          document.addEventListener('mousedown', handleClickOutside);  // Detect click outside modal
+          document.addEventListener('keydown', handleEscapeKey);        // Detect 'Escape' key press
         }
-
+      
+        // Clean up event listeners when component unmounts or modal closes
         return () => {
-            document.removeEventListener('mousedown', handleClickOutside);
+          document.removeEventListener('mousedown', handleClickOutside);
+          document.removeEventListener('keydown', handleEscapeKey);
         };
-    }, [modalContent]);
+      }, [modalContent]);
+      
+      
 
     const projectContent = {
         project1: (
@@ -374,7 +387,7 @@ const Projects = () => {
                     <img onClick={(e) => handleDisplay('project2', e)} src={GlyphicX.image1} alt="" />
                 </div>
             </div>
-            
+
             <div className="project2">
                 <div className="content left">
                     <h1 id='pro2gsapleft' className='mainHeading projectHeading' onClick={(e) => handleDisplay('project1', e)}>Eaxee EnterPrise</h1>

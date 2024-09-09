@@ -105,18 +105,18 @@
     color: var(--background-color);
 }
 
-.mainHeading {
+.projectHeading {
     /* border: 1px solid red; */
     width: fit-content;
 }
 
-.simple .mainHeading {
+.simple .projectHeading {
     position: relative;
     cursor: pointer;
     margin-bottom: 10px;
 }
 
-.simple .mainHeading::after {
+.simple .projectHeading::after {
     content: '';
     position: absolute;
     width: 0%;
@@ -128,7 +128,7 @@
     transition: all 0.5s ease;
 }
 
-.simple .mainHeading:hover::after {
+.simple .projectHeading:hover::after {
     opacity: 1;
     width: 100%;
 }
@@ -148,7 +148,7 @@
 
 @media screen and (max-width:969px) {
     .projects {
-        margin-top: 4rem;
+        padding-top: 100px;
     }
 
     .project1 {
@@ -177,7 +177,7 @@
     .project1 {
         padding: 20px;
         gap: 1rem;
-        margin-top: 4rem;
+        padding-top: 100px;
     }
 
     .project2 {

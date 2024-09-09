@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 80px 64px 80px 64px;
+    padding: 80px 64px 60px 64px;
     /* margin-top: 4rem; */
     padding-top: 10rem;
     gap: 30px;
@@ -92,8 +92,7 @@
 @media screen and (max-width:808px) {
     .benefit {
         flex-direction: column;
-        padding: 20px;
-        gap: 1rem;
+        padding: 90px 20px 40px;
     }
 
     .benefit-heading {

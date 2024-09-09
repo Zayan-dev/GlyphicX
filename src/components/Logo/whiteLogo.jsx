@@ -44,7 +44,7 @@ const WhiteLogo = () => {
         <img
           src={logoImg}
           alt="Logo"
-          width={width < 641 ? "35" : "70"}
+          width={width < 641 ? "35" : "50"}
           height={width < 641 ? "35" : "50"}
           className="relative"
         />

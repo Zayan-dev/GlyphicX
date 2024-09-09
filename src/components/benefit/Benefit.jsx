@@ -33,29 +33,29 @@ const Benefit = () => {
 
   return (
     <div className="beneath-overlay">
-    <div id='gsapBenefitContainer' className="benefit">
-      <div className="benefit-heading">
-        <p id='gsapBenefitHeading' className="mainHeading">
-          Transforming Brands Through CaPtivating Storytelling
-        </p>
-      </div>
-      {/* <div className="beneath-overlay"> */}
-      <div className="benefit-intro">
-        <p id='gsapBenefitIntro' className="para">
-          Welcome to GlyphicX, where creativity meets strategy to deliver
-          exceptional brand experiences. Our team of experts is passionate
-          about crafting compelling narratives that resonate with your
-          audience and drive results.
-          {/* <div className="py-4 container">
+      <div id="gsapBenefitContainer" className="benefit">
+        <div className="benefit-heading">
+          <p id="gsapBenefitHeading" className="mainHeading">
+            Transforming Brands Through CaPtivating Storytelling
+          </p>
+        </div>
+        {/* <div className="beneath-overlay"> */}
+        <div className="benefit-intro">
+          <p id="gsapBenefitIntro" className="para">
+            Welcome to GlyphicX, where creativity meets strategy to deliver
+            exceptional brand experiences. Our team of experts is passionate
+            about crafting compelling narratives that resonate with your
+            audience and drive results.
+            {/* <div className="py-4 container">
             <a href='/' className="underline-btn">Learn More</a>
-          </div> */}  
-          <Link id="gsapContactBtn" to="/services" className="benefitContactBtn hidden md2:flex xl:w-[180px]">
+          </div> */}
+          <Link id="gsapContactBtn" to="/services" className="benefitContactBtn hidden md2:flex md:w-[180px]">
               <CustomButton2 text="Learn More" />
             </Link>
-        </p>
+          </p>
+        </div>
+        {/* </div> */}
       </div>
-      {/* </div> */}
-    </div>
     </div>
   );
 }

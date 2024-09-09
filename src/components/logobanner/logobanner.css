@@ -4,14 +4,14 @@
     justify-content: center;
     align-items: center;
     gap: 5rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
-@media screen and (max-width:808px) {
+@media screen and (max-width : 640px) {
     .logobanner {
         padding: 20px;
-        gap: 1rem;
-        margin-top: 4rem;
+        gap: 0px;
+        margin-top: 0px;
         flex-direction: column;
     }
 

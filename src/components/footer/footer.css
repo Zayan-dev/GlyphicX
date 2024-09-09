@@ -7,7 +7,7 @@
 
 .flex-container {
     /* border: 1px solid yellowgreen; */
-    padding: 80px 64px 80px 64px;
+    padding: 80px 64px 20px 64px;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -96,12 +96,10 @@
 
 
 .footer-bottom {
-    height: 5rem;
-    padding: 80px 64px 80px 64px;
+    padding: 30px 64px 30px 64px;
     width: 100%;
     border-top: 1px solid var(--foreground-color);
     justify-content: space-between;
-    padding-top: 30px;
 }
 
 .footer-links {
@@ -163,5 +161,11 @@
     .newsletter input,
     .newsletter button {
         width: 100%;
+    }
+}
+
+@media screen and (max-width : 600px) {
+    .footer-bottom {
+        flex-direction: column-reverse;
     }
 }

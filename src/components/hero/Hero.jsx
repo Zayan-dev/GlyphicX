@@ -48,7 +48,7 @@ const Hero = () => {
             //         // // scrub: 2,
             //     }
             // });
-            
+
             gsap.from("#gsapBenefitHeading", {
                 x: -800,
                 opacity: 0,
@@ -111,6 +111,8 @@ const Hero = () => {
                     // scrub: 5,
                 }
             });
+      
+
             gsap.from("#gsapInner1 p", {
                 y: 400,
                 opacity: 0,
@@ -161,23 +163,23 @@ const Hero = () => {
                     // scrub: 2,
                 }
             });
-            gsap.from("#gsapWorkingImg ", {
-                transformOrigin: 'left',
-                transform: "scaleX(0)",
-                scrollTrigger: {
-                    trigger: "#gsapWorkingImg",
-                    scroller: "body",
-                    markers: false,
-                    start: "top 80%",
-                    end: "top 30%",
-                    // scrub: 2,
-                }
-            });
+            // gsap.from("#gsapWorkingImg ", {
+            //     transformOrigin: 'left',
+            //     transform: "scaleX(0)",
+            //     scrollTrigger: {
+            //         trigger: "#gsapWorkingImg",
+            //         scroller: "body",
+            //         markers: false,
+            //         start: "top 80%",
+            //         end: "top 30%",
+            //         // scrub: 2,
+            //     }
+            // });
             gsap.from("#gsapWorkingHeading", {
                 rotateX: "90deg",
+                y: -180,
                 opacity: 0,
-                stagger: 0.3,
-                // duration: 10,
+                // stagger: 0.3,
                 scrollTrigger: {
                     trigger: "#gsapWorking",
                     scroller: "body",
@@ -187,7 +189,46 @@ const Hero = () => {
                     // scrub: 2,
                 }
             });
-            
+            gsap.from("#gsapWorkingStar img", {
+                opacity: 0,
+                duration: 3,
+                scrollTrigger: {
+                    trigger: "#gsapWorkingStar img",
+                    scroller: "body",
+                    markers: false,
+                    start: "top 90%",
+                    end: "top 60%",
+                }
+            });
+            gsap.from("#gsapWorkingTextDiv p", {
+                rotateX: "90deg",
+                opacity: 0,
+                stagger: 0.3,
+                duration:1,
+                scrollTrigger: {
+                    trigger: "#gsapWorkingTextDiv",
+                    scroller: "body",
+                    markers: false,
+                    start: "top 60%",
+                    end: "top 10%",
+                    // scrub: 5,
+                }
+            });
+            gsap.from("#gsapWorkingTextDiv h3", {
+                rotateX: "90deg",
+                opacity: 0,
+                stagger: 0.3,
+                duration:1,
+                scrollTrigger: {
+                    trigger: "#gsapWorkingTextDiv",
+                    scroller: "body",
+                    markers: false,
+                    start: "top 60%",
+                    end: "top 10%",
+                    // scrub: 5,
+                }
+            });
+
         },
     );
 

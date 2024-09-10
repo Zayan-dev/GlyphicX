@@ -4,7 +4,7 @@ import { GrResources } from "react-icons/gr";
 import { MdDesignServices } from "react-icons/md";
 import { GrProjects } from "react-icons/gr";
 import { Link } from "react-router-dom";
-import { CustomButton3 } from "../../CustomButton";
+import { CustomButton4 } from "../../CustomButton";
 import logo from "../../../assets/images/sidebarLogo2.png"
 import bg from "../../../assets/bg.png"
 
@@ -27,7 +27,7 @@ const Sidebar = ({ isOpen, toggle }) => {
         className={`sidebar-container shadow-sm shadow-offWhite pr-14 fixed w-full h-full bg-cover bg-center overflow-hidden justify-start transition-transform duration-[400ms] pt-[110px] left-0 z-50`}
         style={{
           transform: `${isOpen ? "translateX(15%)" : "translateX(110%)"}`,
-          backgroundImage: `url(${bg})` ,
+          backgroundImage: `url(${bg})`,
           boxShadow: "-5px 0px 18px -10px #fffaf0",
         }}
       >
@@ -94,7 +94,7 @@ const Sidebar = ({ isOpen, toggle }) => {
           className="subHeading px-[12%] block mt-8 w-full"
           onClick={toggle}
         >
-          <CustomButton3 text="Contact" />
+          <CustomButton4 text="Contact" />
         </Link>
 
         <div className="w-full px-[8%] text-left text-offWhite">

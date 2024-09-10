@@ -201,7 +201,7 @@ const Footer = () => {
                 target="_blank"
                 href="https://www.facebook.com/profile.php?id=61555673464641&mibextid=kFxxJD"
               >
-                <i className="fa-brands fa-facebook fa-xl"></i>
+           <i class="fa-brands fa-square-facebook fa-xl"></i>
               </a>
               <a
                 target="_blank"

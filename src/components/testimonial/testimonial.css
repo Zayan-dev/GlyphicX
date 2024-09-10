@@ -8,6 +8,7 @@
     height: 50vh;
     overflow: hidden;
     padding: 20px;
+    margin-bottom: 2rem;
     /* border: 1px solid red; */
 }
 
@@ -19,7 +20,7 @@
     align-items: center;
     /* gap: 40px; */
     width:50%;
-    height: 30vh;
+    height: 40vh;
 }
 
 .prev, .next {
@@ -82,7 +83,8 @@
 /* Responsive Styles */
 @media screen and (max-width: 808px) {
     .testimonial-slider{
-        height: 30vh;
+        height: 45vh;
+        margin-bottom: 2rem;
     }
     .testimonial {
         gap: 2rem;

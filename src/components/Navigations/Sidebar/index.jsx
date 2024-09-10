@@ -10,7 +10,7 @@ import bg from "../../../assets/bg.png"
 
 const Sidebar = ({ isOpen, toggle }) => {
 
-  const listItemStyles = "h-[60px] rounded hover:bg-royalBlue mb-4";
+  const listItemStyles = "h-[60px] rounded hover:bg-offWhite mb-4 hover:text-navyBlue";
   const linkStyles = "h-full w-full flex items-center justify-center gap-8 font-medium px-[4%]";
   return (
     <div className="relative">
@@ -117,7 +117,7 @@ const Sidebar = ({ isOpen, toggle }) => {
           >
             {" "}
             <i
-              className="fa-brands fa-facebook"
+              className="fa-brands fa-square-facebook fa-xl"
               style={{ color: "#fffaf0", fontSize: "26px" }}
             ></i>
           </a>

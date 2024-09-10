@@ -43,10 +43,11 @@
 .logo-text img{
     width: 10rem;
 }
-.newsletter {
+.newsletter form {
     display: flex;
     gap: 2rem;
     margin-top: 10px;
+    /* border: 1px solid red; */
 }
 
 .newsletter input {
@@ -203,7 +204,7 @@
         width: 100%;
     }
 
-    .newsletter {
+    .newsletter form {
         flex-direction: column;
     }
 

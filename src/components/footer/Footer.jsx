@@ -3,8 +3,35 @@ import '../footer/footer.css';
 import Modal from '../Modal'; // Import Modal component
 import logo from "../../assets/logo.png"
 import { CustomButton4 } from '../CustomButton';
+import { useForm } from 'react-hook-form';
+import emailjs from "emailjs-com";
+import Alert from "../alert/alertBox";
+
 
 const Footer = () => {
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
+
+  const [disabled, setDisabled] = useState(false);
+  const [alertInfo, setAlertInfo] = useState({
+    display: false,
+    message: "",
+    type: "",
+  });
+
+  // Shows alert message for form submission feedback
+  const toggleAlert = (message, type) => {
+    setAlertInfo({ display: true, message, type });
+
+    // Hide alert after 5 seconds
+    setTimeout(() => {
+      setAlertInfo({ display: false, message: "", type: "" });
+    }, 3000);
+  };
   // const footerRef = useRef(null);
   // const { hash } = useLocation();
   // const navigate = useNavigate();
@@ -47,6 +74,45 @@ const Footer = () => {
   const openCookieModal = () => setIsModalCookieOpen(true);
   const closeCookieModal = () => setIsModalCookieOpen(false);
 
+  const onSubmit = async (data) => {
+    // Detect spams by checking honeypot field
+    if (data.honeypot) {
+      reset();
+      console.log("Spam email, discarding submission!");
+      return;
+    }
+
+    // Destrcture data object
+    const { email } = data;
+    try {
+      // Disable form while processing submission
+      setDisabled(true);
+
+      const templateParams = {
+        email,
+      };
+
+      // console.log(import.meta.env.VITE_APP_SERVICE_ID);
+      await emailjs.send(
+        import.meta.env.VITE_APP_SERVICE_ID2,
+        import.meta.env.VITE_APP_TEMPLATE_ID2,
+        templateParams,
+        import.meta.env.VITE_APP_PUBLIC_KEY
+      );
+
+      // TODO:Receiver Email ID set krni hai, email js ki website pr ja kr template bhi set krni hai
+
+      toggleAlert("Email sent successfully!", "success");
+    } catch (e) {
+      console.error(e);
+      toggleAlert("Uh oh. Something went wrong.", "danger");
+    } finally {
+      // Re-enable form submission
+      setDisabled(false);
+      // Reset contact form fields after submission
+      reset();
+    }
+  };
 
 
   return (
@@ -61,11 +127,44 @@ const Footer = () => {
             newsletter.
           </p>
           <div className="newsletter">
-            <input type="email" placeholder="Your email" className="para" />
-            <div className="subscribe-btn">
-              <CustomButton4 text="Submit" />
-            </div>
+            <form onSubmit={handleSubmit(onSubmit)}
+              noValidate
+              disabled={disabled}>
+              <input type="email"
+                name="email"
+                id="email"
+                className="para"
+                {...register("email", {
+                  required: true,
+                  pattern:
+                    /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+                })} />
+              {errors.email && (
+                <span className="para errorMessage">
+                  Please enter a valid email address
+                </span>
+              )}
+
+              {/* Honeypot for spam detection */}
+              <label htmlFor="honeypot" style={{ display: "none" }}>
+                Enter First Name:
+              </label>
+              <input
+                type="text"
+                name="honeypot"
+                id="honeypot"
+                className="para"
+                style={{ display: "none" }}
+                {...register("honeypot")}
+              />
+
+              <div className="subscribe-btn">
+                <CustomButton4 text="Submit" type="submit" />
+              </div>
+
+            </form>
           </div>
+
           <p className="para">
             By subscribing, you agree to our Privacy Policy and consent to
             receive updates from our company.
@@ -186,6 +285,12 @@ const Footer = () => {
         </ul>
       </div>
 
+      <Alert
+        display={alertInfo.display}
+        message={alertInfo.message}
+        type={alertInfo.type}
+        onClose={() => setAlertInfo({ display: false, message: "", type: "" })}
+      />
       <Modal isOpen={isModalOpen} onClose={closeModal}>
         <div class="privacy-policy">
           <h2 className='mainHeading mb-3'>Privacy Policy</h2>

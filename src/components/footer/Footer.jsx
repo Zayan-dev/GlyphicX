@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import '../footer/footer.css';
 import Modal from '../Modal'; // Import Modal component
 import logo from "../../assets/logo.png"
-import { CustomButton4 } from '../CustomButton';
+import CustomButton, { CustomButton2, CustomButton3, CustomButton4, CustomButton5 } from '../CustomButton';
 import { useForm } from 'react-hook-form';
 import emailjs from "emailjs-com";
 import Alert from "../alert/alertBox";
@@ -10,6 +10,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 const Footer = () => {
+
   const {
     register,
     handleSubmit,
@@ -156,7 +157,7 @@ const Footer = () => {
               />
 
               <div className="subscribe-btn">
-                <CustomButton4 text="Submit" type="submit" />
+                <CustomButton5 text="Submit" type="submit" />
               </div>
 
             </form>

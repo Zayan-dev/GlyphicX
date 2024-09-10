@@ -52,13 +52,13 @@ const Contact = () => {
         message,
       };
 
-      console.log(import.meta.env.VITE_APP_SERVICE_ID);
-      // await emailjs.send(
-      //   import.meta.env.VITE_APP_SERVICE_ID,
-      //   import.meta.env.VITE_APP_TEMPLATE_ID,
-      //   templateParams,
-      //   import.meta.env.VITE_APP_PUBLIC_KEY
-      // );
+      // console.log(import.meta.env.VITE_APP_SERVICE_ID);
+      await emailjs.send(
+        import.meta.env.VITE_APP_SERVICE_ID,
+        import.meta.env.VITE_APP_TEMPLATE_ID,
+        templateParams,
+        import.meta.env.VITE_APP_PUBLIC_KEY
+      );
 
       // TODO:Receiver Email ID set krni hai, email js ki website pr ja kr template bhi set krni hai
 

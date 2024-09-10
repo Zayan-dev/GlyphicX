@@ -52,7 +52,7 @@ const Sidebar = ({ isOpen, toggle }) => {
         <ul className="subHeading w-full px-[8%] text-left text-offWhite text-xl">
           <li className="w-full mb-10 flex justify-center items-center">
             <Link to="/" className="" onClick={toggle}>
-              <img src={logo} alt="logo" style={{ height: "40px" }} />
+              <img src={logo} alt="logo" style={{ height: "39px" }} />
               {/* for second image apply these inline styles to the img tag style={{ height: "100px" }} */}
             </Link>
           </li>

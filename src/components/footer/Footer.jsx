@@ -6,6 +6,7 @@ import { CustomButton4 } from '../CustomButton';
 import { useForm } from 'react-hook-form';
 import emailjs from "emailjs-com";
 import Alert from "../alert/alertBox";
+import { useNavigate } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -34,7 +35,7 @@ const Footer = () => {
   };
   // const footerRef = useRef(null);
   // const { hash } = useLocation();
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isModalTosOpen, setIsModalTosOpen] = useState(false);
   const [isModalCookieOpen, setIsModalCookieOpen] = useState(false);
@@ -268,6 +269,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
+
         </div>
       </div>
       <div className="flex footer-bottom">

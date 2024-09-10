@@ -131,6 +131,7 @@ const Footer = () => {
               noValidate
               disabled={disabled}>
               <input type="email"
+                placeholder='your email'
                 name="email"
                 id="email"
                 className="para"
@@ -139,11 +140,6 @@ const Footer = () => {
                   pattern:
                     /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
                 })} />
-              {errors.email && (
-                <span className="para errorMessage">
-                  Please enter a valid email address
-                </span>
-              )}
 
               {/* Honeypot for spam detection */}
               <label htmlFor="honeypot" style={{ display: "none" }}>
@@ -163,6 +159,12 @@ const Footer = () => {
               </div>
 
             </form>
+            {errors.email && (
+              <span className="para errorMessage">
+                Please enter a valid email address
+              </span>
+            )}
+
           </div>
 
           <p className="para">

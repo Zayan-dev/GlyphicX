@@ -66,7 +66,7 @@ const Sidebar = ({ isOpen, toggle }) => {
           <li className={listItemStyles}>
             <Link to="/" className={linkStyles} onClick={toggle}>
               {/* <IoHome /> */}
-              <p>sHome</p>
+              <p>Home</p>
             </Link>
           </li>
           <li className={listItemStyles}>

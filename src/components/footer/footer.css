@@ -45,7 +45,7 @@
 }
 .newsletter form {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     margin-top: 10px;
     /* border: 1px solid red; */
 }

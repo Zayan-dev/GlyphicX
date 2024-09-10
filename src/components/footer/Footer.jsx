@@ -125,8 +125,7 @@ const Footer = () => {
             <img src={logo} alt="logo" />
           </div>
           <p className="para">
-            Stay up to date on the latest features and releases by joining our
-            newsletter.
+            Stay up to date with our offers and services
           </p>
           <div className="newsletter">
             <form onSubmit={handleSubmit(onSubmit)}
@@ -157,7 +156,7 @@ const Footer = () => {
               />
 
               <div className="subscribe-btn">
-                <CustomButton5 text="Submit" type="submit" />
+                <CustomButton5 text="Subscribe" type="submit" />
               </div>
 
             </form>

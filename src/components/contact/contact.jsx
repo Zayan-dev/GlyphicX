@@ -103,7 +103,7 @@ const Contact = () => {
             <div className="formRow">
               <div className="inputField">
                 <label htmlFor="fullName" className="para">
-                  Name
+                  Full Name
                 </label>
                 <input
                   type="text"

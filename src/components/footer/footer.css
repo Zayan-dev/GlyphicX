@@ -75,7 +75,7 @@
     height: 100%;
     margin-left: 1rem;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
     gap: 40px;
 }
@@ -83,10 +83,15 @@
 .column-1,
 .column-2,
 .column-3 {
-    /* border: 1px solid red; */
+    /* border: 1px solid yellow; */
     display: flex;
     flex-direction: column;
+    width: 30%;
     gap: 16px;
+    height: 100%;
+}
+.column-2{
+    /* border: 1px solid red; */
 }
 
 .column-div-heading {
@@ -217,5 +222,8 @@
 @media screen and (max-width : 600px) {
     .footer-bottom {
         flex-direction: column-reverse;
+    }
+    .column-div{
+        flex-wrap: wrap;
     }
 }

@@ -267,6 +267,23 @@ const Footer = () => {
               <a href="mailto:info@GlyphicX.com" className="para">
                 info@GlyphicX.com
               </a>
+
+            </div>
+            <div className="social">
+              {/* <a target="_blank" href="mailto:info@GlyphicX.com"> */}
+              <i class="fa-solid fa-phone fa-xl"></i>
+              {/* </a> */}
+              <p className="para">
+                +92 319 2001014
+              </p>
+            </div>
+            <div className="social">
+              {/* <a target="_blank" href="mailto:info@GlyphicX.com"> */}
+              <i class="fa-solid fa-location-dot fa-xl"></i>
+              {/* </a> */}
+              <p className="para">
+                C 93 Zaibunnisa Blvd, Block 13 Gulistan-e-Johar, Karachi, Karachi, Pakistan
+              </p>
             </div>
           </div>
 

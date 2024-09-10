@@ -6,6 +6,7 @@ import { GrProjects } from "react-icons/gr";
 import { Link } from "react-router-dom";
 import { CustomButton3 } from "../../CustomButton";
 import logo from "../../../assets/images/sidebarLogo2.png"
+import bg from "../../../assets/bg.png"
 
 const Sidebar = ({ isOpen, toggle }) => {
 
@@ -26,7 +27,7 @@ const Sidebar = ({ isOpen, toggle }) => {
         className={`sidebar-container shadow-sm shadow-offWhite pr-14 fixed w-full h-full bg-cover bg-center overflow-hidden justify-start transition-transform duration-[400ms] pt-[110px] left-0 z-50`}
         style={{
           transform: `${isOpen ? "translateX(15%)" : "translateX(110%)"}`,
-          backgroundImage: "url('./src/assets/bg.png')",
+          backgroundImage: `url(${bg})` ,
           boxShadow: "-5px 0px 18px -10px #fffaf0",
         }}
       >

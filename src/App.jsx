@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import ScrollToTop from "./components/scrolltotop/ScrollToTop";
 import Footer from "./components/footer/Footer"
 import Hero from "./components/hero/Hero"
@@ -10,7 +10,7 @@ import Contact from "./components/contact/contact";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Navigation />
       <ScrollToTop />
       <Routes>
@@ -22,7 +22,7 @@ function App() {
       </Routes>
  
       <Footer></Footer>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

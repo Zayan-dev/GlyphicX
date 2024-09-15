@@ -15,14 +15,14 @@
 
 .footer-section {
     /* border: 1px solid green; */
-    margin-bottom: 70px;
+    /* margin-bottom: 70px; */
     width: 600px;
-    height: 340px;
+    /* height: 340px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     /* position: relative; */
-    top: 0px;
+    /* top: 0px; */
     gap: 24px;
 }
 
@@ -33,10 +33,10 @@
 .logo-text {
     font-size: 25px;
     font-weight: 600;
-    height: 60px;
+    height: 30px;
     position: relative;
-    left: -15px;
-    top: -40px;
+    left: -11px;
+    top: -66px;
     /* border: 1px solid red; */
     /* overflow: hidden; */
 }
@@ -46,7 +46,7 @@
 .newsletter form {
     display: flex;
     gap: 1rem;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     /* border: 1px solid red; */
 }
 
@@ -73,7 +73,7 @@
     /* border: 1px solid red; */
     width: 684px;
     height: 100%;
-    margin-left: 1rem;
+    margin-left: 2rem;
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: space-between;
@@ -90,8 +90,8 @@
     gap: 16px;
     height: 100%;
 }
-.column-2{
-    /* border: 1px solid red; */
+.column-3{
+    width: 20%;
 }
 
 .column-div-heading {
@@ -168,23 +168,33 @@
         gap: 1rem;
     }
 
-    .column-div {
-        margin-top: 40px;
-    }
-
     .footer-section {
         top: 40px;
     }
-
 }
 
-
+@media screen and  (min-width : 929px) and (max-width : 1200px){
+    .flex-container {
+        padding: 40px 0 20px;
+    }
+    .footer-bottom {
+        padding: 30px 0;
+    }
+    .column-div {
+        gap: 20px;
+        margin-left: 1rem;
+        justify-content: space-evenly;
+    }
+    .footer-section {
+        width: 450px;
+    }
+}
 
 
 @media screen and (max-width:928px) {
     .flex-container {
         flex-direction: column;
-        padding: 0;
+        padding: 20px 0 0;
     }
 
     .footer-bottom {
@@ -202,6 +212,7 @@
         height: 100%;
         width: 100%;
         margin-left: 0;
+        margin-top: 40px;
     }
  
 }
@@ -224,8 +235,13 @@
 @media screen and (max-width : 600px) {
     .footer-bottom {
         flex-direction: column-reverse;
+        row-gap: 20px !important;
     }
     .column-div{
         flex-wrap: wrap;
+        /* column-gap: 60px; */
+    }
+    .column-1, .column-2, .column-3 {
+        width: auto;
     }
 }

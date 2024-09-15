@@ -265,7 +265,7 @@ const Footer = () => {
                 <i className="fa-solid fa-envelope fa-xl"></i>
               </a>
               <a href="mailto:info@GlyphicX.com" className="para">
-                info@GlyphicX.com
+                info@glyphicx.com
               </a>
 
             </div>

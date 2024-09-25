@@ -20,6 +20,9 @@
     line-height: 48px;
 }
 
+.working .subHeading{
+    color: #e3ae46;
+}
 
 .outerContainer {
     display: flex;

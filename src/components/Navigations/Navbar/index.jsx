@@ -38,9 +38,9 @@ const Navbar = ({ toggle }) => {
     ? `fixed top-0 z-10 transition-colors duration-300 ${isScrolled ? 'bg-offWhite text-navyBlue opacity-100' : 'bg-transparent text-white opacity-100'}`
     : 'fixed top-0 z-10 text-navyBlue opacity-100 border-b-2 bg-offWhite'; // Default styles for other pages
 
-    const listItemStyles = `${isHomePage && !isScrolled ? 'text-white' : ''} subHeading relative text-lg lg:text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 hover:text-royalBlue`;
+    const listItemStyles = `${isHomePage && !isScrolled ? 'text-white' : ''} subHeading relative text-lg lg:text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 hover:text-peanut`;
 
-  const activeLinkStyles = "after:w-full after:scale-x-0 after:scale-x-100 text-royalBlue ";
+  const activeLinkStyles = "after:w-full after:scale-x-0 after:scale-x-100 text-peanut ";
 
 
   // When resources navlink had to be added change all md: to md2
@@ -54,7 +54,7 @@ const Navbar = ({ toggle }) => {
                 to="/"
                 onClick={() => handleNavigation("/")}
                 className={({ isActive }) =>
-                  `${listItemStyles} ${isActive ? activeLinkStyles : ""} ${isHomePage ? (isScrolled ? 'after:bg-royalBlue' : 'after:bg-white') : 'after:bg-royalBlue'}`
+                  `${listItemStyles} ${isActive ? activeLinkStyles : ""} ${isHomePage ? (isScrolled ? 'after:bg-peanut' : 'after:bg-peanut') : 'after:bg-peanut'}`
                 }
                 id="gsapNavItem"
               >
@@ -67,7 +67,7 @@ const Navbar = ({ toggle }) => {
                 to="/portfolio"
                 onClick={() => handleNavigation("/portfolio")}
                 className={({ isActive }) =>
-                  `${listItemStyles} ${isActive ? activeLinkStyles : ""} ${isHomePage ? (isScrolled ? 'after:bg-royalBlue' : 'after:bg-white') : 'after:bg-royalBlue'}`
+                  `${listItemStyles} ${isActive ? activeLinkStyles : ""} ${isHomePage ? (isScrolled ? 'after:bg-peanut' : 'after:bg-peanut') : 'after:bg-peanut'}`
                 }
                 id="gsapNavItem"
               >
@@ -79,7 +79,7 @@ const Navbar = ({ toggle }) => {
                 to="/services"
                 onClick={() => handleNavigation("/services")}
                 className={({ isActive }) =>
-                  `${listItemStyles} ${isActive ? activeLinkStyles : ""} ${isHomePage ? (isScrolled ? 'after:bg-royalBlue' : 'after:bg-white') : 'after:bg-royalBlue'}`
+                  `${listItemStyles} ${isActive ? activeLinkStyles : ""} ${isHomePage ? (isScrolled ? 'after:bg-peanut' : 'after:bg-peanut') : 'after:bg-peanut'}`
                 }
                 id="gsapNavItem"
               >

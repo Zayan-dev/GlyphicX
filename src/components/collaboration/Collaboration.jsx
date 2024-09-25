@@ -3,7 +3,7 @@ import { useInView } from 'react-intersection-observer';
 import '../collaboration/collaboration.css';
 import video1 from "../../assets/videos/Logo_reveal.mp4";
 import {CustomButton3} from '../CustomButton';
-import star from "../../../src/assets/images/Star.png"
+import star from "../../../src/assets/images/Star peanut.png"
 
 const Collaboration = () => {
     const { ref, inView } = useInView({

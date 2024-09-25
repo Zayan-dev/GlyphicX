@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "./contact.css";
 import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
-import CustomButton from "../CustomButton";
+import CustomButton, { CustomButton2 } from "../CustomButton";
 import Alert from "../alert/alertBox";
 
 const Contact = () => {  
@@ -210,7 +210,7 @@ const Contact = () => {
             />
 
             <div id="submitButton" className="para">
-              <CustomButton text="Submit" type="submit" />
+              <CustomButton2 text="Submit" type="submit" />
             </div>
           </form>
         </div>

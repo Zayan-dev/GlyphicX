@@ -3,7 +3,7 @@ import '../working/working.css';
 import communication from "../../assets/images/working1.png"
 import storytelling from "../../assets/images/working2.png"
 import impact from "../../assets/images/working3.png"
-import stars from "../../assets/images/stars.png"
+import stars from "../../assets/images/stars peanut.png"
 
 const Working = () => {
 

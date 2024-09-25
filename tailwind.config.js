@@ -13,7 +13,10 @@ export default {
       },
       colors: {
         offWhite: "#fffaf0",
+        lightPink:"#f6cbcb",
         navyBlue: "#071C40",
+        peanut:"#e3ae46",
+        lightBlue:"#c3e9da",
         royalBlue: "#1214EB",
       },
     },

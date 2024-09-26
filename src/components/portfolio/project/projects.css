@@ -19,7 +19,7 @@
     position: fixed;
     background-color: rgba(0, 0, 0, 0.76);
     z-index: 10;
-    pointer-events: none;
+    /* pointer-events: none; */
 }
 
 .project1 {
@@ -156,7 +156,7 @@
     width: 100%;
     z-index: 11;
     padding: 3rem;
-    overflow-y: scroll;
+    overflow-y: scroll; 
 }
 
 @media screen and (max-width:969px) {

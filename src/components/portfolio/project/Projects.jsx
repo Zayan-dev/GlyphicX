@@ -116,33 +116,51 @@ const Projects = () => {
     useEffect(() => {
         // Function to close modal on click outside
         const handleClickOutside = (event) => {
-          const modal = document.querySelector('.iframe-container');
-          if (modal && !modal.contains(event.target) && document.querySelector('.overlay')) {
-            handleClose();  // Close the modal if click is outside
-          }
+            const modal = document.querySelector('.iframe-container');
+            const overlay = document.querySelector('.overlay');
+
+            if (modal && overlay) {
+                const { clientX, clientY } = event;
+                const { left, top, right, bottom } = modal.getBoundingClientRect();
+
+                // Check if the click is outside the modal
+                const isOutsideModal = !(clientX >= left && clientX <= right && clientY >= top && clientY <= bottom);
+
+                // Determine if a vertical scrollbar is present
+                const hasVerticalScrollbar = document.body.scrollHeight > window.innerHeight;
+                const scrollbarWidth = hasVerticalScrollbar ? 17 : 0; // Approximate scrollbar width (varies by browser)
+
+                // Check if the click is within the scrollbar area (assuming right scrollbar)
+                const isClickOnScrollbar = (clientX > window.innerWidth - scrollbarWidth && clientX <= window.innerWidth);
+
+                if (isOutsideModal && !isClickOnScrollbar) {
+                    handleClose();  // Close the modal if click is outside and not on scrollbar
+                }
+            }
         };
-      
+
+
         // Function to close modal on pressing 'Escape' key
         const handleEscapeKey = (event) => {
-          if (event.key === 'Escape') {
-            handleClose();  // Close the modal if 'Escape' key is pressed
-          }
+            if (event.key === 'Escape') {
+                handleClose();  // Close the modal if 'Escape' key is pressed
+            }
         };
-      
+
         // Add event listeners when modal is open
         if (modalContent && document.querySelector('.overlay')) {
-          document.addEventListener('mousedown', handleClickOutside);  // Detect click outside modal
-          document.addEventListener('keydown', handleEscapeKey);        // Detect 'Escape' key press
+            document.addEventListener('mousedown', handleClickOutside);  // Detect click outside modal
+            document.addEventListener('keydown', handleEscapeKey);        // Detect 'Escape' key press
         }
-      
+
         // Clean up event listeners when component unmounts or modal closes
         return () => {
-          document.removeEventListener('mousedown', handleClickOutside);
-          document.removeEventListener('keydown', handleEscapeKey);
+            document.removeEventListener('mousedown', handleClickOutside);
+            document.removeEventListener('keydown', handleEscapeKey);
         };
-      }, [modalContent]);
-      
-      
+    }, [modalContent]);
+
+
 
     const projectContent = {
         project1: (

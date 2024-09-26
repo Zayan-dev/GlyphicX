@@ -3,6 +3,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #e58c10;
+    color: #fffaf0;
 }
 
 .flex-container {
@@ -58,7 +60,7 @@
     padding: 12px;
     gap: 8px;
     background-color: var(--background-color);
-    border: 1px solid var(--foreground-color);
+    border: 1px solid var(--background-color);
 }
 
 .newsletter input:focus {
@@ -105,14 +107,14 @@
     align-items: center;
     gap: 16px;
     /* border: 1px solid red; */
-    color: var(--foreground-color);
+    color: var(--background-color);
 }
 
 
 .footer-bottom {
     padding: 30px 64px 30px 64px;
     width: 100%;
-    border-top: 1px solid var(--foreground-color);
+    border-top: 1px solid var(--background-color);
     justify-content: space-between;
 }
 

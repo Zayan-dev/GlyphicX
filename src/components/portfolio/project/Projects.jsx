@@ -3,7 +3,7 @@ import "../project/projects.css";
 import { ScrollTrigger } from 'gsap/all';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-import { CustomButton2, CustomButton3 } from '../../CustomButton';
+import { CustomButton2, CustomButton3, CustomButton6 } from '../../CustomButton';
 const Projects = () => {
 
     const Eaxee = {
@@ -379,7 +379,7 @@ const Projects = () => {
                     <p id='gsapleft' className='para mt-3 pb-3'>The result? A cohesive, powerful brand identity that not only represents who we are today but also inspires us as we continue to grow and evolve</p>
                     <div id='gsapleft' className="mt-3">
                         <button className='w-full' onClick={(e) => handleDisplay('project2', e)} >
-                            <CustomButton2 text="Explore" ></CustomButton2>
+                            <CustomButton6 text="Explore" ></CustomButton6>
                         </button>
                     </div>
                 </div>
@@ -412,7 +412,7 @@ const Projects = () => {
 
                     <div id='pro3gsapleft' className="mt-3">
                         <button className='w-full' onClick={(e) => handleDisplay('project3', e)} >
-                            <CustomButton2 text="Explore" ></CustomButton2>
+                            <CustomButton6 text="Explore" ></CustomButton6>
                         </button>
                     </div>
                 </div>

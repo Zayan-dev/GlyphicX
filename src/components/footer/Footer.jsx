@@ -2,11 +2,11 @@ import React, { useEffect, useRef, useState } from 'react';
 import '../footer/footer.css';
 import Modal from '../Modal'; // Import Modal component
 import logo from "../../assets/logo.png"
-import CustomButton, { CustomButton2, CustomButton3, CustomButton4, CustomButton5 } from '../CustomButton';
+import CustomButton, { CustomButton6 } from '../CustomButton';
 import { useForm } from 'react-hook-form';
 import emailjs from "emailjs-com";
 import Alert from "../alert/alertBox";
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -158,11 +158,11 @@ const Footer = () => {
               />
 
               <div className="subscribe-btn">
-                <CustomButton5 text="Subscribe" type="submit" />
+                <CustomButton6 text="Subscribe" type="submit" />
               </div>
             </form>
             {errors.email && (
-              <span className="para errorMessage">
+              <span className="para errorMessage text-offWhite">
                 Please enter a valid email address
               </span>
             )}
@@ -302,14 +302,14 @@ const Footer = () => {
         </div>
         <ul className="para footer-links">
           <li>
-            <a onClick={openModal} className="cursor-pointer">
+            <Link to="/privacypolicy"  className="cursor-pointer">
               Privacy Policy
-            </a>
+            </Link>
           </li>
           <li>
-            <a onClick={openTosModal} className="cursor-pointer">
+            <Link to="/termsofservices" className="cursor-pointer">
               Terms of Service
-            </a>
+            </Link>
           </li>
           <li>
             <a onClick={openCookieModal} className="cursor-pointer">
@@ -325,8 +325,8 @@ const Footer = () => {
         type={alertInfo.type}
         onClose={() => setAlertInfo({ display: false, message: "", type: "" })}
       />
-      <Modal isOpen={isModalOpen} onClose={closeModal}>
-        <div class="privacy-policy">
+      {/* <Modal isOpen={isModalOpen} onClose={closeModal}>
+        <div class="privacy-policy text-navyBlue">
           <h2 className="mainHeading mb-3">Privacy Policy</h2>
 
           <p className="para mb-3">
@@ -400,122 +400,127 @@ const Footer = () => {
             <a href="mailto:info@GlyphicX.com">info@GlyphicX.com</a>.
           </p>
         </div>
-      </Modal>
+      </Modal> */}
 
-      <Modal isOpen={isModalTosOpen} onClose={closeTosModal}>
-        <h1 className="mainHeading mb-3">Terms of Service</h1>
-        <p>
-          <strong>Effective Date: September 9 2024</strong>
-        </p>
+      {/* <Modal isOpen={isModalTosOpen} onClose={closeTosModal}>
+        <div className='text-navyBlue'>
+          <h1 className="mainHeading mb-3">Terms of Service</h1>
+          <p>
+            <strong>Effective Date: September 9 2024</strong>
+          </p>
 
-        <p className="para mb-3">
-          Welcome to GlyphicX! These Terms of Service govern your use of our
-          website and services. By accessing or using our services, you agree to
-          comply with these terms. If you do not agree, please do not use our
-          services.
-        </p>
+          <p className="para mb-3">
+            Welcome to GlyphicX! These Terms of Service govern your use of our
+            website and services. By accessing or using our services, you agree to
+            comply with these terms. If you do not agree, please do not use our
+            services.
+          </p>
 
-        <h2 className="subHeading">1. Acceptance of Terms</h2>
-        <p className="para mb-3">
-          By using our website, you acknowledge that you have read and agree to
-          these Terms of Service. We may update these terms from time to time,
-          and your continued use signifies acceptance of those changes.
-        </p>
+          <h2 className="subHeading">1. Acceptance of Terms</h2>
+          <p className="para mb-3">
+            By using our website, you acknowledge that you have read and agree to
+            these Terms of Service. We may update these terms from time to time,
+            and your continued use signifies acceptance of those changes.
+          </p>
 
-        <h2 className="subHeading">2. Services Offered</h2>
-        <p className="para mb-3">
-          GlyphicX provides graphic design, branding, and related services.
-          Details about our offerings can be found on our website.
-        </p>
+          <h2 className="subHeading">2. Services Offered</h2>
+          <p className="para mb-3">
+            GlyphicX provides graphic design, branding, and related services.
+            Details about our offerings can be found on our website.
+          </p>
 
-        <h2 className="subHeading">3. Intellectual Property</h2>
-        <p className="para mb-3">
-          All content on our website, including designs, graphics, and text, is
-          the property of GlyphicX and protected by intellectual property laws.
-          User-generated content may grant us rights to use it as described in
-          our policies.
-        </p>
+          <h2 className="subHeading">3. Intellectual Property</h2>
+          <p className="para mb-3">
+            All content on our website, including designs, graphics, and text, is
+            the property of GlyphicX and protected by intellectual property laws.
+            User-generated content may grant us rights to use it as described in
+            our policies.
+          </p>
 
-        <h2 className="subHeading">4. Payment Terms</h2>
-        <p className="para mb-3">
-          All payments for services are due as specified at the time of
-          purchase. We reserve the right to change our fees, and users will be
-          notified accordingly.
-        </p>
+          <h2 className="subHeading">4. Payment Terms</h2>
+          <p className="para mb-3">
+            All payments for services are due as specified at the time of
+            purchase. We reserve the right to change our fees, and users will be
+            notified accordingly.
+          </p>
 
-        <h2 className="subHeading">5. Changes to the Terms</h2>
-        <p className="para mb-3">
-          We may update these Terms of Service at any time. Changes will be
-          posted on this page, and the effective date will be updated.
-        </p>
+          <h2 className="subHeading">5. Changes to the Terms</h2>
+          <p className="para mb-3">
+            We may update these Terms of Service at any time. Changes will be
+            posted on this page, and the effective date will be updated.
+          </p>
 
-        <h2 className="subHeading">6. Contact Information</h2>
-        <p className="para mb-3">
-          For any questions regarding these Terms of Service, please contact us
-          at <a href="mailto:info@GlyphicX.com">info@GlyphicX.com</a>.
-        </p>
-      </Modal>
+          <h2 className="subHeading">6. Contact Information</h2>
+          <p className="para mb-3">
+            For any questions regarding these Terms of Service, please contact us
+            at <a href="mailto:info@GlyphicX.com">info@GlyphicX.com</a>.
+          </p>
+        </div>
+      </Modal> */}
+
       <Modal isOpen={isModalCookieOpen} onClose={closeCookieModal}>
-        <h3 className="mainHeading mb-3">Cookies</h3>
-        <p className="para mb-3">
-          Our website uses cookies to enhance your browsing experience and
-          improve our services. Cookies are small files that are stored on your
-          device when you visit a website. They help us understand how you use
-          our site and enable us to provide a more personalized experience.
-        </p>
+        <div className='text-navyBlue'>
+          <h3 className="mainHeading mb-3">Cookies</h3>
+          <p className="para mb-3">
+            Our website uses cookies to enhance your browsing experience and
+            improve our services. Cookies are small files that are stored on your
+            device when you visit a website. They help us understand how you use
+            our site and enable us to provide a more personalized experience.
+          </p>
 
-        <h4 className="subHeading">Types of Cookies We Use:</h4>
-        <ul className="para mb-3">
-          <li>
-            <strong>Session Cookies:</strong> These cookies are temporary and
-            expire once you close your browser. They help us manage your session
-            while you navigate our site.
-          </li>
-          {/* <li><strong>Persistent Cookies:</strong> These cookies remain on your device for a specified period or until you delete them. They help us remember your preferences for future visits.</li>
+          <h4 className="subHeading">Types of Cookies We Use:</h4>
+          <ul className="para mb-3">
+            <li>
+              <strong>Session Cookies:</strong> These cookies are temporary and
+              expire once you close your browser. They help us manage your session
+              while you navigate our site.
+            </li>
+            {/* <li><strong>Persistent Cookies:</strong> These cookies remain on your device for a specified period or until you delete them. They help us remember your preferences for future visits.</li>
           <li><strong>Third-Party Cookies:</strong> We may also use cookies from third-party services for analytics and advertising purposes.</li> */}
-        </ul>
+          </ul>
 
-        <h4 className="subHeading">User Consent:</h4>
-        <p className="para mb-3">
-          By using our website, you consent to our use of cookies.
-        </p>
+          <h4 className="subHeading">User Consent:</h4>
+          <p className="para mb-3">
+            By using our website, you consent to our use of cookies.
+          </p>
 
-        <h4 className="subHeading">Managing Cookies:</h4>
-        <p className="para mb-3">
-          You can control how cookies are managed on your device by adjusting
-          your browser settings. Most browsers allow you to refuse cookies or
-          alert you when cookies are being sent. For more information on how to
-          manage cookies, please visit the help section of your browser:
-        </p>
-        <ul className="para mb-3">
-          <li>
-            <a
-              href="https://support.google.com/chrome/answer/95647"
-              target="_blank"
-            >
-              Chrome
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://support.mozilla.org/en-US/kb/delete-cookies-remove-info-websites-stored"
-              target="_blank"
-            >
-              Firefox
-            </a>
-          </li>
-          <li>
-            <a href="https://support.apple.com/en-us/HT201265" target="_blank">
-              Safari
-            </a>
-          </li>
-        </ul>
+          <h4 className="subHeading">Managing Cookies:</h4>
+          <p className="para mb-3">
+            You can control how cookies are managed on your device by adjusting
+            your browser settings. Most browsers allow you to refuse cookies or
+            alert you when cookies are being sent. For more information on how to
+            manage cookies, please visit the help section of your browser:
+          </p>
+          <ul className="para mb-3">
+            <li>
+              <a
+                href="https://support.google.com/chrome/answer/95647"
+                target="_blank"
+              >
+                Chrome
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://support.mozilla.org/en-US/kb/delete-cookies-remove-info-websites-stored"
+                target="_blank"
+              >
+                Firefox
+              </a>
+            </li>
+            <li>
+              <a href="https://support.apple.com/en-us/HT201265" target="_blank">
+                Safari
+              </a>
+            </li>
+          </ul>
 
-        <p className="para">
-          If you have any questions or concerns about our use of cookies, please
-          contact us at <a href="mailto:info@GlyphicX.com">info@GlyphicX.com</a>
-          .
-        </p>
+          <p className="para">
+            If you have any questions or concerns about our use of cookies, please
+            contact us at <a href="mailto:info@GlyphicX.com">info@GlyphicX.com</a>
+            .
+          </p>
+        </div>
       </Modal>
     </div>
   );

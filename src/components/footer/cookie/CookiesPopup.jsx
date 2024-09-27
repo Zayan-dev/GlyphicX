@@ -19,7 +19,7 @@ const CookiesPopup = () => {
 
   return (
     isVisible && (
-      <div className="fixed bottom-4 left-4 bg-gray-800 text-white p-4 rounded-lg shadow-lg z-50 flex flex-col sm:flex-row items-center">
+      <div className="fixed bottom-4 left-4 mr-4 bg-gray-800 text-white p-4 rounded-lg shadow-lg z-50 flex flex-col sm:flex-row items-center">
         <p className="text-sm mb-2 sm:mb-0 sm:mr-4">
           Our website uses cookies to improve your browsing experience. By continuing to use this site, you consent to our use of cookies.
         </p>

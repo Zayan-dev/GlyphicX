@@ -200,7 +200,7 @@ const Footer = () => {
                 target="_blank"
                 href="https://www.facebook.com/profile.php?id=61555673464641&mibextid=kFxxJD"
               >
-                <i class="fa-brands fa-square-facebook fa-xl"></i>
+                <i className="fa-brands fa-square-facebook fa-xl"></i>
               </a>
               <a
                 target="_blank"
@@ -270,7 +270,7 @@ const Footer = () => {
             </div>
             <div className="social">
               {/* <a target="_blank" href="mailto:info@GlyphicX.com"> */}
-              <i class="fa-brands fa-square-whatsapp fa-2xl"></i>
+              <i className="fa-brands fa-square-whatsapp fa-2xl"></i>
               {/* </a> */}
               <a
                 href="https://wa.me/923192001014"
@@ -282,7 +282,7 @@ const Footer = () => {
             </div>
             <div className="social">
               {/* <a target="_blank" href="mailto:info@GlyphicX.com"> */}
-              <i class="fa-solid fa-location-dot fa-xl"></i>
+              <i className="fa-solid fa-location-dot fa-xl"></i>
               {/* </a> */}
               <a
                 href="https://www.google.com/maps?q=24.91054099503488,67.13492330610099"

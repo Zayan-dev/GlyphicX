@@ -7,12 +7,34 @@
     --background-color: #fffaf0;
     --royalBlue-color: #1214EB;
     --uniform-screen-padding: 6%;
+    color-scheme: light !important;
 }
+
+@media (prefers-color-scheme: light) {
+  :root {
+        --foreground-color: #071C40;
+        --background-color: #fffaf0;
+        --royalBlue-color: #1214EB;
+  }
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+        --foreground-color: #071C40;
+        --background-color: #fffaf0;
+        --royalBlue-color: #1214EB;
+  }
+} */
+
+
 
 html,body {
     overflow-x: hidden;
-    color: var(--foreground-color);
-    background-color: var(--background-color);
+    color: var(--foreground-color) !important;
+    background-color: var(--background-color) !important;
+}
+body {
+    color-scheme: light !important;
 }
 
 @font-face {

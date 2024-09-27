@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { useInView } from 'react-intersection-observer';
 import '../collaboration/collaboration.css';
-import video1 from "../../assets/videos/Logo_reveal.mp4";
+import video1 from "../../assets/videos/Logo reveal.mp4";
 import { CustomButton3 } from '../CustomButton';
 import star from "../../../src/assets/images/Star peanut.png"
 

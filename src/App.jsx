@@ -1,4 +1,4 @@
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useEffect, useState } from "react";
 import ScrollToTop from "./components/scrolltotop/ScrollToTop";
 import Footer from "./components/footer/Footer"
@@ -36,7 +36,7 @@ function App() {
   // }, []);
 
   return (
-    <HashRouter>
+    <BrowserRouter>
       {/* <Alert
         display={alertInfo.display}
         message={alertInfo.message}
@@ -65,7 +65,7 @@ function App() {
       </Routes>
 
       <Footer></Footer>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 

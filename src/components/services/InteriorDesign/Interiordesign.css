@@ -1,7 +1,8 @@
 .interiordesign {
     /* border: 1px solid red; */
     padding: 112px 64px 112px 64px;
-    background-image: url("../../../assets/bg.png");
+    /* background-image: url("../../../assets/bg.png"); */
+    background-color: var(--foreground-color);
     color: var(--background-color);
     display: flex;
     justify-content: space-between;

@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     background-color: #e58c10;
-    color: #071C40;
+    color: var(--background-color);
 }
 
 .flex-container {
@@ -100,7 +100,7 @@
 }
 
 .column-1 a:hover {
-    color: var(--background-color);
+    color: var(--foreground-color);
 }
 
 .column-div-heading {
@@ -117,7 +117,8 @@
 }
 
 .social:hover {
-    color: var(--background-color);
+    color: var(--foreground-color);
+    cursor: pointer;
 }
 
 
@@ -132,10 +133,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-decoration: underline;
     gap: 24px;
+    list-style: none;
 }
 
+.footer-links li {
+    text-decoration: underline;
+    text-decoration-color: inherit;
+}
+
+.footer-links li:hover {
+    color: var(--foreground-color);
+    text-decoration-color: var(--foreground-color);
+}
 
 /* modal.css */
 .modal-overlay {

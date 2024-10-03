@@ -43,7 +43,7 @@ export const CustomButton5 = ({ text, onClick, type = "button" }) => {
 }
 export const CustomButton6 = ({ text, onClick }) => {
   return (
-    <button className="relative h-11 sm:h-[50px] w-full min-w-28 sm:min-w-32 items-center justify-center rounded overflow-hidden bg-offWhite font-medium text-navyBlue border border-offWhite shadow-md transition-all duration-300 before:absolute before:inset-0 before:border-0 before:border-peanut before:duration-100 before:ease-linear hover:bg-peanut hover:text-offWhite hover:border-offWhite hover:border-[1px] hover:before:border-[25px]">
+    <button className="relative h-11 sm:h-[50px] w-full min-w-28 sm:min-w-32 items-center justify-center rounded overflow-hidden bg-offWhite font-medium text-navyBlue border border-navyBlue shadow-md transition-all duration-300 before:absolute before:inset-0 before:border-0 before:border-peanut before:duration-100 before:ease-linear hover:bg-peanut hover:text-offWhite hover:border-peanut hover:border-[1px] hover:before:border-[25px]">
       <span className="relative subHeading text-base sm:text-lg lg:text-xl">
         {text}
       </span>

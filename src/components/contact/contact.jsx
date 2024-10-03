@@ -79,7 +79,7 @@ const Contact = () => {
       <div className="box1">
         <div className="contacttext">
           <h1 className="mainHeading">
-            <span className="connect">Connect</span> with our Team of ExPerts
+            <span className="connect">Connect</span> with Us
           </h1>
           <p className="para">
             Contact our team of excellence-driven experts today to bring your

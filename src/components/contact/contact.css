@@ -31,11 +31,11 @@
 .contacttext{
     height: 100%;
     max-width: 100%;
-    text-align: center;
+    text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .contacttext h1 {

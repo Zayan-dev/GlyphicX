@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import Logo from "../../Logo"; // Original bluish logo
-import { CustomButton2 } from "../../CustomButton";
+import { CustomButton2, CustomButton6 } from "../../CustomButton";
 import WhiteLogo from "../../Logo/whiteLogo"; // White logo
 
 const Navbar = ({ toggle }) => {
@@ -92,7 +92,7 @@ const Navbar = ({ toggle }) => {
           </div>
 
           <NavLink to="/contact" id="gsapContactBtn" className="hidden md2:flex xl:w-[180px]">
-            <CustomButton2 text="Contact" />
+            <CustomButton6 text="Contact" />
           </NavLink>
 
           <button

@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import '../footer/footer.css';
 import Modal from '../Modal'; // Import Modal component
 import logo from "../../assets/logo.png"
-import CustomButton, { CustomButton6 } from '../CustomButton';
+import CustomButton, { CustomButton2, CustomButton6 } from '../CustomButton';
 import { useForm } from 'react-hook-form';
 import emailjs from "emailjs-com";
 import Alert from "../alert/alertBox";
@@ -158,7 +158,7 @@ const Footer = () => {
               />
 
               <div className="subscribe-btn">
-                <CustomButton6 text="Subscribe" type="submit" />
+                <CustomButton2 text="Subscribe" type="submit" />
               </div>
             </form>
             {errors.email && (

@@ -25,7 +25,8 @@
     height: 50%;
     top: 0;
     left: 0;
-    background-image: url("../../assets/bg.png");
+    /* background-image: url("../../assets/bg.png"); */
+    background-color: var(--foreground-color);
     background-position: center;
     background-repeat: repeat;
     z-index: -1;

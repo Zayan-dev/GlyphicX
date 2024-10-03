@@ -11,11 +11,11 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
+    :root {
         --foreground-color: #071C40;
         --background-color: #fffaf0;
         --royalBlue-color: #1214EB;
-  }
+    }
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -28,18 +28,20 @@
 
 
 
-html,body {
+html,
+body {
     overflow-x: hidden;
     color: var(--foreground-color) !important;
     background-color: var(--background-color) !important;
 }
+
 body {
     color-scheme: light !important;
 }
 
 @font-face {
     font-family: 'mainHeading';
-    src: url('../src/fonts/Baron-Neue.otf') 
+    src: url('../src/fonts/Baron-Neue.otf')
 }
 
 @font-face {
@@ -55,11 +57,20 @@ body {
 .mainHeading {
     font-family: mainHeading;
     color: #e58c10;
+    font-size: 35px;
 }
 
 .subHeading {
     font-family: subHeading;
 }
-.para{
+
+.para {
     font-family: para;
+}
+
+/* mobile mode main heading size will be 28px */
+@media screen and (max-width:808px) {
+    .mainHeading {
+        font-size: 28px;
+    }
 }

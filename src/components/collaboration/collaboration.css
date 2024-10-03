@@ -1,6 +1,7 @@
 .collaboration {
     /* border: 1px solid red; */
-    background-image: url("../../assets/bg.png");
+    /* background-image: url("../../assets/bg.png"); */
+    background-color: var(--foreground-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,7 +27,7 @@
 }
 
 .coll-head-text {
-    font-size: 48px;
+    /* font-size: 48px; */
     font-weight: 700;
     line-height: 57px;
 }
@@ -87,11 +88,11 @@
 }
 
 .discover-text {
-    text-align: center;
+    /* text-align: center; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     gap: 16px;
 }
 

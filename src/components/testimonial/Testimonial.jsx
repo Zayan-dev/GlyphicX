@@ -47,7 +47,7 @@ const Testimonial = () => {
     const { text, img } = testimonials[currentIndex];
 
     return (
-        <div className='mt-5 testimonial-slider'>
+        <div className='testimonial-slider'>
             {/* <button className="prev" onClick={prevSlide}>‹</button> */}
             <div className='testimonial'>
                 <div className='test-text'>

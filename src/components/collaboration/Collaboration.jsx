@@ -43,7 +43,7 @@ const Collaboration = () => {
               {/* <img src={star} alt="star" style={{ height: "50px" }}/> */}
               <div className="discover-text">
                 <div className='flex gap-2'>
-                  <img src={star} alt="star" style={{ height: "30px" }} />
+                  {/* <img src={star} alt="star" style={{ height: "30px" }} /> */}
                   <p className="subHeading font-bold text-2xl">Discover</p>
                 </div>
                 <p className="para text-base">
@@ -55,7 +55,7 @@ const Collaboration = () => {
               {/* <img src={star} alt="star" style={{ height: "50px" }} /> */}
               <div className="discover-text">
                 <div className='flex gap-2'>
-                  <img src={star} alt="star" style={{ height: "30px" }} />
+                  {/* <img src={star} alt="star" style={{ height: "30px" }} /> */}
                   <p className="subHeading font-bold text-2xl">Create</p>
                 </div>
                 <p className="para text-base">
@@ -81,7 +81,7 @@ const Collaboration = () => {
               {/* <img src={star} alt="star" style={{ height: "50px" }} /> */}
               <div className="discover-text">
                 <div className='flex gap-2'>
-                  <img src={star} alt="star" style={{ height: "30px" }} />
+                  {/* <img src={star} alt="star" style={{ height: "30px" }} /> */}
                   <p className="subHeading font-bold text-2xl">Design</p>
                 </div>
                 <p className="para text-base">
@@ -93,7 +93,7 @@ const Collaboration = () => {
               {/* <img src={star} alt="star" style={{ height: "50px" }} /> */}
               <div className="discover-text">
                 <div className='flex gap-2'>
-                  <img src={star} alt="star" style={{ height: "30px" }} />
+                  {/* <img src={star} alt="star" style={{ height: "30px" }} /> */}
                   <p className="subHeading font-bold text-2xl">Deliver</p>
                 </div>
                 <p className="para text-base">

@@ -29,7 +29,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: url("../../../assets/bg.png");
+    /* background-image: url("../../../assets/bg.png"); */
+    background-color: var(--foreground-color);
     color: var(--background-color);
     overflow: hidden;
 }

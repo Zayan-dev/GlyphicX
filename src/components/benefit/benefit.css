@@ -26,7 +26,8 @@
     height: 100%;
     /* font-size: 46px; */
     font-weight: 700;
-    line-height: 57.2px;
+    line-height: 47.2px;
+    text-transform: uppercase;
 }
 
 .benefit-intro {

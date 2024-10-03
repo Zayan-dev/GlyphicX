@@ -3,7 +3,7 @@ import React from 'react';
 const Tos = () => {
   return (
     <div className="max-w-4xl mx-auto p-6 text-navyBlue mt-[70px]">
-      <h1 className="text-3xl font-bold mb-6 text-center text-peanut">Terms of Service</h1>
+      <h1 className="text-3xl font-bold mb-6 text-center text-peanut uppercase">Terms of Service</h1>
       <p className="mb-2 text-sm text-gray-600 text-center">Effective Date: September 9, 2024</p>
 
       <p className="mb-4">

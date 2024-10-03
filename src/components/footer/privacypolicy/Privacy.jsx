@@ -3,7 +3,7 @@ import React from 'react';
 const Privacy = () => {
   return (
     <div className="max-w-4xl mx-auto p-6 text-navyBlue mt-[70px]">
-      <h1 className="text-3xl font-bold mb-6 text-center mainHeading">Privacy Policy</h1>
+      <h1 className="text-3xl font-bold mb-6 text-center mainHeading uppercase">Privacy Policy</h1>
 
       <p className="mb-4 para">
         At <span className="font-semibold">GlyphicX</span>, we are committed to protecting your privacy. This Privacy Policy outlines how we collect, use, and protect your personal information when you visit our website or interact with our services.

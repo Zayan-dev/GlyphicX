@@ -12,6 +12,7 @@
 .heading {
     /* border: 1px solid red; */
     /* width: 868px; */
+    text-transform: uppercase;
     height: 145px;
     display: flex;
     align-items:end;

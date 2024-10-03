@@ -64,7 +64,8 @@
 
 .content h1 {
     font-weight: 700;
-    font-size: 48px;
+    font-size: 35px;
+    text-transform: uppercase;
 }
 
 .image {
@@ -213,7 +214,7 @@
     }
 
     .content h1 {
-        font-size: 36px;
+        font-size: 28px;
     }
 }
 

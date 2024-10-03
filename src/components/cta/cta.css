@@ -37,6 +37,7 @@
 }
 
 .cta-text {
+    text-transform: uppercase;
     font-weight: 700;
     font-size: 48px;
     z-index: 2;

@@ -460,7 +460,7 @@ const Footer = () => {
 
       <Modal isOpen={isModalCookieOpen} onClose={closeCookieModal}>
         <div className='text-navyBlue'>
-          <h3 className="mainHeading mb-3">Cookies</h3>
+          <h3 className="mainHeading mb-3 uppercase">Cookies</h3>
           <p className="para mb-3">
             Our website uses cookies to enhance your browsing experience and
             improve our services. Cookies are small files that are stored on your

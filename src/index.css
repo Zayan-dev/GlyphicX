@@ -41,12 +41,12 @@ body {
 
 @font-face {
     font-family: 'mainHeading';
-    src: url('../src/fonts/Baron-Neue.otf')
+    src: url('../src/fonts/Montserrat-Bold.ttf')
 }
 
 @font-face {
     font-family: 'subHeading';
-    src: url('../src/fonts/OpenSans-SemiBold.ttf')
+    src: url('../src/fonts/Montserrat-Bold.ttf');
 }
 
 @font-face {

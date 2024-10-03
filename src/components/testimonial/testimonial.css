@@ -5,10 +5,10 @@
     align-items: center;
     position: relative;
     width: 100%;
-    height: 50vh;
+    height: 40vh;
     overflow: hidden;
     padding: 20px;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
     /* border: 1px solid red; */
 }
 
@@ -81,10 +81,16 @@
 }
 
 /* Responsive Styles */
+@media screen and (min-width:1370px) {
+    .testimonial-slider{
+        height: 30vh;
+        /* border: 2px solid red; */
+    }
+}
 @media screen and (max-width: 808px) {
     .testimonial-slider{
-        height: 45vh;
-        margin-bottom: 2rem;
+        height: 30vh;
+        /* margin-bottom: 2rem; */
     }
     .testimonial {
         gap: 2rem;

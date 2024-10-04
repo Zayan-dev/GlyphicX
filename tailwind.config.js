@@ -11,13 +11,14 @@ export default {
       },
       fontFamily: {
         lato: ['"Lato"', "sans-serif"],
+        signature: ['"signature"', "sans-serif"],
       },
       colors: {
         offWhite: "#fffaf0",
-        lightPink:"#f6cbcb",
+        lightPink: "#f6cbcb",
         navyBlue: "#071C40",
-        peanut:"#e58c10",
-        lightBlue:"#c3e9da",
+        peanut: "#e58c10",
+        lightBlue: "#c3e9da",
         royalBlue: "#1214EB",
       },
     },

@@ -36,16 +36,25 @@ const Benefit = () => {
       <div id="gsapBenefitContainer" className="benefit">
         <div className="benefit-heading">
           <p id="gsapBenefitHeading" className="mainHeading">
-            Transforming Brands Through CaPtivating Storytelling
+            Transforming Brands Through
+          </p>
+          <p className="signature">
+            <span className="font-signature text-peanut">
+              CaPtivating Storytelling
+            </span>
           </p>
         </div>
         {/* <div className="beneath-overlay"> */}
         <div className="benefit-intro">
           <p id="gsapBenefitIntro" className="para">
-            Welcome to <span style={{fontWeight: "bold", fontSize: "22px"}}>GlyphicX</span>, where creativity meets strategy to
-            deliver exceptional brand experiences. Our team of experts is
-            passionate about crafting compelling narratives that resonate with
-            your audience and drive results.
+            Welcome to{" "}
+            <span style={{ fontWeight: "bold", fontSize: "22px" }}>
+              GlyphicX
+            </span>
+            , where creativity meets strategy to deliver exceptional brand
+            experiences. Our team of experts is passionate about crafting
+            compelling narratives that resonate with your audience and drive
+            results.
             {/* <div className="py-4 container">
             <a href='/' className="underline-btn">Learn More</a>
           </div> */}

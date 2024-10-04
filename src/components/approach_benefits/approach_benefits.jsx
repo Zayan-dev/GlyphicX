@@ -18,14 +18,14 @@ const ApproachAndBenefits = () => {
         <div className="outerDiv">
           <div id="gsapInner1" className="innerDiv">
             <div className="approachStep">
-              <p className="subHeading font-bold text-2xl mb-4">Discover</p>
+              <h3 className="subHeading">Discover</h3>
               <p className="para text-base">
                 Understanding objectives to ensure both the parties are in sync
                 and striving towards a shared vision.
               </p>
             </div>
             <div className="approachStep">
-              <p className="subHeading font-bold text-2xl mb-4">Design</p>
+              <h3 className="subHeading">Design</h3>
               <p className="para text-base">
                 Create captivating and powerful, cutting-edge visuals to leave
                 an impact
@@ -34,13 +34,13 @@ const ApproachAndBenefits = () => {
           </div>
           <div id="gsapInner2" className="innerDiv">
             <div className="approachStep">
-              <p className="subHeading font-bold text-2xl mb-4">Create</p>
+              <h3 className="subHeading">Create</h3>
               <p className="para text-base">
                 Tailoring customized strategy aimed at achieving triumph
               </p>
             </div>
             <div className="approachStep">
-              <p className="subHeading font-bold text-2xl mb-4">Deliver</p>
+              <h3 className="subHeading">Deliver</h3>
               <p className="para text-base">
                 Transforming ideas into reality with precision and utmost level
                 of satisfaction
@@ -60,7 +60,7 @@ const ApproachAndBenefits = () => {
         <div className="outerDiv">
           <div id="gsapWorking" className="innerDiv">
             <div id="gsapWorkingTextDiv" className="benefitPointer">
-              <h3 className="subHeading font-bold text-2xl mb-4">
+              <h3 className="subHeading">
                 Transparent Communication
               </h3>
               <p className="para text-base">
@@ -69,7 +69,7 @@ const ApproachAndBenefits = () => {
               </p>
             </div>
             <div id="gsapWorkingTextDiv" className="benefitPointer">
-              <h3 className="subHeading font-bold text-2xl mb-4">
+              <h3 className="subHeading">
                 Competitive Analysis
               </h3>
               <p className="para text-base">
@@ -80,7 +80,7 @@ const ApproachAndBenefits = () => {
           </div>
           <div id="gsapWorking" className="innerDiv">
             <div id="gsapWorkingTextDiv" className="benefitPointer">
-              <h3 className="subHeading font-bold text-2xl mb-4">
+              <h3 className="subHeading">
                 Audience Engagement
               </h3>
               <p className="para text-base">
@@ -88,7 +88,7 @@ const ApproachAndBenefits = () => {
               </p>
             </div>
             <div id="gsapWorkingTextDiv" className="benefitPointer">
-              <h3 className="subHeading font-bold text-2xl mb-4">
+              <h3 className="subHeading">
                 Stunning designs
               </h3>
               <p className="para text-base">

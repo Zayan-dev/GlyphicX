@@ -7,7 +7,6 @@
 
 .wavePatternDiv {
     position: absolute;
-    display: none;
     z-index: 0;
     right: 0;
     top: 0;
@@ -51,6 +50,77 @@
     width: 47%;
 }
 
+.approachStep h3,
+.benefitPointer h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+
+}
+
+.approachStep p,
+.benefitPointer p {
+    font-size: 18px;
+}
+
 .benefits {
     margin-top: 100px;
+}
+
+
+@media screen and (min-width: 809px) and (max-width: 1024px) {
+    .mainContainer {
+        padding: 80px 64px;
+    }
+    .approach, .benefits {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 808px) {
+    .approach,
+    .benefits {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 808px) {
+    .col-head-text {
+        margin-bottom: 20px;
+    }
+    .mainContainer {
+        padding: 40px 20px;
+    }
+
+    .benefits {
+        margin-top: 40px;
+    }
+    .outerDiv,
+    .innerDiv {
+        gap: 25px;
+        flex-direction: column;
+    }
+
+    .approachStep, .benefitPointer {
+        width: 100%;
+    }
+
+    .approachStep h3,
+    .benefitPointer h3 {
+        font-size: 20px;
+        margin-bottom: 0.4rem;
+    }
+
+    .approachStep p,
+    .benefitPointer p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .approach,
+    .benefits {
+        width: 100%;
+    }
 }

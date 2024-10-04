@@ -54,6 +54,11 @@ body {
     src: url('../src/fonts/OpenSans-Regular.ttf')
 }
 
+@font-face {
+    font-family: 'signature';
+    src: url('../src/fonts/BrittanySignature.ttf')
+}
+
 .mainHeading {
     font-family: mainHeading;
     color: #e58c10;

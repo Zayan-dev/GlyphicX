@@ -13,6 +13,7 @@ import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import LogoBanner from '../logobanner/LogoBanner'
 import VideoBanner from '../videobanner/VideoBanner'
+import ApproachAndBenefits from '../approach_benefits/approach_benefits'
 const Hero = () => {
 
     gsap.registerPlugin(ScrollTrigger);
@@ -238,8 +239,9 @@ const Hero = () => {
             <Benefit></Benefit>
             <VideoBanner></VideoBanner>
             <Feature></Feature>
-            <Collaboration></Collaboration>
-            <Working></Working>
+            <ApproachAndBenefits />
+            {/* <Collaboration></Collaboration> */}
+            {/* <Working></Working> */}
             <LogoBanner></LogoBanner>
             <Testimonial></Testimonial>
             {/* <Team></Team> */}

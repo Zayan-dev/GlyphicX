@@ -1,0 +1,56 @@
+.mainContainer {
+    background-color: var(--foreground-color);
+    padding: 80px 160px;
+    color: var(--background-color);
+    position: relative;
+}
+
+.wavePatternDiv {
+    position: absolute;
+    display: none;
+    z-index: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 450px;
+}
+
+.approach, .benefits {
+    height: auto;
+    width: 70%;
+}
+
+.col-head-text {
+    width: 100%;
+    font-weight: 700;
+    line-height: 57px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.outerDiv,
+.innerDiv {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.outerDiv {
+    flex-direction: column;
+    gap: 40px;
+}
+
+.innerDiv {
+    flex-direction: row;
+    height: auto;
+    gap: 30px;
+}
+
+.approachStep, .benefitPointer {
+    width: 47%;
+}
+
+.benefits {
+    margin-top: 100px;
+}

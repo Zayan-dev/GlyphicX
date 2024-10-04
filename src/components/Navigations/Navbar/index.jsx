@@ -91,7 +91,7 @@ const Navbar = ({ toggle }) => {
             {isHomePage ? (isScrolled ? <Logo /> : <WhiteLogo />) : <Logo />} {/* Toggle logos based on page */}
           </div>
 
-          <NavLink to="/contact" id="gsapContactBtn" className="hidden md2:flex xl:w-[180px]">
+          <NavLink to="/contact" id="gsapContactBtn" className="hidden md:flex xl:w-[180px]">
             <CustomButton6 text="Contact" />
           </NavLink>
 

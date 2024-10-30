@@ -15,7 +15,7 @@ export default {
       },
       colors: {
         offWhite: "#fffaf0",
-        lightPink: "#f6cbcb",
+        lightPink: "#EC6164",
         navyBlue: "#071C40",
         peanut: "#e58c10",
         lightBlue: "#c3e9da",

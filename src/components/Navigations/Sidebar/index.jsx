@@ -8,6 +8,7 @@ import { CustomButton4 } from "../../CustomButton";
 import logo from "../../../assets/images/sidebarLogo2.png"
 import bg from "../../../assets/bg.png"
 
+//TODO: Ask for Sidebar changes according to design
 const Sidebar = ({ isOpen, toggle }) => {
 
   const listItemStyles = "h-[60px] rounded hover:bg-offWhite mb-4 hover:text-navyBlue";

@@ -2,18 +2,16 @@ import React from 'react'
 import '../hero/hero.css'
 import Benefit from '../benefit/Benefit'
 import Feature from '../feature/Feature'
-import Working from '../working/Working'
-import Collaboration from '../collaboration/Collaboration'
 import Testimonial from '../testimonial/Testimonial'
-import Team from '../team/Team'
 import Cta from '../cta/Cta'
-import ImageSlider from '../ImageSlider/ImageSlider'
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import LogoBanner from '../logobanner/LogoBanner'
 import VideoBanner from '../videobanner/VideoBanner'
 import ApproachAndBenefits from '../approach_benefits/approach_benefits'
+import circleDotPattern from "../../assets/images/dotPattern.png"
+import circleDotWithDoodlePattern from "../../assets/images/secondDotPattern.png"
 const Hero = () => {
 
     gsap.registerPlugin(ScrollTrigger);
@@ -234,20 +232,40 @@ const Hero = () => {
     );
 
     return (
-        <>
-            {/* <ImageSlider></ImageSlider> */}
-            <Benefit></Benefit>
-            <VideoBanner></VideoBanner>
-            <Feature></Feature>
-            <ApproachAndBenefits />
-            {/* <Collaboration></Collaboration> */}
-            {/* <Working></Working> */}
-            <LogoBanner></LogoBanner>
-            <Testimonial></Testimonial>
-            {/* <Team></Team> */}
-            <Cta></Cta>
-        </>
-    )
+      <>
+        {/* <ImageSlider></ImageSlider> */}
+        <div className="videoBannerAndFeature">
+          <Benefit></Benefit>
+          <VideoBanner></VideoBanner>
+          <Feature></Feature>
+          <div id="gsapWorkingStar" className="circleDotPattern">
+            <img
+              id="gsapWorking"
+              height="100%"
+              width="100%"
+              src={circleDotPattern}
+              alt="Circle Dot pattern"
+            />
+          </div>
+          <div id="gsapWorkingStar" className="circleDotWithDoodlePattern">
+            <img
+              id="gsapWorking"
+              height="100%"
+              width="100%"
+              src={circleDotWithDoodlePattern}
+              alt="Circle Dot with Doodle pattern"
+            />
+          </div>
+          <ApproachAndBenefits />
+          {/* <Collaboration></Collaboration> */}
+          {/* <Working></Working> */}
+          <LogoBanner></LogoBanner>
+          <Testimonial></Testimonial>
+          {/* <Team></Team> */}
+          <Cta></Cta>
+        </div>
+      </>
+    );
 }
 
 export default Hero

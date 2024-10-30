@@ -1,7 +1,5 @@
 .mainContainer {
-    background-color: var(--foreground-color);
-    padding: 80px 160px;
-    color: var(--background-color);
+    padding: 80px 230px;
     position: relative;
     overflow: hidden;
 }
@@ -17,38 +15,52 @@
 
 .approach, .benefits {
     height: auto;
-    width: 70%;
+    /* width: 70%; */
 }
 
-.col-head-text {
+
+.approach-heading {
+    text-align: left;
     width: 100%;
-    font-weight: 700;
-    line-height: 57px;
-    text-transform: uppercase;
-    margin-bottom: 30px;
+    height: 100%;
+    margin-bottom: 40px;
 }
+
+.headingSpan {
+    width: fit-content;
+    background: linear-gradient(to right, var(--peanut-color), var(--lightPink-color));
+    background-clip: border-box;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
 
 .outerDiv,
 .innerDiv {
     display: flex;
     width: 100%;
+    height: fit-content;
     justify-content: space-between;
     align-items: start;
 }
 
 .outerDiv {
-    flex-direction: column;
-    gap: 40px;
+    flex-direction: row;
+    gap: 20px;
 }
 
 .innerDiv {
     flex-direction: row;
     height: auto;
-    gap: 30px;
+    gap: 20px;
 }
 
 .approachStep, .benefitPointer {
-    width: 47%;
+    width: 50%;
+    height: max-content;
+    border: 1px solid var(--foreground-color);
+    padding: 1rem 0.5rem;
+    border-radius: 1rem;
 }
 
 .approachStep h3,

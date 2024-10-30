@@ -1,118 +1,50 @@
 .beneath-overlay {
-    /* border: 1px solid green; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10rem 64px 60px 64px;  
+    padding: 10rem 230px 60px;  
     overflow: hidden;
-    background-color: var(--foreground-color);
-    background-position: center;
-    background-repeat: repeat;
-    color: var(--background-color);
 }
 
 
 .benefit {
-    width: 70vw;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding-left: 20px;
 }
-
 
 .benefit-heading {
-    /* border: 1px solid green; */
     text-align: left;
-    width: 700px;
-    /* position: relative;
-    left: 15%; */
-    height: 100%;
-    /* font-size: 46px; */
-    font-weight: 700;
-    line-height: 47.2px;
-    text-transform: uppercase;
-}
-
-.signature {
-    text-align: right;
     width: 100%;
-    margin-top: 10px;
+    height: 100%;
 }
 
-.signature span {
-    text-transform: capitalize;
-    font-weight: 400;
-    text-align: right;
-    font-size: 32px;
+.headingSpan {
+    width: fit-content;
+    background: linear-gradient(to right, var(--peanut-color), var(--lightPink-color));
+    background-clip: border-box;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 .benefit-intro {
-    /* border: 1px solid yellow; */
-    width: 700px;
+    width: calc(100% - 20%);
     text-align: left;
-    height: 100%;
-    /* padding: 20px 0; */
-    font-size: 18px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
-    /* margin-top: 1rem; */
 }
 
-.benefit-intro-button {
-    width: 180px;
-}
-
-.underline-btn {
-    background-color: transparent;
-    /* border: 1px solid red; */
-    position: relative;
-    cursor: pointer;
-    outline: none;
-}
-
-.underline-btn::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    width: 0;
-    background-color: var(--foreground-color);
-    transition: width 0.5s ease-in-out;
-}
-
-.underline-btn:hover::after {
-    width: 100%;
-}
-
-.benefitContactBtn {
-    /* border: 1px solid red; */
-    margin: 2rem auto;
-    overflow: hidden;
-}
-
-/* Gsap css */
-.benefit-text {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.benefit-text .word {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    line-height: 1;
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .beneath-overlay {
+        padding: 10rem 150px 60px;
+    }
+    .benefit-heading, .benefit-intro {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 809px) and (max-width: 1024px) {
-    .benefit-heading, .benefit-intro {
-        width: 580px;
+    .beneath-overlay {
+        padding: 10rem 120px 60px;
     }
-    
+    .benefit-heading, .benefit-intro {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:808px) {
@@ -127,13 +59,7 @@
 
     .benefit-heading {
         width: 100%;
-        font-size: 36px;
-        line-height: 50px;
     }
-
-    /* .beneath-overlay{
-        height: 100vh;
-    } */
 
     .benefit-intro {
         width: 100%;

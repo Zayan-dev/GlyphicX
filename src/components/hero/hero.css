@@ -1,23 +1,35 @@
-.hero{
-    /* border: 1px solid red; */
-    background-color: var(--foreground-color);
-    height: 90vh;
+.videoBannerAndFeature {
+    position: relative;
+    z-index: 1;
 }
-#slide1, #slide2, #slide3, #slide4{
-    /* max-height: 30rem; */
-    height: max-content;
-    overflow: hidden;
+
+.circleDotPattern {
+    position: absolute;
+    width: 12%;
+    height: 12%;
+    top: 32rem;
+    left: 10%;
+    z-index: -10;
 }
-.carousel-item {
-    display: none;
+
+.circleDotWithDoodlePattern {
+    position: absolute;
+    width: 24%;
+    height: 24%;
+    top: 50rem;
+    right: -2rem;
+    z-index: -10;
 }
-.carousel-item.active {
-    display: block;
+@media screen and (min-width: 541px) and (max-width: 808px){
+    .circleDotPattern {
+        top: 20rem;
+        left: 0;
+        width: 20%;
+        height: 20%;
+    }
 }
-#cursor{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    position: fixed;
-    z-index: 100;
+@media screen and (max-width: 540px) {
+    .circleDotPattern, .circleDotWithDoodlePattern {
+        display: none;
+    }
 }

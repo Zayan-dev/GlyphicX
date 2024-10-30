@@ -1,6 +1,4 @@
 .video-banner {
-    /* border: 1px solid red; */
-    /* margin-top: 4rem; */
     height: 100%;
     display: flex;
     justify-content: center;
@@ -13,25 +11,19 @@
 }
 
 .hero-video {
-    width: 70vw;
-    border: 2px solid var(--background-color);
+    width: 65vw;
+    border: 2px solid var(--foreground-color);
 }
 
 .video-banner::before {
     content: "";
     position: absolute;
-    /* border: 1px solid red; */
     width: 100%;
     height: 50%;
     top: 0;
     left: 0;
-    /* background-image: url("../../assets/bg.png"); */
-    background-color: var(--foreground-color);
-    background-position: center;
-    background-repeat: repeat;
     z-index: -1;
 }
-
 
 @media screen and (max-width:808px) {
     .video-banner {
@@ -40,6 +32,5 @@
     }
     .hero-video {
         width: 100vw;
-
     }
 }

@@ -2,6 +2,8 @@ import React, { useEffect, useRef } from 'react';
 import '../feature/feature.css';
 import { useInView } from "react-intersection-observer";
 import animatedvideo from "../../assets/videos/Unlock the Power of Storytelling.mp4";
+import unlockText from "../../assets/images/unlockText.png"
+import unlockMobileText from "../../assets/images/unlockMobile.png";
 // import gsap from 'gsap';
 
 // const splitTextIntoWords = (selector) => {
@@ -49,16 +51,32 @@ const Feature = () => {
 
   return (
     <div className="feature">
-      <div id='gsapFeatureVideo' className="feature-img">
+      {/* <div id='gsapFeatureVideo' className="feature-img">
         <div ref={ref}>
           <video ref={videoRef} src={animatedvideo} alt="video" muted playsInline loop>
             Your browser does not support the video tag.
           </video>
         </div>
+      </div> */}
+      <div id="gsapFeatureVideo" className="unlockTextDiv">
+        <img
+          className="unlockTextImg"
+          id="gsapWorking"
+          src={unlockText}
+          alt="Unlock"
+        />
       </div>
-      <div id='gsapFeatureText' className="feature-text">
+      <div id="gsapFeatureText" className="feature-text">
         <p className="mainHeading bold-text">
-          unlock the Power of storytelling
+          <div id="gsapFeatureVideo">
+            <img
+              className="unlockMobileDiv"
+              id="gsapWorking"
+              src={unlockMobileText}
+              alt="Unlock"
+            />
+          </div>
+          the Power of storytelling
         </p>
         <p className="para">
           At GlyphicX, we believe in the transformative power of storytelling.
@@ -66,19 +84,15 @@ const Feature = () => {
           helps our clients create meaningful connections with their audience.
         </p>
         <div className="feature-inner-div">
-          <div>
-            <h5 className="subHeading font-bold">Engage</h5>
-            <p className="para">
-              Capture your audience's attention with compelling narratives and
-              stunning visuals.
-            </p>
-          </div>
-          <div>
-            <h5 className="subHeading font-bold">Differentiate</h5>
-            <p className="para">
-              Stand out from the competition by telling your unique brand story.
-            </p>
-          </div>
+          <p className="para">
+            <span className="subHeading">Engage - </span>
+            Capture your audience's attention with compelling narratives and
+            stunning visuals.
+          </p>
+          <p className="para">
+            <span className="subHeading">Differentiate - </span>
+            Stand out from the competition by telling your unique brand story.
+          </p>
         </div>
       </div>
     </div>

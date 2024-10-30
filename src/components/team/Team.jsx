@@ -1,6 +1,6 @@
 import React from 'react'
 import "../team/team.css"
-import image from "../../pics/ss.jpg"
+import image from "../../assets/images/Transforming.jpg"
 import { CustomButton3 } from '../CustomButton'
 const Team = () => {
     const teamMembers = [{

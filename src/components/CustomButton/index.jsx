@@ -1,8 +1,18 @@
 import React from 'react'
-
-const CustomButton = ({ text, onClick, type = "button" }) => {
+import { cn } from '../../lib/utils';
+// TODO: When all custom buttons are changed remove the unnecessary buttons
+const CustomButton = ({ className, text, disabled = false, ...props }) => {
   return (
-    <button type={type} className="relative h-11 sm:h-[50px] w-full min-w-28 sm:min-w-32 items-center justify-center rounded overflow-hidden bg-royalBlue font-medium text-offWhite shadow-md transition-all duration-300 before:absolute before:inset-0 before:border-0 before:border-offWhite before:duration-100 before:ease-linear hover:bg-offWhite hover:text-royalBlue hover:border-royalBlue hover:border-[1px] hover:before:border-[25px]">
+    <button
+      className={cn(
+        "relative h-11 sm:h-[50px] w-full min-w-28 sm:min-w-32 items-center justify-center overflow-hidden bg-peanut font-medium text-offWhite shadow-md transition-all duration-300 before:absolute before:inset-0 before:border-0 before:border-offWhite before:duration-100 before:ease-linear hover:bg-offWhite hover:text-navyBlue hover:border-navyBlue hover:border-[1px] hover:before:border-[25px]",
+        className,
+        {
+          "bg-gray-400": disabled,
+        }
+      )}
+      {...props}
+    >
       <span className="relative subHeading text-base sm:text-lg lg:text-xl">
         {text}
       </span>
@@ -11,6 +21,19 @@ const CustomButton = ({ text, onClick, type = "button" }) => {
 }
 
 export default CustomButton
+
+
+// const CustomButton = ({ text, onClick, type = "button" }) => {
+//   return (
+//     <button type={type} className="relative h-11 sm:h-[50px] w-full min-w-28 sm:min-w-32 items-center justify-center rounded overflow-hidden bg-royalBlue font-medium text-offWhite shadow-md transition-all duration-300 before:absolute before:inset-0 before:border-0 before:border-offWhite before:duration-100 before:ease-linear hover:bg-offWhite hover:text-royalBlue hover:border-royalBlue hover:border-[1px] hover:before:border-[25px]">
+//       <span className="relative subHeading text-base sm:text-lg lg:text-xl">
+//         {text}
+//       </span>
+//     </button>
+//   );
+// }
+
+// export default CustomButton
 
 
 export const CustomButton2 = ({ text, onClick }) => {

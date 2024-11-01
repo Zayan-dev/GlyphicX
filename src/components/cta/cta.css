@@ -2,13 +2,13 @@
     /* border: 1px solid red; */
     position: relative;
     height: 421px;
-    padding: 40px;
+    padding: 80px 230px;
     display: flex;
     justify-content: center;
     align-items: center;
     background: url('../../assets/images//Transforming.jpg') no-repeat center center;
     background-size:cover;
-    color: var(--background-color);
+    color: var(--foreground-color);
     /* background-color: var(--royalBlue-color); */
     overflow: hidden;
 }
@@ -27,11 +27,8 @@
 .cta-outer {
     /* border: 1px solid green; */
     position: relative;
-    text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 24px;
     z-index: 2;
 }
@@ -42,6 +39,10 @@
     font-size: 48px;
     z-index: 2;
     margin-bottom: 1rem;
+    background: linear-gradient(to right, var(--peanut-color), var(--lightPink-color));
+    background-clip: border-box;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 .cta-btn-div {
@@ -49,8 +50,6 @@
     display: flex;
     width: 392px;
     gap: 2rem;
-    justify-content: center;
-    align-items: center;
     z-index: 2;
 }
 

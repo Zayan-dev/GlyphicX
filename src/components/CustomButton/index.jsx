@@ -5,7 +5,7 @@ const CustomButton = ({ className, text, disabled = false, ...props }) => {
   return (
     <button
       className={cn(
-        "relative h-11 sm:h-[50px] w-full min-w-28 sm:min-w-32 items-center justify-center overflow-hidden bg-peanut font-medium text-offWhite shadow-md transition-all duration-300 before:absolute before:inset-0 before:border-0 before:border-offWhite before:duration-100 before:ease-linear hover:bg-offWhite hover:text-navyBlue hover:border-navyBlue hover:border-[1px] hover:before:border-[25px]",
+        "relative px-4 h-11 sm:h-[50px] w-full min-w-28 sm:min-w-32 items-center justify-center overflow-hidden bg-peanut font-medium text-offWhite shadow-md transition-all duration-300 before:absolute before:inset-0 before:border-0 before:border-offWhite before:duration-100 before:ease-linear hover:bg-offWhite hover:text-navyBlue hover:border-navyBlue hover:border-[1px] hover:before:border-[25px]",
         className,
         {
           "bg-gray-400": disabled,
@@ -38,7 +38,7 @@ export default CustomButton
 
 export const CustomButton2 = ({ text, onClick }) => {
   return (
-    <button className="relative h-11 sm:h-[50px] w-full min-w-28 sm:min-w-32 items-center justify-center rounded overflow-hidden bg-offWhite font-medium text-navyBlue border border-navyBlue shadow-md transition-all duration-300 before:absolute before:inset-0 before:border-0 before:border-navyBlue before:duration-100 before:ease-linear hover:bg-navyBlue hover:text-offWhite hover:border-navyBlue hover:border-[1px] hover:before:border-[25px]">
+    <button className="relative h-11 sm:h-[50px] w-full min-w-28 sm:min-w-32 items-center justify-center overflow-hidden bg-offWhite font-medium text-navyBlue border border-navyBlue shadow-md transition-all duration-300 before:absolute before:inset-0 before:border-0 before:border-navyBlue before:duration-100 before:ease-linear hover:bg-navyBlue hover:text-offWhite hover:border-navyBlue hover:border-[1px] hover:before:border-[25px]">
       <span className="relative subHeading text-base sm:text-lg lg:text-xl">
         {text}
       </span>

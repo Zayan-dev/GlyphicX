@@ -19,13 +19,13 @@ const CookiesPopup = () => {
 
   return (
     isVisible && (
-      <div className="fixed bottom-4 left-4 mr-4 bg-gray-800 text-white p-4 rounded-lg shadow-lg z-50 flex flex-col sm:flex-row items-center">
+      <div className="fixed bottom-4 left-4 mr-4 bg-gray-800 text-offWhite p-4 rounded-lg shadow-lg z-50 flex flex-col sm:flex-row items-center">
         <p className="text-sm mb-2 sm:mb-0 sm:mr-4">
           Our website uses cookies to improve your browsing experience. By continuing to use this site, you consent to our use of cookies.
         </p>
         <button
           onClick={handleAcceptCookies}
-          className="bg-blue-600 hover:bg-blue-500 text-white py-1 px-3 rounded transition"
+          className="bg-blue-600 hover:bg-blue-500 text-offWhite py-1 px-3 rounded transition"
         >
           Accept Cookies
         </button>

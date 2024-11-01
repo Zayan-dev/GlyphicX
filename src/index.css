@@ -89,8 +89,14 @@ body {
 
 }
 
-/* mobile mode main heading size will be 28px */
 @media screen and (max-width: 808px) {
+    .mainHeading {
+        font-size: 2rem;
+    }
+}
+
+/* mobile mode main heading size will be 28px */
+@media screen and (max-width: 640px) {
     .mainHeading {
         font-size: 1.75rem;
     }

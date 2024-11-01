@@ -10,8 +10,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import LogoBanner from '../logobanner/LogoBanner'
 import VideoBanner from '../videobanner/VideoBanner'
 import ApproachAndBenefits from '../approach_benefits/approach_benefits'
-import circleDotPattern from "../../assets/images/dotPattern.png"
-import circleDotWithDoodlePattern from "../../assets/images/secondDotPattern.png"
+import circleDotPattern from "../../assets/images/Patterns/dotPattern.png";
+import circleDotWithDoodlePattern from "../../assets/images/Patterns/secondDotPattern.png";
 const Hero = () => {
 
     gsap.registerPlugin(ScrollTrigger);
@@ -202,13 +202,13 @@ const Hero = () => {
             gsap.from("#gsapWorkingTextDiv p", {
                 rotateX: "90deg",
                 opacity: 0,
-                stagger: 0.3,
+                stagger: 0.2,
                 duration:1,
                 scrollTrigger: {
                     trigger: "#gsapWorkingTextDiv",
                     scroller: "body",
                     markers: false,
-                    start: "top 60%",
+                    start: "top 80%",
                     end: "top 10%",
                     // scrub: 5,
                 }
@@ -216,13 +216,13 @@ const Hero = () => {
             gsap.from("#gsapWorkingTextDiv h3", {
                 rotateX: "90deg",
                 opacity: 0,
-                stagger: 0.3,
+                stagger: 0.2,
                 duration:1,
                 scrollTrigger: {
                     trigger: "#gsapWorkingTextDiv",
                     scroller: "body",
                     markers: false,
-                    start: "top 60%",
+                    start: "top 80%",
                     end: "top 10%",
                     // scrub: 5,
                 }
@@ -259,8 +259,8 @@ const Hero = () => {
           <ApproachAndBenefits />
           {/* <Collaboration></Collaboration> */}
           {/* <Working></Working> */}
-          <LogoBanner></LogoBanner>
-          <Testimonial></Testimonial>
+          {/* <LogoBanner></LogoBanner> */}
+          {/* <Testimonial></Testimonial> */}
           {/* <Team></Team> */}
           <Cta></Cta>
         </div>

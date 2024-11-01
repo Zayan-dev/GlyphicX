@@ -1,63 +1,11 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import '../feature/feature.css';
-import { useInView } from "react-intersection-observer";
-import animatedvideo from "../../assets/videos/Unlock the Power of Storytelling.mp4";
-import unlockText from "../../assets/images/unlockText.png"
-import unlockMobileText from "../../assets/images/unlockMobile.png";
-// import gsap from 'gsap';
-
-// const splitTextIntoWords = (selector) => {
-//   const element = document.querySelector(selector);
-//   const text = element.textContent;
-//   const html = text.split(/\s+/).map(word => `<div class="word">${word}</div>`).join(' ');
-//   element.innerHTML = html;
-// };
+import unlockText from "../../assets/images/TextImages/unlockText.png";
+import unlockMobileText from "../../assets/images/TextImages/unlockMobile.png";
 
 const Feature = () => {
-  const { ref, inView } = useInView({
-    triggerOnce: false,
-    threshold: 0.1,
-  });
-
-  const videoRef = useRef(null);
-
-  useEffect(() => {
-    if (videoRef.current) {
-      if (inView) {
-        videoRef.current.play();
-      } else {
-        videoRef.current.pause();
-      }
-    }
-  }, [inView]);
-
-  // useEffect(() => {
-    // splitTextIntoWords("#gsapFeatureText .mainHeading");
-
-    // gsap.from("#gsapFeatureText", {
-    //   opacity: 0,
-    //   x: -400,
-    //   stagger: 0.2, 
-    //   scrollTrigger: {
-    //     trigger: "#gsapFeatureText",
-    //     scroller: "body",
-    //     markers: true ,
-    //     start: "top 50%",
-    //     end: "top 10%",
-    //     // scrub: 2,
-    //   }
-    // });
-  // }, []);
-
   return (
     <div className="feature">
-      {/* <div id='gsapFeatureVideo' className="feature-img">
-        <div ref={ref}>
-          <video ref={videoRef} src={animatedvideo} alt="video" muted playsInline loop>
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      </div> */}
       <div id="gsapFeatureVideo" className="unlockTextDiv">
         <img
           className="unlockTextImg"
@@ -67,7 +15,7 @@ const Feature = () => {
         />
       </div>
       <div id="gsapFeatureText" className="feature-text">
-        <p className="mainHeading bold-text">
+        <div>
           <div id="gsapFeatureVideo">
             <img
               className="unlockMobileDiv"
@@ -76,8 +24,8 @@ const Feature = () => {
               alt="Unlock"
             />
           </div>
-          the Power of storytelling
-        </p>
+          <p className="mainHeading bold-text">the Power of storytelling</p>
+        </div>
         <p className="para">
           At GlyphicX, we believe in the transformative power of storytelling.
           Our strategic approach, combined with captivating visual language,

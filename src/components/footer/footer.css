@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     background-color: #e58c10;
-    color: var(--background-color);
+    color: var(--foreground-color);
 }
 
 .flex-container {
@@ -58,15 +58,16 @@
     text-decoration: none;
     outline: none;
     width: 365px;
-    height: 48px;
+    height: 50px;
     padding: 12px;
     gap: 8px;
-    background-color: var(--background-color);
+    color: var(--background-color);
+    background-color: var(--foreground-color);
     border: 1px solid var(--background-color);
 }
 
 .newsletter input:focus {
-    border: 2px solid var(--foreground-color);
+    border: 2px solid var(--background-color);
 }
 
 .subscribe-btn {
@@ -100,7 +101,7 @@
 }
 
 .column-1 a:hover {
-    color: var(--foreground-color);
+    color: var(--background-color);
 }
 
 .column-div-heading {
@@ -117,7 +118,7 @@
 }
 
 .social:hover {
-    color: var(--foreground-color);
+    color: var(--background-color);
     cursor: pointer;
 }
 
@@ -125,7 +126,7 @@
 .footer-bottom {
     padding: 30px 64px 30px 64px;
     width: 100%;
-    border-top: 1px solid var(--background-color);
+    border-top: 1px solid var(--foreground-color);
     justify-content: space-between;
 }
 
@@ -143,8 +144,8 @@
 }
 
 .footer-links li:hover {
-    color: var(--foreground-color);
-    text-decoration-color: var(--foreground-color);
+    color: var(--background-color);
+    text-decoration-color: var(--background-color);
 }
 
 /* modal.css */
@@ -195,7 +196,7 @@
     }
 }
 
-@media screen and (min-width : 929px) and (max-width : 1200px) {
+@media screen and (min-width : 1024px) and (max-width : 1200px) {
     .flex-container {
         padding: 40px 0 20px;
     }
@@ -216,7 +217,7 @@
 }
 
 
-@media screen and (max-width:928px) {
+@media screen and (max-width:1024px) {
     .flex-container {
         flex-direction: column;
         padding: 20px 0 0;

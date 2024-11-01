@@ -1,10 +1,10 @@
 import React from 'react'
 import "../cta/cta.css"
-import { CustomButton2, CustomButton3 } from '../CustomButton'
 import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from 'gsap/all'
 import gsap from 'gsap'
 import { Link } from 'react-router-dom'
+import CustomButton from "../CustomButton";
 
 const Cta = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -46,10 +46,9 @@ const Cta = () => {
           </p>
         </div>
         <div id='gsapCtaBtn' className="cta-btn-div">
-          <Link to="/services" className="benefitContactBtn md:w-[180px]" style={{margin: "0 2rem"}}>
-          <CustomButton2 text="Learn More"></CustomButton2>
+          <Link to="/services">
+            <CustomButton text="Learn More"></CustomButton>
           </Link>
-
         </div>
       </div>
     </div>

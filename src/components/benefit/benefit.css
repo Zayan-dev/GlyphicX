@@ -49,7 +49,7 @@
 
 @media screen and (max-width:808px) {
     .beneath-overlay {
-        padding: 90px 20px 40px;
+        padding: 140px 20px 40px;
     }
 
     .benefit {
@@ -63,5 +63,11 @@
 
     .benefit-intro {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .beneath-overlay {
+        padding: 100px 20px 40px;
     }
 }

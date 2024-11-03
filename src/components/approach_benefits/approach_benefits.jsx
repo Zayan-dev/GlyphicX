@@ -14,11 +14,23 @@ const ApproachAndBenefits = () => {
     <div className="mainContainer">
       {/* Arrow with dots pattern */}
       <div id="gsapWorkingStar" className="arrowWithDotsDiv">
-        <img id="gsapWorking" src={arrowWithDots} alt="Arrow with dots" />
+        <img
+          id="gsapWorking"
+          height="100%"
+          width="100%"
+          src={arrowWithDots}
+          alt="Arrow with dots"
+        />
       </div>
       {/* Dots pattern */}
       <div id="gsapWorkingStar" className="dotsDiv">
-        <img id="gsapWorking" src={dots} alt="Dots" />
+        <img
+          id="gsapWorking"
+          height="100%"
+          width="100%"
+          src={dots}
+          alt="Dots"
+        />
       </div>
 
       {/* Approach */}

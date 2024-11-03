@@ -1,15 +1,12 @@
 .cta {
-    /* border: 1px solid red; */
     position: relative;
     height: 421px;
     padding: 80px 230px;
     display: flex;
-    justify-content: center;
     align-items: center;
     background: url('../../assets/images//Transforming.jpg') no-repeat center center;
     background-size:cover;
     color: var(--foreground-color);
-    /* background-color: var(--royalBlue-color); */
     overflow: hidden;
 }
 
@@ -25,7 +22,6 @@
 }
 
 .cta-outer {
-    /* border: 1px solid green; */
     position: relative;
     display: flex;
     flex-direction: column;
@@ -34,11 +30,7 @@
 }
 
 .cta-text {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 48px;
-    z-index: 2;
-    margin-bottom: 1rem;
+    margin-bottom: 1.75rem;
     background: linear-gradient(to right, var(--peanut-color), var(--lightPink-color));
     background-clip: border-box;
     -webkit-text-fill-color: transparent;
@@ -47,45 +39,24 @@
 
 .cta-btn-div {
     margin-top: 1rem;
-    display: flex;
-    width: 392px;
-    gap: 2rem;
-    z-index: 2;
+    width: 160px;
 }
 
-.ctaBtn {
-    overflow: hidden;
-    margin: 0 4rem;
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .cta {
+        padding: 80px 150px;
+    }
 }
 
-.contact {
-    width: 104px;
-    height: 48px;
-    padding: 12px 24px 12px 24px;
-    background-color: #1214EB;
-    color: var(--background-color);
-    z-index: 2;
-}
-
-.learn {
-    width: 149px;
-    height: 48px;
-    padding: 12px 24px 12px 24px;
-    border: 1px solid var(--background-color);
-    color: var(--background-color);
-    background-color: transparent;
-    z-index: 2;
+@media screen and (min-width: 809px) and (max-width: 1024px) {
+    .cta {
+        padding: 60px 120px;
+    }
 }
 
 @media screen and (max-width:808px) {
     .cta {
         padding: 20px;
         gap: 1rem;
-    }
-    .cta-text{
-        font-size: 36px;
-    }
-    .cta-btn-div{
-        width: 100%;
     }
 }

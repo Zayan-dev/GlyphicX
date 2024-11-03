@@ -12,6 +12,7 @@
 
 .hero-video {
     width: 65vw;
+    max-width: 1200px;
     border: 2px solid var(--foreground-color);
 }
 
@@ -32,5 +33,6 @@
     }
     .hero-video {
         width: 100vw;
+        max-width: -webkit-fill-available;
     }
 }

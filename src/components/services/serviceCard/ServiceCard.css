@@ -1,0 +1,20 @@
+.service-card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 325px;
+    height: 313px;
+    gap: 30px;
+}
+.service-card-text{
+    font-size: 20px;
+    text-align: justify;
+}
+.service-card-heading{
+    font-size: 24px;
+    font-weight: 800;
+}
+.service-card-image{
+    width: 60px;
+    height: 60px;
+}

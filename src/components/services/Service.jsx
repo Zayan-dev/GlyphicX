@@ -15,6 +15,7 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import InteriorDesign from './InteriorDesign/InteriorDesign'
 import TVC from './TVC/TVC'
+import ServiceCard from './serviceCard/ServiceCard'
 
 const Service = () => {
 
@@ -303,7 +304,8 @@ const Service = () => {
   return (
     <div>
       <ServiceHero heading="Translate ideas into imPactful content" para="Discover our comprehensive range of services that combine design and business expertise." ></ServiceHero>
-      <Branding></Branding>
+      <ServiceCard/>
+      {/* <Branding></Branding>
       <br />
       <Visualization></Visualization>
       <br />
@@ -313,8 +315,8 @@ const Service = () => {
       <br />
       <Graphic></Graphic>
       <br />
-      {/* <Commercial></Commercial> */}
-      {/* <br /> */}
+      <Commercial></Commercial>
+      <br />
       <ProductAnimation></ProductAnimation>
       <br />
       <UserInterface></UserInterface>
@@ -324,7 +326,7 @@ const Service = () => {
       <InteriorDesign></InteriorDesign>
       <br  />
       <TVC></TVC>
-      <Cta></Cta>
+      <Cta></Cta> */}
     </div>
   )
 }

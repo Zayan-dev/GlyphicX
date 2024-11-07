@@ -4,6 +4,8 @@ import { ScrollTrigger } from 'gsap/all';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { CustomButton2, CustomButton3, CustomButton6 } from '../../CustomButton';
+import circleDot from "../../../assets/images/Patterns/dotPattern.png"
+import arrowwithDotsPattern from "../../../assets/images/Patterns/arrowWithDotsPattern.png"
 const Projects = () => {
 
     const Eaxee = {
@@ -390,24 +392,68 @@ const Projects = () => {
     return (
         <div className={modalContent ? 'projects' : 'simple'}>
 
-
+            <div className='pattern'>
+                <img src={circleDot} alt="" />
+            </div>
             <div className="project1" id='pro1'>
-                <div className="content left"  >
-                    <h1 id='gsapleft' className='mainHeading projectHeading' onClick={(e) => handleDisplay('project2', e)}>GlyPhicX</h1>
-                    <p id='gsapleft' className='para'>When it came to crafting our own identity, we approached the task with the same passion and creativity that we bring to every client project</p>
-                    <p id='gsapleft' className='para mt-3 pb-3'>The result? A cohesive, powerful brand identity that not only represents who we are today but also inspires us as we continue to grow and evolve</p>
-                    <div id='gsapleft' className="mt-3">
-                        <button className='w-full' onClick={(e) => handleDisplay('project2', e)} >
-                            <CustomButton6 text="Explore" ></CustomButton6>
-                        </button>
+
+                <img src={Eaxee.image1} alt="Eaxee Image" class=" project1-image" onClick={(e) => handleDisplay('project1', e)} />
+                <div className='project1-overflow'>
+                    <div className='project-content'>
+                        <h1 className='mainHeading' onClick={(e) => handleDisplay('project1', e)}>Eaxxe EnterPrise</h1>
+                        <p className='para'>Eaxee, a leader in enterprise architecture management, sought a brand identity that would mirror its commitment to empowering organizations with intuitive, flexible solutions</p>
                     </div>
                 </div>
-                <div id='gsapright' className="image right">
-                    <img onClick={(e) => handleDisplay('project2', e)} src={GlyphicX.image1} alt="" />
+
+            </div>
+            <div className='patter2'>
+                <img src={arrowwithDotsPattern} alt="" />
+            </div>
+            <div className="project2" id='pro1'>
+           
+                <img src={LambdaTheta.image1} alt="Lambda Theta Image" class=" project2-image" onClick={(e) => handleDisplay('project3', e)} />
+                <div className='project2-overflow'>
+                    <div className='project-content'>
+                        <h1 className='mainHeading' onClick={(e) => handleDisplay('project3', e)}>Lambda Theta</h1>
+                        <h3 className='subHeading'>BRANDING & GRAPHIC DESIGN</h3>
+                        <p className='para'>Lambda Theta, a cutting-edge technology company, required a brand identity that would capture the essence of their expertise in AI-based and Digital Systems</p>
+                    </div>
                 </div>
+
+            </div>
+            <div className='pattern3'>
+                <img src={arrowwithDotsPattern} alt="" />
+            </div>
+            <div className="project1" id='pro1'>
+          
+                <img src={GlyphicX.image1} alt="GlyphicX Image" class=" project1-image" onClick={(e) => handleDisplay('project2', e)} />
+                <div className='project1-overflow'>
+                    <div className='project-content'>
+                        <h1 className='mainHeading' onClick={(e) => handleDisplay('project2', e)}>GlyphicX</h1>
+                        {/* <h3 className='subHeading'>GRAPHIC DESIGN & 3D ANIMATION</h3> */}
+                        <p className='para'>ur task was to craft a brand that embodies Eaxee’s mission of delivering a user-friendly platform while aligning with its vision of making enterprise architecture accessible to all.</p>
+                    </div>
+                </div>
+
             </div>
 
-            <div className="project2">
+            <div className='pattern4'>
+                <img src={circleDot} alt="" />
+            </div>
+            <div className="project2" id='pro1'>
+      
+                <img src={LambdaTheta.image1} alt="Lambda Theta Image" class=" project2-image" onClick={(e) => handleDisplay('project3', e)} />
+                <div className='project2-overflow'>
+                    <div className='project-content'>
+                        <h1 className='mainHeading' onClick={(e) => handleDisplay('project3', e)}>Lambda Theta</h1>
+                        <h3 className='subHeading'>BRANDING & GRAPHIC DESIGN</h3>
+                        <p className='para'>Lambda Theta, a cutting-edge technology company, required a brand identity that would capture the essence of their expertise in AI-based and Digital Systems</p>
+                    </div>
+                </div>
+
+            </div>
+
+            {/* <div className="project2">
                 <div className="content left">
                     <h1 id='pro2gsapleft' className='mainHeading projectHeading' onClick={(e) => handleDisplay('project1', e)}>Eaxee EnterPrise</h1>
                     <p id='pro2gsapleft' className='para'>Eaxee, a leader in enterprise architecture management, sought a brand identity that would mirror its commitment to empowering organizations with intuitive, flexible solutions.</p>
@@ -421,9 +467,9 @@ const Projects = () => {
                 <div id='pro2gsapright' className="image right">
                     <img onClick={(e) => handleDisplay('project1', e)} src={Eaxee.image1} alt="" />
                 </div>
-            </div>
+            </div> */}
 
-            <div className="project1">
+            {/* <div className="project1">
                 <div className="content left">
                     <h1 id='pro3gsapleft' className='mainHeading projectHeading' onClick={(e) => handleDisplay('project3', e)}>Lambda Theta</h1>
                     <p id='pro3gsapleft' className='para'>Lambda Theta, a cutting-edge technology company, required a brand identity that would capture the essence of their expertise in providing research and development of AI-based and Digital Systems</p>
@@ -438,9 +484,9 @@ const Projects = () => {
                 <div id='pro3gsapright' className="image right">
                     <img onClick={(e) => handleDisplay('project3', e)} src={LambdaTheta.image3} alt="" />
                 </div>
-            </div>
+            </div> */}
 
-            <div className="project2">
+            {/* <div className="project2">
                 <div className="content left">
                     <h1 id='pro4gsapleft' className='mainHeading projectHeading' onClick={(e) => handleDisplay('project4', e)}>uHu TvC Production</h1>
                     <p id='pro4gsapleft' className='para'>The ad highlights the universal application and strength of a UHU adhesive tube and was designed to leverage the hype around the release of House of the Dragon by nostalgia baiting a popular scene from Game of Thrones.</p>
@@ -454,7 +500,7 @@ const Projects = () => {
                 <div id='pro4gsapright' className="image right">
                     <img onClick={(e) => handleDisplay('project4', e)} src={VideoProduction.image1} alt="" />
                 </div>
-            </div>
+            </div> */}
             {/* any other project if needed */}
 
             {modalContent && (

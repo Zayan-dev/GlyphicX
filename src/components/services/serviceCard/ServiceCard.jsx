@@ -2,15 +2,13 @@ import React from "react";
 // import image from "/services/artboard1.png";
 import "./ServiceCard.css"
 
-const ServiceCard = () => {
+const ServiceCard = ({image,heading,text}) => {
   return (
     <div className="service-card-container" >
-      <img src="/services/artboard1.png" alt="artboard1" className="service-card-image" />
-      <h1 className="headingSpan service-card-heading">BRANDING</h1>
+      <img src= {`/services/${image}.png`} alt="artboard1" className="service-card-image" />
+      <h1 className="headingSpan service-card-heading">{heading}</h1>
       <p className="service-card-text">
-        At GlyphicX, we understand the vital role that branding plays in the
-        <b> success of a business</b>. From logo design to brand guidelines, we help you
-        establish a strong and memorable brand presence.
+       {text}
       </p>
     </div>
   );

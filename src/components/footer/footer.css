@@ -5,6 +5,8 @@
     align-items: center;
     background-color: #e58c10;
     color: var(--foreground-color);
+ 
+
 }
 
 .footerDiv p, .footerDiv li, .footerDiv a {

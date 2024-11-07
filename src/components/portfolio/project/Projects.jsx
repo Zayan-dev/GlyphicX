@@ -390,6 +390,7 @@ const Projects = () => {
     return (
         <div className={modalContent ? 'projects' : 'simple'}>
 
+
             <div className="project1" id='pro1'>
                 <div className="content left"  >
                     <h1 id='gsapleft' className='mainHeading projectHeading' onClick={(e) => handleDisplay('project2', e)}>GlyPhicX</h1>

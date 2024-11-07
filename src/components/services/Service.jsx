@@ -21,19 +21,6 @@ const Service = () => {
   gsap.registerPlugin(ScrollTrigger);
 
   useGSAP(() => {
-    gsap.from(".service-hero", {
-      x: -400,
-      opacity: 0,
-      duration: 1,
-      scrollTrigger: {
-        trigger: ".service-hero",
-        scroller: "body",
-        markers: false,
-        start: "top 80%",
-        end: "top 30%",
-      }
-    });
-
     gsap.from(".gsapBrandingText", {
       x: -400,
       opacity: 0,
@@ -322,7 +309,7 @@ const Service = () => {
       <WebDev></WebDev>
       <br />
       <InteriorDesign></InteriorDesign>
-      <br  />
+      <br />
       <TVC></TVC>
       <Cta></Cta>
     </div>

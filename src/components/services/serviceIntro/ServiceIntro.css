@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   padding: 0rem 10px 10px 230px;
+  position: relative;
 }
 .service-intro {
   display: grid;
@@ -18,19 +19,20 @@ min-width: 735px;
 .dot-arrow-image{
     position: absolute;
     left: 0;
-    top: 700px;
+    top: 450px;
 }
 .dot-image{
     position: absolute;
-    top: 1400px;
+    top: 1140px;
     left: 0;
-    transform: rotate(45deg);
-    left: -80px;
+    transform: rotate(45deg) translateX(-66%);
+ 
 }
 .dot-circle-image{
     position: absolute;
-    right: 0px;
-    top: 1612px;
+    right: 0;
+    bottom: 0;
+    transform: translate(35%, 45%);
 
 }
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
@@ -47,9 +49,7 @@ min-width: 735px;
   .service-intro-container {
     padding: 0rem 120px 60px;
   }
-  .dot-circle-image{
-    top: 1720px;
-  }
+ 
   .service-image{
     display: none;
   }

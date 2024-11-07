@@ -47,34 +47,29 @@ const ServiceIntro = () => {
   ];
   return (
     <div className="service-intro-container overflow-hidden">
-      <div>
-        <img
+      
+      <img
           height="10%"
           width="10%"
           src="/services/arrowDots.png"
           alt="Arrow with dots"
           className="dot-arrow-image intro-side-images"
         />
-      </div>
-      <div >
-        <img
+      <img
           height="10%"
           width="10%"
           src={dots}
           alt="Dots"
           className="dot-image intro-side-images"
         />
-      </div>
-      <div >
-        <img
-          height="15%"
-          width="15%"
+      <img
+          height="30%"
+          width="30%"
           src="/services/dotCircle-image.png"
           alt="Dots"
-          className="dot-circle-image intro-side-images"
+          className="dot-circle-image "
           
         />
-      </div>
 
       <div className="service-intro">
         {cardData.map((d, index) => (

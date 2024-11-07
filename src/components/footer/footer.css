@@ -5,7 +5,8 @@
     align-items: center;
     background-color: #e58c10;
     color: var(--foreground-color);
- 
+    position: relative;
+    z-index: 10;
 
 }
 

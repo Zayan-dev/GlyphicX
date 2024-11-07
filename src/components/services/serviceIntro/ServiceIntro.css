@@ -29,7 +29,7 @@ min-width: 735px;
 }
 .dot-circle-image{
     position: absolute;
-    right: -111px;
+    right: 0px;
     top: 1612px;
 
 }
@@ -47,7 +47,9 @@ min-width: 735px;
   .service-intro-container {
     padding: 0rem 120px 60px;
   }
-  
+  .dot-circle-image{
+    top: 1720px;
+  }
   .service-image{
     display: none;
   }

@@ -67,8 +67,8 @@ const ServiceIntro = () => {
       </div>
       <div >
         <img
-          height="30%"
-          width="30%"
+          height="15%"
+          width="15%"
           src="/services/dotCircle-image.png"
           alt="Dots"
           className="dot-circle-image intro-side-images"

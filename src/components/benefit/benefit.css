@@ -1,8 +1,7 @@
 .beneath-overlay {
-    padding: 10rem 230px 60px;  
+    padding: 10rem 230px 60px;
     overflow: hidden;
 }
-
 
 .benefit {
     display: flex;
@@ -33,7 +32,9 @@
     .beneath-overlay {
         padding: 10rem 150px 60px;
     }
-    .benefit-heading, .benefit-intro {
+
+    .benefit-heading,
+    .benefit-intro {
         width: 100%;
     }
 }
@@ -42,7 +43,9 @@
     .beneath-overlay {
         padding: 10rem 120px 60px;
     }
-    .benefit-heading, .benefit-intro {
+
+    .benefit-heading,
+    .benefit-intro {
         width: 100%;
     }
 }

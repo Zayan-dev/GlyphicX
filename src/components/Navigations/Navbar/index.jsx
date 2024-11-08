@@ -25,7 +25,6 @@ const Navbar = ({ toggle }) => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [location.pathname, isScrolled]);
-  console.log(isScrolled)
 
   const handleNavigation = (path) => {
     navigate(path); // Use navigate to change the route

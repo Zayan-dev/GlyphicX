@@ -1,20 +1,40 @@
-.projects {
-    /* border: 1px solid red; */
-    height: 100%;
-    overflow: hidden;
+.pattern1 {
+    position: absolute;
+    right: 5%;
+    top: 0;
 }
 
-.simple {
+.pattern2 {
+    position: absolute;
+    left: -2rem;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    top: 20rem;
+}
+
+.pattern3 {
+    position: absolute;
+    right: -2rem;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    top: 50rem;
+}
+
+.pattern4 {
+    position: absolute;
+    left: -7%;
+    height: 18%;
+    width: 18%;
+    top: 70rem;
+}
+
+.projects, .simple {
     height: 100%;
     position: relative;
-    /* text-align: justify; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    /* align-items: center; */
-    padding: 0rem 230px 60px;
+    padding: 0rem 230px 100px;
     gap: 5rem;
-    /* border: 1px solid red; */
 }
 
 .projects::after {
@@ -24,364 +44,95 @@
     top: 0;
     left: 0;
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.76);
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 10;
-    /* pointer-events: none; */
 }
 
-
-
-.project1 {
+.project1, .project2 {
     position: relative;
-    width: 45rem;
-    height: 100%;
-    background-color: var(--foreground-color);
-    border-radius: 5%;
+    max-width: 65rem;
+    width: 78%;
+    height: fit-content;
     z-index: 1;
 }
 
 .project2 {
-    position: relative;
-    width: 45rem;
-    height: 100%;
-    background-color: var(--foreground-color);
-    border-radius: 5%;
-    left: 13rem;
-    z-index: 1;
+    /* project2 width is 78%, so left = 100 - 78 */
+    left: calc(100% - 78%);
 }
 
-.pattern {
-    position: absolute;
-    right: 0;
-    top: 0;
-    /* border: 1px solid red; */
-    /* height: 100px;
-    width: 100px; */
-}
-
-.patter2 {
-    position: absolute;
-    left: 0;
-    top: 20rem;
-}
-
-.pattern3 {
-    position: absolute;
-    right: 0;
-    top: 50rem;
-    /* border: 1px solid red; */
-    /* height: 100px;
-    width: 100px; */
-}
-
-.pattern4 {
-    position: absolute;
-    left: 0;
-    top: 70rem;
-    /* border: 1px solid red; */
-}
-
-.project1-overflow {
+.project1-overflow, .project2-overflow {
     overflow: hidden;
-    border-radius: 5%;
+    border-radius: 2.125rem;
     height: 100%;
     width: 100%;
     position: relative;
-    /* border: 1px solid green; */
+    background-color: var(--foreground-color);
 }
 
 .project2-overflow {
     display: flex;
-    flex-direction: column;
     justify-content: end;
-    align-items: flex-end;
-    overflow: hidden;
-    border-radius: 5%;
-    height: 100%;
-    width: 100%;
-    position: relative;
 }
 
 .project1-overflow::before,
 .project2-overflow::before {
     content: "";
     width: 100%;
-    height: 10%;
-    background: linear-gradient(274.5deg, #EC6164 16.46%, #E58C10 96.11%);
+    height: 2.25rem;
+    background: linear-gradient(275deg, #bc42a1 2%, #EC6164 40%, #E58C10 98%);
     position: absolute;
     bottom: 0;
-    /* border-bottom-right-radius: 20%;
-    border-bottom-left-radius: 20px; */
+}
+
+.project-content {
+    width: 65%;
+    color: var(--background-color);
+    height: 100%;
+    padding: 3rem 2.5rem calc(2.25rem + 3rem);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.project1-image, .project2-image {
+    position: absolute;
+    /* 100% - height of the bottom border - Height of the image itself and then /2, so that top bottom are equal  */
+    top: calc(((100% - 2.125rem - 70%)/2));
+    height: 70%;
+    max-height: 15rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    z-index: 4;
 }
 
 .project1-image {
-    position: absolute;
-    right: -30%;
-    top: 2rem;
-    height: 60%;
-    object-fit: cover;
-    border-radius: 5%;
-    z-index: 4;
-    cursor: pointer;
-    /* width: 50%; */
+    right: 0;
+    transform: translateX(50%);
 }
-
 .project2-image {
-    position: absolute;
-    left: -30%;
-    top: 2rem;
-    height: 60%;
-    object-fit: cover;
-    border-radius: 5%;
-    z-index: 4;
-    cursor: pointer;
-    /* width: 50%; */
-}
-
-
-.project-content {
-    /* border: 1px solid red; */
-    width: 60%;
-    color: var(--background-color);
-    height: 100%;
-    padding: 3rem 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    left: 0;
+    transform: translateX(-50%);
 }
 
 .project-content h1 {
     background: linear-gradient(to right, var(--peanut-color), var(--lightPink-color));
     background-clip: border-box;
+    width: fit-content;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
+    text-transform: capitalize;
+    font-size: 2.35rem;
     -webkit-background-clip: text;
 }
 
-/* media queries */
-
-@media screen and (min-width:1400px) {
-    .simple {
-        align-items: center;
-    }
-}
-
-@media screen and (max-width:1340px) {
-    .simple {
-        padding: 0rem 150px 60px;
-    }
-
-    .project1,
-    .project2 {
-        width: 80%;
-    }
-}
-
-@media screen and (max-width:1230px) {
-
-    /* .project1-image, .project2-image{
-        display: none;
-    } */
-    .project1-image {
-        right: -10%;
-        height: 180px;
-    }
-
-    .project2-image {
-        left: -10%;
-        height: 180px;
-    }
-
-    .project1 {
-        width: 90%;
-    }
-
-    .project2 {
-        left: 4rem;
-        width: 90%;
-    }
-
-    .project-content {
-        width: 60%;
-    }
-}
-
-
-@media screen and (max-width:800px) {
-    .simple {
-        padding: 0px 20px 40px;
-    }
-
-}
-
-@media screen and (max-width:990px) {
-
-    .project1-image,
-    .project2-image {
-        display: none;
-    }
-
-    .project-content {
-        width: 100%;
-    }
-
-    .project1,
-    .project2 {
-        width: 100%;
-    }
-
-    .project2 {
-        left: 0;
-    }
-}
-
-@media screen and (max-width:730px) {
-
-    .project1-image,
-    .project2-image {
-        display: none;
-    }
-
-    .project-content {
-        width: 100%;
-    }
-
-    .project1,
-    .project2 {
-        width: 100%;
-    }
-
-    .project2 {
-        left: 0;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-/* .project2 {
-    border: 1px solid white;
-    padding: 112px 64px 112px 64px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: var(--foreground-color);
-} */
-
-.project3 {
-    /* border: 1px solid white; */
-    padding: 112px 64px 112px 64px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-image: url("../../../assets/bg.png");
-    color: var(--background-color);
-}
-
-.content {
-    /* border: 1px solid white; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* width: 45%; */
-    border: 1px solid black;
-}
-
-.content h1 {
-    font-weight: 700;
-    font-size: 35px;
+.project-content h3 {
     text-transform: uppercase;
 }
 
-.image {
-    width: 50%;
-    cursor: pointer;
-}
-
-/* .image img:nth-child(odd){ */
-/* height: 100%; */
-/* object-fit: cover; */
-/* border: 2px solid var(--background-color); */
-/* } */
-
-.project1 .image img,
-.project3 .image img {
-    border: 2px solid var(--background-color);
-}
-
-.project2 .image img,
-.project4 .image img {
-    border: 2px solid var(--foreground-color);
-}
-
-
-.project-iframe {
-    /* border: 1px solid red; */
-    /* background-color: white; */
-    /* position: fixed; */
-    z-index: 20;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    /* margin: 3rem; */
-    border: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    pointer-events: none;
-    /* overflow-y: scroll; */
-}
-
-.close-btn {
-    /* background-color: aqua; */
-    position: fixed;
-    z-index: 100;
-    top: 10px;
-    right: 30px;
-}
-
-.close-btn i {
-    color: var(--background-color);
-}
-
-.projectHeading {
-    /* border: 1px solid red; */
-    width: fit-content;
-}
-
-.simple .projectHeading {
-    position: relative;
-    cursor: pointer;
-    margin-bottom: 10px;
-}
-
-.simple .projectHeading::after {
-    content: '';
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    background-color: currentColor;
-    bottom: -5px;
-    left: 0;
-    opacity: 0;
-    transition: all 0.5s ease;
-}
-
-.simple .projectHeading:hover::after {
-    opacity: 1;
-    width: 100%;
-}
+/* Overlay */
 
 .overlay {
-    /* border: 10px solid red; */
-    /* background-color: red; */
     position: fixed;
     top: 0;
     left: 0;
@@ -392,65 +143,127 @@
     overflow-y: scroll;
 }
 
-/* @media screen and (max-width:969px) {
-    .projects {
-        padding-top: 100px;
-    }
+.project-iframe {
+    z-index: 20;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    pointer-events: none;
+}
 
-    .project1 {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 34px;
-    }
+.close-btn {
+    position: fixed;
+    z-index: 100;
+    top: 20px;
+    right: 22px;
+}
 
-    .project2 {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 34px;
-    }
+.close-btn i {
+    color: var(--foreground-color);
+}
 
-    .project3 {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 34px;
+/* media queries */
+
+@media screen and (min-width: 1600px) {
+    .pattern1 {
+        height: 12%;
+        width: 12%;
+        right: 10%;
+    }
+    .project-content {
+        padding: 3rem 4rem calc(2.25rem + 3rem);
+    }
+    .project1-image, .project2-image{
+        max-height: 18.75rem;
     }
 }
 
-@media screen and (max-width:970px) {
-    .project1 {
-        padding: 20px;
-        gap: 1rem;
-        padding-top: 100px;
-        margin-bottom: 3rem;
+@media screen and (min-width: 1280px) and (max-width:1340px) {
+    .project-content {
+        width: 70%;
     }
+}
 
-    .project2 {
-        padding: 20px;
-        gap: 1rem;
-        margin-bottom: 3rem;
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .projects, .simple {
+        padding: 0rem 150px 80px;
     }
-
-    .project3 {
-        padding: 20px;
-        gap: 1rem;
-        margin-bottom: 3rem;
+    .pattern4 {top: 80rem;}
+}
+@media screen and (max-width: 1024px) { 
+    .projects, .simple {
+        padding: 0rem 120px 14rem;
+        gap: 15rem;
     }
-
-    .content,
-    .image {
+    .project1, .project2 {
         width: 100%;
     }
 
-    .content h1 {
-        font-size: 28px;
+    .project2 {
+        left: 0;
+    }
+    .project-content {
+        width: 100%;
+    }
+    .project1-image, .project2-image {
+        top: 80%;
+        height: 16rem;
+    }
+
+    .project1-image{
+        right: 50%;
+    }
+
+    .project2-image {
+        left: 50%;
+    }
+    .pattern2, .pattern3{
+        height: 15%;
+        width: 15%;}
+    .pattern4 {top: 90rem;}
+}
+@media screen and (max-width: 808px) {
+    .projects, .simple {
+        padding: 0px 20px 14rem;
+    }
+    .project-iframe {
+        gap: 2rem;
+    }
+    .project-content {
+        padding: 2rem 2rem calc(2.25rem + 2rem);
+    }
+    .project-content h1 {
+        font-size: 1.75rem;
+        line-height: 34px;
     }
 }
 
-@media screen and (max-width:430px) {
-    .simple {
-        text-align: left;
+@media screen and (max-width: 540px) {
+    .projects, .simple {
+        padding: 0rem 20px 8.75rem;
+        gap: 8.75rem;
     }
-} */
+    .project-content {
+        padding: 1rem 1rem calc(2.25rem + 2rem);
+    }
+    .project1-overflow, .project2-overflow, .project1-image, .project2-image {
+        border-radius: 1rem;
+    }
+    .pattern1, .pattern2, .pattern3, .pattern4 { display: none;}
+
+    .project1-image, .project2-image {
+        top: 84%;
+        max-height: 9rem;
+    }
+    .overlay { padding: 1.5rem;}
+    .project-iframe {
+        gap: 1rem;
+    }
+    .close-btn { top: 10px; right: 6px; font-size: 0.6rem;}
+}

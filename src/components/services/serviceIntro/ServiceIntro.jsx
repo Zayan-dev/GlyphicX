@@ -2,6 +2,7 @@ import React from "react";
 import ServiceCard from "../serviceCard/ServiceCard";
 import "./ServiceIntro.css";
 import dots from "../../../assets/images/Patterns/dots.png";
+import circleDotWithDoodlePattern from "../../../assets/images/Patterns/secondDotPattern.png";
 const ServiceIntro = () => {
   const cardData = [
     {
@@ -47,29 +48,34 @@ const ServiceIntro = () => {
   ];
   return (
     <div className="service-intro-container overflow-hidden">
-      
       <img
-          height="10%"
-          width="10%"
-          src="/services/arrowDots.png"
-          alt="Arrow with dots"
-          className="dot-arrow-image intro-side-images"
-        />
+        height="10%"
+        width="10%"
+        src="/services/arrowDots.png"
+        alt="Arrow with dots"
+        className="dot-arrow-image intro-side-images"
+      />
       <img
-          height="10%"
-          width="10%"
-          src={dots}
-          alt="Dots"
-          className="dot-image intro-side-images"
-        />
+        height="10%"
+        width="10%"
+        src={dots}
+        alt="Dots"
+        className="dot-image intro-side-images"
+      />
       <img
-          height="30%"
-          width="30%"
-          src="/services/dotCircle-image.png"
-          alt="Dots"
-          className="dot-circle-image "
-          
-        />
+        height="30%"
+        width="30%"
+        src="/services/dotCircle-image.png"
+        alt="Dots"
+        className="dot-circle-image "
+      />
+      <img
+        height="15%"
+        width="15%"
+        src="/services/arrowDots.png"
+        alt="Dots"
+        className="dot-arrow-image2"
+      />
 
       <div className="service-intro">
         {cardData.map((d, index) => (
@@ -82,7 +88,14 @@ const ServiceIntro = () => {
         ))}
       </div>
       <div className="service-intro-image">
-        <img src="/services/services-mobile.png" className="service-image" />
+        {/* <img src="/" className="service-image" /> */}
+        <img
+          className="service-image"
+          height="100%"
+          width="100%"
+          src={circleDotWithDoodlePattern}
+          alt="Circle Dot with Doodle pattern"
+        />
       </div>
     </div>
   );

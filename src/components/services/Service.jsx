@@ -293,31 +293,7 @@ const Service = () => {
   return (
     <div className='overflow-hidden'>
       <ServiceHero heading="services" para="what we do" ></ServiceHero>
-      {/* <SideImages/> */}
-      
       <ServiceIntro/>
-      {/* <Branding></Branding>
-      <br />
-      <Visualization></Visualization>
-      <br />
-      <FinalProduct></FinalProduct>
-      <br />
-      <Sketch></Sketch>
-      <br />
-      <Graphic></Graphic>
-      <br />
-      <Commercial></Commercial>
-      <br />
-      <ProductAnimation></ProductAnimation>
-      <br />
-      <UserInterface></UserInterface>
-      <br />
-      <WebDev></WebDev>
-      <br />
-      <InteriorDesign></InteriorDesign>
-      <br />
-      <TVC></TVC>
-      <Cta></Cta> */}
     </div>
   )
 }

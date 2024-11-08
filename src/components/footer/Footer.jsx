@@ -310,11 +310,11 @@ const Footer = () => {
 
       <Modal isOpen={isModalCookieOpen} onClose={closeCookieModal}>
         <div className="text-navyBlue">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center relative">
             <h3 className="mainHeading mb-3 uppercase">Cookies</h3>
 
             <button
-              className="text-4xl fixed left-2/3 font-semibold mb-6 rotate-45"
+              className="text-4xl absolute right-2 font-semibold mb-6 rotate-45"
               onClick={closeCookieModal}
             >
               +

@@ -1,10 +1,6 @@
 import React from "react";
-import { IoHome } from "react-icons/io5";
-import { GrResources } from "react-icons/gr";
-import { MdDesignServices } from "react-icons/md";
-import { GrProjects } from "react-icons/gr";
 import { Link } from "react-router-dom";
-import { CustomButton4 } from "../../CustomButton";
+import CustomButton from "../../CustomButton";
 import logo from "../../../assets/images/sidebarLogo2.png"
 import bg from "../../../assets/bg.png"
 
@@ -25,10 +21,9 @@ const Sidebar = ({ isOpen, toggle }) => {
 
       {/* Sidebar */}
       <div
-        className={`sidebar-container shadow-sm shadow-offWhite pr-14 fixed w-full h-full bg-cover bg-center overflow-hidden justify-start transition-transform duration-[400ms] pt-[110px] left-0 z-50`}
+        className={`sidebar-container shadow-sm bg-navyBlue shadow-offWhite pr-14 fixed w-full h-full bg-cover bg-center overflow-hidden justify-start transition-transform duration-[400ms] pt-[110px] left-0 z-50`}
         style={{
           transform: `${isOpen ? "translateX(15%)" : "translateX(110%)"}`,
-          backgroundImage: `url(${bg})`,
           boxShadow: "-5px 0px 18px -10px #fffaf0",
         }}
       >
@@ -42,7 +37,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             width="32"
             height="32"
             viewBox="0 0 24 24"
-            color="var(--background-color)"
+            color="var(--foreground-color)"
           >
             <path
               fill="currentColor"
@@ -51,7 +46,7 @@ const Sidebar = ({ isOpen, toggle }) => {
           </svg>
         </button>
 
-        <ul className="subHeading w-full px-[8%] text-left text-offWhite text-xl">
+        <ul className="subHeading w-full px-[8%] text-left text-peanut text-xl">
           <li className="w-full mb-10 flex justify-center items-center">
             <Link to="/" className="" onClick={toggle}>
               <img src={logo} alt="logo" style={{ height: "39px" }} />
@@ -59,10 +54,9 @@ const Sidebar = ({ isOpen, toggle }) => {
             </Link>
           </li>
           <hr
-            className="border-0 h-[2px] w-[90%] block m-auto mb-6"
+            className="border-0 rounded-full h-[6px] w-4/5 block m-auto mb-6"
             style={{
-              backgroundImage:
-                "linear-gradient(to right, rgba(255, 250, 240, 0), rgba(255, 250, 240, 1), rgba(0, 0, 0, 0))",
+              background: "linear-gradient(275deg, #6D3C7D, #E58C10)",
             }}
           />
           <li className={listItemStyles}>
@@ -90,26 +84,27 @@ const Sidebar = ({ isOpen, toggle }) => {
             </Link>
           </li> */}
         </ul>
-        <Link
-          to="/contact"
-          className="subHeading px-[12%] block mt-8 w-full"
-          onClick={toggle}
-        >
-          <CustomButton4 text="Contact" />
-        </Link>
+        <div className="flex justify-center">
+          <Link
+            to="/contact"
+            className="subHeading px-[12%] block mt-8 w-4/5"
+            onClick={toggle}
+          >
+            <CustomButton text="Contact" />
+          </Link>
+        </div>
 
-        <div className="w-full px-[8%] text-left text-offWhite">
+        <div className="w-full px-[8%] text-left text-peanut">
           <hr
-            className="border-0 h-[2px] m-auto w-[90%] block mt-12"
+            className="border-0 h-[6px] m-auto w-4/5 rounded-full block mt-12"
             style={{
-              backgroundImage:
-                "linear-gradient(to right, rgba(255, 250, 240, 0), rgba(255, 250, 240, 1), rgba(0, 0, 0, 0))",
+              background: "linear-gradient(275deg, #6D3C7D, #E58C10)",
             }}
           />
         </div>
 
         <div
-          className="subHeading flex px-[12%] gap-8 items-center justify-center mt-12 w-full"
+          className="subHeading flex px-[12%] gap-8 justify-center mt-12 w-full"
           onClick={toggle}
         >
           <a
@@ -118,8 +113,8 @@ const Sidebar = ({ isOpen, toggle }) => {
           >
             {" "}
             <i
-              className="fa-brands fa-square-facebook fa-xl"
-              style={{ color: "#fffaf0", fontSize: "26px" }}
+              className="fa-brands fa-square-facebook"
+              style={{ color: "#E58C10", fontSize: "30px" }}
             ></i>
           </a>
           <a
@@ -129,14 +124,14 @@ const Sidebar = ({ isOpen, toggle }) => {
             {" "}
             <i
               className="fa-brands fa-square-instagram"
-              style={{ color: "#fffaf0", fontSize: "28px" }}
+              style={{ color: "#E58C10", fontSize: "30px" }}
             ></i>
           </a>
           <a target="_blank" href="https://www.linkedin.com/company/glyphicx/">
             {" "}
             <i
               className="fa-brands fa-linkedin"
-              style={{ color: "#fffaf0", fontSize: "28px" }}
+              style={{ color: "#E58C10", fontSize: "30px" }}
             ></i>
           </a>
         </div>

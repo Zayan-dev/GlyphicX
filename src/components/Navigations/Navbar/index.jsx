@@ -20,27 +20,20 @@ const Navbar = ({ toggle }) => {
       }
     };
 
-    // Only add the scroll event listener if on the homepage
-    if (location.pathname === "/") {
-      window.addEventListener("scroll", handleScroll);
-    }
-
+    window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [location.pathname]);
+  }, [location.pathname, isScrolled]);
+  console.log(isScrolled)
 
   const handleNavigation = (path) => {
     navigate(path); // Use navigate to change the route
   };
 
-  // Define styles based on location
-  const isHomePage = location.pathname === "/";
-  const navbarStyles = isHomePage
-    ? `fixed top-0 z-10 transition-colors duration-300 ${isScrolled ? 'bg-offWhite text-peanut opacity-100' : 'bg-transparent text-peanut opacity-100'}`
-    : 'fixed top-0 z-10 text-peanut opacity-100 border-b-2 bg-offWhite'; // Default styles for other pages
+  const navbarStyles = `fixed top-0 z-10 transition-colors duration-300 ${isScrolled ? 'bg-offWhite text-peanut opacity-100' : 'bg-transparent text-peanut opacity-100'}` // Default styles for other pages
 
-    const listItemStyles = `${isHomePage && !isScrolled ? 'text-peanut' : ''} subHeading relative text-lg lg:text-xl w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300`;
+    const listItemStyles = `${!isScrolled ? 'text-peanut' : ''} subHeading relative text-lg lg:text-xl w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300`;
 
   const activeLinkStyles = "after:w-full after:scale-x-0 after:scale-x-100 text-peanut ";
 
@@ -59,12 +52,9 @@ const Navbar = ({ toggle }) => {
                 to="/"
                 onClick={() => handleNavigation("/")}
                 className={({ isActive }) =>
-                  `${listItemStyles} ${isActive ? activeLinkStyles : ""} ${
-                    isHomePage
-                      ? isScrolled
+                  `${listItemStyles} ${isActive ? activeLinkStyles : ""} ${isScrolled
                         ? "after:bg-peanut"
                         : "after:bg-peanut"
-                      : "after:bg-peanut"
                   }`
                 }
                 id="gsapNavItem"
@@ -78,11 +68,9 @@ const Navbar = ({ toggle }) => {
                 onClick={() => handleNavigation("/portfolio")}
                 className={({ isActive }) =>
                   `${listItemStyles} ${isActive ? activeLinkStyles : ""} ${
-                    isHomePage
-                      ? isScrolled
+                    isScrolled
                         ? "after:bg-peanut"
                         : "after:bg-peanut"
-                      : "after:bg-peanut"
                   }`
                 }
                 id="gsapNavItem"
@@ -96,11 +84,9 @@ const Navbar = ({ toggle }) => {
                 onClick={() => handleNavigation("/services")}
                 className={({ isActive }) =>
                   `${listItemStyles} ${isActive ? activeLinkStyles : ""} ${
-                    isHomePage
-                      ? isScrolled
+                    isScrolled
                         ? "after:bg-peanut"
                         : "after:bg-peanut"
-                      : "after:bg-peanut"
                   }`
                 }
                 id="gsapNavItem"
@@ -113,7 +99,7 @@ const Navbar = ({ toggle }) => {
             id="gsapLogo"
             className="static md:absolute md:left-1/2 md:transform md:-translate-x-1/2"
           >
-            {isHomePage ? isScrolled ? <Logo /> : <WhiteLogo /> : <Logo />}{" "}
+            {isScrolled ? <Logo /> : <WhiteLogo />}{" "}
             {/* Toggle logos based on page */}
           </div>
 
@@ -136,14 +122,10 @@ const Navbar = ({ toggle }) => {
               width="32"
               height="32"
               viewBox="0 0 24 24"
-              color={
-                isHomePage ? (isScrolled ? "#071C40" : "#FFFFFF") : "#071C40"
-              }
+              color={isScrolled ? "#071C40" : "#FFFFFF"}
             >
               <path
-                fill={
-                  isHomePage ? (isScrolled ? "#071C40" : "#FFFFFF") : "#071C40"
-                }
+                fill={isScrolled ? "#071C40" : "#FFFFFF"}
                 d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"
               />
             </svg>

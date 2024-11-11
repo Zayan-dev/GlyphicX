@@ -508,22 +508,8 @@ const Projects = () => {
           </div>
         </div>
         <div className="project1" id="pro1">
-          {/* <div className="perfectimage" onClick={(e) => handleDisplay("project5", e)}>
-            <img
-              src={Perfect.image1}
-              alt="Perfect Image"
-              // className=" project1-image"
-              // onClick={(e) => handleDisplay("project5", e)}
-            />
-            <img
-              src={Perfect.image1}
-              alt="Perfect Image"
-              // className=" project1-image"
-              // onClick={(e) => handleDisplay("project5", e)}
-            />
-          </div> */}
           <img
-            src={Perfect.image1}
+            src="/Portfolio/Perfect/Gray.jpg"
             alt="Perfect Image"
             className=" project1-image"
             onClick={(e) => handleDisplay("project5", e)}

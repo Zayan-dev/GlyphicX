@@ -2,20 +2,37 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 325px;
     gap: 30px;
     height: auto;
 }
 .service-card-text{
     text-align: justify;
 }
-.service-card-heading{
-    font-size: 24px;
-    font-weight: 800;
+.service-card-container h1{
+    font-size: 2rem;
 }
+
 .service-card-image{
     width: 60px;
     height: 60px;
+}
+
+@media screen and (min-width: 1600px) {
+    .service-card-container h1{
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width: 808px) {
+    .service-card-container h1 {
+        font-size: 1.75rem;
+    }
+}
+
+/* mobile mode main heading size will be 28px */
+@media screen and (max-width: 640px) {
+    .service-card-container h1 {
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 808px) {

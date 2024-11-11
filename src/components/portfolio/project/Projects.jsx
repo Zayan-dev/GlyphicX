@@ -438,7 +438,7 @@ const Projects = () => {
           <div className="project1-overflow">
             <div className="project-content">
               <h1
-                className="mainHeading"
+                className="headingSpan mainHeading"
                 onClick={(e) => handleDisplay("project1", e)}
               >
                 Eaxee Enterprise
@@ -466,7 +466,7 @@ const Projects = () => {
           <div className="project2-overflow">
             <div className="project-content">
               <h1
-                className="mainHeading"
+                className="headingSpan mainHeading"
                 onClick={(e) => handleDisplay("project3", e)}
               >
                 Lambda Theta
@@ -493,7 +493,7 @@ const Projects = () => {
           <div className="project1-overflow">
             <div className="project-content">
               <h1
-                className="mainHeading"
+                className="headingSpan mainHeading"
                 onClick={(e) => handleDisplay("project2", e)}
               >
                 Urge Fragrances
@@ -521,7 +521,7 @@ const Projects = () => {
           <div className="project2-overflow">
             <div className="project-content">
               <h1
-                className="mainHeading"
+                className="headingSpan mainHeading"
                 onClick={(e) => handleDisplay("project4", e)}
               >
                 Eaxee Soft

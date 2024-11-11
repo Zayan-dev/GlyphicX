@@ -37,15 +37,6 @@
     margin-bottom: 40px;
 }
 
-.headingSpan {
-    width: fit-content;
-    background: linear-gradient(to right, var(--peanut-color), var(--lightPink-color));
-    background-clip: border-box;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-}
-
-
 .outerDiv{
     width: calc(100% - 10%);
     display: grid;

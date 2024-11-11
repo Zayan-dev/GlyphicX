@@ -5,6 +5,8 @@ import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
 import CustomButton from "../CustomButton";
 import Alert from "../alert/alertBox";
+import circleDotPattern from "../../assets/images/Patterns/dotPattern.png";
+import dots from "../../assets/images/Patterns/dots.png";
 
 const Contact = () => {  
   const {
@@ -76,6 +78,24 @@ const Contact = () => {
 
   return (
     <div className="contact-page">
+      <div id="gsapWorkingStar" className="circleDotPatternContactPage">
+        <img
+          id="gsapWorking"
+          height="100%"
+          width="100%"
+          src={circleDotPattern}
+          alt="Circle Dot with Doodle pattern"
+        />
+      </div>
+      <div id="gsapWorkingStar" className="dotsPatternContactPage">
+        <img
+          id="gsapWorking"
+          height="100%"
+          width="100%"
+          src={dots}
+          alt="Dot pattern"
+        />
+      </div>
       <div className="box1">
         <div className="contacttext">
           <h1 className="mainHeading">

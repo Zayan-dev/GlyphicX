@@ -1,9 +1,26 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import ServiceCard from "../serviceCard/ServiceCard";
 import "./ServiceIntro.css";
 import dots from "../../../assets/images/Patterns/dots.png";
 import circleDotWithDoodlePattern from "../../../assets/images/Patterns/secondDotPattern.png";
 const ServiceIntro = () => {
+  const sectionRefs = {
+    "#webdevelopment": useRef(null),
+    "#graphicdesign": useRef(null),
+    "#uidesign": useRef(null),
+    "#3danimation": useRef(null),
+    "#digitalvideocommercial": useRef(null),
+  };
+
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash && sectionRefs[hash].current) {
+      sectionRefs[hash].current.scrollIntoView({ behavior: "smooth"});
+    }
+  }, [hash]);
+
   const cardData = [
     {
       image: "artboard1",
@@ -47,7 +64,7 @@ const ServiceIntro = () => {
     },
   ];
   return (
-    <div className="service-intro-container overflow-hidden">
+    <div className="service-intro-container">
       <img
         height="10%"
         width="10%"
@@ -70,8 +87,8 @@ const ServiceIntro = () => {
         className="dot-circle-image "
       />
       <img
-        height="15%"
-        width="15%"
+        height="10%"
+        width="10%"
         src="/services/arrowDots.png"
         alt="Dots"
         className="dot-arrow-image2"
@@ -83,6 +100,7 @@ const ServiceIntro = () => {
             key={index}
             image={d.image}
             heading={d.heading}
+            sectionRefs={sectionRefs}
             text={d.text}
           />
         ))}

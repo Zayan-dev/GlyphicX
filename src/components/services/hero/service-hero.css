@@ -11,16 +11,6 @@
     text-transform: uppercase;
 }
 
-.service-hero-custom-mainHeading {
-    font-size: 25px;
-    width: fit-content;
-    background: linear-gradient(to right, var(--peanut-color), var(--lightPink-color));
-    background-clip: border-box;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    overflow: hidden;
-}
-
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
     .service-hero {
         padding: 10rem 150px 60px;

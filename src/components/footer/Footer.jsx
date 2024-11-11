@@ -35,36 +35,28 @@ const Footer = () => {
     }, 3000);
   };
   const navigate = useNavigate();
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isModalTosOpen, setIsModalTosOpen] = useState(false);
   const [isModalCookieOpen, setIsModalCookieOpen] = useState(false);
 
 
   const handleNavigation = () => {
-    navigate("/services#graphicDesign");
+    navigate("/services#graphicdesign");
   };
 
   const handleUi = () => {
-    navigate("/services#uiDesign");
+    navigate("/services#uidesign");
   };
 
   const handleWeb = () => {
-    navigate("/services#webDevelopment");
+    navigate("/services#webdevelopment");
   };
 
   const handleProAnim = () => {
-    navigate("/services#proAnim");
+    navigate("/services#3danimation");
   };
 
   const handleTvc = () => {
-    navigate("/services#Tvc");
+    navigate("/services#digitalvideocommercial");
   };
-
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
-
-  const openTosModal = () => setIsModalTosOpen(true);
-  const closeTosModal = () => setIsModalTosOpen(false);
 
   const openCookieModal = () => setIsModalCookieOpen(true);
   const closeCookieModal = () => setIsModalCookieOpen(false);

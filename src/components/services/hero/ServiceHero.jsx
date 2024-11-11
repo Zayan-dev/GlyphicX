@@ -25,7 +25,7 @@ const ServiceHero = (props) => {
       <div className="service-hero">
         <h1 id='gsap-service-hero-heading'>{props.subheading}</h1>
         <div className="para service-hero-custom-subHeading">{props.heading}</div>
-        <p className='mainHeading service-hero-custom-mainHeading'>{props.para}</p>
+        <h1 className='headingSpan mainHeading'>{props.para}</h1>
       </div>
     </>
   );

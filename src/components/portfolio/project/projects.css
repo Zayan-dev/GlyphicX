@@ -116,14 +116,9 @@
 }
 
 .project-content h1 {
-    background: linear-gradient(to right, var(--peanut-color), var(--lightPink-color));
-    background-clip: border-box;
-    width: fit-content;
-    -webkit-text-fill-color: transparent;
     cursor: pointer;
     text-transform: capitalize;
     font-size: 2.35rem;
-    -webkit-background-clip: text;
 }
 
 .project-content h3 {

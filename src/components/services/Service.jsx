@@ -1,23 +1,9 @@
 import React from 'react'
 import ServiceHero from './hero/ServiceHero'
-import Branding from './branding/Branding'
-import Visualization from './visualization/Visualization'
-import FinalProduct from './finalPro/FinalProduct'
-import Sketch from './sketch/Sketch'
-import Cta from '../cta/Cta'
-import Graphic from './graphic design/Graphic'
-import Commercial from './commercial/Commercial'
-import ProductAnimation from './ProductAnimation/ProductAnimation'
-import UserInterface from './user interface/UserInterface'
-import WebDev from './web dev/WebDev'
 import { ScrollTrigger } from 'gsap/all';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-import InteriorDesign from './InteriorDesign/InteriorDesign'
-import TVC from './TVC/TVC'
-import ServiceCard from './serviceCard/ServiceCard'
 import ServiceIntro from './serviceIntro/ServiceIntro'
-import SideImages from './sideImages/SideImages'
 
 const Service = () => {
 
@@ -291,7 +277,7 @@ const Service = () => {
 
   })
   return (
-    <div className='overflow-hidden'>
+    <div>
       <ServiceHero heading="services" para="what we do" ></ServiceHero>
       <ServiceIntro/>
     </div>

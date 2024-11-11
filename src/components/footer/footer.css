@@ -6,8 +6,6 @@
     background-color: #e58c10;
     color: var(--foreground-color);
     position: relative;
-    z-index: 10;
-
 }
 
 .footerDiv p, .footerDiv li, .footerDiv a {

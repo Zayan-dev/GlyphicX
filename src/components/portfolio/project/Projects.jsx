@@ -32,37 +32,14 @@ const Projects = () => {
         image22: "/Portfolio/EAXEE/Brand Guideline/EAXEE-30.jpg"
     };
 
-    const GlyphicX = {
-        image1: "/Portfolio/GlyphicX/Glyphicx Profile 24-06-2024-01.jpg",
-        image5: "/Portfolio/GlyphicX/Glyphicx Profile 24-06-2024-05.jpg",
-        image6: "/Portfolio/GlyphicX/Glyphicx Profile 24-06-2024-06.jpg",
-        image7: "/Portfolio/GlyphicX/Glyphicx Profile 24-06-2024-07.jpg",
-        image8: "/Portfolio/GlyphicX/Glyphicx Profile 24-06-2024-08.jpg",
-        image9: "/Portfolio/GlyphicX/Glyphicx Profile 24-06-2024-09.jpg",
-        image10: "/Portfolio/GlyphicX/Glyphicx Profile 24-06-2024-10.jpg",
-        image11: "/Portfolio/GlyphicX/Glyphicx Profile 24-06-2024-11.jpg",
-        image12: "/Portfolio/GlyphicX/Glyphicx Profile 24-06-2024-12.jpg",
-        image13: "/Portfolio/GlyphicX/Glyphicx Profile 24-06-2024-13.jpg",
-        image14: "/Portfolio/GlyphicX/Glyphicx Profile 24-06-2024-14.jpg",
-        image15: "/Portfolio/GlyphicX/Glyphicx Profile 24-06-2024-15.jpg",
-        image16: "/Portfolio/GlyphicX/Glyphicx Profile 24-06-2024-16.jpg",
-        image17: "/Portfolio/GlyphicX/Glyphicx Profile 24-06-2024-17.jpg",
-        image18: "/Portfolio/GlyphicX/Glyphicx Profile 24-06-2024-18.jpg",
-        image19: "/Portfolio/GlyphicX/Glyphicx Profile 24-06-2024-19.jpg",
-        image20: "/Portfolio/GlyphicX/Glyphicx Profile 24-06-2024-20.jpg",
-        image21: "/Portfolio/GlyphicX/Glyphicx Profile 24-06-2024-21.jpg",
-        image22: "/Portfolio/GlyphicX/Glyphicx Profile 24-06-2024-22.jpg",
-        image23: "/Portfolio/GlyphicX/Glyphicx Profile 24-06-2024-23.jpg",
-        image24: "/Portfolio/GlyphicX/Glyphicx Profile 24-06-2024-24.jpg",
-        image25: "/Portfolio/GlyphicX/Glyphicx Profile 24-06-2024-25.jpg",
-        image26: "/Portfolio/GlyphicX/Glyphicx Profile 24-06-2024-26.jpg",
-        image27: "/Portfolio/GlyphicX/Glyphicx Profile 24-06-2024-27.jpg",
-        image28: "/Portfolio/GlyphicX/Glyphicx Profile 24-06-2024-28.jpg",
-        image29: "/Portfolio/GlyphicX/Glyphicx Profile 24-06-2024-29.jpg",
-        image30: "/Portfolio/GlyphicX/Glyphicx Profile 24-06-2024-30.jpg",
-        image31: "/Portfolio/GlyphicX/Glyphicx Profile 24-06-2024-31.jpg",
-        image32: "/Portfolio/GlyphicX/Glyphicx Profile 24-06-2024-32.jpg",
-        image33: "/Portfolio/GlyphicX/Glyphicx Profile 24-06-2024-33.jpg"
+    const UrgeFragrances = {
+        image1: "/Portfolio/UrgeFragrances/1.png",
+        image2: "/Portfolio/UrgeFragrances/2.jpg",
+        video1: "/Portfolio/UrgeFragrances/3.mp4",
+        image4: "/Portfolio/UrgeFragrances/8.jpg",
+        image5: "/Portfolio/UrgeFragrances/9.jpg",
+        image6: "/Portfolio/UrgeFragrances/10.png",
+        image7: "/Portfolio/UrgeFragrances/11.png",
     };
 
     const LambdaTheta = {
@@ -89,24 +66,6 @@ const Projects = () => {
       image13: "/Portfolio/Eaxeesoft/eaxeesoft Brand Identity 11-08-2024-13.jpg",
       image14: "/Portfolio/Eaxeesoft/eaxeesoft Brand Identity 11-08-2024-14.jpg",
     };
-
-    const VideoProduction = {
-        image1: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-01.jpg",
-        image2: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-02.jpg",
-        image3: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-03.jpg",
-        image4: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-04.jpg",
-        image5: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-05.jpg",
-        image6: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-06.jpg",
-        image7: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-07.jpg",
-        image8: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-08.jpg",
-        image9: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-09.jpg",
-        image10: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-10.jpg",
-        image11: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-11.jpg",
-        image12: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-12.jpg",
-        image13: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-13.jpg",
-        image14: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-14.jpg",
-        image15: "/Portfolio/TVC PRODUCTION/TVC PRODUCTION edited-15.jpg",
-    }
 
     const [modalContent, setModalContent] = useState(null);
     const [clickedElement, setClickedElement] = useState(null);
@@ -181,120 +140,136 @@ const Projects = () => {
 
 
     const projectContent = {
-        project1: (
-            <>
-                <img src={Eaxee.image1} alt="project1" />
-                <img src={Eaxee.image2} alt="project1" />
-                <img src={Eaxee.image3} alt="project1" />
-                <img src={Eaxee.image4} alt="project1" />
-                <img src={Eaxee.image5} alt="project1" />
-                <img src={Eaxee.image6} alt="project1" />
-                <img src={Eaxee.image7} alt="project1" />
-                <img src={Eaxee.image8} alt="project1" />
-                <img src={Eaxee.image9} alt="project1" />
-                <img src={Eaxee.image10} alt="project1" />
-                <img src={Eaxee.image11} alt="project1" />
-                <img src={Eaxee.image12} alt="project1" />
-                <img src={Eaxee.image13} alt="project1" />
-                <img src={Eaxee.image14} alt="project1" />
-                <img src={Eaxee.image15} alt="project1" />
-                <img src={Eaxee.image16} alt="project1" />
-                <img src={Eaxee.image17} alt="project1" />
-                <img src={Eaxee.image18} alt="project1" />
-                <img src={Eaxee.image19} alt="project1" />
-                <img src={Eaxee.image20} alt="project1" />
-                <img src={Eaxee.image21} alt="project1" />
-                <img src={Eaxee.image22} alt="project1" />
-            </>
-        ),
-        project2: (
-            <>
-                <img src={GlyphicX.image1} alt="project2" />
-                <img src={GlyphicX.image5} alt="project2" />
-                <img src={GlyphicX.image6} alt="project2" />
-                <img src={GlyphicX.image7} alt="project2" />
-                <img src={GlyphicX.image8} alt="project2" />
-                <img src={GlyphicX.image9} alt="project2" />
-                <img src={GlyphicX.image10} alt="project2" />
-                <img src={GlyphicX.image11} alt="project2" />
-                <img src={GlyphicX.image12} alt="project2" />
-                <img src={GlyphicX.image13} alt="project2" />
-                <img src={GlyphicX.image14} alt="project2" />
-                <img src={GlyphicX.image15} alt="project2" />
-                <img src={GlyphicX.image16} alt="project2" />
-                <img src={GlyphicX.image17} alt="project2" />
-                <img src={GlyphicX.image18} alt="project2" />
-                <img src={GlyphicX.image19} alt="project2" />
-                <img src={GlyphicX.image20} alt="project2" />
-                <img src={GlyphicX.image21} alt="project2" />
-                <img src={GlyphicX.image22} alt="project2" />
-                <img src={GlyphicX.image23} alt="project2" />
-                <img src={GlyphicX.image24} alt="project2" />
-                <img src={GlyphicX.image25} alt="project2" />
-                <img src={GlyphicX.image26} alt="project2" />
-                <img src={GlyphicX.image27} alt="project2" />
-                <img src={GlyphicX.image28} alt="project2" />
-                <img src={GlyphicX.image29} alt="project2" />
-                <img src={GlyphicX.image30} alt="project2" />
-                <img src={GlyphicX.image31} alt="project2" />
-                <img src={GlyphicX.image32} alt="project2" />
-                <img src={GlyphicX.image33} alt="project2" />
-            </>
-        ),
-        project3: (
-            <>
-                <img src={LambdaTheta.image1} alt="project3" />
-                <img src={LambdaTheta.image2} alt="project3" />
-                <img src={LambdaTheta.image3} alt="project3" />
-                <video controls muted autoPlay playsInline loop>
-                    <source src={LambdaTheta.video1} type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
-                <video controls muted autoPlay playsInline loop>
-                    <source src={LambdaTheta.video2} type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
-            </>
-        ),
-        project4: (
-            <>
-                <img src={Eaxeesoft.image1} alt="project4" style={{ width: "100%" }} />
-                <img src={Eaxeesoft.image2} alt="project4" style={{ width: "100%" }} />
-                <img src={Eaxeesoft.image4} alt="project4" style={{ width: "100%" }} />
-                <img src={Eaxeesoft.image3} alt="project4" style={{ width: "100%" }} />
-                <img src={Eaxeesoft.image5} alt="project4" style={{ width: "100%" }} />
-                <img src={Eaxeesoft.image6} alt="project4" style={{ width: "100%" }} />
-                <img src={Eaxeesoft.image7} alt="project4" style={{ width: "100%" }} />
-                <img src={Eaxeesoft.image8} alt="project4" style={{ width: "100%" }} />
-                <img src={Eaxeesoft.image9} alt="project4" style={{ width: "100%" }} />
-                <img src={Eaxeesoft.image10} alt="project4" style={{ width: "100%" }} />
-                <img src={Eaxeesoft.image11} alt="project4" style={{ width: "100%" }} />
-                <img src={Eaxeesoft.image12} alt="project4" style={{ width: "100%" }} />
-                <img src={Eaxeesoft.image13} alt="project4" style={{ width: "100%" }} />
-                <img src={Eaxeesoft.image14} alt="project4" style={{ width: "100%" }} />
-            </>
-        ),
-        project5: (
-            <>
-                <img src={VideoProduction.image1} alt="project4" style={{ width: "100%" }} />
-                <img src={VideoProduction.image2} alt="project4" style={{ width: "100%" }} />
-                <img src={VideoProduction.image3} alt="project4" style={{ width: "100%" }} />
-                <img src={VideoProduction.image4} alt="project4" style={{ width: "100%" }} />
-                <img src={VideoProduction.image5} alt="project4" style={{ width: "100%" }} />
-                <img src={VideoProduction.image6} alt="project4" style={{ width: "100%" }} />
-                <img src={VideoProduction.image7} alt="project4" style={{ width: "100%" }} />
-                <img src={VideoProduction.image8} alt="project4" style={{ width: "100%" }} />
-                <img src={VideoProduction.image9} alt="project4" style={{ width: "100%" }} />
-                <img src={VideoProduction.image10} alt="project4" style={{ width: "100%" }} />
-                <img src={VideoProduction.image11} alt="project4" style={{ width: "100%" }} />
-                <img src={VideoProduction.image12} alt="project4" style={{ width: "100%" }} />
-                <img src={VideoProduction.image13} alt="project4" style={{ width: "100%" }} />
-                <img src={VideoProduction.image14} alt="project4" style={{ width: "100%" }} />
-                <img src={VideoProduction.image15} alt="project4" style={{ width: "100%" }} />
-            </>
-        )
-
-        // any other project content if needed
+      project1: (
+        <>
+          <img src={Eaxee.image1} alt="project1" />
+          <img src={Eaxee.image2} alt="project1" />
+          <img src={Eaxee.image3} alt="project1" />
+          <img src={Eaxee.image4} alt="project1" />
+          <img src={Eaxee.image5} alt="project1" />
+          <img src={Eaxee.image6} alt="project1" />
+          <img src={Eaxee.image7} alt="project1" />
+          <img src={Eaxee.image8} alt="project1" />
+          <img src={Eaxee.image9} alt="project1" />
+          <img src={Eaxee.image10} alt="project1" />
+          <img src={Eaxee.image11} alt="project1" />
+          <img src={Eaxee.image12} alt="project1" />
+          <img src={Eaxee.image13} alt="project1" />
+          <img src={Eaxee.image14} alt="project1" />
+          <img src={Eaxee.image15} alt="project1" />
+          <img src={Eaxee.image16} alt="project1" />
+          <img src={Eaxee.image17} alt="project1" />
+          <img src={Eaxee.image18} alt="project1" />
+          <img src={Eaxee.image19} alt="project1" />
+          <img src={Eaxee.image20} alt="project1" />
+          <img src={Eaxee.image21} alt="project1" />
+          <img src={Eaxee.image22} alt="project1" />
+        </>
+      ),
+      project2: (
+        <>
+          <img src={UrgeFragrances.image1} alt="project2" />
+          <img src={UrgeFragrances.image2} alt="project2" />
+          <video controls muted autoPlay playsInline loop>
+            <source src={UrgeFragrances.video1} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <img src={UrgeFragrances.image4} alt="project2" />
+          <img src={UrgeFragrances.image5} alt="project2" />
+          <img src={UrgeFragrances.image6} alt="project2" />
+          <img src={UrgeFragrances.image7} alt="project2" />
+        </>
+      ),
+      project3: (
+        <>
+          <img src={LambdaTheta.image1} alt="project3" />
+          <img src={LambdaTheta.image2} alt="project3" />
+          <img src={LambdaTheta.image3} alt="project3" />
+          <video controls muted autoPlay playsInline loop>
+            <source src={LambdaTheta.video1} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <video controls muted autoPlay playsInline loop>
+            <source src={LambdaTheta.video2} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </>
+      ),
+      project4: (
+        <>
+          <img
+            src={Eaxeesoft.image1}
+            alt="project4"
+            style={{ width: "100%" }}
+          />
+          <img
+            src={Eaxeesoft.image2}
+            alt="project4"
+            style={{ width: "100%" }}
+          />
+          <img
+            src={Eaxeesoft.image4}
+            alt="project4"
+            style={{ width: "100%" }}
+          />
+          <img
+            src={Eaxeesoft.image3}
+            alt="project4"
+            style={{ width: "100%" }}
+          />
+          <img
+            src={Eaxeesoft.image5}
+            alt="project4"
+            style={{ width: "100%" }}
+          />
+          <img
+            src={Eaxeesoft.image6}
+            alt="project4"
+            style={{ width: "100%" }}
+          />
+          <img
+            src={Eaxeesoft.image7}
+            alt="project4"
+            style={{ width: "100%" }}
+          />
+          <img
+            src={Eaxeesoft.image8}
+            alt="project4"
+            style={{ width: "100%" }}
+          />
+          <img
+            src={Eaxeesoft.image9}
+            alt="project4"
+            style={{ width: "100%" }}
+          />
+          <img
+            src={Eaxeesoft.image10}
+            alt="project4"
+            style={{ width: "100%" }}
+          />
+          <img
+            src={Eaxeesoft.image11}
+            alt="project4"
+            style={{ width: "100%" }}
+          />
+          <img
+            src={Eaxeesoft.image12}
+            alt="project4"
+            style={{ width: "100%" }}
+          />
+          <img
+            src={Eaxeesoft.image13}
+            alt="project4"
+            style={{ width: "100%" }}
+          />
+          <img
+            src={Eaxeesoft.image14}
+            alt="project4"
+            style={{ width: "100%" }}
+          />
+        </>
+      ),
+      // any other project content if needed
     };
 
     gsap.registerPlugin(ScrollTrigger);
@@ -485,8 +460,8 @@ const Projects = () => {
         </div>
         <div className="project1" id="pro1">
           <img
-            src={GlyphicX.image1}
-            alt="GlyphicX Image"
+            src={UrgeFragrances.image1}
+            alt="UrgeFragrances Image"
             className=" project1-image"
             onClick={(e) => handleDisplay("project2", e)}
           />

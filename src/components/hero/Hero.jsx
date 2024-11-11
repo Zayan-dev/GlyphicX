@@ -2,12 +2,10 @@ import React from 'react'
 import '../hero/hero.css'
 import Benefit from '../benefit/Benefit'
 import Feature from '../feature/Feature'
-import Testimonial from '../testimonial/Testimonial'
 import Cta from '../cta/Cta'
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import LogoBanner from '../logobanner/LogoBanner'
 import VideoBanner from '../videobanner/VideoBanner'
 import ApproachAndBenefits from '../approach_benefits/approach_benefits'
 import circleDotPattern from "../../assets/images/Patterns/dotPattern.png";
@@ -257,11 +255,6 @@ const Hero = () => {
             />
           </div>
           <ApproachAndBenefits />
-          {/* <Collaboration></Collaboration> */}
-          {/* <Working></Working> */}
-          {/* <LogoBanner></LogoBanner> */}
-          {/* <Testimonial></Testimonial> */}
-          {/* <Team></Team> */}
           <Cta></Cta>
         </div>
       </>

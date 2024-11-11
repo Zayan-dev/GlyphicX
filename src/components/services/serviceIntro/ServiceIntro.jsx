@@ -3,6 +3,8 @@ import { useLocation } from "react-router-dom";
 import ServiceCard from "../serviceCard/ServiceCard";
 import "./ServiceIntro.css";
 import dots from "../../../assets/images/Patterns/dots.png";
+import circleDotPattern from "../../../assets/images/Patterns/dotPattern.png";
+import arrowDots from "../../../assets/images/Patterns/arrowWithDotsPattern.png";
 import circleDotWithDoodlePattern from "../../../assets/images/Patterns/secondDotPattern.png";
 const ServiceIntro = () => {
   const sectionRefs = {
@@ -68,7 +70,7 @@ const ServiceIntro = () => {
       <img
         height="10%"
         width="10%"
-        src="/services/arrowDots.png"
+        src={arrowDots}
         alt="Arrow with dots"
         className="dot-arrow-image intro-side-images"
       />
@@ -82,14 +84,14 @@ const ServiceIntro = () => {
       <img
         height="30%"
         width="30%"
-        src="/services/dotCircle-image.png"
+        src={circleDotPattern}
         alt="Dots"
         className="dot-circle-image "
       />
       <img
         height="10%"
         width="10%"
-        src="/services/arrowDots.png"
+        src={arrowDots}
         alt="Dots"
         className="dot-arrow-image2"
       />

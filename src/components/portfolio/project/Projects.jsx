@@ -33,13 +33,14 @@ const Projects = () => {
     };
 
     const UrgeFragrances = {
-        image1: "/Portfolio/UrgeFragrances/1.png",
-        image2: "/Portfolio/UrgeFragrances/2.jpg",
-        video1: "/Portfolio/UrgeFragrances/3.mp4",
-        image4: "/Portfolio/UrgeFragrances/8.jpg",
-        image5: "/Portfolio/UrgeFragrances/9.jpg",
-        image6: "/Portfolio/UrgeFragrances/10.png",
-        image7: "/Portfolio/UrgeFragrances/11.png",
+      image1: "/Portfolio/UrgeFragrances/1.png",
+      image2: "/Portfolio/UrgeFragrances/2.jpg",
+      video1: "/Portfolio/UrgeFragrances/3.mp4",
+      image4: "/Portfolio/UrgeFragrances/8.jpg",
+      image5: "/Portfolio/UrgeFragrances/9.jpg",
+      image6: "/Portfolio/UrgeFragrances/10.png",
+      video2: "/Portfolio/UrgeFragrances/5.mp4",
+      video3: "/Portfolio/UrgeFragrances/6.mp4",
     };
 
     const LambdaTheta = {
@@ -65,6 +66,23 @@ const Projects = () => {
       image12: "/Portfolio/Eaxeesoft/eaxeesoft Brand Identity 11-08-2024-12.jpg",
       image13: "/Portfolio/Eaxeesoft/eaxeesoft Brand Identity 11-08-2024-13.jpg",
       image14: "/Portfolio/Eaxeesoft/eaxeesoft Brand Identity 11-08-2024-14.jpg",
+    };
+
+    const Perfect = {
+      image1: "/Portfolio/Perfect/1.jpg",
+      image2: "/Portfolio/Perfect/2.jpg",
+      image3: "/Portfolio/Perfect/3.jpg",
+      image4: "/Portfolio/Perfect/4.jpg",
+      image5: "/Portfolio/Perfect/5.jpg",
+      image6: "/Portfolio/Perfect/6.jpg",
+      image7: "/Portfolio/Perfect/7.jpg",
+      image8: "/Portfolio/Perfect/8.jpg",
+      image9: "/Portfolio/Perfect/9.jpg",
+      image10: "/Portfolio/Perfect/10.jpg",
+      image11: "/Portfolio/Perfect/11.jpg",
+      image12: "/Portfolio/Perfect/12.jpg",
+      image13: "/Portfolio/Perfect/13.jpg",
+      image14: "/Portfolio/Perfect/14.jpg",
     };
 
     const [modalContent, setModalContent] = useState(null);
@@ -168,7 +186,7 @@ const Projects = () => {
       ),
       project2: (
         <>
-          <img src={UrgeFragrances.image1} alt="project2" />
+          <img src={UrgeFragrances.image1} alt="project2" className="w-full" />
           <img src={UrgeFragrances.image2} alt="project2" />
           <video controls muted autoPlay playsInline loop>
             <source src={UrgeFragrances.video1} type="video/mp4" />
@@ -176,8 +194,17 @@ const Projects = () => {
           </video>
           <img src={UrgeFragrances.image4} alt="project2" />
           <img src={UrgeFragrances.image5} alt="project2" />
-          <img src={UrgeFragrances.image6} alt="project2" />
-          <img src={UrgeFragrances.image7} alt="project2" />
+          <div className="flex flex-col sm:flex-row gap-4 sm0:gap-8 justify-between w-fit">
+            <video controls muted autoPlay playsInline loop className="w-full sm:w-[49%]">
+              <source src={UrgeFragrances.video2} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video controls muted autoPlay playsInline loop className="w-full sm:w-[49%]">
+              <source src={UrgeFragrances.video3} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <img src={UrgeFragrances.image6} alt="project2" className="w-full" />
         </>
       ),
       project3: (
@@ -197,76 +224,46 @@ const Projects = () => {
       ),
       project4: (
         <>
-          <img
-            src={Eaxeesoft.image1}
-            alt="project4"
-            style={{ width: "100%" }}
-          />
-          <img
-            src={Eaxeesoft.image2}
-            alt="project4"
-            style={{ width: "100%" }}
-          />
-          <img
-            src={Eaxeesoft.image4}
-            alt="project4"
-            style={{ width: "100%" }}
-          />
-          <img
-            src={Eaxeesoft.image3}
-            alt="project4"
-            style={{ width: "100%" }}
-          />
-          <img
-            src={Eaxeesoft.image5}
-            alt="project4"
-            style={{ width: "100%" }}
-          />
-          <img
-            src={Eaxeesoft.image6}
-            alt="project4"
-            style={{ width: "100%" }}
-          />
-          <img
-            src={Eaxeesoft.image7}
-            alt="project4"
-            style={{ width: "100%" }}
-          />
-          <img
-            src={Eaxeesoft.image8}
-            alt="project4"
-            style={{ width: "100%" }}
-          />
-          <img
-            src={Eaxeesoft.image9}
-            alt="project4"
-            style={{ width: "100%" }}
-          />
-          <img
-            src={Eaxeesoft.image10}
-            alt="project4"
-            style={{ width: "100%" }}
-          />
-          <img
-            src={Eaxeesoft.image11}
-            alt="project4"
-            style={{ width: "100%" }}
-          />
-          <img
-            src={Eaxeesoft.image12}
-            alt="project4"
-            style={{ width: "100%" }}
-          />
-          <img
-            src={Eaxeesoft.image13}
-            alt="project4"
-            style={{ width: "100%" }}
-          />
-          <img
-            src={Eaxeesoft.image14}
-            alt="project4"
-            style={{ width: "100%" }}
-          />
+          <img src={Eaxeesoft.image1} alt="project4" className="w-full" />
+          <img src={Eaxeesoft.image2} alt="project4" className="w-full" />
+          <img src={Eaxeesoft.image4} alt="project4" className="w-full" />
+          <img src={Eaxeesoft.image3} alt="project4" className="w-full" />
+          <img src={Eaxeesoft.image5} alt="project4" className="w-full" />
+          <img src={Eaxeesoft.image6} alt="project4" className="w-full" />
+          <img src={Eaxeesoft.image7} alt="project4" className="w-full" />
+          <img src={Eaxeesoft.image8} alt="project4" className="w-full" />
+          <img src={Eaxeesoft.image9} alt="project4" className="w-full" />
+          <img src={Eaxeesoft.image10} alt="project4" className="w-full" />
+          <img src={Eaxeesoft.image11} alt="project4" className="w-full" />
+          <img src={Eaxeesoft.image12} alt="project4" className="w-full" />
+          <img src={Eaxeesoft.image13} alt="project4" className="w-full" />
+          <img src={Eaxeesoft.image14} alt="project4" className="w-full" />
+        </>
+      ),
+      project5: (
+        <>
+          {Object.keys(Perfect).map((key, index) => {
+            const imageSrc = Perfect[key]; // Get the image URL from the object
+
+            // Render two images per row (if it's an odd index, render a single image)
+            if (index % 2 === 0) {
+              const nextImage = Perfect[Object.keys(Perfect)[index + 1]];
+
+              return (
+                <div key={index} className="flex flex-col sm:flex-row gap-4 sm0:gap-8 justify-between w-full">
+                  <img src={imageSrc} alt={`project${index + 1}`} className="w-full sm:w-[48%] lg:w-[49%]" />
+                  {nextImage && (
+                    <img
+                      src={nextImage}
+                      alt={`project${index + 2}`}
+                      className="w-full sm:w-[48%] lg:w-[49%]"
+                    />
+                  )}
+                </div>
+              );
+            }
+            return null; // Skip odd-indexed items
+          })}
         </>
       ),
       // any other project content if needed
@@ -506,6 +503,44 @@ const Projects = () => {
                 Tasked with creating the complete brand identity and developing
                 a modern, functional website for EaxeeSoft, a custom software
                 development company.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="project1" id="pro1">
+          {/* <div className="perfectimage" onClick={(e) => handleDisplay("project5", e)}>
+            <img
+              src={Perfect.image1}
+              alt="Perfect Image"
+              // className=" project1-image"
+              // onClick={(e) => handleDisplay("project5", e)}
+            />
+            <img
+              src={Perfect.image1}
+              alt="Perfect Image"
+              // className=" project1-image"
+              // onClick={(e) => handleDisplay("project5", e)}
+            />
+          </div> */}
+          <img
+            src={Perfect.image1}
+            alt="Perfect Image"
+            className=" project1-image"
+            onClick={(e) => handleDisplay("project5", e)}
+          />
+          <div className="project1-overflow">
+            <div className="project-content">
+              <h1
+                className="headingSpan mainHeading"
+                onClick={(e) => handleDisplay("project2", e)}
+              >
+                Perfect
+              </h1>
+              <h3 className="subHeading">3D visualization</h3>
+              <p className="para">
+                For Perfect Cosmetics, we developed high-quality 3D renders that
+                capture the elegance and design details of their product line,
+                showcasing each item in its best light.
               </p>
             </div>
           </div>

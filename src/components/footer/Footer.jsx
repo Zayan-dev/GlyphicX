@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../footer/footer.css';
 import Modal from '../Modal'; // Import Modal component
-import logo from "../../assets/logo.png"
+import logo from "../../assets/images/sidebarLogo2.png"
 import { CustomButton2 } from '../CustomButton';
 import { useForm } from 'react-hook-form';
 import emailjs from "emailjs-com";

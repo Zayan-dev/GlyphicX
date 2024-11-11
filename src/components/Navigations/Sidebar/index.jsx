@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import CustomButton from "../../CustomButton";
 import logo from "../../../assets/images/sidebarLogo2.png"
-import bg from "../../../assets/bg.png"
 
 //TODO: Ask for Sidebar changes according to design
 const Sidebar = ({ isOpen, toggle }) => {

@@ -26,22 +26,6 @@
     z-index: -1;
 }
 
-.sound-icon-btn {
-    position: absolute;
-    top: 10px;
-    right: 18vw;
-    background: var(--peanut-color);
-    color: var(--background-color);
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 50%;
-}
-
-.sound-icon-btn:hover {
-    color: var(--foreground-color);
-}
-
 @media screen and (max-width:808px) {
     .video-banner {
         padding: 0 20px;
@@ -50,8 +34,5 @@
     .hero-video {
         width: 100vw;
         max-width: -webkit-fill-available;
-    }
-    .sound-icon-btn {
-        right: 30px;
     }
 }

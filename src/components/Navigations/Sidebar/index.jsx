@@ -20,7 +20,7 @@ const Sidebar = ({ isOpen, toggle }) => {
 
       {/* Sidebar */}
       <div
-        className={`sidebar-container shadow-sm bg-navyBlue shadow-offWhite pr-14 fixed w-full h-full bg-cover bg-center overflow-hidden justify-start transition-transform duration-[400ms] pt-[110px] left-0 z-50`}
+        className={`sidebar-container shadow-sm bg-navyBlue shadow-offWhite pr-14 fixed w-full h-full bg-cover bg-center overflow-scroll justify-start transition-transform duration-[400ms] pt-[110px] left-0 z-50`}
         style={{
           transform: `${isOpen ? "translateX(15%)" : "translateX(110%)"}`,
           boxShadow: "-5px 0px 18px -10px #fffaf0",

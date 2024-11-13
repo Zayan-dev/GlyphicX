@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import "../project/projects.css";
 import { ScrollTrigger } from 'gsap/all';
 import gsap from 'gsap';
@@ -6,6 +6,7 @@ import { useGSAP } from '@gsap/react';
 import circleDot from "../../../assets/images/Patterns/dotPattern.png"
 import arrowwithDotsPattern from "../../../assets/images/Patterns/arrowWithDotsPattern.png"
 const Projects = () => {
+
 
   const Eaxee = {
     image1: "/Portfolio/EAXEE/Brand Guideline/EAXEE-01.jpg",
@@ -85,8 +86,21 @@ const Projects = () => {
     image14: "/Portfolio/Perfect/14.jpg",
   };
 
+  gsap.registerPlugin(ScrollTrigger);
   const [modalContent, setModalContent] = useState(null);
   const [clickedElement, setClickedElement] = useState(null);
+  // const overlayRef = useRef(null);
+
+  // useEffect(() => {
+  //   if (overlayRef.current) {
+  //     gsap.from(overlayRef.current, {
+  //       width: "10%",
+  //       opacity: 0.5,
+  //       duration: 1,
+  //       ease: "power2.out"
+  //     });
+  //   }
+  // }, [modalContent]);
 
   const handleDisplay = (project, event) => {
     setClickedElement(event.currentTarget);
@@ -269,7 +283,6 @@ const Projects = () => {
     // any other project content if needed
   };
 
-  gsap.registerPlugin(ScrollTrigger);
 
   useGSAP(() => {
 
@@ -418,35 +431,39 @@ const Projects = () => {
         // scrub: 1,
       }
     });
-    gsap.to("#pattern1",{
+    gsap.to("#pattern1", {
       opacity: 0.2,
       duration: 1,
-      repeat:-1,
-      yoyo:true
+      repeat: -1,
+      ease: "none",
+      yoyo: true
     })
-    gsap.to("#pattern2",{
-      y:-20,
+    gsap.to("#pattern2", {
+      y: -20,
       duration: 1,
-      repeat:-1,
-      yoyo:true
+      repeat: -1,
+      yoyo: true
     })
   })
+
 
 
   return (
     <div className={modalContent ? "projects" : "simple"}>
       <div className="pattern1" id='pattern1'>
-        <img  src={circleDot} height="100%" width="100%" alt="" />
+        <img src={circleDot} height="100%" width="100%" alt="" />
       </div>
-      <div className="project1" id="">
+      <div className="project1" id="gsapright">
         <img
           src={Eaxee.image1}
-          id="gsapright"
+          // id="gsapright"
           alt="Eaxee Image"
           className=" project1-image"
           onClick={(e) => handleDisplay("project1", e)}
         />
-        <div className="project1-overflow" id='gsapleft'>
+        <div className="project1-overflow"
+        // id='gsapleft'
+        >
           <div className="project-content">
             <h1
               className="headingSpan mainHeading"
@@ -467,15 +484,17 @@ const Projects = () => {
       <div className="pattern2" id='pattern2'>
         <img src={arrowwithDotsPattern} height="100%" width="100%" alt="" />
       </div>
-      <div className="project2">
+      <div className="project2" id='pro2gsapleft'>
         <img
-          id="pro2gsapleft"
+          // id="pro2gsapleft"
           src={LambdaTheta.image3}
           alt="Lambda Theta Image"
           className="project2-image"
           onClick={(e) => handleDisplay("project3", e)}
         />
-        <div className="project2-overflow" id="pro2gsapright">
+        <div className="project2-overflow"
+        //  id="pro2gsapright"
+        >
           <div className="project-content">
             <h1
               className="headingSpan mainHeading"
@@ -495,15 +514,17 @@ const Projects = () => {
       <div className="pattern3" id='pattern2'>
         <img src={arrowwithDotsPattern} height="100%" width="100%" alt="" />
       </div>
-      <div className="project1" id="pro1">
+      <div className="project1" id="pro3gsapright">
         <img
-          id="pro3gsapright"
+          // id="pro3gsapright"
           src={UrgeFragrances.image1}
           alt="UrgeFragrances Image"
           className=" project1-image"
           onClick={(e) => handleDisplay("project2", e)}
         />
-        <div className="project1-overflow" id="pro3gsapleft">
+        <div className="project1-overflow"
+        //  id="pro3gsapleft"
+        >
           <div className="project-content">
             <h1
               className="headingSpan mainHeading"
@@ -524,15 +545,17 @@ const Projects = () => {
       <div className="pattern4" id='pattern1'>
         <img src={circleDot} height="100%" width="100%" alt="" />
       </div>
-      <div className="project2" id="pro1">
+      <div className="project2" id="pro4gsapleft">
         <img
-          id="pro4gsapleft"
+          // id="pro4gsapleft"
           src={Eaxeesoft.image1}
           alt="Eaxeesoft Image"
           className=" project2-image"
           onClick={(e) => handleDisplay("project4", e)}
         />
-        <div className="project2-overflow" id="pro4gsapright">
+        <div className="project2-overflow"
+        // id="pro4gsapright"
+        >
           <div className="project-content">
             <h1
               className="headingSpan mainHeading"
@@ -549,15 +572,17 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="project1" id="pro1">
+      <div className="project1" id="pro5gsapright">
         <img
-          id="pro5gsapright"
+          // id="pro5gsapright"
           src="/Portfolio/Perfect/Gray.jpg"
           alt="Perfect Image"
           className=" project1-image"
           onClick={(e) => handleDisplay("project5", e)}
         />
-        <div className="project1-overflow" id="pro5gsapleft">
+        <div className="project1-overflow"
+        // id="pro5gsapleft"
+        >
           <div className="project-content">
             <h1
               className="headingSpan mainHeading"
@@ -576,12 +601,14 @@ const Projects = () => {
       </div>
 
       {modalContent && (
-        <div className="overlay">
+        <div className="overlay" >
           <div
-            className="iframe-container"
+            className="iframe-container flex justify-center"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="project-iframe">
+            <div className="project-iframe" 
+            // ref={overlayRef} 
+            >
               {projectContent[modalContent]}
             </div>
             <button className="close-btn" onClick={handleClose}>

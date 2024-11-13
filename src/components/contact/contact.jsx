@@ -7,8 +7,25 @@ import CustomButton from "../CustomButton";
 import Alert from "../alert/alertBox";
 import circleDotPattern from "../../assets/images/Patterns/dotPattern.png";
 import dots from "../../assets/images/Patterns/dots.png";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const Contact = () => {  
+  useGSAP(()=>{
+    gsap.from("#pattern1", {
+      opacity: 0.25,
+      duration: 1,
+      repeat: -1,
+      ease: "none",
+      yoyo: true
+  })
+  gsap.to("#pattern3", {
+      duration: 10,
+      ease: "none",
+      repeat: -1,
+      rotation: 360,
+  })
+  })
   const {
     register,
     handleSubmit,
@@ -78,18 +95,18 @@ const Contact = () => {
 
   return (
     <div className="contact-page">
-      <div id="gsapWorkingStar" className="circleDotPatternContactPage">
+      <div id="pattern1" className="circleDotPatternContactPage">
         <img
-          id="gsapWorking"
+          id="pattern1"
           height="100%"
           width="100%"
           src={circleDotPattern}
           alt="Circle Dot with Doodle pattern"
         />
       </div>
-      <div id="gsapWorkingStar" className="dotsPatternContactPage">
+      <div id="pattern3" className="dotsPatternContactPage">
         <img
-          id="gsapWorking"
+          id="pattern3"
           height="100%"
           width="100%"
           src={dots}

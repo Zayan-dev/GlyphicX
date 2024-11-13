@@ -6,6 +6,8 @@ import dots from "../../../assets/images/Patterns/dots.png";
 import circleDotPattern from "../../../assets/images/Patterns/dotPattern.png";
 import arrowDots from "../../../assets/images/Patterns/arrowWithDotsPattern.png";
 import circleDotWithDoodlePattern from "../../../assets/images/Patterns/secondDotPattern.png";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 const ServiceIntro = () => {
   const sectionRefs = {
     "#webdevelopment": useRef(null),
@@ -19,7 +21,7 @@ const ServiceIntro = () => {
 
   useEffect(() => {
     if (hash && sectionRefs[hash].current) {
-      sectionRefs[hash].current.scrollIntoView({ behavior: "smooth"});
+      sectionRefs[hash].current.scrollIntoView({ behavior: "smooth" });
     }
   }, [hash]);
 
@@ -65,9 +67,32 @@ const ServiceIntro = () => {
       text: "Your brand has a story to tell, and we’re here to help you tell it. By partnering with you, we listen to your vision, create a strategic plan, and deliver video content that not only meets your goals but exceeds your expectations.",
     },
   ];
+
+  useGSAP(() => {
+    gsap.to("#pattern1", {
+      opacity: 0.2,
+      duration: 1,
+      repeat: -1,
+      ease: "none",
+      yoyo: true
+    })
+    gsap.to("#pattern2", {
+      y: -20,
+      duration: 1,
+      repeat: -1,
+      yoyo: true
+    })
+    gsap.to("#pattern3", {
+      duration: 10,
+      ease: "none",
+      repeat: -1,
+      rotation: 360,
+    })
+  })
   return (
-    <div className="service-intro-container">
+    <div className="service-intro-container" >
       <img
+        id="pattern2"
         height="10%"
         width="10%"
         src={arrowDots}
@@ -75,6 +100,7 @@ const ServiceIntro = () => {
         className="dot-arrow-image intro-side-images"
       />
       <img
+        id="pattern3"
         height="10%"
         width="10%"
         src={dots}
@@ -82,6 +108,7 @@ const ServiceIntro = () => {
         className="dot-image intro-side-images"
       />
       <img
+        id="pattern1"
         height="30%"
         width="30%"
         src={circleDotPattern}
@@ -89,6 +116,7 @@ const ServiceIntro = () => {
         className="dot-circle-image "
       />
       <img
+        id="pattern2"
         height="10%"
         width="10%"
         src={arrowDots}
@@ -96,7 +124,7 @@ const ServiceIntro = () => {
         className="dot-arrow-image2"
       />
 
-      <div className="service-intro">
+      <div className="service-intro" >
         {cardData.map((d, index) => (
           <ServiceCard
             key={index}
@@ -110,6 +138,7 @@ const ServiceIntro = () => {
       <div className="service-intro-image">
         {/* <img src="/" className="service-image" /> */}
         <img
+          id="pattern1"
           className="service-image"
           height="100%"
           width="100%"

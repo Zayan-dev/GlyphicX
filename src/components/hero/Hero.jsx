@@ -108,7 +108,7 @@ const Hero = () => {
                     // scrub: 5,
                 }
             });
-      
+
 
             gsap.from("#gsapInner1 p", {
                 y: 400,
@@ -201,7 +201,7 @@ const Hero = () => {
                 rotateX: "90deg",
                 opacity: 0,
                 stagger: 0.2,
-                duration:1,
+                duration: 1,
                 scrollTrigger: {
                     trigger: "#gsapWorkingTextDiv",
                     scroller: "body",
@@ -215,7 +215,7 @@ const Hero = () => {
                 rotateX: "90deg",
                 opacity: 0,
                 stagger: 0.2,
-                duration:1,
+                duration: 1,
                 scrollTrigger: {
                     trigger: "#gsapWorkingTextDiv",
                     scroller: "body",
@@ -226,38 +226,57 @@ const Hero = () => {
                 }
             });
 
+            gsap.to("#pattern1", {
+                opacity: 1,
+                duration: 1,
+                repeat: -1,
+                ease: "none",
+                yoyo: true
+            })
+            gsap.to("#pattern2", {
+                y: -20,
+                duration: 1,
+                repeat: -1,
+                yoyo: true
+            })
+            gsap.to("#pattern3", {
+                duration: 10,
+                ease: "none",
+                repeat: -1,
+                rotation: 360,
+            })
         },
     );
 
     return (
-      <>
-        {/* <ImageSlider></ImageSlider> */}
-        <div className="videoBannerAndFeature">
-          <Benefit></Benefit>
-          <VideoBanner></VideoBanner>
-          <Feature></Feature>
-          <div id="gsapWorkingStar" className="circleDotPattern">
-            <img
-              id="gsapWorking"
-              height="100%"
-              width="100%"
-              src={circleDotPattern}
-              alt="Circle Dot pattern"
-            />
-          </div>
-          <div id="gsapWorkingStar" className="circleDotWithDoodlePattern">
-            <img
-              id="gsapWorking"
-              height="100%"
-              width="100%"
-              src={circleDotWithDoodlePattern}
-              alt="Circle Dot with Doodle pattern"
-            />
-          </div>
-          <ApproachAndBenefits />
-          <Cta></Cta>
-        </div>
-      </>
+        <>
+            {/* <ImageSlider></ImageSlider> */}
+            <div className="videoBannerAndFeature">
+                <Benefit></Benefit>
+                <VideoBanner></VideoBanner>
+                <Feature></Feature>
+                <div id="gsapWorkingStar" className="circleDotPattern">
+                    <img
+                        id="pattern1"
+                        height="100%"
+                        width="100%"
+                        src={circleDotPattern}
+                        alt="Circle Dot pattern"
+                    />
+                </div>
+                <div id="gsapWorkingStar" className="circleDotWithDoodlePattern">
+                    <img
+                        id="pattern1"
+                        height="100%"
+                        width="100%"
+                        src={circleDotWithDoodlePattern}
+                        alt="Circle Dot with Doodle pattern"
+                    />
+                </div>
+                <ApproachAndBenefits />
+                <Cta></Cta>
+            </div>
+        </>
     );
 }
 

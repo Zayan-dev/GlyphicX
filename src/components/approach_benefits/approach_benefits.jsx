@@ -8,14 +8,30 @@ import transparent from "../../assets/images/WhyUsLogos/transparentCommunication
 import competitive from "../../assets/images/WhyUsLogos/competitiveAnalysis.png";
 import audience from "../../assets/images/WhyUsLogos/audienceEngagement.png";
 import stunning from "../../assets/images/WhyUsLogos/stunningDesigns.png";
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 
 const ApproachAndBenefits = () => {
+  useGSAP(() => {
+    gsap.to("#pattern2", {
+      y: -20,
+      duration: 1,
+      repeat: -1,
+      yoyo: true
+    })
+    gsap.to("#pattern3", {
+      duration: 10,
+      ease: "none",
+      repeat: -1,
+      rotation: 360,
+    })
+  })
   return (
     <div className="mainContainer">
       {/* Arrow with dots pattern */}
-      <div id="gsapWorkingStar" className="arrowWithDotsDiv">
+      <div id="pattern1" className="arrowWithDotsDiv">
         <img
-          id="gsapWorking"
+          id="pattern2"
           height="100%"
           width="100%"
           src={arrowWithDots}
@@ -23,7 +39,7 @@ const ApproachAndBenefits = () => {
         />
       </div>
       {/* Dots pattern */}
-      <div id="gsapWorkingStar" className="dotsDiv">
+      <div id="pattern3" className="dotsDiv">
         <img
           id="gsapWorking"
           height="100%"

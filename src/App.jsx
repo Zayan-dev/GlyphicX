@@ -47,20 +47,21 @@ function App() {
       <ScrollToTop />
       <CookiesPopup></CookiesPopup>
       <Routes>
-        <Route exact path="/" element={<Hero></Hero>}></Route>
-        <Route exact path="/services" element={<Service></Service>}></Route>
+        <Route exact path="/" key="hero" element={<Hero></Hero>}></Route>
+        <Route exact path="/services" key="service" element={<Service></Service>}></Route>
         <Route
           exact
           path="/portfolio"
+          key="portfolio"
           element={<Portfolio></Portfolio>}
         ></Route>
-        <Route exact path="/contact" element={<Contact></Contact>}></Route>
+        <Route exact path="/contact" key="contact" element={<Contact></Contact>}></Route>
         <Route
           exact
-          path="/privacypolicy"
+          path="/privacypolicy" key="privacypolicy"
           element={<Privacy></Privacy>}
         ></Route>
-        <Route exact path="/termsofservices" element={<Tos></Tos>}></Route>
+        <Route exact path="/termsofservices" key="termsofservices" element={<Tos></Tos>}></Route>
         {/* <Route exact path="/resources" element={<Resources></Resources>}></Route> */}
       </Routes>
 

@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import ServiceCard from "../serviceCard/ServiceCard";
 import "./ServiceIntro.css";
 import dots from "../../../assets/images/Patterns/dots.png";
-import circleDotPattern from "../../../assets/images/Patterns/dotPattern.png";
+import circleDotPattern from "../../../assets/images/Patterns/Dots-01.png";
 import arrowDots from "../../../assets/images/Patterns/arrowWithDotsPattern.png";
 import circleDotWithDoodlePattern from "../../../assets/images/Patterns/secondDotPattern.png";
 import { useGSAP } from "@gsap/react";
@@ -77,16 +77,16 @@ const ServiceIntro = () => {
       yoyo: true
     })
     gsap.to("#pattern2", {
-      duration: 1,
-      y: -30,
       repeat: -1,
-      ease: "none",
+      y: -30,
+      duration: 3,
+      ease: "power2.inOut",
       yoyo: true
     })
     gsap.to("#pattern3", {
-      duration: 1,
       x: 10,
-      ease: "none",
+      duration: 3,
+      ease: "power2.inOut",
       repeat: -1,
       yoyo: true
     })

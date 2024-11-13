@@ -15,17 +15,17 @@ const ApproachAndBenefits = () => {
   useGSAP(() => {
     gsap.to("#pattern2", {
       y: -30,
-      duration: 1,
       repeat: -1,
-      ease:"none",
+      duration: 3,
+      ease: "power2.inOut",
       yoyo: true
     })
     gsap.to("#pattern3", {
-      duration: 1,
-      ease: "none",
+      duration: 3,
+      ease: "power2.inOut",
       repeat: -1,
-      yoyo:true,
-      x:60
+      yoyo: true,
+      x: 60
     })
   })
   return (

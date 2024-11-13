@@ -27,25 +27,6 @@ const Hero = () => {
                 x: 500,
                 duration: 1,
             });
-            // gsap.from('#gsapSlider', {
-            //     y: 100,
-            //     opacity: 0,
-            //     scale: 3,
-            //     duration: 1
-            // });
-            // gsap.from("#gsapBenefitContainer", {
-            //     x: -800,
-            //     opacity: 0,
-            //     scrollTrigger: {
-            //         trigger: "#gsapBenefitContainer",
-            //         scroller: "body",
-            //         markers: false,
-            //         start: "top 90%",
-            //         end: "top 40%",
-            //         // // scrub: 2,
-            //     }
-            // });
-
             gsap.from("#gsapBenefitHeading", {
                 x: -800,
                 opacity: 0,
@@ -160,18 +141,6 @@ const Hero = () => {
                     // scrub: 2,
                 }
             });
-            // gsap.from("#gsapWorkingImg ", {
-            //     transformOrigin: 'left',
-            //     transform: "scaleX(0)",
-            //     scrollTrigger: {
-            //         trigger: "#gsapWorkingImg",
-            //         scroller: "body",
-            //         markers: false,
-            //         start: "top 80%",
-            //         end: "top 30%",
-            //         // scrub: 2,
-            //     }
-            // });
             gsap.from("#gsapWorkingHeading", {
                 rotateX: "90deg",
                 y: -180,
@@ -235,17 +204,19 @@ const Hero = () => {
             })
             gsap.to("#pattern2", {
                 y: -30,
-      duration: 1,
-      repeat: -1,
-      ease:"none",
-      yoyo: true
+                duration: 3,
+                ease: "power2.inOut",
+                repeat: -1,
+                ease: "none",
+                yoyo: true
             })
             gsap.to("#pattern3", {
-                duration: 1,
-                x:60,
+                duration: 3,
+                ease: "power2.inOut",
+                x: 60,
                 ease: "none",
                 repeat: -1,
-                yoyo:true
+                yoyo: true
                 // rotation: 360,
             })
         },

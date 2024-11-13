@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import "../videobanner/videoBanner.css";
-import banner from "../../assets/videos/banner_video.mp4";
+import banner from "../../assets/videos/banner_video2.mp4";
 
 const VideoBanner = () => {
   return (

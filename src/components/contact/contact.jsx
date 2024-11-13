@@ -14,15 +14,15 @@ const Contact = () => {
   useGSAP(() => {
     gsap.from("#pattern1", {
       opacity: 0.25,
-      duration: 1,
       repeat: -1,
+      duration: 1,
       ease: "none",
       yoyo: true
     })
     gsap.to("#pattern3", {
-      duration: 1,
       x: 40,
-      ease: "none",
+      duration: 3,
+      ease: "power2.inOut",
       repeat: -1,
       yoyo: true
     })

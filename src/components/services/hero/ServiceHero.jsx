@@ -9,7 +9,7 @@ const ServiceHero = (props) => {
     gsap.from(".service-hero", {
       x: -400,
       opacity: 0,
-      duration: 1,
+      // duration: 1,
       scrollTrigger: {
         trigger: ".service-hero",
         scroller: "body",

@@ -4,16 +4,21 @@
   padding: 0rem 0px 80px 230px;
   position: relative;
 }
+
 .service-intro {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* 2 columns */
-  column-gap: 3.5rem; /* Space between columns */
-  row-gap: 80px; /* Space between rows */
+  grid-template-columns: 1fr 1fr;
+  /* 2 columns */
+  column-gap: 3.5rem;
+  /* Space between columns */
+  row-gap: 80px;
+  /* Space between rows */
   min-width: 630px;
   width: 65%;
   z-index: 1;
 
 }
+
 .service-image {
   position: absolute;
   right: 4%;
@@ -21,40 +26,46 @@
   z-index: 0;
 }
 
-.dot-arrow-image{
-    position: absolute;
-    left: 0;
-    top: 450px;
-    z-index: 0;
+.dot-arrow-image {
+  position: absolute;
+  left: 0;
+  top: 450px;
+  z-index: 0;
 }
-.dot-image{
-    position: absolute;
-    top: 1140px;
-    left: 0;
-    transform: rotate(45deg) translateX(-66%);
+
+.dot-image {
+  position: absolute;
+  top: 1140px;
+  left: 0;
+  transform: rotate(45deg) translateX(-66%);
 }
+
 .dot-arrow-image2 {
   position: absolute;
   right: 0;
   top: 900px;
-}
-.dot-circle-image{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    transform: translate(35%, 45%);
 
 }
+
+.dot-circle-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translate(35%, 45%);
+}
+
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
   .service-intro-container {
     padding: 0rem 150px 60px;
-    
+
   }
+
   .service-intro {
     gap: 2rem;
     width: 90%;
   }
-  .service-image{
+
+  .service-image {
     display: none;
   }
 }
@@ -68,29 +79,37 @@
     gap: 2rem;
     width: 100%;
   }
- 
-  .service-image, .dot-arrow-image2{
+
+  .service-image,
+  .dot-arrow-image2 {
     display: none;
   }
- 
+
 }
 
 @media screen and (max-width: 808px) {
   .service-intro-container {
     padding: 0px 20px 40px;
   }
+
   .service-intro {
-    grid-template-columns: 1fr; /* 1 column */
-    justify-items: center; /* Center align items horizontally */
-    align-items: center; /* Center align items vertically */
+    grid-template-columns: 1fr;
+    /* 1 column */
+    justify-items: center;
+    /* Center align items horizontally */
+    align-items: center;
+    /* Center align items vertically */
     min-width: 100%;
     row-gap: 40px;
   }
-  .service-image{
+
+  .service-image {
     display: none;
 
   }
-  .intro-side-images, .dot-arrow-image2{
+
+  .intro-side-images,
+  .dot-arrow-image2 {
     display: none;
   }
 }
@@ -100,4 +119,3 @@
     padding: 0px 20px 40px;
   }
 }
-

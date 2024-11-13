@@ -439,10 +439,10 @@ const Projects = () => {
       yoyo: true
     })
     gsap.to("#pattern2", {
-      y: -30,
-      duration: 1,
+      y: 30,
       repeat: -1,
-      ease:"none",
+      duration: 3,
+      ease: "power2.inOut",
       yoyo: true
     })
   })
@@ -607,7 +607,7 @@ const Projects = () => {
             className="iframe-container flex justify-center"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="project-iframe" 
+            <div className="project-iframe"
             // ref={overlayRef} 
             >
               {projectContent[modalContent]}

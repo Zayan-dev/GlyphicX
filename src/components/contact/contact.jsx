@@ -10,21 +10,22 @@ import dots from "../../assets/images/Patterns/dots.png";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
-const Contact = () => {  
-  useGSAP(()=>{
+const Contact = () => {
+  useGSAP(() => {
     gsap.from("#pattern1", {
       opacity: 0.25,
       duration: 1,
       repeat: -1,
       ease: "none",
       yoyo: true
-  })
-  gsap.to("#pattern3", {
-      duration: 10,
+    })
+    gsap.to("#pattern3", {
+      duration: 1,
+      x: 40,
       ease: "none",
       repeat: -1,
-      rotation: 360,
-  })
+      yoyo: true
+    })
   })
   const {
     register,
@@ -106,7 +107,6 @@ const Contact = () => {
       </div>
       <div id="pattern3" className="dotsPatternContactPage">
         <img
-          id="pattern3"
           height="100%"
           width="100%"
           src={dots}

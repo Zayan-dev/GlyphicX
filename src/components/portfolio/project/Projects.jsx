@@ -439,9 +439,10 @@ const Projects = () => {
       yoyo: true
     })
     gsap.to("#pattern2", {
-      y: -20,
+      y: -30,
       duration: 1,
       repeat: -1,
+      ease:"none",
       yoyo: true
     })
   })

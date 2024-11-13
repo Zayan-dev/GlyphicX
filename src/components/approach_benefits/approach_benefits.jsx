@@ -14,22 +14,24 @@ import gsap from 'gsap';
 const ApproachAndBenefits = () => {
   useGSAP(() => {
     gsap.to("#pattern2", {
-      y: -20,
+      y: -30,
       duration: 1,
       repeat: -1,
+      ease:"none",
       yoyo: true
     })
     gsap.to("#pattern3", {
-      duration: 10,
+      duration: 1,
       ease: "none",
       repeat: -1,
-      rotation: 360,
+      yoyo:true,
+      x:60
     })
   })
   return (
     <div className="mainContainer">
       {/* Arrow with dots pattern */}
-      <div id="pattern1" className="arrowWithDotsDiv">
+      <div id="pattern2" className="arrowWithDotsDiv">
         <img
           id="pattern2"
           height="100%"

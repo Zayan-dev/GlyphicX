@@ -227,23 +227,26 @@ const Hero = () => {
             });
 
             gsap.to("#pattern1", {
-                opacity: 1,
+                opacity: 0.25,
                 duration: 1,
                 repeat: -1,
                 ease: "none",
                 yoyo: true
             })
             gsap.to("#pattern2", {
-                y: -20,
-                duration: 1,
-                repeat: -1,
-                yoyo: true
+                y: -30,
+      duration: 1,
+      repeat: -1,
+      ease:"none",
+      yoyo: true
             })
             gsap.to("#pattern3", {
-                duration: 10,
+                duration: 1,
+                x:60,
                 ease: "none",
                 repeat: -1,
-                rotation: 360,
+                yoyo:true
+                // rotation: 360,
             })
         },
     );
@@ -255,7 +258,7 @@ const Hero = () => {
                 <Benefit></Benefit>
                 <VideoBanner></VideoBanner>
                 <Feature></Feature>
-                <div id="gsapWorkingStar" className="circleDotPattern">
+                <div id="pattern1" className="circleDotPattern">
                     <img
                         id="pattern1"
                         height="100%"
@@ -266,7 +269,7 @@ const Hero = () => {
                 </div>
                 <div id="gsapWorkingStar" className="circleDotWithDoodlePattern">
                     <img
-                        id="pattern1"
+                        id="gsapWorking"
                         height="100%"
                         width="100%"
                         src={circleDotWithDoodlePattern}

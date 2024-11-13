@@ -77,16 +77,18 @@ const ServiceIntro = () => {
       yoyo: true
     })
     gsap.to("#pattern2", {
-      y: -20,
       duration: 1,
+      y: -30,
       repeat: -1,
+      ease: "none",
       yoyo: true
     })
     gsap.to("#pattern3", {
-      duration: 10,
+      duration: 1,
+      x: 10,
       ease: "none",
       repeat: -1,
-      rotation: 360,
+      yoyo: true
     })
   })
   return (
@@ -138,7 +140,6 @@ const ServiceIntro = () => {
       <div className="service-intro-image">
         {/* <img src="/" className="service-image" /> */}
         <img
-          id="pattern1"
           className="service-image"
           height="100%"
           width="100%"

@@ -3,7 +3,7 @@ import "../project/projects.css";
 import { ScrollTrigger } from 'gsap/all';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-import circleDot from "../../../assets/images/Patterns/dotPattern.png"
+import circleDot from "../../../assets/images/Patterns/Dots-01.png"
 import arrowwithDotsPattern from "../../../assets/images/Patterns/arrowWithDotsPattern.png"
 const Projects = () => {
 
@@ -442,7 +442,7 @@ const Projects = () => {
       y: 30,
       repeat: -1,
       duration: 3,
-      ease: "power2.inOut",
+      ease: "sine.inOut",
       yoyo: true
     })
   })
@@ -452,7 +452,7 @@ const Projects = () => {
   return (
     <div className={modalContent ? "projects" : "simple"}>
       <div className="pattern1" id='pattern1'>
-        <img src={circleDot} height="100%" width="100%" alt="" />
+        <img src={circleDot} alt="" />
       </div>
       <div className="project1" id="gsapright">
         <img

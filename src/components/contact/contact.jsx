@@ -22,7 +22,7 @@ const Contact = () => {
     gsap.to("#pattern3", {
       x: 40,
       duration: 3,
-      ease: "power2.inOut",
+      ease: "sine.inOut",
       repeat: -1,
       yoyo: true
     })

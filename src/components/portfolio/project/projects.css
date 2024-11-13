@@ -1,7 +1,14 @@
 .pattern1 {
     position: absolute;
     right: 5%;
+    display: flex;
+    justify-content: end;
     top: 0;
+    /* height: 18%; */
+    width: 20%;
+    /* border: 1px solid red; */
+    object-fit: contain;
+
 }
 
 .pattern2 {

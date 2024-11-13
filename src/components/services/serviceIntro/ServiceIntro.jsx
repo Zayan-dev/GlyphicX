@@ -80,13 +80,13 @@ const ServiceIntro = () => {
       repeat: -1,
       y: -30,
       duration: 3,
-      ease: "power2.inOut",
+      ease: "sine.inOut",
       yoyo: true
     })
     gsap.to("#pattern3", {
       x: 10,
       duration: 3,
-      ease: "power2.inOut",
+      ease: "sine.inOut",
       repeat: -1,
       yoyo: true
     })
@@ -110,7 +110,6 @@ const ServiceIntro = () => {
         className="dot-image intro-side-images"
       />
       <img
-        id="pattern1"
         height="30%"
         width="30%"
         src={circleDotPattern}

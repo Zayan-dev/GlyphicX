@@ -8,7 +8,7 @@ import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import VideoBanner from '../videobanner/VideoBanner'
 import ApproachAndBenefits from '../approach_benefits/approach_benefits'
-import circleDotPattern from "../../assets/images/Patterns/dotPattern.png";
+import circleDotPattern from "../../assets/images/Patterns/Dots-01.png";
 import circleDotWithDoodlePattern from "../../assets/images/Patterns/secondDotPattern.png";
 const Hero = () => {
 
@@ -202,23 +202,7 @@ const Hero = () => {
                 ease: "none",
                 yoyo: true
             })
-            gsap.to("#pattern2", {
-                y: -30,
-                duration: 3,
-                ease: "power2.inOut",
-                repeat: -1,
-                ease: "none",
-                yoyo: true
-            })
-            gsap.to("#pattern3", {
-                duration: 3,
-                ease: "power2.inOut",
-                x: 60,
-                ease: "none",
-                repeat: -1,
-                yoyo: true
-                // rotation: 360,
-            })
+           
         },
     );
 

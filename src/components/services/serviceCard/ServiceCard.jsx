@@ -37,17 +37,26 @@ const ServiceCard = ({ image, heading, text, sectionRefs }) => {
     <div
       className="service-card-container"
       id={headingTransform}
+      // ref={sectionRefs[`#${headingTransform}`]}
       ref={(el) => {
-        cardRef.current = el;
-        sectionRefs[`#${headingTransform}`] = el; // Register each section ref for external access
+        if (el) {
+          cardRef.current = el;
+          if (sectionRefs[`#${headingTransform}`]) {
+            sectionRefs[`#${headingTransform}`].current = el; // Set the `.current` property
+          }
+        }
       }}
     >
-      <img
-        src={`/services/${image}.png`}
-        alt={heading}
-        className="service-card-image"
-      />
-      <h1 className="headingSpan mainHeading service-card-heading">{heading}</h1>
+      <div className="serviceeHeadingDiv">
+        <img
+          src={`/services/${image}.png`}
+          alt={heading}
+          className="service-card-image"
+        />
+        <h1 className="headingSpan mainHeading service-card-heading">
+          {heading}
+        </h1>
+      </div>
       <p className="service-card-text para">{text}</p>
     </div>
   );

@@ -4,34 +4,33 @@
     justify-content: flex-start;
     gap: 30px;
     height: auto;
+    scroll-margin-top: 150px;
 }
-.service-card-text{
-    text-align: justify;
+.serviceeHeadingDiv {
+    display: flex;
+    column-gap: 2rem;
+    align-items: center;
 }
 .service-card-container h1{
-    font-size: 2rem;
+    font-size: 1.75rem;
 }
 
 .service-card-image{
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
 }
 
-@media screen and (min-width: 1600px) {
-    .service-card-container h1{
-        font-size: 2.5rem;
-    }
-}
 @media screen and (max-width: 808px) {
     .service-card-container h1 {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
 }
 
 /* mobile mode main heading size will be 28px */
 @media screen and (max-width: 640px) {
     .service-card-container h1 {
-        font-size: 1.5rem;
+        font-size: 1.375rem;
+        line-height: 30px;
     }
 }
 

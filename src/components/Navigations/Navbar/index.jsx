@@ -58,7 +58,7 @@ const Navbar = ({ toggle }) => {
                 }
                 id="gsapNavItem"
               >
-                <p className="xl3:text-[1.375rem]">Home</p>
+                <p >Home</p>
               </NavLink>
             </li>
             <li>
@@ -74,7 +74,7 @@ const Navbar = ({ toggle }) => {
                 }
                 id="gsapNavItem"
               >
-                <p className="xl3:text-[1.375rem]">Our Work</p>
+                <p >Our Work</p>
               </NavLink>
             </li>
             <li>
@@ -90,7 +90,7 @@ const Navbar = ({ toggle }) => {
                 }
                 id="gsapNavItem"
               >
-                <p className="xl3:text-[1.375rem]">Services</p>
+                <p >Services</p>
               </NavLink>
             </li>
           </ul>

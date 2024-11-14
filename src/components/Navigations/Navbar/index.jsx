@@ -32,7 +32,7 @@ const Navbar = ({ toggle }) => {
 
   const navbarStyles = `fixed top-0 z-10 transition-colors duration-300 ${isScrolled ? 'bg-offWhite text-peanut opacity-100' : 'bg-transparent text-peanut opacity-100'}` // Default styles for other pages
 
-    const listItemStyles = `${!isScrolled ? 'text-peanut' : ''} subHeading relative text-lg lg:text-xl w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300`;
+    const listItemStyles = `${!isScrolled ? 'text-peanut' : ''} subHeading relative !text-lg !xl3:text-xl w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300`;
 
   const activeLinkStyles = "after:w-full after:scale-x-0 after:scale-x-100 text-peanut ";
 

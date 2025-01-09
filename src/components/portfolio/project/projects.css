@@ -170,6 +170,10 @@
     top: 20px;
     right: 22px;
 }
+.shareIcon{
+    color: #E58C10;
+
+}
 
 .close-btn i {
     color: var(--foreground-color);

@@ -66,6 +66,12 @@ const ServiceIntro = () => {
       heading: "DIGITAL VIDEO COMMERCIAL",
       text: "Your brand has a story to tell, and we’re here to help you tell it. By partnering with you, we listen to your vision, create a strategic plan, and deliver video content that not only meets your goals but exceeds your expectations.",
     },
+    {
+      image: "social media",
+      heading: "SOCIAL MEDIA HANDLING",
+      text: " Creating your brand's presence on social media media platforms by creating, curating and sharing content as well as engaging with the audience - building strong online presence, increasing brand awareness and achieving specific goals"
+
+    }
   ];
 
   useGSAP(() => {

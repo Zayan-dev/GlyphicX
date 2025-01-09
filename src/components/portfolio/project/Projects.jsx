@@ -1,13 +1,11 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from "react";
 import "../project/projects.css";
-import { ScrollTrigger } from 'gsap/all';
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
-import circleDot from "../../../assets/images/Patterns/Dots-01.png"
-import arrowwithDotsPattern from "../../../assets/images/Patterns/arrowWithDotsPattern.png"
+import { ScrollTrigger } from "gsap/all";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import circleDot from "../../../assets/images/Patterns/Dots-01.png";
+import arrowwithDotsPattern from "../../../assets/images/Patterns/arrowWithDotsPattern.png";
 const Projects = () => {
-
-
   const Eaxee = {
     image1: "/Portfolio/EAXEE/Brand Guideline/EAXEE-01.jpg",
     image2: "/Portfolio/EAXEE/Brand Guideline/EAXEE-10.jpg",
@@ -30,7 +28,7 @@ const Projects = () => {
     image19: "/Portfolio/EAXEE/Brand Guideline/EAXEE-27.jpg",
     image20: "/Portfolio/EAXEE/Brand Guideline/EAXEE-28.jpg",
     image21: "/Portfolio/EAXEE/Brand Guideline/EAXEE-29.jpg",
-    image22: "/Portfolio/EAXEE/Brand Guideline/EAXEE-30.jpg"
+    image22: "/Portfolio/EAXEE/Brand Guideline/EAXEE-30.jpg",
   };
 
   const UrgeFragrances = {
@@ -42,6 +40,20 @@ const Projects = () => {
     image6: "/Portfolio/UrgeFragrances/10.png",
     video2: "/Portfolio/UrgeFragrances/5.mp4",
     video3: "/Portfolio/UrgeFragrances/6.mp4",
+    image7: "/Portfolio/UrgeFragrances/WEBSITEHOMEPAGE.jpg",
+    image8: "/Portfolio/UrgeFragrances/Wax page.jpg",
+    image9: "/Portfolio/UrgeFragrances/Perfumes page.jpg",
+    image10: "/Portfolio/UrgeFragrances/Candles2.jpg",
+    image11: "/Portfolio/UrgeFragrances/Candles4.jpg",
+    image12: "/Portfolio/UrgeFragrances/Perfume2.2.jpg",
+    image13: "/Portfolio/UrgeFragrances/Celeste.jpg",
+    image14: "/Portfolio/UrgeFragrances/Black Swan.jpg",
+    image15: "/Portfolio/UrgeFragrances/rosseto.jpg",
+    image16: "/Portfolio/UrgeFragrances/royal dale.jpg",
+    image17: "/Portfolio/UrgeFragrances/speed.jpg",
+    image18: "/Portfolio/UrgeFragrances/The Boss.jpg",
+    
+
   };
 
   const LambdaTheta = {
@@ -50,7 +62,7 @@ const Projects = () => {
     image3: "/Portfolio/Lambda Theta/4.jpg",
     video1: "/Portfolio/Lambda Theta/1.mp4",
     video2: "/Portfolio/Lambda Theta/5.m4v",
-  }
+  };
 
   const Eaxeesoft = {
     image1: "/Portfolio/Eaxeesoft/eaxeesoft Brand Identity 11-08-2024-01.jpg",
@@ -110,7 +122,6 @@ const Projects = () => {
     setModalContent(project);
   };
 
-
   const handleClose = () => {
     //   document.body.style.overflowX = "hidden"; // Add this line
     document.documentElement.style.overflowX = "hidden"; // Add this line
@@ -125,51 +136,56 @@ const Projects = () => {
   useEffect(() => {
     // Function to close modal on click outside
     const handleClickOutside = (event) => {
-      const modal = document.querySelector('.iframe-container');
-      const overlay = document.querySelector('.overlay');
+      const modal = document.querySelector(".iframe-container");
+      const overlay = document.querySelector(".overlay");
 
       if (modal && overlay) {
         const { clientX, clientY } = event;
         const { left, top, right, bottom } = modal.getBoundingClientRect();
 
         // Check if the click is outside the modal
-        const isOutsideModal = !(clientX >= left && clientX <= right && clientY >= top && clientY <= bottom);
+        const isOutsideModal = !(
+          clientX >= left &&
+          clientX <= right &&
+          clientY >= top &&
+          clientY <= bottom
+        );
 
         // Determine if a vertical scrollbar is present
-        const hasVerticalScrollbar = document.body.scrollHeight > window.innerHeight;
+        const hasVerticalScrollbar =
+          document.body.scrollHeight > window.innerHeight;
         const scrollbarWidth = hasVerticalScrollbar ? 17 : 0; // Approximate scrollbar width (varies by browser)
 
         // Check if the click is within the scrollbar area (assuming right scrollbar)
-        const isClickOnScrollbar = (clientX > window.innerWidth - scrollbarWidth && clientX <= window.innerWidth);
+        const isClickOnScrollbar =
+          clientX > window.innerWidth - scrollbarWidth &&
+          clientX <= window.innerWidth;
 
         if (isOutsideModal && !isClickOnScrollbar) {
-          handleClose();  // Close the modal if click is outside and not on scrollbar
+          handleClose(); // Close the modal if click is outside and not on scrollbar
         }
       }
     };
 
-
     // Function to close modal on pressing 'Escape' key
     const handleEscapeKey = (event) => {
-      if (event.key === 'Escape') {
-        handleClose();  // Close the modal if 'Escape' key is pressed
+      if (event.key === "Escape") {
+        handleClose(); // Close the modal if 'Escape' key is pressed
       }
     };
 
     // Add event listeners when modal is open
-    if (modalContent && document.querySelector('.overlay')) {
-      document.addEventListener('mousedown', handleClickOutside);  // Detect click outside modal
-      document.addEventListener('keydown', handleEscapeKey);        // Detect 'Escape' key press
+    if (modalContent && document.querySelector(".overlay")) {
+      document.addEventListener("mousedown", handleClickOutside); // Detect click outside modal
+      document.addEventListener("keydown", handleEscapeKey); // Detect 'Escape' key press
     }
 
     // Clean up event listeners when component unmounts or modal closes
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-      document.removeEventListener('keydown', handleEscapeKey);
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("keydown", handleEscapeKey);
     };
   }, [modalContent]);
-
-
 
   const projectContent = {
     project1: (
@@ -200,6 +216,48 @@ const Projects = () => {
     ),
     project2: (
       <>
+        <img src={UrgeFragrances.image7} alt="project2" className="w-full" />
+        <div className="flex flex-col sm:flex-row gap-4 sm0:gap-8 justify-between w-fit">
+          <img
+            src={UrgeFragrances.image13}
+            alt="project2"
+            className="w-full sm:w-[49%]"
+          />
+          <img
+            src={UrgeFragrances.image14}
+            alt="project2"
+            className="w-full sm:w-[49%]"
+          />
+        </div>
+        <div className="flex flex-col sm:flex-row gap-4 sm0:gap-8 justify-between w-fit">
+          <img
+            src={UrgeFragrances.image15}
+            alt="project2"
+            className="w-full sm:w-[49%]"
+          />
+          <img
+            src={UrgeFragrances.image16}
+            alt="project2"
+            className="w-full sm:w-[49%]"
+          />
+        </div>
+        <div className="flex flex-col sm:flex-row gap-4 sm0:gap-8 justify-between w-fit">
+          <img
+            src={UrgeFragrances.image17}
+            alt="project2"
+            className="w-full sm:w-[49%]"
+          />
+          <img
+            src={UrgeFragrances.image18}
+            alt="project2"
+            className="w-full sm:w-[49%]"
+          />
+        </div>
+        <img src={UrgeFragrances.image12} alt="project2" className="w-full" />
+        <img src={UrgeFragrances.image9} alt="project2" className="w-full" />
+        <img src={UrgeFragrances.image8} alt="project2" className="w-full" />
+        <img src={UrgeFragrances.image10} alt="project2" className="w-full" />
+        <img src={UrgeFragrances.image11} alt="project2" className="w-full" />
         <img src={UrgeFragrances.image1} alt="project2" className="w-full" />
         <img src={UrgeFragrances.image2} alt="project2" />
         <video controls muted autoPlay playsInline loop>
@@ -209,11 +267,25 @@ const Projects = () => {
         <img src={UrgeFragrances.image4} alt="project2" />
         <img src={UrgeFragrances.image5} alt="project2" />
         <div className="flex flex-col sm:flex-row gap-4 sm0:gap-8 justify-between w-fit">
-          <video controls muted autoPlay playsInline loop className="w-full sm:w-[49%]">
+          <video
+            controls
+            muted
+            autoPlay
+            playsInline
+            loop
+            className="w-full sm:w-[49%]"
+          >
             <source src={UrgeFragrances.video2} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <video controls muted autoPlay playsInline loop className="w-full sm:w-[49%]">
+          <video
+            controls
+            muted
+            autoPlay
+            playsInline
+            loop
+            className="w-full sm:w-[49%]"
+          >
             <source src={UrgeFragrances.video3} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
@@ -264,8 +336,15 @@ const Projects = () => {
             const nextImage = Perfect[Object.keys(Perfect)[index + 1]];
 
             return (
-              <div key={index} className="flex flex-col sm:flex-row gap-4 sm0:gap-8 justify-between w-full">
-                <img src={imageSrc} alt={`project${index + 1}`} className="w-full sm:w-[48%] lg:w-[49%]" />
+              <div
+                key={index}
+                className="flex flex-col sm:flex-row gap-4 sm0:gap-8 justify-between w-full"
+              >
+                <img
+                  src={imageSrc}
+                  alt={`project${index + 1}`}
+                  className="w-full sm:w-[48%] lg:w-[49%]"
+                />
                 {nextImage && (
                   <img
                     src={nextImage}
@@ -283,9 +362,7 @@ const Projects = () => {
     // any other project content if needed
   };
 
-
   useGSAP(() => {
-
     gsap.from("#pro1", {
       opacity: 0,
       duration: 1,
@@ -296,7 +373,7 @@ const Projects = () => {
         start: "top 80%",
         end: "top 30%",
         // scrub: 2,
-      }
+      },
     });
 
     gsap.from("#gsapleft", {
@@ -311,7 +388,7 @@ const Projects = () => {
         start: "top 80%",
         end: "top 30%",
         // scrub: 2,
-      }
+      },
     });
 
     gsap.from("#gsapright", {
@@ -325,7 +402,7 @@ const Projects = () => {
         start: "top 80%",
         end: "top 30%",
         // scrub: 2,
-      }
+      },
     });
     gsap.from("#pro2gsapleft", {
       x: -600,
@@ -338,7 +415,7 @@ const Projects = () => {
         start: "top 80%",
         end: "top 30%",
         // scrub: 2,
-      }
+      },
     });
     gsap.from("#pro2gsapright", {
       x: 800,
@@ -351,7 +428,7 @@ const Projects = () => {
         start: "top 80%",
         end: "top 30%",
         // scrub: 1,
-      }
+      },
     });
     gsap.from("#pro3gsapleft", {
       x: -400,
@@ -364,7 +441,7 @@ const Projects = () => {
         start: "top 80%",
         end: "top 30%",
         // scrub: 2,
-      }
+      },
     });
     gsap.from("#pro3gsapright", {
       x: 800,
@@ -377,7 +454,7 @@ const Projects = () => {
         start: "top 80%",
         end: "top 30%",
         // scrub: 1,
-      }
+      },
     });
     gsap.from("#pro4gsapleft", {
       x: -600,
@@ -390,7 +467,7 @@ const Projects = () => {
         start: "top 80%",
         end: "top 30%",
         // scrub: 2,
-      }
+      },
     });
     gsap.from("#pro4gsapright", {
       x: 800,
@@ -403,7 +480,7 @@ const Projects = () => {
         start: "top 80%",
         end: "top 30%",
         // scrub: 1,
-      }
+      },
     });
     gsap.from("#pro5gsapleft", {
       x: -600,
@@ -416,7 +493,7 @@ const Projects = () => {
         start: "top 80%",
         end: "top 30%",
         // scrub: 2,
-      }
+      },
     });
     gsap.from("#pro5gsapright", {
       x: 800,
@@ -429,29 +506,35 @@ const Projects = () => {
         start: "top 80%",
         end: "top 30%",
         // scrub: 1,
-      }
+      },
     });
     gsap.to("#pattern1", {
       opacity: 0.2,
       duration: 1,
       repeat: -1,
       ease: "none",
-      yoyo: true
-    })
+      yoyo: true,
+    });
     gsap.to("#pattern2", {
       y: 30,
       repeat: -1,
       duration: 3,
       ease: "sine.inOut",
-      yoyo: true
-    })
-  })
+      yoyo: true,
+    });
+    gsap.to("#shareIcon", {
+      opacity: 0.2,
+      duration: 1,
+      repeat: -1,
+      ease: "none",
+      yoyo: true,
+    });
 
-
+  });
 
   return (
     <div className={modalContent ? "projects" : "simple"}>
-      <div className="pattern1" id='pattern1'>
+      <div className="pattern1" id="pattern1">
         <img src={circleDot} alt="" />
       </div>
       <div className="project1" id="gsapright">
@@ -462,30 +545,39 @@ const Projects = () => {
           className=" project1-image"
           onClick={(e) => handleDisplay("project1", e)}
         />
-        <div className="project1-overflow"
-        // id='gsapleft'
+        <div
+          className="project1-overflow"
+          // id='gsapleft'
         >
           <div className="project-content">
+          <div style={{display:"flex",alignItems: "center"}}>
             <h1
               className="headingSpan mainHeading"
-              onClick={(e) => handleDisplay("project1", e)}
+             
             >
-              Eaxee Enterprise
+              Eaxee
             </h1>
+            <a href="https://eaxee.com/" target="_blank" >
+            <i class="fa fa-external-link" aria-hidden="true" style={{ marginLeft: '10px',color:"#E58C10" , cursor:"pointer" }} id="shareIcon"  ></i>
+
+            </a>
+
+            </div>
+           
             <h3 className="subHeading">BRANDING & WEB DEVELOPMENT</h3>
             <p className="para">
               Eaxee, a leader in enterprise architecture management, sought a
               brand identity that would mirror its commitment to empowering
-              organizations with intuitive, flexible solutions
+              organizations with intuitive, flexible solutions. <span  id="shareIcon" style={{color: "#E58C10", cursor:"pointer"}} onClick={(e) => handleDisplay("project1", e)}>Learn More</span>
             </p>
           </div>
         </div>
       </div>
 
-      <div className="pattern2" id='pattern2'>
+      <div className="pattern2" id="pattern2">
         <img src={arrowwithDotsPattern} height="100%" width="100%" alt="" />
       </div>
-      <div className="project2" id='pro2gsapleft'>
+      <div className="project2" id="pro2gsapleft">
         <img
           // id="pro2gsapleft"
           src={LambdaTheta.image3}
@@ -493,57 +585,73 @@ const Projects = () => {
           className="project2-image"
           onClick={(e) => handleDisplay("project3", e)}
         />
-        <div className="project2-overflow"
-        //  id="pro2gsapright"
+        <div
+          className="project2-overflow"
+          //  id="pro2gsapright"
         >
           <div className="project-content">
             <h1
               className="headingSpan mainHeading"
-              onClick={(e) => handleDisplay("project3", e)}
+             
             >
               Lambda Theta
             </h1>
             <h3 className="subHeading">BRANDING & GRAPHIC DESIGN</h3>
             <p className="para">
-              Lambda Theta, a cutting-edge technology company, required a
-              brand identity that would capture the essence of their expertise
-              in AI-based and Digital Systems
+              Lambda Theta, a cutting-edge technology company, required a brand
+              identity that would capture the essence of their expertise in
+              AI-based and Digital Systems. <span  id="shareIcon" style={{color: "#E58C10", cursor:"pointer"}} onClick={(e) => handleDisplay("project3", e)}>Learn More</span>
             </p>
           </div>
         </div>
       </div>
-      <div className="pattern3" id='pattern2'>
+      <div className="pattern3" id="pattern2">
         <img src={arrowwithDotsPattern} height="100%" width="100%" alt="" />
       </div>
       <div className="project1" id="pro3gsapright">
         <img
           // id="pro3gsapright"
-          src={UrgeFragrances.image1}
+          src={UrgeFragrances.image7}
           alt="UrgeFragrances Image"
           className=" project1-image"
           onClick={(e) => handleDisplay("project2", e)}
         />
-        <div className="project1-overflow"
-        //  id="pro3gsapleft"
+        <div
+          className="project1-overflow"
+          //  id="pro3gsapleft"
         >
           <div className="project-content">
+            <div style={{display:"flex",alignItems: "center"}}>
             <h1
               className="headingSpan mainHeading"
-              onClick={(e) => handleDisplay("project2", e)}
+             
             >
               Urge Fragrances
             </h1>
-            <h3 className="subHeading">GRAPHIC DESIGN & 3D ANIMATION</h3>
+            <a href="https://urgefragrances.com/" target="_blank" >
+            <i class="fa fa-external-link" aria-hidden="true" style={{ marginLeft: '10px',color:"#E58C10" , cursor:"pointer" }} id="shareIcon"  ></i>
+
+
+            </a>
+
+            </div>
+            
+            <h3 className="subHeading">
+              BRANDING, 3D VISUALIZATION & WEB DEVELOPMENT
+            </h3>
             <p className="para">
-              Our collaboration with Urge Fragrances included, developing a
-              distinctive logo, creating sophisticated packaging & delivering
-              3D renderings of their products
+              We collaborated with Urge Fragrances to create a unique brand
+              identity, including a distinctive logo, elegant packaging,
+              high-quality 3D product renderings, and a visually engaging,
+              user-friendly website. <span  id="shareIcon" style={{color: "#E58C10", cursor:"pointer"}} onClick={(e) => handleDisplay("project2", e)}>Learn More</span>
             </p>
+
+          
           </div>
         </div>
       </div>
 
-      <div className="pattern4" id='pattern1'>
+      <div className="pattern4" id="pattern1">
         <img src={circleDot} height="100%" width="100%" alt="" />
       </div>
       <div className="project2" id="pro4gsapleft">
@@ -554,21 +662,31 @@ const Projects = () => {
           className=" project2-image"
           onClick={(e) => handleDisplay("project4", e)}
         />
-        <div className="project2-overflow"
-        // id="pro4gsapright"
+        <div
+          className="project2-overflow"
+          // id="pro4gsapright"
         >
           <div className="project-content">
+          <div style={{display:"flex",alignItems: "center"}}>
             <h1
               className="headingSpan mainHeading"
-              onClick={(e) => handleDisplay("project4", e)}
+             
             >
               Eaxee Soft
             </h1>
+            <a href="https://www.eaxeesoft.com/" target="_blank" >
+            <i class="fa fa-external-link" aria-hidden="true" style={{ marginLeft: '10px',color:"#E58C10" , cursor:"pointer" }} id="shareIcon"  ></i>
+
+
+            </a>
+
+            </div>
+            
             <h3 className="subHeading">BRANDING AND WEB DEVELOPMENT</h3>
             <p className="para">
-              Tasked with creating the complete brand identity and developing
-              a modern, functional website for EaxeeSoft, a custom software
-              development company.
+              Tasked with creating the complete brand identity and developing a
+              modern, functional website for EaxeeSoft, a custom software
+              development company. <span  id="shareIcon" style={{color: "#E58C10", cursor:"pointer"}} onClick={(e) => handleDisplay("project4", e)}>Learn More</span>
             </p>
           </div>
         </div>
@@ -581,13 +699,14 @@ const Projects = () => {
           className=" project1-image"
           onClick={(e) => handleDisplay("project5", e)}
         />
-        <div className="project1-overflow"
-        // id="pro5gsapleft"
+        <div
+          className="project1-overflow"
+          // id="pro5gsapleft"
         >
           <div className="project-content">
             <h1
               className="headingSpan mainHeading"
-              onClick={(e) => handleDisplay("project2", e)}
+             
             >
               Perfect
             </h1>
@@ -595,20 +714,21 @@ const Projects = () => {
             <p className="para">
               For Perfect Cosmetics, we developed high-quality 3D renders that
               capture the elegance and design details of their product line,
-              showcasing each item in its best light.
+              showcasing each item in its best light. <span  id="shareIcon" style={{color: "#E58C10", cursor:"pointer"}} onClick={(e) => handleDisplay("project5", e)}>Learn More</span>
             </p>
           </div>
         </div>
       </div>
 
       {modalContent && (
-        <div className="overlay" >
+        <div className="overlay">
           <div
             className="iframe-container flex justify-center"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="project-iframe"
-            // ref={overlayRef} 
+            <div
+              className="project-iframe"
+              // ref={overlayRef}
             >
               {projectContent[modalContent]}
             </div>
@@ -620,6 +740,6 @@ const Projects = () => {
       )}
     </div>
   );
-}
+};
 
 export default Projects;

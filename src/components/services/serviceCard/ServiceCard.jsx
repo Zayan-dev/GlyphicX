@@ -6,7 +6,7 @@ import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const ServiceCard = ({ image, heading, text, sectionRefs }) => {
+const ServiceCard = ({ image, heading, text, sectionRefs ,enlarge}) => {
   const cardRef = useRef(null);
 
   
@@ -51,7 +51,7 @@ const ServiceCard = ({ image, heading, text, sectionRefs }) => {
         <img
           src={`/services/${image}.png`}
           alt={heading}
-          className="service-card-image"
+          className={`${enlarge ? " service-card-enlarge-image" :"service-card-image"  } `}
         />
         <h1 className="headingSpan mainHeading service-card-heading">
           {heading}

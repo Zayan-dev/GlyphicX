@@ -32,10 +32,11 @@ const ServiceIntro = () => {
       text: "At GlyphicX, we understand the vital role that branding plays in the success of a business. From logo design to brand guidelines, we help you establish a strong and memorable brand presence.",
     },
     {
-      image: "artboard2",
-      heading: "3D VISUALIZATION",
-      text: "Bring your creative vision to life. Get a clear, immersive representation of your final product, interior space, or design, enabling better understanding of scale, proportions, and design options.",
+      image: "graphic",
+      heading: "GRAPHIC DESIGN",
+      text: "We help you establish a strong and memorable brand presence. Whether you need a striking logo, captivating packaging, or an eye-catching illustration, our team of skilled designers is here to bring your vision to life. ",
     },
+    
     {
       image: "artboard3",
       heading: "3D ANIMATION",
@@ -46,10 +47,12 @@ const ServiceIntro = () => {
       heading: "UI DESIGN",
       text: "Thoughtful design that is user focused. Let us help you launch or overhaul your product with the right design strategy & user requirements, allowing for a better user experience!",
     },
+    
     {
-      image: "graphic",
-      heading: "GRAPHIC DESIGN",
-      text: "We help you establish a strong and memorable brand presence. Whether you need a striking logo, captivating packaging, or an eye-catching illustration, our team of skilled designers is here to bring your vision to life. ",
+      image: "artboard2",
+      heading: "3D VISUALIZATION",
+      text: "Bring your creative vision to life. Get a clear, immersive representation of your final product, interior space, or design, enabling better understanding of scale, proportions, and design options.",
+    
     },
     {
       image: "webdev",
@@ -69,8 +72,8 @@ const ServiceIntro = () => {
     {
       image: "social media",
       heading: "SOCIAL MEDIA HANDLING",
-      text: " Creating your brand's presence on social media media platforms by creating, curating and sharing content as well as engaging with the audience - building strong online presence, increasing brand awareness and achieving specific goals"
-
+      text: " Creating your brand's presence on social media media platforms by creating, curating and sharing content as well as engaging with the audience - building strong online presence, increasing brand awareness and achieving specific goals",
+      enlarge: true,
     }
   ];
 
@@ -139,6 +142,7 @@ const ServiceIntro = () => {
             heading={d.heading}
             sectionRefs={sectionRefs}
             text={d.text}
+            enlarge = {d.enlarge}
           />
         ))}
       </div>

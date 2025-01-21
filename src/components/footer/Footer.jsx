@@ -213,6 +213,17 @@ const Footer = () => {
                 <p className="para">Linkedin</p>
               </div>
             </a>
+            <a
+              target="_blank"
+              href="https://www.youtube.com/@Glyphic-X"
+            >
+              <div className="social">
+                <div>
+                  <i className="fa-brands fa-square-youtube fa-xl"></i>
+                </div>
+                <p className="para">YouTube</p>
+              </div>
+            </a>
             {/* <div className="social">
               <a target="_blank" href="http://">
                 <i className="fa-brands fa-youtube fa-xl"></i>

@@ -3,13 +3,13 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import "./ServiceCard.css";
 import { useGSAP } from "@gsap/react";
+import { useNavigate } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const ServiceCard = ({ image, heading, text, sectionRefs ,enlarge}) => {
+const ServiceCard = ({ image, heading, text, sectionRefs ,enlarge,click}) => {
   const cardRef = useRef(null);
-
-  
+  const navigate = useNavigate()
   useEffect(() => {
     const element = cardRef.current;
     gsap.fromTo(
@@ -30,6 +30,10 @@ const ServiceCard = ({ image, heading, text, sectionRefs ,enlarge}) => {
       }
     );
   }, []);
+  const clickHandler = ()=>{
+    navigate(`/services/${click}`)
+
+  }
 
   const headingTransform = heading.toLowerCase().replace(/\s+/g, "");
 
@@ -46,6 +50,7 @@ const ServiceCard = ({ image, heading, text, sectionRefs ,enlarge}) => {
           }
         }
       }}
+      onClick={clickHandler}
     >
       <div className="serviceeHeadingDiv">
         <img

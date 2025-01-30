@@ -1,0 +1,60 @@
+.dot-arrow-image {
+  position: absolute;
+  left: 0;
+  top: 150px;
+  z-index: 0;
+}
+
+.dot-image {
+  position: absolute;
+  top: 800px;
+  left: 0;
+  transform: rotate(45deg) translateX(-66%);
+}
+
+.dot-arrow-image2 {
+  position: absolute;
+  right: 0;
+  top: 500px;
+}
+
+.dot-circle-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translate(35%, 45%);
+}
+.service-image {
+  position: absolute;
+  right: 4%;
+  width: 24%;
+  z-index: 0;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+   
+  
+    .service-image {
+      display: none;
+    }
+  }
+  
+  @media screen and (min-width: 809px) and (max-width: 1024px) {
+    
+    .dot-arrow-image2 {
+      display: none;
+    }
+  
+  }
+  
+  @media screen and (max-width: 808px) {
+    
+    .intro-side-images,
+    .dot-arrow-image2 {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 540px) {
+   
+  }

@@ -11,6 +11,7 @@ import Privacy from "./components/footer/privacypolicy/Privacy";
 import Tos from "./components/footer/terms and services/Tos";
 import CookiesPopup from "./components/footer/cookie/CookiesPopup";
 import Alert from "./components/alert/alertBox";
+import ServiceDetail from "./components/services/ServiceDetail";
 // import Resources from "./components/resources/resources";
 
 function App() {
@@ -49,12 +50,14 @@ function App() {
       <Routes>
         <Route exact path="/" key="hero" element={<Hero></Hero>}></Route>
         <Route exact path="/services" key="service" element={<Service></Service>}></Route>
+        <Route exact path="/services/:detail" key="service" element={<ServiceDetail/>}></Route>
         <Route
           exact
           path="/portfolio"
           key="portfolio"
           element={<Portfolio></Portfolio>}
         ></Route>
+
         <Route exact path="/contact" key="contact" element={<Contact></Contact>}></Route>
         <Route
           exact

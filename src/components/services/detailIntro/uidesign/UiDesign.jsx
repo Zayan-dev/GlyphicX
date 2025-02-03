@@ -1,6 +1,6 @@
 import React from "react";
 import { Detail } from "../branding/Branding";
-import "../branding/Branding.css"
+import "../branding/Branding.css";
 
 const UiDesign = () => {
   const designDetail = [
@@ -23,21 +23,21 @@ const UiDesign = () => {
   ];
 
   return (
-   
-        
-      <div className="branding">
-      <h1 className="pl-[20px] text-lg font-bold text-peanut">UI Services</h1>
-        <div className="detail-wrapper">
-          {designDetail.map((d, index) => (
-            <Detail detail={d} />
-          ))}
-        </div>
-        <div className="work-wrapper">
-          <img src="/services/ui-detail.png" className="branding-image" style={{width:"100%"}} />
-        
-        </div>
+    <div className="branding">
+      <h1 className=" text-lg font-bold text-peanut">UI Services</h1>
+      <div className="detail-wrapper">
+        {designDetail.map((d, index) => (
+          <Detail detail={d} />
+        ))}
       </div>
-
+      <div className="work-wrapper">
+        <img
+          src="/services/ui-detail.png"
+          className="branding-image"
+          style={{ width: "100%" }}
+        />
+      </div>
+    </div>
   );
 };
 

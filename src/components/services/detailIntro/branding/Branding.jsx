@@ -23,7 +23,7 @@ const Branding = () => {
   ];
   return (
     <div className="branding">
-    <h1 className="pl-[20px] text-lg font-bold text-peanut">Branding Services</h1>
+    <h1 className=" text-lg font-bold text-peanut">Branding Services</h1>
       <div className="detail-wrapper">
         {brandingDetail.map((d, index) => (
           <Detail detail={d} />

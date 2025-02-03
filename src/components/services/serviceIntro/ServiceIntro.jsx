@@ -56,7 +56,7 @@ const ServiceIntro = () => {
       image: "artboard2",
       heading: "3D VISUALIZATION",
       text: "Bring your creative vision to life. Get a clear, immersive representation of your final product, interior space, or design, enabling better understanding of scale, proportions, and design options.",
-      click: "visualization"
+      click: "visualisation"
     },
     {
       image: "webdev",

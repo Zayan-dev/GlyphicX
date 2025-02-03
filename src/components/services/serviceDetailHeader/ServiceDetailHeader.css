@@ -31,10 +31,10 @@
 
 @media screen and (min-width: 809px) and (max-width: 1024px) {
     .service-detail-hero{
-        padding: 2rem 120px 60px;
-        flex-direction: column;
+        padding: 2rem 120px 10px;
+       
     }
-    .left-colum{
+    .left-column{
         width: 100%;
     }
 
@@ -46,10 +46,10 @@
 
 @media screen and (max-width:808px) {
     .service-detail-hero {
-        padding: 10px 0px 10px;
+        padding: 10px 20px 10px;
         flex-direction: column;
     }
-    .left-colum{
+    .left-column{
         width: 100%;
     }
 
@@ -69,10 +69,10 @@
 
 @media screen and (max-width: 540px) {
     .service-detail-hero {
-        padding: 10px 0px 10px;
+        padding: 10px 20px 10px;
         flex-direction: column;
     }
-    .left-colum{
+    .left-column{
         width: 100%;
     }
 }

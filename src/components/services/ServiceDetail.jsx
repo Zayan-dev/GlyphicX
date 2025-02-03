@@ -12,7 +12,7 @@ const ServiceDetail = () => {
       content:"Tap into the power of a captivating and powerful brand. Increase customer awareness, recognition and loyalty with GlyphicX’s cutting-edge and highly effective online branding services. Get ready to outshine your competition and grow!",
       image:"artboard1"
     },
-    visualization:{
+    visualisation:{
       heading: "3D VISUALISATION",
       content: "3D is one of the most powerful ways to communicate your brand’s story, explain your product, and connect with your audience. GlyphicX’s 3D services make your message stand out.",
       image:"artboard2"

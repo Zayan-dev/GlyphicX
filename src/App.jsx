@@ -37,7 +37,7 @@ function App() {
   // }, []);
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       {/* <Alert
         display={alertInfo.display}
         message={alertInfo.message}
@@ -69,7 +69,7 @@ function App() {
       </Routes>
 
       <Footer></Footer>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

@@ -39,7 +39,7 @@ const ServiceCard = ({ image, heading, text, sectionRefs ,enlarge,click}) => {
 
   return (
     <div
-      className="service-card-container"
+      className="service-card-container cursor-pointer"
       id={headingTransform}
       // ref={sectionRefs[`#${headingTransform}`]}
       ref={(el) => {

@@ -252,7 +252,7 @@ const Footer = () => {
               </div>
             </a>
             <a
-              href="https://wa.me/923192001014"
+              href="https://wa.me/971524108606"
               target="_blank"
               className="para"
             >
@@ -260,11 +260,11 @@ const Footer = () => {
                 <div>
                   <i className="fa-brands fa-square-whatsapp fa-xl"></i>
                 </div>
-                <p className="para">+92 319 2001014</p>
+                <p className="para">+971 52 410 8606</p>
               </div>
             </a>
             <a
-              href="https://www.google.com/maps?q=24.91054099503488,67.13492330610099"
+              href="https://maps.app.goo.gl/hw6sBkvT3p3LtZMH8"
               target="_blank"
               className="para"
             >
@@ -273,8 +273,8 @@ const Footer = () => {
                   <i className="fa-solid fa-location-dot fa-xl"></i>
                 </div>
                 <p className="para">
-                  C 93 Zaibunnisa Blvd, Block 13 Gulistan-e-Johar,
-                  Karachi, Pakistan
+                Business Center, Sharjah Publishing City Free Zone, Sharjah,
+                United Arab Emirates
                 </p>
               </div>
             </a>
